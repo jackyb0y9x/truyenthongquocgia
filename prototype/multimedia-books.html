@@ -1,0 +1,1601 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chuyên trang Books & Ấn phẩm KH&CN | Nền tảng Truyền thông Quốc Gia</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontSize: {
+            xs: ['0.90625rem', { lineHeight: '1.35rem' }],
+            sm: ['1rem', { lineHeight: '1.45rem' }],
+            base: ['1.125rem', { lineHeight: '1.65rem' }],
+            lg: ['1.25rem', { lineHeight: '1.8rem' }],
+            xl: ['1.375rem', { lineHeight: '1.9rem' }],
+            '2xl': ['1.625rem', { lineHeight: '2.1rem' }],
+            '3xl': ['2rem', { lineHeight: '2.45rem' }]
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <style> body { font-family: 'Inter', sans-serif; } 
+    .max-w-7xl {
+      max-width: 90rem !important;
+    }
+    header h1 {
+      font-family: 'Inter', sans-serif !important;
+      font-weight: 800 !important;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col">
+
+  
+  <!-- TOP UTILITY BAR -->
+  <div class="bg-[#0b1c33] text-slate-200 text-[13px] py-1.5 px-4 sm:px-8 border-b border-slate-700/60">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-2">
+      <div class="flex items-center gap-3">
+        <span class="text-slate-300"><i class="fa-regular fa-calendar-check mr-1.5 text-amber-400"></i>Thứ Năm, 27/08/2026</span>
+      </div>
+      <div class="flex items-center gap-4 text-[13px]">
+        <div class="flex items-center gap-1.5 font-bold">
+          <span class="text-amber-400">VI</span>
+          <span class="text-slate-500">/</span>
+          <span class="text-slate-400 hover:text-white cursor-pointer">EN</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="bg-white border-b border-slate-200 shadow-sm sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 py-3.5 flex flex-col md:flex-row items-center justify-between gap-4">
+      <a href="index.html" class="flex items-center gap-3.5 group">
+        <img src="quoc-huy.png" alt="Quốc huy Việt Nam" class="w-12 h-12 object-contain drop-shadow">
+        <div>
+          <h1 class="text-[14.5px] sm:text-[16px] md:text-[18px] lg:text-[18px] xl:text-[20px] font-extrabold tracking-normal uppercase text-red-800 leading-normal">
+            <span class="block whitespace-nowrap">NỀN TẢNG TRUYỀN THÔNG SỐ QUỐC GIA VỀ KHOA HỌC, CÔNG NGHỆ,</span>
+            <span class="block mt-1 whitespace-nowrap">ĐỔI MỚI SÁNG TẠO VÀ CHUYỂN ĐỔI SỐ</span>
+          </h1>
+        </div>
+      </a>
+
+      <div class="w-full md:w-80 lg:w-96 relative shrink-0">
+        <input type="text" placeholder="Tìm kiếm tin bài, video, ảnh..." 
+          class="w-full pl-10 pr-4 py-2 bg-slate-100 focus:bg-white text-[13px] rounded-full border border-slate-300 focus:outline-none focus:ring-2 focus:ring-red-700/30">
+        <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-[13px]"></i>
+      </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="bg-white border-t border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-8 flex items-center justify-start overflow-visible gap-1.5 text-[14.5px] sm:text-[15px] font-semibold">
+        <a href="index.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Trang chủ
+      </a>
+        
+        <!-- CHÍNH SÁCH VỚI SUBMENU CHỈ ĐẠO ĐIỀU HÀNH & GIẢI THÍCH CHÍNH SÁCH -->
+        <div class="relative group">
+          <a href="chinh-sach.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap flex items-center gap-1 cursor-pointer">
+        <span>Chính sách</span>
+        <i class="fa-solid fa-chevron-down text-[9px] text-slate-400 group-hover:text-red-800 group-hover:rotate-180 transition-transform"></i>
+      </a>
+          <!-- Submenu dropdown -->
+          <div class="hidden group-hover:block absolute left-0 top-full bg-white rounded-xl shadow-2xl border border-slate-200 py-1.5 min-w-[260px] z-50 text-slate-800 font-normal">
+            <a href="chinh-sach.html" class="flex items-center gap-2.5 px-4 py-2.5 hover:bg-slate-50 text-slate-700 hover:text-red-800 text-[14.5px] transition font-semibold">
+              <i class="fa-solid fa-landmark text-slate-400 text-[14.5px]"></i>
+              <span>Chính sách & Thể chế</span>
+            </a>
+            <a href="chinh-sach-tra-cuu.html" class="flex items-center gap-2.5 px-4 py-2.5 hover:bg-slate-50 text-slate-700 hover:text-red-800 text-[14.5px] transition font-semibold">
+              <i class="fa-solid fa-file-signature text-red-700 text-[14.5px]"></i>
+              <span>Chỉ đạo điều hành</span>
+            </a>
+            <a href="giai-thich-chinh-sach.html" class="flex items-center gap-2.5 px-4 py-2.5 hover:bg-slate-50 text-slate-700 hover:text-red-800 font-semibold text-[14.5px] transition">
+              <i class="fa-solid fa-chalkboard-user text-amber-600 text-[14.5px]"></i>
+              <span>Giải thích chính sách</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="san-pham-cong-nghe.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Sản phẩm KH&CN
+      </a>
+        <a href="bao-cao-danh-gia-truyen-thong.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Báo cáo thường niên
+      </a>
+        <a href="tai-lieu-video.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Kho tư liệu
+      </a>
+        
+        <a href="su-kien.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">Sự kiện</a>
+
+        
+        <a href="hoi-dap.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Hỏi đáp
+      </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- BREADCRUMB -->
+  <div class="bg-slate-100 border-b border-slate-200 py-3 px-4 sm:px-8 text-xs">
+    <div class="max-w-7xl mx-auto flex items-center gap-2 text-slate-500">
+      <a href="index.html" class="hover:text-red-800"><i class="fa-solid fa-house"></i> Trang chủ</a>
+      <span>/</span>
+      <a href="multimedia.html" class="hover:text-red-800">Tin tức & Media</a>
+      <span>/</span>
+      <span class="text-red-800 font-semibold">Chuyên trang Books & Ấn phẩm KH&CN</span>
+    </div>
+  </div>
+
+  <!-- FORMAT PILLS BAR -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-8 pt-8 pb-4 w-full">
+    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-4 border-b border-slate-200">
+      <div>
+        <h2 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight flex items-center gap-3">
+          Chuyên trang Books & Ấn phẩm KH&CN
+        </h2>
+        <p class="text-xs text-slate-500 mt-1">Cổng thông tin chuyên sâu tích hợp bộ lọc 9 chuyên mục trọng điểm Quốc gia</p>
+      </div>
+
+      <div class="flex flex-wrap items-center gap-1.5 text-xs font-semibold">
+        
+      <a href="multimedia.html" class="px-4 py-1.5 rounded-full bg-white border border-slate-300 text-slate-700 hover:bg-slate-100 transition flex items-center gap-1.5">
+        <i class="fa-regular fa-newspaper text-[12px] text-amber-400"></i> Tin tổng hợp
+      </a>
+    
+
+      <a href="multimedia-video.html" class="px-4 py-1.5 rounded-full bg-white border border-slate-300 text-slate-700 hover:bg-slate-100 transition flex items-center gap-1.5">
+        <i class="fa-solid fa-play text-[12px] text-red-600"></i> Video
+      </a>
+    
+
+      <a href="multimedia-photo.html" class="px-4 py-1.5 rounded-full bg-white border border-slate-300 text-slate-700 hover:bg-slate-100 transition flex items-center gap-1.5">
+        <i class="fa-regular fa-image text-[12px] text-blue-600"></i> Ảnh
+      </a>
+    
+
+      <a href="multimedia-infographic.html" class="px-4 py-1.5 rounded-full bg-white border border-slate-300 text-slate-700 hover:bg-slate-100 transition flex items-center gap-1.5">
+        <i class="fa-solid fa-chart-pie text-[12px] text-emerald-600"></i> Infographic
+      </a>
+    
+
+      <a href="multimedia-books.html" class="px-4 py-1.5 rounded-full bg-[#0e2646] text-white font-bold shadow-md transition flex items-center gap-1.5">
+        <i class="fa-solid fa-book text-[12px] text-amber-400"></i> Books
+      </a>
+    
+
+      <a href="multimedia-voice.html" class="px-4 py-1.5 rounded-full bg-white border border-slate-300 text-slate-700 hover:bg-slate-100 transition flex items-center gap-1.5">
+        <i class="fa-solid fa-podcast text-[12px] text-purple-600"></i> Voice
+      </a>
+    
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- MAIN 2-COLUMN LAYOUT -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-8 py-4 w-full flex-1">
+    
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      
+      
+    <!-- CÂY PHÂN LOẠI 9 CHUYÊN MỤC TRỌNG ĐIỂM (LEFT SIDEBAR) -->
+    <aside class="lg:col-span-4 xl:col-span-3.5 space-y-4">
+      <div class="bg-white rounded-2xl border border-slate-200 p-4 sm:p-5 shadow-sm space-y-4 sticky top-24">
+        
+        <!-- Header -->
+        <div class="flex items-center justify-between pb-3 border-b border-slate-100">
+          <div class="flex items-center gap-2.5">
+            <div class="w-8 h-8 rounded-xl bg-red-100 text-red-800 flex items-center justify-center text-sm font-bold shadow-xs">
+              <i class="fa-solid fa-layer-group"></i>
+            </div>
+            <div>
+              <h3 class="font-black text-xs sm:text-sm text-slate-900 tracking-tight uppercase">Chuyên mục trọng điểm</h3>
+              <p class="text-[12px] text-slate-500 font-medium">Phân loại dữ liệu theo chuyên mục</p>
+            </div>
+          </div>
+          <span class="text-[12px] bg-red-50 text-red-700 font-bold px-2 py-0.5 rounded-full border border-red-200">9 Mục</span>
+        </div>
+
+        <!-- Quick Search inside category list -->
+        <div class="relative">
+          <input type="text" id="treeSearchInput" onkeyup="handleTreeSearch(this.value)" placeholder="Tìm kiếm chuyên mục..." 
+            class="w-full pl-8 pr-3 py-1.5 bg-slate-50 focus:bg-white text-xs rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-red-700/20">
+          <i class="fa-solid fa-magnifying-glass absolute left-2.5 top-1/2 -translate-y-1/2 text-slate-400 text-[12px]"></i>
+        </div>
+
+        <!-- Root Node: Tất cả chuyên mục -->
+        <button onclick="filterByTopic('all', this)" 
+                class="category-btn active-category-btn w-full flex items-center justify-between p-2.5 rounded-xl text-xs font-bold transition-all text-left bg-[#0e2646] text-white shadow-sm border border-transparent" 
+                data-topic-target="all"
+                data-topic-name="Tất cả chuyên mục">
+          <div class="flex items-center gap-2.5 min-w-0">
+            <div class="category-icon-box w-7 h-7 rounded-lg bg-white/20 text-white flex items-center justify-center text-xs shrink-0 transition"
+                 data-orig-bg="bg-white/20" data-orig-text="text-white">
+              <i class="fa-solid fa-border-all"></i>
+            </div>
+            <span class="category-name text-xs font-bold text-white truncate transition block">Tất cả chuyên mục</span>
+          </div>
+          <span class="category-count text-[13px] font-mono font-bold px-2 py-0.5 rounded-full bg-white/20 text-white shrink-0 transition"
+                data-orig-bg="bg-white/20" data-orig-text="text-white">
+            134 bài
+          </span>
+        </button>
+
+        <!-- Category List -->
+        <div id="treeContainer" class="space-y-1.5 max-h-[calc(100vh-320px)] overflow-y-auto pr-1">
+          
+      <button onclick="filterByTopic('khcn', this)" 
+              class="category-btn w-full flex items-center justify-between p-2.5 rounded-xl text-xs font-bold transition-all text-left bg-white text-slate-700 hover:bg-slate-100 hover:text-slate-900 border border-slate-200/80 shadow-xs group" 
+              data-topic-target="khcn"
+              data-topic-name="Khoa học & Công nghệ">
+        <div class="flex items-center gap-2.5 min-w-0">
+          <div class="category-icon-box w-7 h-7 rounded-lg bg-indigo-50 text-indigo-700 flex items-center justify-center text-xs shrink-0 shadow-xs transition"
+               data-orig-bg="bg-indigo-50" data-orig-text="text-indigo-700">
+            <i class="fa-solid fa-flask-vial"></i>
+          </div>
+          <span class="category-name text-xs font-bold text-slate-800 truncate transition block">
+            Khoa học & Công nghệ
+          </span>
+        </div>
+        
+        <span class="category-count text-[13px] font-mono font-bold px-2 py-0.5 rounded-full bg-indigo-50 text-indigo-700 shrink-0 transition"
+              data-orig-bg="bg-indigo-50" data-orig-text="text-indigo-700">
+          18 bài
+        </span>
+      </button>
+    
+
+      <button onclick="filterByTopic('dmst', this)" 
+              class="category-btn w-full flex items-center justify-between p-2.5 rounded-xl text-xs font-bold transition-all text-left bg-white text-slate-700 hover:bg-slate-100 hover:text-slate-900 border border-slate-200/80 shadow-xs group" 
+              data-topic-target="dmst"
+              data-topic-name="Đổi mới sáng tạo">
+        <div class="flex items-center gap-2.5 min-w-0">
+          <div class="category-icon-box w-7 h-7 rounded-lg bg-amber-50 text-amber-700 flex items-center justify-center text-xs shrink-0 shadow-xs transition"
+               data-orig-bg="bg-amber-50" data-orig-text="text-amber-700">
+            <i class="fa-solid fa-lightbulb"></i>
+          </div>
+          <span class="category-name text-xs font-bold text-slate-800 truncate transition block">
+            Đổi mới sáng tạo
+          </span>
+        </div>
+        
+        <span class="category-count text-[13px] font-mono font-bold px-2 py-0.5 rounded-full bg-amber-50 text-amber-700 shrink-0 transition"
+              data-orig-bg="bg-amber-50" data-orig-text="text-amber-700">
+          16 bài
+        </span>
+      </button>
+    
+
+      <button onclick="filterByTopic('shtt', this)" 
+              class="category-btn w-full flex items-center justify-between p-2.5 rounded-xl text-xs font-bold transition-all text-left bg-white text-slate-700 hover:bg-slate-100 hover:text-slate-900 border border-slate-200/80 shadow-xs group" 
+              data-topic-target="shtt"
+              data-topic-name="Sở hữu trí tuệ">
+        <div class="flex items-center gap-2.5 min-w-0">
+          <div class="category-icon-box w-7 h-7 rounded-lg bg-rose-50 text-rose-700 flex items-center justify-center text-xs shrink-0 shadow-xs transition"
+               data-orig-bg="bg-rose-50" data-orig-text="text-rose-700">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <span class="category-name text-xs font-bold text-slate-800 truncate transition block">
+            Sở hữu trí tuệ
+          </span>
+        </div>
+        
+        <span class="category-count text-[13px] font-mono font-bold px-2 py-0.5 rounded-full bg-rose-50 text-rose-700 shrink-0 transition"
+              data-orig-bg="bg-rose-50" data-orig-text="text-rose-700">
+          12 bài
+        </span>
+      </button>
+    
+
+      <button onclick="filterByTopic('tcdl', this)" 
+              class="category-btn w-full flex items-center justify-between p-2.5 rounded-xl text-xs font-bold transition-all text-left bg-white text-slate-700 hover:bg-slate-100 hover:text-slate-900 border border-slate-200/80 shadow-xs group" 
+              data-topic-target="tcdl"
+              data-topic-name="Tiêu chuẩn, Đo lường, CL">
+        <div class="flex items-center gap-2.5 min-w-0">
+          <div class="category-icon-box w-7 h-7 rounded-lg bg-emerald-50 text-emerald-700 flex items-center justify-center text-xs shrink-0 shadow-xs transition"
+               data-orig-bg="bg-emerald-50" data-orig-text="text-emerald-700">
+            <i class="fa-solid fa-ruler-combined"></i>
+          </div>
+          <span class="category-name text-xs font-bold text-slate-800 truncate transition block">
+            Tiêu chuẩn, Đo lường, CL
+          </span>
+        </div>
+        
+        <span class="category-count text-[13px] font-mono font-bold px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 shrink-0 transition"
+              data-orig-bg="bg-emerald-50" data-orig-text="text-emerald-700">
+          13 bài
+        </span>
+      </button>
+    
+
+      <button onclick="filterByTopic('nlnt', this)" 
+              class="category-btn w-full flex items-center justify-between p-2.5 rounded-xl text-xs font-bold transition-all text-left bg-white text-slate-700 hover:bg-slate-100 hover:text-slate-900 border border-slate-200/80 shadow-xs group" 
+              data-topic-target="nlnt"
+              data-topic-name="Năng lượng nguyên tử">
+        <div class="flex items-center gap-2.5 min-w-0">
+          <div class="category-icon-box w-7 h-7 rounded-lg bg-purple-50 text-purple-700 flex items-center justify-center text-xs shrink-0 shadow-xs transition"
+               data-orig-bg="bg-purple-50" data-orig-text="text-purple-700">
+            <i class="fa-solid fa-atom"></i>
+          </div>
+          <span class="category-name text-xs font-bold text-slate-800 truncate transition block">
+            Năng lượng nguyên tử
+          </span>
+        </div>
+        
+        <span class="category-count text-[13px] font-mono font-bold px-2 py-0.5 rounded-full bg-purple-50 text-purple-700 shrink-0 transition"
+              data-orig-bg="bg-purple-50" data-orig-text="text-purple-700">
+          11 bài
+        </span>
+      </button>
+    
+
+      <button onclick="filterByTopic('bcvt', this)" 
+              class="category-btn w-full flex items-center justify-between p-2.5 rounded-xl text-xs font-bold transition-all text-left bg-white text-slate-700 hover:bg-slate-100 hover:text-slate-900 border border-slate-200/80 shadow-xs group" 
+              data-topic-target="bcvt"
+              data-topic-name="Bưu chính - Viễn thông">
+        <div class="flex items-center gap-2.5 min-w-0">
+          <div class="category-icon-box w-7 h-7 rounded-lg bg-teal-50 text-teal-700 flex items-center justify-center text-xs shrink-0 shadow-xs transition"
+               data-orig-bg="bg-teal-50" data-orig-text="text-teal-700">
+            <i class="fa-solid fa-tower-broadcast"></i>
+          </div>
+          <span class="category-name text-xs font-bold text-slate-800 truncate transition block">
+            Bưu chính - Viễn thông
+          </span>
+        </div>
+        
+        <span class="category-count text-[13px] font-mono font-bold px-2 py-0.5 rounded-full bg-teal-50 text-teal-700 shrink-0 transition"
+              data-orig-bg="bg-teal-50" data-orig-text="text-teal-700">
+          13 bài
+        </span>
+      </button>
+    
+
+      <button onclick="filterByTopic('cds', this)" 
+              class="category-btn w-full flex items-center justify-between p-2.5 rounded-xl text-xs font-bold transition-all text-left bg-white text-slate-700 hover:bg-slate-100 hover:text-slate-900 border border-slate-200/80 shadow-xs group" 
+              data-topic-target="cds"
+              data-topic-name="Chuyển đổi số & KNS">
+        <div class="flex items-center gap-2.5 min-w-0">
+          <div class="category-icon-box w-7 h-7 rounded-lg bg-blue-50 text-blue-700 flex items-center justify-center text-xs shrink-0 shadow-xs transition"
+               data-orig-bg="bg-blue-50" data-orig-text="text-blue-700">
+            <i class="fa-solid fa-network-wired"></i>
+          </div>
+          <span class="category-name text-xs font-bold text-slate-800 truncate transition block">
+            Chuyển đổi số & KNS
+          </span>
+        </div>
+        
+        <span class="category-count text-[13px] font-mono font-bold px-2 py-0.5 rounded-full bg-blue-50 text-blue-700 shrink-0 transition"
+              data-orig-bg="bg-blue-50" data-orig-text="text-blue-700">
+          17 bài
+        </span>
+      </button>
+    
+
+      <button onclick="filterByTopic('cns-ai', this)" 
+              class="category-btn w-full flex items-center justify-between p-2.5 rounded-xl text-xs font-bold transition-all text-left bg-white text-slate-700 hover:bg-slate-100 hover:text-slate-900 border border-slate-200/80 shadow-xs group" 
+              data-topic-target="cns-ai"
+              data-topic-name="Công nghiệp số & AI">
+        <div class="flex items-center gap-2.5 min-w-0">
+          <div class="category-icon-box w-7 h-7 rounded-lg bg-sky-50 text-sky-700 flex items-center justify-center text-xs shrink-0 shadow-xs transition"
+               data-orig-bg="bg-sky-50" data-orig-text="text-sky-700">
+            <i class="fa-solid fa-microchip"></i>
+          </div>
+          <span class="category-name text-xs font-bold text-slate-800 truncate transition block">
+            Công nghiệp số & AI
+          </span>
+        </div>
+        
+        <span class="category-count text-[13px] font-mono font-bold px-2 py-0.5 rounded-full bg-sky-50 text-sky-700 shrink-0 transition"
+              data-orig-bg="bg-sky-50" data-orig-text="text-sky-700">
+          19 bài
+        </span>
+      </button>
+    
+
+      <button onclick="filterByTopic('kts', this)" 
+              class="category-btn w-full flex items-center justify-between p-2.5 rounded-xl text-xs font-bold transition-all text-left bg-white text-slate-700 hover:bg-slate-100 hover:text-slate-900 border border-slate-200/80 shadow-xs group" 
+              data-topic-target="kts"
+              data-topic-name="Kinh tế số - Xã hội số">
+        <div class="flex items-center gap-2.5 min-w-0">
+          <div class="category-icon-box w-7 h-7 rounded-lg bg-cyan-50 text-cyan-700 flex items-center justify-center text-xs shrink-0 shadow-xs transition"
+               data-orig-bg="bg-cyan-50" data-orig-text="text-cyan-700">
+            <i class="fa-solid fa-chart-line"></i>
+          </div>
+          <span class="category-name text-xs font-bold text-slate-800 truncate transition block">
+            Kinh tế số - Xã hội số
+          </span>
+        </div>
+        
+        <span class="category-count text-[13px] font-mono font-bold px-2 py-0.5 rounded-full bg-cyan-50 text-cyan-700 shrink-0 transition"
+              data-orig-bg="bg-cyan-50" data-orig-text="text-cyan-700">
+          15 bài
+        </span>
+      </button>
+    
+        </div>
+
+        <!-- Footer Shortcut -->
+        <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-[13px] text-slate-500">
+          <span class="text-[12px]">Cổng chuyên mục gốc:</span>
+          <a href="index.html#chuyen-de-sec" class="text-red-700 hover:text-red-800 font-bold flex items-center gap-1 text-[13px]">
+            Xem chi tiết 9 mục <i class="fa-solid fa-arrow-right text-[11px]"></i>
+          </a>
+        </div>
+
+      </div>
+    </aside>
+  
+
+      <!-- NỘI DUNG CHUYÊN TRANG BOOKS (RIGHT AREA) -->
+      <section class="lg:col-span-8 xl:col-span-8.5 space-y-6">
+
+        <!-- FILTER & ACTIVE TOPIC BAR -->
+        <div class="bg-white rounded-xl border border-slate-200 p-4 shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+          <div class="flex items-center gap-2.5">
+            <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">Đang xem:</span>
+            <span id="activeTopicLabel" class="text-xs sm:text-sm font-black text-red-800 bg-red-50 px-3 py-1 rounded-lg border border-red-200">
+              Tất cả chuyên mục
+            </span>
+            <span id="filteredCount" class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded font-bold">
+              12 ấn phẩm
+            </span>
+          </div>
+
+          <div class="flex items-center gap-2">
+            <button onclick="resetFilter()" class="text-[13px] text-slate-500 hover:text-red-700 font-medium px-2 py-1 rounded hover:bg-slate-100 transition flex items-center gap-1">
+              <i class="fa-solid fa-rotate-left"></i> Đặt lại
+            </button>
+            <div class="h-4 w-[1px] bg-slate-200"></div>
+            <select class="text-xs bg-slate-50 border border-slate-200 rounded-lg px-2.5 py-1 text-slate-700 focus:outline-none focus:ring-1 focus:ring-red-700">
+              <option>Mới xuất bản</option>
+              <option>Đọc nhiều nhất</option>
+              <option>Sách chuyên khảo</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- EMPTY STATE NOTICE -->
+        <div id="emptyStateNotice" class="hidden p-12 bg-white rounded-2xl border border-dashed border-slate-300 text-center space-y-3">
+          <div class="w-14 h-14 bg-amber-50 text-amber-700 rounded-full flex items-center justify-center mx-auto text-xl">
+            <i class="fa-solid fa-book-open"></i>
+          </div>
+          <h4 class="font-bold text-slate-800 text-sm">Chưa có ấn phẩm cho chuyên mục này</h4>
+          <p class="text-xs text-slate-500 max-w-sm mx-auto">Vui lòng chọn chuyên mục khác hoặc nhấn "Đặt lại" để xem toàn bộ kho sách điện tử.</p>
+          <button onclick="resetFilter()" class="px-4 py-1.5 bg-amber-700 text-white text-xs font-bold rounded-lg hover:bg-amber-800 transition">
+            Xem tất cả ấn phẩm
+          </button>
+        </div>
+
+        <!-- BOOKS GRID -->
+        <div id="cardsGrid" class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5">
+          
+    <div class="content-card-item bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition duration-300 group flex flex-col justify-between" 
+         data-topic="khcn" data-subtopic="khcn-nghiencuu">
+      
+      <div class="p-5 space-y-4">
+        
+        <!-- 3D Book Display Mockup -->
+        <div class="relative h-56 bg-gradient-to-tr from-slate-100 to-slate-50 rounded-xl pt-10 pb-4 px-4 flex items-center justify-center overflow-hidden cursor-pointer group-hover:bg-slate-100 transition" onclick="openBookModal('b1')">
+          
+          <!-- 3D Book Graphic -->
+          <div class="relative w-28 h-40 bg-gradient-to-r from-blue-900 via-indigo-950 to-slate-900 rounded-r-md shadow-2xl transition duration-300 transform group-hover:scale-105 group-hover:-rotate-1 border-l-4 border-amber-600/60 flex flex-col justify-between p-2.5 text-white">
+            
+            <!-- Book Spine Accent -->
+            <div class="absolute left-0 top-0 bottom-0 w-2 bg-black/30 border-r border-white/20"></div>
+
+            <div class="space-y-1 pl-1">
+              <span class="text-[7px] text-amber-300 uppercase tracking-widest font-black block">MST PUBLISHING</span>
+              <h5 class="text-[9px] font-bold leading-tight line-clamp-3 text-slate-100">Kỷ yếu ngành Khoa học và Công nghệ – Kế thừa lịch sử, hướng tới tương lai</h5>
+            </div>
+
+            <div class="flex items-center justify-between text-slate-300 text-xs pl-1">
+              <i class="fa-solid fa-book-bookmark"></i>
+              <span class="text-[8px] font-mono">2026</span>
+            </div>
+          </div>
+
+          <!-- Read Trigger Overlay -->
+          <div class="absolute inset-0 bg-slate-900/30 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+            <span class="px-3 py-1.5 rounded-full bg-amber-700 text-white font-bold text-xs shadow-lg flex items-center gap-1.5">
+              <i class="fa-solid fa-book-open"></i> Đọc trực tuyến
+            </span>
+          </div>
+
+          <!-- Topic Badge -->
+          <span class="absolute top-2.5 left-2.5 text-[12px] font-bold px-2 py-0.5 rounded-full border shadow-xs bg-indigo-50 text-indigo-700 border-indigo-200">
+            Khoa học & Công nghệ
+          </span>
+        </div>
+
+        <!-- Book Meta & Title -->
+        <div class="space-y-2">
+          <div class="flex items-center justify-between text-[13px] text-slate-400">
+            <span class="truncate max-w-[150px]"><i class="fa-solid fa-building text-[12px] mr-1"></i> NXB Khoa học Tự nhiên & Công nghệ</span>
+            <span class="font-mono">240 trang</span>
+          </div>
+
+          <h4 class="font-bold text-xs sm:text-sm text-slate-900 group-hover:text-amber-800 transition line-clamp-2 leading-snug cursor-pointer" onclick="openBookModal('b1')">
+            Kỷ yếu ngành Khoa học và Công nghệ – Kế thừa lịch sử, hướng tới tương lai
+          </h4>
+
+          <p class="text-[13px] text-slate-500 line-clamp-2 leading-relaxed">
+            Tổng hợp toàn diện lịch sử hình thành, các thành tựu nghiên cứu ứng dụng và định hướng phát triển của ngành KH&CN Việt Nam.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Card Action Bar -->
+      <div class="px-5 py-3 bg-slate-50 border-t border-slate-100 flex items-center justify-between text-xs">
+        <button onclick="openBookModal('b1')" class="text-amber-800 hover:text-amber-900 font-bold flex items-center gap-1.5">
+          <i class="fa-solid fa-book-open text-xs"></i> Đọc ngay
+        </button>
+        <button onclick="alert('Đang tải tệp PDF ấn phẩm số (24.5 MB)...')" class="px-2.5 py-1 rounded-lg bg-white border border-slate-200 hover:border-amber-700 hover:text-amber-800 text-slate-600 font-medium text-[13px] flex items-center gap-1 transition">
+          <i class="fa-solid fa-download text-[12px]"></i> PDF (24.5 MB)
+        </button>
+      </div>
+
+    </div>
+  
+
+    <div class="content-card-item bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition duration-300 group flex flex-col justify-between" 
+         data-topic="dmst" data-subtopic="dmst-khoinghiep">
+      
+      <div class="p-5 space-y-4">
+        
+        <!-- 3D Book Display Mockup -->
+        <div class="relative h-56 bg-gradient-to-tr from-slate-100 to-slate-50 rounded-xl pt-10 pb-4 px-4 flex items-center justify-center overflow-hidden cursor-pointer group-hover:bg-slate-100 transition" onclick="openBookModal('b2')">
+          
+          <!-- 3D Book Graphic -->
+          <div class="relative w-28 h-40 bg-gradient-to-r from-amber-800 via-orange-950 to-slate-900 rounded-r-md shadow-2xl transition duration-300 transform group-hover:scale-105 group-hover:-rotate-1 border-l-4 border-amber-600/60 flex flex-col justify-between p-2.5 text-white">
+            
+            <!-- Book Spine Accent -->
+            <div class="absolute left-0 top-0 bottom-0 w-2 bg-black/30 border-r border-white/20"></div>
+
+            <div class="space-y-1 pl-1">
+              <span class="text-[7px] text-amber-300 uppercase tracking-widest font-black block">MST PUBLISHING</span>
+              <h5 class="text-[9px] font-bold leading-tight line-clamp-3 text-slate-100">Sách trắng Đổi mới sáng tạo và Khởi nghiệp công nghệ Việt Nam 2026</h5>
+            </div>
+
+            <div class="flex items-center justify-between text-slate-300 text-xs pl-1">
+              <i class="fa-solid fa-lightbulb"></i>
+              <span class="text-[8px] font-mono">2026</span>
+            </div>
+          </div>
+
+          <!-- Read Trigger Overlay -->
+          <div class="absolute inset-0 bg-slate-900/30 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+            <span class="px-3 py-1.5 rounded-full bg-amber-700 text-white font-bold text-xs shadow-lg flex items-center gap-1.5">
+              <i class="fa-solid fa-book-open"></i> Đọc trực tuyến
+            </span>
+          </div>
+
+          <!-- Topic Badge -->
+          <span class="absolute top-2.5 left-2.5 text-[12px] font-bold px-2 py-0.5 rounded-full border shadow-xs bg-amber-50 text-amber-700 border-amber-200">
+            Đổi mới sáng tạo
+          </span>
+        </div>
+
+        <!-- Book Meta & Title -->
+        <div class="space-y-2">
+          <div class="flex items-center justify-between text-[13px] text-slate-400">
+            <span class="truncate max-w-[150px]"><i class="fa-solid fa-building text-[12px] mr-1"></i> Bộ Khoa học và Công nghệ</span>
+            <span class="font-mono">310 trang</span>
+          </div>
+
+          <h4 class="font-bold text-xs sm:text-sm text-slate-900 group-hover:text-amber-800 transition line-clamp-2 leading-snug cursor-pointer" onclick="openBookModal('b2')">
+            Sách trắng Đổi mới sáng tạo và Khởi nghiệp công nghệ Việt Nam 2026
+          </h4>
+
+          <p class="text-[13px] text-slate-500 line-clamp-2 leading-relaxed">
+            Báo cáo thường niên phân tích dòng vốn đầu tư mạo hiểm, chỉ số PII và bản đồ các vườn ươm doanh nghiệp DeepTech.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Card Action Bar -->
+      <div class="px-5 py-3 bg-slate-50 border-t border-slate-100 flex items-center justify-between text-xs">
+        <button onclick="openBookModal('b2')" class="text-amber-800 hover:text-amber-900 font-bold flex items-center gap-1.5">
+          <i class="fa-solid fa-book-open text-xs"></i> Đọc ngay
+        </button>
+        <button onclick="alert('Đang tải tệp PDF ấn phẩm số (32.0 MB)...')" class="px-2.5 py-1 rounded-lg bg-white border border-slate-200 hover:border-amber-700 hover:text-amber-800 text-slate-600 font-medium text-[13px] flex items-center gap-1 transition">
+          <i class="fa-solid fa-download text-[12px]"></i> PDF (32.0 MB)
+        </button>
+      </div>
+
+    </div>
+  
+
+    <div class="content-card-item bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition duration-300 group flex flex-col justify-between" 
+         data-topic="shtt" data-subtopic="shtt-sangche">
+      
+      <div class="p-5 space-y-4">
+        
+        <!-- 3D Book Display Mockup -->
+        <div class="relative h-56 bg-gradient-to-tr from-slate-100 to-slate-50 rounded-xl pt-10 pb-4 px-4 flex items-center justify-center overflow-hidden cursor-pointer group-hover:bg-slate-100 transition" onclick="openBookModal('b3')">
+          
+          <!-- 3D Book Graphic -->
+          <div class="relative w-28 h-40 bg-gradient-to-r from-rose-900 via-red-950 to-slate-900 rounded-r-md shadow-2xl transition duration-300 transform group-hover:scale-105 group-hover:-rotate-1 border-l-4 border-amber-600/60 flex flex-col justify-between p-2.5 text-white">
+            
+            <!-- Book Spine Accent -->
+            <div class="absolute left-0 top-0 bottom-0 w-2 bg-black/30 border-r border-white/20"></div>
+
+            <div class="space-y-1 pl-1">
+              <span class="text-[7px] text-amber-300 uppercase tracking-widest font-black block">MST PUBLISHING</span>
+              <h5 class="text-[9px] font-bold leading-tight line-clamp-3 text-slate-100">Cẩm nang Pháp luật Sở hữu trí tuệ dành cho Doanh nghiệp vừa và nhỏ</h5>
+            </div>
+
+            <div class="flex items-center justify-between text-slate-300 text-xs pl-1">
+              <i class="fa-solid fa-shield-halved"></i>
+              <span class="text-[8px] font-mono">2026</span>
+            </div>
+          </div>
+
+          <!-- Read Trigger Overlay -->
+          <div class="absolute inset-0 bg-slate-900/30 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+            <span class="px-3 py-1.5 rounded-full bg-amber-700 text-white font-bold text-xs shadow-lg flex items-center gap-1.5">
+              <i class="fa-solid fa-book-open"></i> Đọc trực tuyến
+            </span>
+          </div>
+
+          <!-- Topic Badge -->
+          <span class="absolute top-2.5 left-2.5 text-[12px] font-bold px-2 py-0.5 rounded-full border shadow-xs bg-rose-50 text-rose-700 border-rose-200">
+            Sở hữu trí tuệ
+          </span>
+        </div>
+
+        <!-- Book Meta & Title -->
+        <div class="space-y-2">
+          <div class="flex items-center justify-between text-[13px] text-slate-400">
+            <span class="truncate max-w-[150px]"><i class="fa-solid fa-building text-[12px] mr-1"></i> Cục Sở hữu trí tuệ</span>
+            <span class="font-mono">185 trang</span>
+          </div>
+
+          <h4 class="font-bold text-xs sm:text-sm text-slate-900 group-hover:text-amber-800 transition line-clamp-2 leading-snug cursor-pointer" onclick="openBookModal('b3')">
+            Cẩm nang Pháp luật Sở hữu trí tuệ dành cho Doanh nghiệp vừa và nhỏ
+          </h4>
+
+          <p class="text-[13px] text-slate-500 line-clamp-2 leading-relaxed">
+            Hướng dẫn thực chiến từ đăng ký nhãn hiệu, sáng chế đến quy trình khởi kiện tranh chấp bản quyền trong kỷ nguyên số.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Card Action Bar -->
+      <div class="px-5 py-3 bg-slate-50 border-t border-slate-100 flex items-center justify-between text-xs">
+        <button onclick="openBookModal('b3')" class="text-amber-800 hover:text-amber-900 font-bold flex items-center gap-1.5">
+          <i class="fa-solid fa-book-open text-xs"></i> Đọc ngay
+        </button>
+        <button onclick="alert('Đang tải tệp PDF ấn phẩm số (16.8 MB)...')" class="px-2.5 py-1 rounded-lg bg-white border border-slate-200 hover:border-amber-700 hover:text-amber-800 text-slate-600 font-medium text-[13px] flex items-center gap-1 transition">
+          <i class="fa-solid fa-download text-[12px]"></i> PDF (16.8 MB)
+        </button>
+      </div>
+
+    </div>
+  
+
+    <div class="content-card-item bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition duration-300 group flex flex-col justify-between" 
+         data-topic="tcdl" data-subtopic="tcdl-tcvn">
+      
+      <div class="p-5 space-y-4">
+        
+        <!-- 3D Book Display Mockup -->
+        <div class="relative h-56 bg-gradient-to-tr from-slate-100 to-slate-50 rounded-xl pt-10 pb-4 px-4 flex items-center justify-center overflow-hidden cursor-pointer group-hover:bg-slate-100 transition" onclick="openBookModal('b4')">
+          
+          <!-- 3D Book Graphic -->
+          <div class="relative w-28 h-40 bg-gradient-to-r from-emerald-900 via-teal-950 to-slate-900 rounded-r-md shadow-2xl transition duration-300 transform group-hover:scale-105 group-hover:-rotate-1 border-l-4 border-amber-600/60 flex flex-col justify-between p-2.5 text-white">
+            
+            <!-- Book Spine Accent -->
+            <div class="absolute left-0 top-0 bottom-0 w-2 bg-black/30 border-r border-white/20"></div>
+
+            <div class="space-y-1 pl-1">
+              <span class="text-[7px] text-amber-300 uppercase tracking-widest font-black block">MST PUBLISHING</span>
+              <h5 class="text-[9px] font-bold leading-tight line-clamp-3 text-slate-100">Sổ tay Tiêu chuẩn Quốc gia (TCVN) và Hướng dẫn truy xuất nguồn gốc số</h5>
+            </div>
+
+            <div class="flex items-center justify-between text-slate-300 text-xs pl-1">
+              <i class="fa-solid fa-ruler-combined"></i>
+              <span class="text-[8px] font-mono">2026</span>
+            </div>
+          </div>
+
+          <!-- Read Trigger Overlay -->
+          <div class="absolute inset-0 bg-slate-900/30 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+            <span class="px-3 py-1.5 rounded-full bg-amber-700 text-white font-bold text-xs shadow-lg flex items-center gap-1.5">
+              <i class="fa-solid fa-book-open"></i> Đọc trực tuyến
+            </span>
+          </div>
+
+          <!-- Topic Badge -->
+          <span class="absolute top-2.5 left-2.5 text-[12px] font-bold px-2 py-0.5 rounded-full border shadow-xs bg-emerald-50 text-emerald-700 border-emerald-200">
+            Tiêu chuẩn, Đo lường, CL
+          </span>
+        </div>
+
+        <!-- Book Meta & Title -->
+        <div class="space-y-2">
+          <div class="flex items-center justify-between text-[13px] text-slate-400">
+            <span class="truncate max-w-[150px]"><i class="fa-solid fa-building text-[12px] mr-1"></i> Tổng cục Tiêu chuẩn Đo lường Chất lượng</span>
+            <span class="font-mono">160 trang</span>
+          </div>
+
+          <h4 class="font-bold text-xs sm:text-sm text-slate-900 group-hover:text-amber-800 transition line-clamp-2 leading-snug cursor-pointer" onclick="openBookModal('b4')">
+            Sổ tay Tiêu chuẩn Quốc gia (TCVN) và Hướng dẫn truy xuất nguồn gốc số
+          </h4>
+
+          <p class="text-[13px] text-slate-500 line-clamp-2 leading-relaxed">
+            Hệ thống quy chuẩn mã số mã vạch, chuẩn dữ liệu GS1 và hướng dẫn tích hợp tem điện tử chống hàng giả.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Card Action Bar -->
+      <div class="px-5 py-3 bg-slate-50 border-t border-slate-100 flex items-center justify-between text-xs">
+        <button onclick="openBookModal('b4')" class="text-amber-800 hover:text-amber-900 font-bold flex items-center gap-1.5">
+          <i class="fa-solid fa-book-open text-xs"></i> Đọc ngay
+        </button>
+        <button onclick="alert('Đang tải tệp PDF ấn phẩm số (14.2 MB)...')" class="px-2.5 py-1 rounded-lg bg-white border border-slate-200 hover:border-amber-700 hover:text-amber-800 text-slate-600 font-medium text-[13px] flex items-center gap-1 transition">
+          <i class="fa-solid fa-download text-[12px]"></i> PDF (14.2 MB)
+        </button>
+      </div>
+
+    </div>
+  
+
+    <div class="content-card-item bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition duration-300 group flex flex-col justify-between" 
+         data-topic="nlnt" data-subtopic="nlnt-buxa">
+      
+      <div class="p-5 space-y-4">
+        
+        <!-- 3D Book Display Mockup -->
+        <div class="relative h-56 bg-gradient-to-tr from-slate-100 to-slate-50 rounded-xl pt-10 pb-4 px-4 flex items-center justify-center overflow-hidden cursor-pointer group-hover:bg-slate-100 transition" onclick="openBookModal('b5')">
+          
+          <!-- 3D Book Graphic -->
+          <div class="relative w-28 h-40 bg-gradient-to-r from-purple-900 via-indigo-950 to-slate-900 rounded-r-md shadow-2xl transition duration-300 transform group-hover:scale-105 group-hover:-rotate-1 border-l-4 border-amber-600/60 flex flex-col justify-between p-2.5 text-white">
+            
+            <!-- Book Spine Accent -->
+            <div class="absolute left-0 top-0 bottom-0 w-2 bg-black/30 border-r border-white/20"></div>
+
+            <div class="space-y-1 pl-1">
+              <span class="text-[7px] text-amber-300 uppercase tracking-widest font-black block">MST PUBLISHING</span>
+              <h5 class="text-[9px] font-bold leading-tight line-clamp-3 text-slate-100">Ứng dụng Năng lượng nguyên tử vì hòa bình: Thành tựu và Định hướng phát triển</h5>
+            </div>
+
+            <div class="flex items-center justify-between text-slate-300 text-xs pl-1">
+              <i class="fa-solid fa-atom"></i>
+              <span class="text-[8px] font-mono">2026</span>
+            </div>
+          </div>
+
+          <!-- Read Trigger Overlay -->
+          <div class="absolute inset-0 bg-slate-900/30 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+            <span class="px-3 py-1.5 rounded-full bg-amber-700 text-white font-bold text-xs shadow-lg flex items-center gap-1.5">
+              <i class="fa-solid fa-book-open"></i> Đọc trực tuyến
+            </span>
+          </div>
+
+          <!-- Topic Badge -->
+          <span class="absolute top-2.5 left-2.5 text-[12px] font-bold px-2 py-0.5 rounded-full border shadow-xs bg-purple-50 text-purple-700 border-purple-200">
+            Năng lượng nguyên tử
+          </span>
+        </div>
+
+        <!-- Book Meta & Title -->
+        <div class="space-y-2">
+          <div class="flex items-center justify-between text-[13px] text-slate-400">
+            <span class="truncate max-w-[150px]"><i class="fa-solid fa-building text-[12px] mr-1"></i> Viện Năng lượng Nguyên tử Việt Nam</span>
+            <span class="font-mono">215 trang</span>
+          </div>
+
+          <h4 class="font-bold text-xs sm:text-sm text-slate-900 group-hover:text-amber-800 transition line-clamp-2 leading-snug cursor-pointer" onclick="openBookModal('b5')">
+            Ứng dụng Năng lượng nguyên tử vì hòa bình: Thành tựu và Định hướng phát triển
+          </h4>
+
+          <p class="text-[13px] text-slate-500 line-clamp-2 leading-relaxed">
+            Tổng quan các công trình nghiên cứu đồng vị phóng xạ y tế, an toàn bức xạ và công nghệ chiếu xạ bảo quản nông sản xuất khẩu.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Card Action Bar -->
+      <div class="px-5 py-3 bg-slate-50 border-t border-slate-100 flex items-center justify-between text-xs">
+        <button onclick="openBookModal('b5')" class="text-amber-800 hover:text-amber-900 font-bold flex items-center gap-1.5">
+          <i class="fa-solid fa-book-open text-xs"></i> Đọc ngay
+        </button>
+        <button onclick="alert('Đang tải tệp PDF ấn phẩm số (22.4 MB)...')" class="px-2.5 py-1 rounded-lg bg-white border border-slate-200 hover:border-amber-700 hover:text-amber-800 text-slate-600 font-medium text-[13px] flex items-center gap-1 transition">
+          <i class="fa-solid fa-download text-[12px]"></i> PDF (22.4 MB)
+        </button>
+      </div>
+
+    </div>
+  
+
+    <div class="content-card-item bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition duration-300 group flex flex-col justify-between" 
+         data-topic="bcvt" data-subtopic="bcvt-5g">
+      
+      <div class="p-5 space-y-4">
+        
+        <!-- 3D Book Display Mockup -->
+        <div class="relative h-56 bg-gradient-to-tr from-slate-100 to-slate-50 rounded-xl pt-10 pb-4 px-4 flex items-center justify-center overflow-hidden cursor-pointer group-hover:bg-slate-100 transition" onclick="openBookModal('b6')">
+          
+          <!-- 3D Book Graphic -->
+          <div class="relative w-28 h-40 bg-gradient-to-r from-teal-900 via-cyan-950 to-slate-900 rounded-r-md shadow-2xl transition duration-300 transform group-hover:scale-105 group-hover:-rotate-1 border-l-4 border-amber-600/60 flex flex-col justify-between p-2.5 text-white">
+            
+            <!-- Book Spine Accent -->
+            <div class="absolute left-0 top-0 bottom-0 w-2 bg-black/30 border-r border-white/20"></div>
+
+            <div class="space-y-1 pl-1">
+              <span class="text-[7px] text-amber-300 uppercase tracking-widest font-black block">MST PUBLISHING</span>
+              <h5 class="text-[9px] font-bold leading-tight line-clamp-3 text-slate-100">Quy hoạch Hạ tầng Thông tin và Truyền thông thời kỳ 2021 - 2030, tầm nhìn 2050</h5>
+            </div>
+
+            <div class="flex items-center justify-between text-slate-300 text-xs pl-1">
+              <i class="fa-solid fa-tower-broadcast"></i>
+              <span class="text-[8px] font-mono">2026</span>
+            </div>
+          </div>
+
+          <!-- Read Trigger Overlay -->
+          <div class="absolute inset-0 bg-slate-900/30 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+            <span class="px-3 py-1.5 rounded-full bg-amber-700 text-white font-bold text-xs shadow-lg flex items-center gap-1.5">
+              <i class="fa-solid fa-book-open"></i> Đọc trực tuyến
+            </span>
+          </div>
+
+          <!-- Topic Badge -->
+          <span class="absolute top-2.5 left-2.5 text-[12px] font-bold px-2 py-0.5 rounded-full border shadow-xs bg-teal-50 text-teal-700 border-teal-200">
+            Bưu chính - Viễn thông
+          </span>
+        </div>
+
+        <!-- Book Meta & Title -->
+        <div class="space-y-2">
+          <div class="flex items-center justify-between text-[13px] text-slate-400">
+            <span class="truncate max-w-[150px]"><i class="fa-solid fa-building text-[12px] mr-1"></i> Bộ Thông tin và Truyền thông</span>
+            <span class="font-mono">280 trang</span>
+          </div>
+
+          <h4 class="font-bold text-xs sm:text-sm text-slate-900 group-hover:text-amber-800 transition line-clamp-2 leading-snug cursor-pointer" onclick="openBookModal('b6')">
+            Quy hoạch Hạ tầng Thông tin và Truyền thông thời kỳ 2021 - 2030, tầm nhìn 2050
+          </h4>
+
+          <p class="text-[13px] text-slate-500 line-clamp-2 leading-relaxed">
+            Văn bản định hướng chiến lược phát triển mạng cáp quang, vệ tinh, trung tâm dữ liệu và phổ cập 5G diện rộng.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Card Action Bar -->
+      <div class="px-5 py-3 bg-slate-50 border-t border-slate-100 flex items-center justify-between text-xs">
+        <button onclick="openBookModal('b6')" class="text-amber-800 hover:text-amber-900 font-bold flex items-center gap-1.5">
+          <i class="fa-solid fa-book-open text-xs"></i> Đọc ngay
+        </button>
+        <button onclick="alert('Đang tải tệp PDF ấn phẩm số (28.6 MB)...')" class="px-2.5 py-1 rounded-lg bg-white border border-slate-200 hover:border-amber-700 hover:text-amber-800 text-slate-600 font-medium text-[13px] flex items-center gap-1 transition">
+          <i class="fa-solid fa-download text-[12px]"></i> PDF (28.6 MB)
+        </button>
+      </div>
+
+    </div>
+  
+
+    <div class="content-card-item bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition duration-300 group flex flex-col justify-between" 
+         data-topic="cds" data-subtopic="cds-chinhphuso">
+      
+      <div class="p-5 space-y-4">
+        
+        <!-- 3D Book Display Mockup -->
+        <div class="relative h-56 bg-gradient-to-tr from-slate-100 to-slate-50 rounded-xl pt-10 pb-4 px-4 flex items-center justify-center overflow-hidden cursor-pointer group-hover:bg-slate-100 transition" onclick="openBookModal('b7')">
+          
+          <!-- 3D Book Graphic -->
+          <div class="relative w-28 h-40 bg-gradient-to-r from-blue-900 via-sky-950 to-slate-900 rounded-r-md shadow-2xl transition duration-300 transform group-hover:scale-105 group-hover:-rotate-1 border-l-4 border-amber-600/60 flex flex-col justify-between p-2.5 text-white">
+            
+            <!-- Book Spine Accent -->
+            <div class="absolute left-0 top-0 bottom-0 w-2 bg-black/30 border-r border-white/20"></div>
+
+            <div class="space-y-1 pl-1">
+              <span class="text-[7px] text-amber-300 uppercase tracking-widest font-black block">MST PUBLISHING</span>
+              <h5 class="text-[9px] font-bold leading-tight line-clamp-3 text-slate-100">Cẩm nang Chuyển đổi số dành cho Lãnh đạo Cơ quan Nhà nước và Địa phương</h5>
+            </div>
+
+            <div class="flex items-center justify-between text-slate-300 text-xs pl-1">
+              <i class="fa-solid fa-network-wired"></i>
+              <span class="text-[8px] font-mono">2026</span>
+            </div>
+          </div>
+
+          <!-- Read Trigger Overlay -->
+          <div class="absolute inset-0 bg-slate-900/30 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+            <span class="px-3 py-1.5 rounded-full bg-amber-700 text-white font-bold text-xs shadow-lg flex items-center gap-1.5">
+              <i class="fa-solid fa-book-open"></i> Đọc trực tuyến
+            </span>
+          </div>
+
+          <!-- Topic Badge -->
+          <span class="absolute top-2.5 left-2.5 text-[12px] font-bold px-2 py-0.5 rounded-full border shadow-xs bg-blue-50 text-blue-700 border-blue-200">
+            Chuyển đổi số & KNS
+          </span>
+        </div>
+
+        <!-- Book Meta & Title -->
+        <div class="space-y-2">
+          <div class="flex items-center justify-between text-[13px] text-slate-400">
+            <span class="truncate max-w-[150px]"><i class="fa-solid fa-building text-[12px] mr-1"></i> Cục Chuyển đổi số Quốc gia</span>
+            <span class="font-mono">190 trang</span>
+          </div>
+
+          <h4 class="font-bold text-xs sm:text-sm text-slate-900 group-hover:text-amber-800 transition line-clamp-2 leading-snug cursor-pointer" onclick="openBookModal('b7')">
+            Cẩm nang Chuyển đổi số dành cho Lãnh đạo Cơ quan Nhà nước và Địa phương
+          </h4>
+
+          <p class="text-[13px] text-slate-500 line-clamp-2 leading-relaxed">
+            Phương pháp luận xây dựng chính quyền số, quản trị dữ liệu số và văn hóa ra quyết định dựa trên dữ liệu thời gian thực.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Card Action Bar -->
+      <div class="px-5 py-3 bg-slate-50 border-t border-slate-100 flex items-center justify-between text-xs">
+        <button onclick="openBookModal('b7')" class="text-amber-800 hover:text-amber-900 font-bold flex items-center gap-1.5">
+          <i class="fa-solid fa-book-open text-xs"></i> Đọc ngay
+        </button>
+        <button onclick="alert('Đang tải tệp PDF ấn phẩm số (18.0 MB)...')" class="px-2.5 py-1 rounded-lg bg-white border border-slate-200 hover:border-amber-700 hover:text-amber-800 text-slate-600 font-medium text-[13px] flex items-center gap-1 transition">
+          <i class="fa-solid fa-download text-[12px]"></i> PDF (18.0 MB)
+        </button>
+      </div>
+
+    </div>
+  
+
+    <div class="content-card-item bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition duration-300 group flex flex-col justify-between" 
+         data-topic="cns-ai" data-subtopic="cns-bandan">
+      
+      <div class="p-5 space-y-4">
+        
+        <!-- 3D Book Display Mockup -->
+        <div class="relative h-56 bg-gradient-to-tr from-slate-100 to-slate-50 rounded-xl pt-10 pb-4 px-4 flex items-center justify-center overflow-hidden cursor-pointer group-hover:bg-slate-100 transition" onclick="openBookModal('b8')">
+          
+          <!-- 3D Book Graphic -->
+          <div class="relative w-28 h-40 bg-gradient-to-r from-sky-900 via-blue-950 to-slate-900 rounded-r-md shadow-2xl transition duration-300 transform group-hover:scale-105 group-hover:-rotate-1 border-l-4 border-amber-600/60 flex flex-col justify-between p-2.5 text-white">
+            
+            <!-- Book Spine Accent -->
+            <div class="absolute left-0 top-0 bottom-0 w-2 bg-black/30 border-r border-white/20"></div>
+
+            <div class="space-y-1 pl-1">
+              <span class="text-[7px] text-amber-300 uppercase tracking-widest font-black block">MST PUBLISHING</span>
+              <h5 class="text-[9px] font-bold leading-tight line-clamp-3 text-slate-100">Chiến lược Quốc gia về Nghiên cứu, Phát triển và Ứng dụng Trí tuệ nhân tạo</h5>
+            </div>
+
+            <div class="flex items-center justify-between text-slate-300 text-xs pl-1">
+              <i class="fa-solid fa-microchip"></i>
+              <span class="text-[8px] font-mono">2026</span>
+            </div>
+          </div>
+
+          <!-- Read Trigger Overlay -->
+          <div class="absolute inset-0 bg-slate-900/30 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+            <span class="px-3 py-1.5 rounded-full bg-amber-700 text-white font-bold text-xs shadow-lg flex items-center gap-1.5">
+              <i class="fa-solid fa-book-open"></i> Đọc trực tuyến
+            </span>
+          </div>
+
+          <!-- Topic Badge -->
+          <span class="absolute top-2.5 left-2.5 text-[12px] font-bold px-2 py-0.5 rounded-full border shadow-xs bg-sky-50 text-sky-700 border-sky-200">
+            Công nghiệp số & AI
+          </span>
+        </div>
+
+        <!-- Book Meta & Title -->
+        <div class="space-y-2">
+          <div class="flex items-center justify-between text-[13px] text-slate-400">
+            <span class="truncate max-w-[150px]"><i class="fa-solid fa-building text-[12px] mr-1"></i> NXB Thông tin và Truyền thông</span>
+            <span class="font-mono">225 trang</span>
+          </div>
+
+          <h4 class="font-bold text-xs sm:text-sm text-slate-900 group-hover:text-amber-800 transition line-clamp-2 leading-snug cursor-pointer" onclick="openBookModal('b8')">
+            Chiến lược Quốc gia về Nghiên cứu, Phát triển và Ứng dụng Trí tuệ nhân tạo
+          </h4>
+
+          <p class="text-[13px] text-slate-500 line-clamp-2 leading-relaxed">
+            Lộ trình đào tạo nhân tài, xây dựng trung tâm tính toán hiệu năng cao và hành lang pháp lý Sandbox cho AI.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Card Action Bar -->
+      <div class="px-5 py-3 bg-slate-50 border-t border-slate-100 flex items-center justify-between text-xs">
+        <button onclick="openBookModal('b8')" class="text-amber-800 hover:text-amber-900 font-bold flex items-center gap-1.5">
+          <i class="fa-solid fa-book-open text-xs"></i> Đọc ngay
+        </button>
+        <button onclick="alert('Đang tải tệp PDF ấn phẩm số (20.5 MB)...')" class="px-2.5 py-1 rounded-lg bg-white border border-slate-200 hover:border-amber-700 hover:text-amber-800 text-slate-600 font-medium text-[13px] flex items-center gap-1 transition">
+          <i class="fa-solid fa-download text-[12px]"></i> PDF (20.5 MB)
+        </button>
+      </div>
+
+    </div>
+  
+
+    <div class="content-card-item bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition duration-300 group flex flex-col justify-between" 
+         data-topic="kts" data-subtopic="kts-doanhnghiep">
+      
+      <div class="p-5 space-y-4">
+        
+        <!-- 3D Book Display Mockup -->
+        <div class="relative h-56 bg-gradient-to-tr from-slate-100 to-slate-50 rounded-xl pt-10 pb-4 px-4 flex items-center justify-center overflow-hidden cursor-pointer group-hover:bg-slate-100 transition" onclick="openBookModal('b9')">
+          
+          <!-- 3D Book Graphic -->
+          <div class="relative w-28 h-40 bg-gradient-to-r from-cyan-900 via-teal-950 to-slate-900 rounded-r-md shadow-2xl transition duration-300 transform group-hover:scale-105 group-hover:-rotate-1 border-l-4 border-amber-600/60 flex flex-col justify-between p-2.5 text-white">
+            
+            <!-- Book Spine Accent -->
+            <div class="absolute left-0 top-0 bottom-0 w-2 bg-black/30 border-r border-white/20"></div>
+
+            <div class="space-y-1 pl-1">
+              <span class="text-[7px] text-amber-300 uppercase tracking-widest font-black block">MST PUBLISHING</span>
+              <h5 class="text-[9px] font-bold leading-tight line-clamp-3 text-slate-100">Báo cáo thường niên Kinh tế số Việt Nam 2026: Đột phá dữ liệu và nền tảng</h5>
+            </div>
+
+            <div class="flex items-center justify-between text-slate-300 text-xs pl-1">
+              <i class="fa-solid fa-chart-line"></i>
+              <span class="text-[8px] font-mono">2026</span>
+            </div>
+          </div>
+
+          <!-- Read Trigger Overlay -->
+          <div class="absolute inset-0 bg-slate-900/30 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+            <span class="px-3 py-1.5 rounded-full bg-amber-700 text-white font-bold text-xs shadow-lg flex items-center gap-1.5">
+              <i class="fa-solid fa-book-open"></i> Đọc trực tuyến
+            </span>
+          </div>
+
+          <!-- Topic Badge -->
+          <span class="absolute top-2.5 left-2.5 text-[12px] font-bold px-2 py-0.5 rounded-full border shadow-xs bg-cyan-50 text-cyan-700 border-cyan-200">
+            Kinh tế số - Xã hội số
+          </span>
+        </div>
+
+        <!-- Book Meta & Title -->
+        <div class="space-y-2">
+          <div class="flex items-center justify-between text-[13px] text-slate-400">
+            <span class="truncate max-w-[150px]"><i class="fa-solid fa-building text-[12px] mr-1"></i> Viện Chiến lược TT&TT</span>
+            <span class="font-mono">260 trang</span>
+          </div>
+
+          <h4 class="font-bold text-xs sm:text-sm text-slate-900 group-hover:text-amber-800 transition line-clamp-2 leading-snug cursor-pointer" onclick="openBookModal('b9')">
+            Báo cáo thường niên Kinh tế số Việt Nam 2026: Đột phá dữ liệu và nền tảng
+          </h4>
+
+          <p class="text-[13px] text-slate-500 line-clamp-2 leading-relaxed">
+            Đo lường chi tiết giá trị gia tăng kinh tế số theo chuẩn OECD, phân tích cơ hội bứt phá của doanh nghiệp Make in Viet Nam.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Card Action Bar -->
+      <div class="px-5 py-3 bg-slate-50 border-t border-slate-100 flex items-center justify-between text-xs">
+        <button onclick="openBookModal('b9')" class="text-amber-800 hover:text-amber-900 font-bold flex items-center gap-1.5">
+          <i class="fa-solid fa-book-open text-xs"></i> Đọc ngay
+        </button>
+        <button onclick="alert('Đang tải tệp PDF ấn phẩm số (25.8 MB)...')" class="px-2.5 py-1 rounded-lg bg-white border border-slate-200 hover:border-amber-700 hover:text-amber-800 text-slate-600 font-medium text-[13px] flex items-center gap-1 transition">
+          <i class="fa-solid fa-download text-[12px]"></i> PDF (25.8 MB)
+        </button>
+      </div>
+
+    </div>
+  
+
+    <div class="content-card-item bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition duration-300 group flex flex-col justify-between" 
+         data-topic="khcn" data-subtopic="khcn-chuyengiao">
+      
+      <div class="p-5 space-y-4">
+        
+        <!-- 3D Book Display Mockup -->
+        <div class="relative h-56 bg-gradient-to-tr from-slate-100 to-slate-50 rounded-xl pt-10 pb-4 px-4 flex items-center justify-center overflow-hidden cursor-pointer group-hover:bg-slate-100 transition" onclick="openBookModal('b10')">
+          
+          <!-- 3D Book Graphic -->
+          <div class="relative w-28 h-40 bg-gradient-to-r from-indigo-900 via-blue-950 to-slate-900 rounded-r-md shadow-2xl transition duration-300 transform group-hover:scale-105 group-hover:-rotate-1 border-l-4 border-amber-600/60 flex flex-col justify-between p-2.5 text-white">
+            
+            <!-- Book Spine Accent -->
+            <div class="absolute left-0 top-0 bottom-0 w-2 bg-black/30 border-r border-white/20"></div>
+
+            <div class="space-y-1 pl-1">
+              <span class="text-[7px] text-amber-300 uppercase tracking-widest font-black block">MST PUBLISHING</span>
+              <h5 class="text-[9px] font-bold leading-tight line-clamp-3 text-slate-100">Ngành Khoa học và Công nghệ – Khơi thông nguồn lực kiến tạo tương lai</h5>
+            </div>
+
+            <div class="flex items-center justify-between text-slate-300 text-xs pl-1">
+              <i class="fa-solid fa-flask-vial"></i>
+              <span class="text-[8px] font-mono">2026</span>
+            </div>
+          </div>
+
+          <!-- Read Trigger Overlay -->
+          <div class="absolute inset-0 bg-slate-900/30 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+            <span class="px-3 py-1.5 rounded-full bg-amber-700 text-white font-bold text-xs shadow-lg flex items-center gap-1.5">
+              <i class="fa-solid fa-book-open"></i> Đọc trực tuyến
+            </span>
+          </div>
+
+          <!-- Topic Badge -->
+          <span class="absolute top-2.5 left-2.5 text-[12px] font-bold px-2 py-0.5 rounded-full border shadow-xs bg-indigo-50 text-indigo-700 border-indigo-200">
+            Khoa học & Công nghệ
+          </span>
+        </div>
+
+        <!-- Book Meta & Title -->
+        <div class="space-y-2">
+          <div class="flex items-center justify-between text-[13px] text-slate-400">
+            <span class="truncate max-w-[150px]"><i class="fa-solid fa-building text-[12px] mr-1"></i> Bộ Khoa học và Công nghệ</span>
+            <span class="font-mono">240 trang</span>
+          </div>
+
+          <h4 class="font-bold text-xs sm:text-sm text-slate-900 group-hover:text-amber-800 transition line-clamp-2 leading-snug cursor-pointer" onclick="openBookModal('b10')">
+            Ngành Khoa học và Công nghệ – Khơi thông nguồn lực kiến tạo tương lai
+          </h4>
+
+          <p class="text-[13px] text-slate-500 line-clamp-2 leading-relaxed">
+            Tổng hợp các bài viết của các nhà khoa học, chuyên gia đầu ngành về đổi mới thể chế tài chính và tự chủ đại học.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Card Action Bar -->
+      <div class="px-5 py-3 bg-slate-50 border-t border-slate-100 flex items-center justify-between text-xs">
+        <button onclick="openBookModal('b10')" class="text-amber-800 hover:text-amber-900 font-bold flex items-center gap-1.5">
+          <i class="fa-solid fa-book-open text-xs"></i> Đọc ngay
+        </button>
+        <button onclick="alert('Đang tải tệp PDF ấn phẩm số (21.0 MB)...')" class="px-2.5 py-1 rounded-lg bg-white border border-slate-200 hover:border-amber-700 hover:text-amber-800 text-slate-600 font-medium text-[13px] flex items-center gap-1 transition">
+          <i class="fa-solid fa-download text-[12px]"></i> PDF (21.0 MB)
+        </button>
+      </div>
+
+    </div>
+  
+
+    <div class="content-card-item bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition duration-300 group flex flex-col justify-between" 
+         data-topic="dmst" data-subtopic="dmst-vuonuom">
+      
+      <div class="p-5 space-y-4">
+        
+        <!-- 3D Book Display Mockup -->
+        <div class="relative h-56 bg-gradient-to-tr from-slate-100 to-slate-50 rounded-xl pt-10 pb-4 px-4 flex items-center justify-center overflow-hidden cursor-pointer group-hover:bg-slate-100 transition" onclick="openBookModal('b11')">
+          
+          <!-- 3D Book Graphic -->
+          <div class="relative w-28 h-40 bg-gradient-to-r from-amber-900 via-yellow-950 to-slate-900 rounded-r-md shadow-2xl transition duration-300 transform group-hover:scale-105 group-hover:-rotate-1 border-l-4 border-amber-600/60 flex flex-col justify-between p-2.5 text-white">
+            
+            <!-- Book Spine Accent -->
+            <div class="absolute left-0 top-0 bottom-0 w-2 bg-black/30 border-r border-white/20"></div>
+
+            <div class="space-y-1 pl-1">
+              <span class="text-[7px] text-amber-300 uppercase tracking-widest font-black block">MST PUBLISHING</span>
+              <h5 class="text-[9px] font-bold leading-tight line-clamp-3 text-slate-100">Hệ sinh thái Đổi mới sáng tạo Mở: Mô hình kết nối Doanh nghiệp - Viện trường</h5>
+            </div>
+
+            <div class="flex items-center justify-between text-slate-300 text-xs pl-1">
+              <i class="fa-solid fa-seedling"></i>
+              <span class="text-[8px] font-mono">2026</span>
+            </div>
+          </div>
+
+          <!-- Read Trigger Overlay -->
+          <div class="absolute inset-0 bg-slate-900/30 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+            <span class="px-3 py-1.5 rounded-full bg-amber-700 text-white font-bold text-xs shadow-lg flex items-center gap-1.5">
+              <i class="fa-solid fa-book-open"></i> Đọc trực tuyến
+            </span>
+          </div>
+
+          <!-- Topic Badge -->
+          <span class="absolute top-2.5 left-2.5 text-[12px] font-bold px-2 py-0.5 rounded-full border shadow-xs bg-amber-50 text-amber-700 border-amber-200">
+            Đổi mới sáng tạo
+          </span>
+        </div>
+
+        <!-- Book Meta & Title -->
+        <div class="space-y-2">
+          <div class="flex items-center justify-between text-[13px] text-slate-400">
+            <span class="truncate max-w-[150px]"><i class="fa-solid fa-building text-[12px] mr-1"></i> Trung tâm Đổi mới sáng tạo Quốc gia (NIC)</span>
+            <span class="font-mono">200 trang</span>
+          </div>
+
+          <h4 class="font-bold text-xs sm:text-sm text-slate-900 group-hover:text-amber-800 transition line-clamp-2 leading-snug cursor-pointer" onclick="openBookModal('b11')">
+            Hệ sinh thái Đổi mới sáng tạo Mở: Mô hình kết nối Doanh nghiệp - Viện trường
+          </h4>
+
+          <p class="text-[13px] text-slate-500 line-clamp-2 leading-relaxed">
+            Cẩm nang mô hình hợp tác ba nhà (Nhà nước - Nhà trường - Nhà doanh nghiệp) thúc đẩy đưa sáng chế vào dây chuyền sản xuất.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Card Action Bar -->
+      <div class="px-5 py-3 bg-slate-50 border-t border-slate-100 flex items-center justify-between text-xs">
+        <button onclick="openBookModal('b11')" class="text-amber-800 hover:text-amber-900 font-bold flex items-center gap-1.5">
+          <i class="fa-solid fa-book-open text-xs"></i> Đọc ngay
+        </button>
+        <button onclick="alert('Đang tải tệp PDF ấn phẩm số (19.2 MB)...')" class="px-2.5 py-1 rounded-lg bg-white border border-slate-200 hover:border-amber-700 hover:text-amber-800 text-slate-600 font-medium text-[13px] flex items-center gap-1 transition">
+          <i class="fa-solid fa-download text-[12px]"></i> PDF (19.2 MB)
+        </button>
+      </div>
+
+    </div>
+  
+
+    <div class="content-card-item bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition duration-300 group flex flex-col justify-between" 
+         data-topic="cds" data-subtopic="cds-antoan">
+      
+      <div class="p-5 space-y-4">
+        
+        <!-- 3D Book Display Mockup -->
+        <div class="relative h-56 bg-gradient-to-tr from-slate-100 to-slate-50 rounded-xl pt-10 pb-4 px-4 flex items-center justify-center overflow-hidden cursor-pointer group-hover:bg-slate-100 transition" onclick="openBookModal('b12')">
+          
+          <!-- 3D Book Graphic -->
+          <div class="relative w-28 h-40 bg-gradient-to-r from-slate-900 via-blue-950 to-slate-900 rounded-r-md shadow-2xl transition duration-300 transform group-hover:scale-105 group-hover:-rotate-1 border-l-4 border-amber-600/60 flex flex-col justify-between p-2.5 text-white">
+            
+            <!-- Book Spine Accent -->
+            <div class="absolute left-0 top-0 bottom-0 w-2 bg-black/30 border-r border-white/20"></div>
+
+            <div class="space-y-1 pl-1">
+              <span class="text-[7px] text-amber-300 uppercase tracking-widest font-black block">MST PUBLISHING</span>
+              <h5 class="text-[9px] font-bold leading-tight line-clamp-3 text-slate-100">Sổ tay An toàn thông tin mạng trong môi trường Cơ quan Nhà nước và Doanh nghiệp</h5>
+            </div>
+
+            <div class="flex items-center justify-between text-slate-300 text-xs pl-1">
+              <i class="fa-solid fa-user-shield"></i>
+              <span class="text-[8px] font-mono">2026</span>
+            </div>
+          </div>
+
+          <!-- Read Trigger Overlay -->
+          <div class="absolute inset-0 bg-slate-900/30 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+            <span class="px-3 py-1.5 rounded-full bg-amber-700 text-white font-bold text-xs shadow-lg flex items-center gap-1.5">
+              <i class="fa-solid fa-book-open"></i> Đọc trực tuyến
+            </span>
+          </div>
+
+          <!-- Topic Badge -->
+          <span class="absolute top-2.5 left-2.5 text-[12px] font-bold px-2 py-0.5 rounded-full border shadow-xs bg-blue-50 text-blue-700 border-blue-200">
+            Chuyển đổi số & KNS
+          </span>
+        </div>
+
+        <!-- Book Meta & Title -->
+        <div class="space-y-2">
+          <div class="flex items-center justify-between text-[13px] text-slate-400">
+            <span class="truncate max-w-[150px]"><i class="fa-solid fa-building text-[12px] mr-1"></i> Cục An toàn thông tin</span>
+            <span class="font-mono">150 trang</span>
+          </div>
+
+          <h4 class="font-bold text-xs sm:text-sm text-slate-900 group-hover:text-amber-800 transition line-clamp-2 leading-snug cursor-pointer" onclick="openBookModal('b12')">
+            Sổ tay An toàn thông tin mạng trong môi trường Cơ quan Nhà nước và Doanh nghiệp
+          </h4>
+
+          <p class="text-[13px] text-slate-500 line-clamp-2 leading-relaxed">
+            Nguyên tắc phòng thủ theo chiều sâu, quy trình ứng cứu sự cố mã độc tống tiền và bảo vệ dữ liệu công dân theo Nghị định 13.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Card Action Bar -->
+      <div class="px-5 py-3 bg-slate-50 border-t border-slate-100 flex items-center justify-between text-xs">
+        <button onclick="openBookModal('b12')" class="text-amber-800 hover:text-amber-900 font-bold flex items-center gap-1.5">
+          <i class="fa-solid fa-book-open text-xs"></i> Đọc ngay
+        </button>
+        <button onclick="alert('Đang tải tệp PDF ấn phẩm số (13.5 MB)...')" class="px-2.5 py-1 rounded-lg bg-white border border-slate-200 hover:border-amber-700 hover:text-amber-800 text-slate-600 font-medium text-[13px] flex items-center gap-1 transition">
+          <i class="fa-solid fa-download text-[12px]"></i> PDF (13.5 MB)
+        </button>
+      </div>
+
+    </div>
+  
+        </div>
+
+        <!-- PAGINATION -->
+        <div class="pt-6 border-t border-slate-200 flex items-center justify-between text-xs text-slate-500">
+          <span>Hiển thị 1 - 12 trên tổng số 12 ấn phẩm</span>
+          <div class="flex items-center gap-1">
+            <button class="px-3 py-1.5 rounded-lg border border-slate-200 bg-white hover:bg-slate-50 text-slate-400 cursor-not-allowed">
+              <i class="fa-solid fa-chevron-left text-[12px]"></i>
+            </button>
+            <button class="px-3 py-1.5 rounded-lg bg-amber-800 text-white font-bold">1</button>
+            <button class="px-3 py-1.5 rounded-lg border border-slate-200 bg-white hover:bg-slate-50 text-slate-700">2</button>
+            <button class="px-3 py-1.5 rounded-lg border border-slate-200 bg-white hover:bg-slate-50 text-slate-700">
+              <i class="fa-solid fa-chevron-right text-[12px]"></i>
+            </button>
+          </div>
+        </div>
+
+      </section>
+
+    </div>
+  </main>
+
+  <!-- E-READER / FLIPBOOK MODAL -->
+  <div id="bookModal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-md p-4">
+    <div class="max-w-4xl w-full flex flex-col h-[90vh] bg-slate-900 rounded-2xl overflow-hidden border border-slate-800 text-white">
+      
+      <!-- Modal Top Bar -->
+      <div class="flex items-center justify-between px-6 py-3.5 border-b border-slate-800 bg-slate-950">
+        <div class="flex items-center gap-3 truncate">
+          <span class="text-amber-400 text-sm font-bold"><i class="fa-solid fa-book-open mr-1"></i> Trình đọc sách số MST</span>
+          <span class="text-slate-500">•</span>
+          <span id="bookModalTitle" class="font-bold text-xs sm:text-sm text-slate-200 truncate">Tiêu đề ấn phẩm</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <span id="bookPageIndicator" class="text-xs font-mono text-amber-400 font-bold bg-amber-950/60 px-2 py-0.5 rounded border border-amber-800/40">Trang 1 / 240</span>
+          <button onclick="closeBookModal()" class="text-slate-400 hover:text-white p-1 text-lg">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Reader Canvas Simulated Book -->
+      <div class="flex-1 bg-slate-800 p-6 flex items-center justify-center overflow-auto">
+        <div class="w-full max-w-2xl bg-white text-slate-800 rounded-lg shadow-2xl p-8 sm:p-12 space-y-6 min-h-[500px] flex flex-col justify-between border border-slate-200 font-serif">
+          
+          <div class="space-y-4">
+            <div class="text-center pb-4 border-b border-slate-200">
+              <span class="text-[12px] uppercase tracking-widest text-slate-400 font-sans font-bold">BỘ KHOA HỌC VÀ CÔNG NGHỆ</span>
+              <h2 id="readerBookHeading" class="text-lg sm:text-xl font-bold text-slate-900 mt-1">Kỷ yếu ngành Khoa học và Công nghệ</h2>
+              <p id="readerBookMeta" class="text-xs text-slate-500 font-sans mt-0.5">Xuất bản: 2026 • NXB Khoa học Tự nhiên & Công nghệ</p>
+            </div>
+
+            <div class="text-xs leading-relaxed space-y-3 text-slate-700">
+              <h4 class="font-bold text-slate-900 font-sans text-sm">LỜI NÓI ĐẦU</h4>
+              <p>
+                Khoa học, công nghệ và đổi mới sáng tạo luôn đóng vai trò là quốc sách hàng đầu, là động lực quan trọng nhất để phát triển lực lượng sản xuất hiện đại, đổi mới mô hình tăng trưởng, nâng cao năng suất, chất lượng, hiệu quả và sức cạnh tranh của nền kinh tế.
+              </p>
+              <p>
+                Thực hiện Nghị quyết số 57/NQ-CP của Chính phủ, ngành Khoa học và Công nghệ đang bước vào giai đoạn chuyển mình lịch sử: Tháo gỡ các điểm nghẽn thể chế, chuyển mạnh từ quản lý hành chính sang kiến tạo phát triển, lấy doanh nghiệp và nhà khoa học làm trung tâm.
+              </p>
+              <p class="italic text-slate-500 pt-2">
+                "Đổi mới sáng tạo không chỉ là công nghệ, mà trước hết là đổi mới tư duy quản lý, trao quyền tự chủ và chấp nhận rủi ro khoa học để vươn tầm quốc tế."
+              </p>
+            </div>
+          </div>
+
+          <div class="pt-4 border-t border-slate-200 flex items-center justify-between text-xs text-slate-400 font-sans">
+            <span>Bản quyền © Bộ Khoa học và Công nghệ</span>
+            <span>Trang 1 / 240</span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Bottom Control Bar -->
+      <div class="p-4 bg-slate-950 border-t border-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs">
+        <div class="flex items-center gap-2">
+          <button onclick="alert('Đang lật về trang trước...')" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 font-medium flex items-center gap-1 transition">
+            <i class="fa-solid fa-chevron-left"></i> Trang trước
+          </button>
+          <button onclick="alert('Đang chuyển sang trang sau...')" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 font-medium flex items-center gap-1 transition">
+            Trang sau <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <button onclick="alert('Bắt đầu tải trọn bộ ấn phẩm PDF số hóa...')" class="px-4 py-1.5 rounded-lg bg-amber-600 hover:bg-amber-700 text-white font-bold flex items-center gap-1.5 transition">
+            <i class="fa-solid fa-file-pdf"></i> Tải bản PDF toàn văn
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  
+  <!-- FOOTER -->
+  <footer class="bg-[#0b1e36] text-white mt-12 border-t border-slate-800 text-[14.5px]" style="font-family: 'Inter', sans-serif;">
+    <div class="max-w-[90rem] mx-auto px-4 sm:px-8 py-10">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <!-- Col 1 -->
+        <div class="md:col-span-2 space-y-3.5 min-w-0">
+          <div class="flex items-start sm:items-center gap-3.5 min-w-0">
+            <div class="w-12 h-12 rounded-full flex items-center justify-center p-0.5 filter drop-shadow-lg shrink-0">
+              <img src="quoc-huy.png" alt="Quốc huy Việt Nam" class="w-11 h-11 object-contain drop-shadow">
+            </div>
+            <div class="min-w-0 flex-1">
+              <h5 class="font-extrabold text-[14.5px] sm:text-[15.5px] lg:text-[16.5px] xl:text-[17.5px] tracking-wide uppercase text-amber-400 leading-snug sm:leading-relaxed">NỀN TẢNG TRUYỀN THÔNG SỐ QUỐC GIA VỀ KHOA HỌC, CÔNG NGHỆ, ĐỔI MỚI SÁNG TẠO VÀ CHUYỂN ĐỔI SỐ</h5>
+              <p class="text-[13px] xl:text-[14.5px] text-slate-300 mt-1">Cơ quan chủ quản: Bộ Khoa học và Công nghệ (MST)</p>
+            </div>
+          </div>
+          <div class="text-[13px] xl:text-[14px] text-slate-300 space-y-1.5 pt-1">
+            <p><i class="fa-solid fa-location-dot w-4 mr-1 text-red-400"></i> Địa chỉ: Đang cập nhật</p>
+            <p><i class="fa-solid fa-phone w-4 mr-1 text-emerald-400"></i> Điện thoại: Đang cập nhật • Email: Đang cập nhật</p>
+          </div>
+        </div>
+
+        <!-- Col 2: Liên kết -->
+        <div class="min-w-0">
+          <h5 class="font-bold text-[13px] xl:text-[14.5px] uppercase tracking-wider text-amber-400 mb-3.5 pb-1.5 border-b border-slate-700">Liên kết nhanh</h5>
+          <ul class="space-y-2.5 text-[13px] xl:text-[14px] text-slate-300">
+            <li><a href="chinh-sach-tra-cuu.html" class="hover:text-amber-300 transition">Văn bản chỉ đạo điều hành</a></li>
+            <li><a href="san-pham-cong-nghe.html" class="hover:text-amber-300 transition">10 Nhóm sản phẩm số trọng điểm</a></li>
+            <li><a href="su-kien.html" class="hover:text-amber-300 transition">Lịch trình sự kiện & hội thảo</a></li>
+            <li><a href="hoi-dap.html" class="hover:text-amber-300 transition">Hỏi đáp & hỗ trợ trực tuyến</a></li>
+            <li><a href="chuyen-muc-kinh-te-so.html" class="hover:text-amber-300 transition">Báo cáo dữ liệu & Chỉ số PII</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Đa phương tiện -->
+        <div class="min-w-0">
+          <h5 class="font-bold text-[13px] xl:text-[14.5px] uppercase tracking-wider text-amber-400 mb-3.5 pb-1.5 border-b border-slate-700">Đa phương tiện</h5>
+          <ul class="space-y-2.5 text-[13px] xl:text-[14px] text-slate-300">
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Video phóng sự thời sự</a></li>
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Kho tư liệu ảnh sự kiện</a></li>
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Đồ họa Infographic số hóa</a></li>
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Podcast & Bản tin phát thanh</a></li>
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Sách điện tử & Báo cáo tổng kết</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-8 pt-4 border-t border-slate-800 flex flex-col lg:flex-row items-center justify-between text-[12.5px] xl:text-[13.5px] text-slate-400 gap-3">
+        <p class="text-center lg:text-left">© 2026 Bản quyền thuộc Bộ Khoa học và Công nghệ. Ghi rõ nguồn khi phát hành lại thông tin.</p>
+        <div class="flex flex-wrap items-center justify-center gap-4 shrink-0">
+          <a href="#" class="hover:text-white transition">Điều khoản sử dụng</a>
+          <a href="#" class="hover:text-white transition">Chính sách bảo mật</a>
+          <a href="hoi-dap.html" class="hover:text-white transition">Sơ đồ cổng</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="prototype-nav.js"></script>
+
+  <!-- Interactive Category Filter Script -->
+  <script>
+    // Filter by Category
+    function filterByTopic(topicId, btnEl) {
+      // 1. Reset all buttons to inactive default state
+      document.querySelectorAll('.category-btn').forEach(btn => {
+        btn.classList.remove('active-category-btn', 'bg-[#0e2646]', 'text-white', 'shadow-sm', 'border-transparent');
+        btn.classList.add('bg-white', 'text-slate-700', 'border-slate-200/80', 'hover:bg-slate-100');
+
+        // Reset text color
+        const nameSpan = btn.querySelector('.category-name');
+        if (nameSpan) {
+          nameSpan.classList.remove('text-white');
+          nameSpan.classList.add('text-slate-800');
+        }
+
+        // Reset icon container to original theme colors
+        const iconBox = btn.querySelector('.category-icon-box');
+        if (iconBox) {
+          const origBg = iconBox.dataset.origBg || 'bg-slate-100';
+          const origText = iconBox.dataset.origText || 'text-slate-700';
+          iconBox.className = 'category-icon-box w-7 h-7 rounded-lg ' + origBg + ' ' + origText + ' flex items-center justify-center text-xs shrink-0 shadow-xs transition';
+        }
+
+        // Reset count badge to original theme colors
+        const countBadge = btn.querySelector('.category-count');
+        if (countBadge) {
+          const origBg = countBadge.dataset.origBg || 'bg-slate-100';
+          const origText = countBadge.dataset.origText || 'text-slate-700';
+          countBadge.className = 'category-count text-[13px] font-mono font-bold px-2 py-0.5 rounded-full ' + origBg + ' ' + origText + ' shrink-0 transition';
+        }
+      });
+
+      // 2. Set active style on the selected button
+      if (btnEl) {
+        btnEl.classList.remove('bg-white', 'text-slate-700', 'border-slate-200/80', 'hover:bg-slate-100');
+        btnEl.classList.add('active-category-btn', 'bg-[#0e2646]', 'text-white', 'shadow-sm', 'border-transparent');
+
+        const nameSpan = btnEl.querySelector('.category-name');
+        if (nameSpan) {
+          nameSpan.classList.remove('text-slate-800');
+          nameSpan.classList.add('text-white');
+        }
+
+        const iconBox = btnEl.querySelector('.category-icon-box');
+        if (iconBox) {
+          iconBox.className = 'category-icon-box w-7 h-7 rounded-lg bg-white/20 text-white flex items-center justify-center text-xs shrink-0 shadow-xs transition';
+        }
+
+        const countBadge = btnEl.querySelector('.category-count');
+        if (countBadge) {
+          countBadge.className = 'category-count text-[13px] font-mono font-bold px-2 py-0.5 rounded-full bg-white/20 text-white shrink-0 transition';
+        }
+      }
+
+      // 3. Update active label on the right side
+      const targetName = btnEl ? (btnEl.getAttribute('data-topic-name') || 'Tất cả chuyên mục') : 'Tất cả chuyên mục';
+      const labelEl = document.getElementById('activeTopicLabel');
+      if (labelEl) {
+        labelEl.textContent = topicId === 'all' ? 'Tất cả chuyên mục' : targetName;
+      }
+
+      // 4. Filter content cards on the right
+      const cards = document.querySelectorAll('.content-card-item');
+      let visibleCount = 0;
+
+      cards.forEach(card => {
+        const itemTopic = card.getAttribute('data-topic');
+        if (topicId === 'all' || itemTopic === topicId) {
+          card.classList.remove('hidden');
+          visibleCount++;
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+
+      // 5. Update count badge
+      const countEl = document.getElementById('filteredCount');
+      if (countEl) countEl.textContent = visibleCount + ' kết quả';
+
+      // 6. Empty state toggle
+      const emptyState = document.getElementById('emptyStateNotice');
+      if (emptyState) {
+        if (visibleCount === 0) {
+          emptyState.classList.remove('hidden');
+        } else {
+          emptyState.classList.add('hidden');
+        }
+      }
+    }
+
+    // Live search inside category list
+    function handleTreeSearch(query) {
+      const q = query.toLowerCase().trim();
+      const btns = document.querySelectorAll('#treeContainer .category-btn');
+      btns.forEach(btn => {
+        const name = (btn.getAttribute('data-topic-name') || '').toLowerCase();
+        if (!q || name.includes(q)) {
+          btn.classList.remove('hidden');
+        } else {
+          btn.classList.add('hidden');
+        }
+      });
+    }
+
+    // Reset filter
+    function resetFilter() {
+      const allBtn = document.querySelector('[data-topic-target="all"]');
+      filterByTopic('all', allBtn);
+      const search = document.getElementById('treeSearchInput');
+      if (search) {
+        search.value = '';
+        handleTreeSearch('');
+      }
+    }
+  </script>
+  
+
+  <script>
+    const BOOK_DATA = [{"id":"b1","topic":"khcn","subtopic":"khcn-nghiencuu","topicName":"Khoa học & Công nghệ","topicColor":"bg-indigo-50 text-indigo-700 border-indigo-200","coverColor":"from-blue-900 via-indigo-950 to-slate-900","icon":"fa-book-bookmark","title":"Kỷ yếu ngành Khoa học và Công nghệ – Kế thừa lịch sử, hướng tới tương lai","publisher":"NXB Khoa học Tự nhiên & Công nghệ","pages":240,"year":"2026","size":"24.5 MB","desc":"Tổng hợp toàn diện lịch sử hình thành, các thành tựu nghiên cứu ứng dụng và định hướng phát triển của ngành KH&CN Việt Nam."},{"id":"b2","topic":"dmst","subtopic":"dmst-khoinghiep","topicName":"Đổi mới sáng tạo","topicColor":"bg-amber-50 text-amber-700 border-amber-200","coverColor":"from-amber-800 via-orange-950 to-slate-900","icon":"fa-lightbulb","title":"Sách trắng Đổi mới sáng tạo và Khởi nghiệp công nghệ Việt Nam 2026","publisher":"Bộ Khoa học và Công nghệ","pages":310,"year":"2026","size":"32.0 MB","desc":"Báo cáo thường niên phân tích dòng vốn đầu tư mạo hiểm, chỉ số PII và bản đồ các vườn ươm doanh nghiệp DeepTech."},{"id":"b3","topic":"shtt","subtopic":"shtt-sangche","topicName":"Sở hữu trí tuệ","topicColor":"bg-rose-50 text-rose-700 border-rose-200","coverColor":"from-rose-900 via-red-950 to-slate-900","icon":"fa-shield-halved","title":"Cẩm nang Pháp luật Sở hữu trí tuệ dành cho Doanh nghiệp vừa và nhỏ","publisher":"Cục Sở hữu trí tuệ","pages":185,"year":"2026","size":"16.8 MB","desc":"Hướng dẫn thực chiến từ đăng ký nhãn hiệu, sáng chế đến quy trình khởi kiện tranh chấp bản quyền trong kỷ nguyên số."},{"id":"b4","topic":"tcdl","subtopic":"tcdl-tcvn","topicName":"Tiêu chuẩn, Đo lường, CL","topicColor":"bg-emerald-50 text-emerald-700 border-emerald-200","coverColor":"from-emerald-900 via-teal-950 to-slate-900","icon":"fa-ruler-combined","title":"Sổ tay Tiêu chuẩn Quốc gia (TCVN) và Hướng dẫn truy xuất nguồn gốc số","publisher":"Tổng cục Tiêu chuẩn Đo lường Chất lượng","pages":160,"year":"2026","size":"14.2 MB","desc":"Hệ thống quy chuẩn mã số mã vạch, chuẩn dữ liệu GS1 và hướng dẫn tích hợp tem điện tử chống hàng giả."},{"id":"b5","topic":"nlnt","subtopic":"nlnt-buxa","topicName":"Năng lượng nguyên tử","topicColor":"bg-purple-50 text-purple-700 border-purple-200","coverColor":"from-purple-900 via-indigo-950 to-slate-900","icon":"fa-atom","title":"Ứng dụng Năng lượng nguyên tử vì hòa bình: Thành tựu và Định hướng phát triển","publisher":"Viện Năng lượng Nguyên tử Việt Nam","pages":215,"year":"2026","size":"22.4 MB","desc":"Tổng quan các công trình nghiên cứu đồng vị phóng xạ y tế, an toàn bức xạ và công nghệ chiếu xạ bảo quản nông sản xuất khẩu."},{"id":"b6","topic":"bcvt","subtopic":"bcvt-5g","topicName":"Bưu chính - Viễn thông","topicColor":"bg-teal-50 text-teal-700 border-teal-200","coverColor":"from-teal-900 via-cyan-950 to-slate-900","icon":"fa-tower-broadcast","title":"Quy hoạch Hạ tầng Thông tin và Truyền thông thời kỳ 2021 - 2030, tầm nhìn 2050","publisher":"Bộ Thông tin và Truyền thông","pages":280,"year":"2026","size":"28.6 MB","desc":"Văn bản định hướng chiến lược phát triển mạng cáp quang, vệ tinh, trung tâm dữ liệu và phổ cập 5G diện rộng."},{"id":"b7","topic":"cds","subtopic":"cds-chinhphuso","topicName":"Chuyển đổi số & KNS","topicColor":"bg-blue-50 text-blue-700 border-blue-200","coverColor":"from-blue-900 via-sky-950 to-slate-900","icon":"fa-network-wired","title":"Cẩm nang Chuyển đổi số dành cho Lãnh đạo Cơ quan Nhà nước và Địa phương","publisher":"Cục Chuyển đổi số Quốc gia","pages":190,"year":"2026","size":"18.0 MB","desc":"Phương pháp luận xây dựng chính quyền số, quản trị dữ liệu số và văn hóa ra quyết định dựa trên dữ liệu thời gian thực."},{"id":"b8","topic":"cns-ai","subtopic":"cns-bandan","topicName":"Công nghiệp số & AI","topicColor":"bg-sky-50 text-sky-700 border-sky-200","coverColor":"from-sky-900 via-blue-950 to-slate-900","icon":"fa-microchip","title":"Chiến lược Quốc gia về Nghiên cứu, Phát triển và Ứng dụng Trí tuệ nhân tạo","publisher":"NXB Thông tin và Truyền thông","pages":225,"year":"2026","size":"20.5 MB","desc":"Lộ trình đào tạo nhân tài, xây dựng trung tâm tính toán hiệu năng cao và hành lang pháp lý Sandbox cho AI."},{"id":"b9","topic":"kts","subtopic":"kts-doanhnghiep","topicName":"Kinh tế số - Xã hội số","topicColor":"bg-cyan-50 text-cyan-700 border-cyan-200","coverColor":"from-cyan-900 via-teal-950 to-slate-900","icon":"fa-chart-line","title":"Báo cáo thường niên Kinh tế số Việt Nam 2026: Đột phá dữ liệu và nền tảng","publisher":"Viện Chiến lược TT&TT","pages":260,"year":"2026","size":"25.8 MB","desc":"Đo lường chi tiết giá trị gia tăng kinh tế số theo chuẩn OECD, phân tích cơ hội bứt phá của doanh nghiệp Make in Viet Nam."},{"id":"b10","topic":"khcn","subtopic":"khcn-chuyengiao","topicName":"Khoa học & Công nghệ","topicColor":"bg-indigo-50 text-indigo-700 border-indigo-200","coverColor":"from-indigo-900 via-blue-950 to-slate-900","icon":"fa-flask-vial","title":"Ngành Khoa học và Công nghệ – Khơi thông nguồn lực kiến tạo tương lai","publisher":"Bộ Khoa học và Công nghệ","pages":240,"year":"2026","size":"21.0 MB","desc":"Tổng hợp các bài viết của các nhà khoa học, chuyên gia đầu ngành về đổi mới thể chế tài chính và tự chủ đại học."},{"id":"b11","topic":"dmst","subtopic":"dmst-vuonuom","topicName":"Đổi mới sáng tạo","topicColor":"bg-amber-50 text-amber-700 border-amber-200","coverColor":"from-amber-900 via-yellow-950 to-slate-900","icon":"fa-seedling","title":"Hệ sinh thái Đổi mới sáng tạo Mở: Mô hình kết nối Doanh nghiệp - Viện trường","publisher":"Trung tâm Đổi mới sáng tạo Quốc gia (NIC)","pages":200,"year":"2026","size":"19.2 MB","desc":"Cẩm nang mô hình hợp tác ba nhà (Nhà nước - Nhà trường - Nhà doanh nghiệp) thúc đẩy đưa sáng chế vào dây chuyền sản xuất."},{"id":"b12","topic":"cds","subtopic":"cds-antoan","topicName":"Chuyển đổi số & KNS","topicColor":"bg-blue-50 text-blue-700 border-blue-200","coverColor":"from-slate-900 via-blue-950 to-slate-900","icon":"fa-user-shield","title":"Sổ tay An toàn thông tin mạng trong môi trường Cơ quan Nhà nước và Doanh nghiệp","publisher":"Cục An toàn thông tin","pages":150,"year":"2026","size":"13.5 MB","desc":"Nguyên tắc phòng thủ theo chiều sâu, quy trình ứng cứu sự cố mã độc tống tiền và bảo vệ dữ liệu công dân theo Nghị định 13."}];
+
+    function openBookModal(bookId) {
+      const book = BOOK_DATA.find(b => b.id === bookId) || BOOK_DATA[0];
+      document.getElementById('bookModalTitle').textContent = book.title;
+      document.getElementById('readerBookHeading').textContent = book.title;
+      document.getElementById('readerBookMeta').textContent = 'Xuất bản: ' + book.year + ' • ' + book.publisher + ' • ' + book.pages + ' trang';
+      document.getElementById('bookPageIndicator').textContent = 'Trang 1 / ' + book.pages;
+      document.getElementById('bookModal').classList.remove('hidden');
+    }
+
+    function closeBookModal() {
+      document.getElementById('bookModal').classList.add('hidden');
+    }
+
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeBookModal();
+    });
+  </script>
+</body>
+</html>

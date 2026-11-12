@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chi tiết Khóa học & Học liệu Đào tạo | Nền tảng Truyền thông Số Quốc Gia</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontSize: {
+            xs: ['0.90625rem', { lineHeight: '1.35rem' }],
+            sm: ['1rem', { lineHeight: '1.45rem' }],
+            base: ['1.125rem', { lineHeight: '1.65rem' }],
+            lg: ['1.25rem', { lineHeight: '1.8rem' }],
+            xl: ['1.375rem', { lineHeight: '1.9rem' }],
+            '2xl': ['1.625rem', { lineHeight: '2.1rem' }],
+            '3xl': ['2rem', { lineHeight: '2.45rem' }]
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .custom-scroll::-webkit-scrollbar { width: 5px; height: 5px; }
+    .custom-scroll::-webkit-scrollbar-track { background: #f1f5f9; }
+    .custom-scroll::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+    .custom-scroll::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+  
+    .max-w-7xl {
+      max-width: 90rem !important;
+    }
+    header h1 {
+      font-family: 'Inter', sans-serif !important;
+      font-weight: 800 !important;
+    }
+  </style>
+</head>
+<body class="bg-[#fbfcfe] text-slate-800 antialiased min-h-screen flex flex-col">
+
+  <!-- TOP UTILITY BAR -->
+  <div class="bg-[#0b1c33] text-slate-200 text-[13px] py-1.5 px-4 sm:px-8 border-b border-slate-700/60">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-2">
+      <div class="flex items-center gap-3">
+        <span class="text-slate-300"><i class="fa-regular fa-calendar-check mr-1.5 text-amber-400"></i>Thứ Năm, 27/08/2026</span>
+      </div>
+      <div class="flex items-center gap-4 text-[13px]">
+        <div class="flex items-center gap-1.5 font-bold">
+          <span class="text-amber-400">VI</span>
+          <span class="text-slate-500">/</span>
+          <span class="text-slate-400 hover:text-white cursor-pointer">EN</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="bg-white border-b border-slate-200 shadow-sm sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 py-3.5 flex flex-col md:flex-row items-center justify-between gap-4">
+      <a href="index.html" class="flex items-center gap-3.5 group">
+        <img src="quoc-huy.png" alt="Quốc huy Việt Nam" class="w-12 h-12 object-contain drop-shadow">
+        <div>
+          <h1 class="text-[14.5px] sm:text-[16px] md:text-[18px] lg:text-[18px] xl:text-[20px] font-extrabold tracking-normal uppercase text-red-800 leading-normal">
+            <span class="block whitespace-nowrap">NỀN TẢNG TRUYỀN THÔNG SỐ QUỐC GIA VỀ KHOA HỌC, CÔNG NGHỆ,</span>
+            <span class="block mt-1 whitespace-nowrap">ĐỔI MỚI SÁNG TẠO VÀ CHUYỂN ĐỔI SỐ</span>
+          </h1>
+        </div>
+      </a>
+
+      <div class="w-full md:w-80 lg:w-96 relative shrink-0">
+        <input type="text" placeholder="Tìm kiếm bài giảng, tài liệu pdf, docx, excel..." 
+          class="w-full pl-10 pr-4 py-2 bg-slate-100 focus:bg-white text-[13px] rounded-full border border-slate-300 focus:outline-none focus:ring-2 focus:ring-red-700/30">
+        <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-[13px]"></i>
+      </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="bg-white border-t border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-8 flex items-center justify-start overflow-visible gap-1.5 text-[14.5px] sm:text-[15px] font-semibold">
+        <a href="index.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Trang chủ
+      </a>
+        
+        <!-- CHÍNH SÁCH VỚI SUBMENU CHỈ ĐẠO ĐIỀU HÀNH & GIẢI THÍCH CHÍNH SÁCH -->
+        <div class="relative group">
+          <a href="chinh-sach.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap flex items-center gap-1 cursor-pointer">
+        <span>Chính sách</span>
+        <i class="fa-solid fa-chevron-down text-[9px] text-slate-400 group-hover:text-red-800 group-hover:rotate-180 transition-transform"></i>
+      </a>
+          <!-- Submenu dropdown -->
+          <div class="hidden group-hover:block absolute left-0 top-full bg-white rounded-xl shadow-2xl border border-slate-200 py-1.5 min-w-[260px] z-50 text-slate-800 font-normal">
+            <a href="chinh-sach.html" class="flex items-center gap-2.5 px-4 py-2.5 hover:bg-slate-50 text-slate-700 hover:text-red-800 text-[14.5px] transition font-semibold">
+              <i class="fa-solid fa-landmark text-slate-400 text-[14.5px]"></i>
+              <span>Chính sách & Thể chế</span>
+            </a>
+            <a href="chinh-sach-tra-cuu.html" class="flex items-center gap-2.5 px-4 py-2.5 hover:bg-slate-50 text-slate-700 hover:text-red-800 text-[14.5px] transition font-semibold">
+              <i class="fa-solid fa-file-signature text-red-700 text-[14.5px]"></i>
+              <span>Chỉ đạo điều hành</span>
+            </a>
+            <a href="giai-thich-chinh-sach.html" class="flex items-center gap-2.5 px-4 py-2.5 hover:bg-slate-50 text-slate-700 hover:text-red-800 font-semibold text-[14.5px] transition">
+              <i class="fa-solid fa-chalkboard-user text-amber-600 text-[14.5px]"></i>
+              <span>Giải thích chính sách</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="san-pham-cong-nghe.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Sản phẩm KH&CN
+      </a>
+        <a href="bao-cao-danh-gia-truyen-thong.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Báo cáo thường niên
+      </a>
+        <a href="tai-lieu-video.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Kho tư liệu
+      </a>
+        
+        <a href="su-kien.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">Sự kiện</a>
+
+        
+        <a href="hoi-dap.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Hỏi đáp
+      </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- BREADCRUMB -->
+  <div class="bg-white border-b border-slate-200 py-3 px-4 sm:px-8 text-xs">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center gap-2 text-slate-500">
+      <a href="index.html" class="hover:text-red-800 flex items-center gap-1"><i class="fa-solid fa-house text-[13px]"></i> Trang chủ</a>
+      <i class="fa-solid fa-chevron-right text-[12px] text-slate-400"></i>
+      <a href="su-kien.html" class="hover:text-red-800">Sự kiện & Đào tạo</a>
+      <i class="fa-solid fa-chevron-right text-[12px] text-slate-400"></i>
+      <a href="chuong-trinh-dao-tao.html" class="hover:text-red-800">Chương trình đào tạo & bồi dưỡng</a>
+      <i class="fa-solid fa-chevron-right text-[12px] text-slate-400"></i>
+      <span class="text-slate-900 font-semibold truncate max-w-xs sm:max-w-md" id="courseBreadcrumbTitle">
+        Nghị quyết 57 và Văn hóa đổi mới sáng tạo trong khu vực công
+      </span>
+    </div>
+  </div>
+
+  <!-- MAIN BODY -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-8 py-8 w-full flex-1 space-y-10">
+
+    <!-- COURSE HEADER BANNER -->
+    <section class="bg-gradient-to-r from-slate-950 via-[#0e2646] to-slate-900 text-white rounded-3xl p-6 sm:p-10 shadow-xl border border-slate-800 relative overflow-hidden">
+      <div class="absolute -right-10 -bottom-10 w-64 h-64 bg-red-600/10 rounded-full blur-3xl pointer-events-none"></div>
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
+        <div class="lg:col-span-8 space-y-4">
+          <div class="flex flex-wrap items-center gap-2">
+            <span id="courseAudienceBadge" class="px-3 py-1 rounded-full bg-red-600 text-white text-[13px] font-black uppercase tracking-wider shadow">
+              Cán bộ, Công chức
+            </span>
+            <span class="px-3 py-1 rounded-full bg-white/10 text-slate-200 text-[13px] font-semibold border border-white/20">
+              Mã khóa học: KH-NQ57-01
+            </span>
+            <span class="px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-[13px] font-semibold border border-emerald-400/30 flex items-center gap-1">
+              <i class="fa-solid fa-circle-check"></i> Đang mở
+            </span>
+          </div>
+
+          <h1 id="courseHeaderTitle" class="text-2xl sm:text-3xl lg:text-4xl font-black text-white leading-tight tracking-tight">
+            Nghị quyết 57 và Văn hóa đổi mới sáng tạo trong khu vực công
+          </h1>
+
+          <p id="courseHeaderDesc" class="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-3xl font-normal">
+            Khóa bồi dưỡng trang bị đột phá tư duy điều hành, cơ chế thí điểm chính sách có kiểm soát (Sandbox), văn hóa dám nghĩ dám làm và các phương pháp kiến tạo hệ sinh thái đổi mới sáng tạo phục vụ người dân, doanh nghiệp.
+          </p>
+
+          <!-- Key Metrics -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2 text-xs">
+            <div class="bg-white/10 backdrop-blur-md p-3 rounded-2xl border border-white/10">
+              <span class="text-slate-400 block text-[12px] uppercase">Thời lượng đào tạo</span>
+              <span class="text-white font-extrabold text-sm sm:text-base">36 Giờ học</span>
+            </div>
+            <div class="bg-white/10 backdrop-blur-md p-3 rounded-2xl border border-white/10">
+              <span class="text-slate-400 block text-[12px] uppercase">Chuyên đề bài giảng</span>
+              <span class="text-white font-extrabold text-sm sm:text-base">12 Chuyên đề</span>
+            </div>
+            <div class="bg-white/10 backdrop-blur-md p-3 rounded-2xl border border-white/10">
+              <span class="text-slate-400 block text-[12px] uppercase">Video lưu trữ</span>
+              <span class="text-white font-extrabold text-sm sm:text-base">08 Video HD/4K</span>
+            </div>
+            <div class="bg-white/10 backdrop-blur-md p-3 rounded-2xl border border-white/10">
+              <span class="text-slate-400 block text-[12px] uppercase">Tài liệu học tập</span>
+              <span class="text-white font-extrabold text-sm sm:text-base">15 Tệp học liệu</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Col right: Instructor / Host -->
+        <div class="lg:col-span-4 bg-white/5 backdrop-blur-md border border-white/15 p-6 rounded-2xl space-y-4">
+          <div class="flex items-center gap-3 pb-3 border-b border-white/10">
+            <div class="w-12 h-12 rounded-full bg-red-700/80 text-white flex items-center justify-center text-lg font-black shrink-0 shadow">
+              <i class="fa-solid fa-building-columns"></i>
+            </div>
+            <div>
+              <span class="text-[12px] text-amber-300 font-bold uppercase tracking-wider block">CƠ QUAN CHỦ TRÌ</span>
+              <h4 class="text-xs sm:text-sm font-bold text-white">Học viện KH, CN & Đổi mới sáng tạo (VISTI)</h4>
+              <span class="text-[13px] text-slate-300">Bộ Khoa học và Công nghệ</span>
+            </div>
+          </div>
+
+          <div class="space-y-2 text-xs text-slate-300">
+            <div class="flex items-center justify-between">
+              <span>Kho học liệu:</span>
+              <strong class="text-white font-semibold">Tài liệu số & Video HD</strong>
+            </div>
+            <div class="flex items-center justify-between">
+              <span>Học phí:</span>
+              <strong class="text-emerald-400 font-bold">Ngân sách Nhà nước tài trợ 100%</strong>
+            </div>
+            <div class="flex items-center justify-between">
+              <span>Hình thức học liệu:</span>
+              <strong class="text-white font-semibold">Đa định dạng (DOCX, PDF, XLSX)</strong>
+            </div>
+          </div>
+
+          <button onclick="scrollToMaterials()" class="w-full py-2.5 rounded-xl bg-red-700 hover:bg-red-800 text-white font-bold text-xs shadow-lg transition flex items-center justify-center gap-2">
+            <i class="fa-solid fa-download"></i>
+            <span>Tải trọn bộ tài liệu & Học liệu</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 1: VIDEO BÀI GIẢNG & LƯU TRỮ CỦA KHÓA HỌC -->
+    <section class="space-y-6" id="video-section">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-l-4 border-red-800 pl-3">
+        <div>
+          <span class="text-[13px] font-bold text-red-700 uppercase tracking-wider flex items-center gap-1.5">
+            <i class="fa-solid fa-video"></i> BÀI GIẢNG TRỰC TUYẾN & VIDEO LƯU TRỮ
+          </span>
+          <h2 class="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
+            Kho Video bài giảng lưu trữ của khóa học
+          </h2>
+          <p class="text-xs text-slate-500 mt-0.5">
+            Xem lại toàn bộ các phiên giảng, hội thảo chuyên đề và tọa đàm giải đáp thắc mắc với chất lượng cao.
+          </p>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="text-xs font-semibold px-3 py-1 bg-slate-100 text-slate-700 rounded-full border border-slate-200">
+            <i class="fa-regular fa-circle-play mr-1 text-red-700"></i> 8 Video bài giảng
+          </span>
+        </div>
+      </div>
+
+      <!-- MAIN VIDEO PLAYER + PLAYLIST SIDEBAR -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 bg-slate-900 rounded-3xl p-4 sm:p-6 shadow-xl border border-slate-800">
+        
+        <!-- Video Player Display (Col 8) -->
+        <div class="lg:col-span-8 flex flex-col justify-between space-y-4">
+          <div class="aspect-video w-full rounded-2xl overflow-hidden bg-black relative group shadow-2xl">
+            <img id="currentVideoThumb" src="https://mic.mediacdn.vn/thumb_w/750/.v-thumb/639352410187198464/2026/4/9/123phienhopthunhatbcd57ok-wm-1774927659-1775735654878216182153.mp4.jpg" 
+                 alt="Bài giảng Video" class="absolute inset-0 w-full h-full object-cover opacity-85 group-hover:scale-105 transition duration-700">
+            
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20 pointer-events-none"></div>
+
+            <!-- Big Play Button Overlay -->
+            <button id="mainPlayBtn" onclick="playCurrentVideo()" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-red-600/90 hover:bg-red-600 text-white flex items-center justify-center text-2xl sm:text-3xl shadow-2xl transition hover:scale-110 active:scale-95 group-hover:ring-8 group-hover:ring-red-500/30 z-20 cursor-pointer">
+              <i class="fa-solid fa-play ml-1"></i>
+            </button>
+
+            <!-- Video Status Bar overlay -->
+            <div class="absolute top-4 left-4 z-20 flex items-center gap-2">
+              <span class="px-2.5 py-1 rounded bg-red-600 text-white text-[12px] font-black uppercase tracking-wider">
+                VIDEO BÀI GIẢNG SỐ <span id="currentVideoNumber">01</span>
+              </span>
+              <span class="px-2 py-0.5 rounded bg-black/60 backdrop-blur-md text-amber-300 text-[12px] font-mono">
+                HD 1080p
+              </span>
+            </div>
+
+            <!-- Video Progress Simulation -->
+            <div class="absolute bottom-4 left-4 right-4 z-20 space-y-1.5">
+              <div class="flex items-center justify-between text-[13px] text-slate-300">
+                <span id="currentVideoTitleOnPlayer" class="font-bold text-white truncate max-w-md">
+                  Chuyên đề 1: Quán triệt tinh thần Nghị quyết 57/NQ-CP về Đổi mới sáng tạo khu vực công
+                </span>
+                <span id="currentVideoDuration" class="font-mono text-amber-400">45:20</span>
+              </div>
+              <div class="w-full bg-white/20 h-1.5 rounded-full overflow-hidden cursor-pointer">
+                <div class="bg-red-600 h-full w-1/3 rounded-full"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Video Title & Details Below Player -->
+          <div class="p-2 space-y-1.5 text-white">
+            <h3 id="currentVideoHeading" class="text-base sm:text-xl font-bold leading-snug">
+              Chuyên đề 1: Quán triệt tinh thần Nghị quyết 57/NQ-CP về Đổi mới sáng tạo khu vực công
+            </h3>
+            <p id="currentVideoSpeaker" class="text-xs text-slate-400 leading-relaxed">
+              Giảng viên: <strong>TS. Trần Văn Nam</strong> • Viện Chiến lược và Chính sách KH&CN, Bộ KH&CN.
+            </p>
+          </div>
+        </div>
+
+        <!-- Playlist Column (Col 4) -->
+        <div class="lg:col-span-4 flex flex-col justify-between space-y-3">
+          <div class="flex items-center justify-between pb-2 border-b border-slate-800 text-xs">
+            <span class="font-bold text-white uppercase tracking-wider flex items-center gap-1.5">
+              <i class="fa-solid fa-list-ol text-red-500"></i> Danh sách video lưu trữ (8)
+            </span>
+            <span class="text-[13px] text-slate-400">Tự động phát tiếp</span>
+          </div>
+
+          <!-- Scrollable playlist items -->
+          <div class="space-y-2 overflow-y-auto max-h-[380px] pr-1 custom-scroll" id="videoPlaylistContainer">
+            <!-- Populated dynamically -->
+          </div>
+
+          <div class="pt-2 border-t border-slate-800 flex items-center justify-between text-[13px] text-slate-400">
+            <span><i class="fa-solid fa-cloud-arrow-down mr-1"></i> Cho phép tải video về học offline</span>
+            <button onclick="alert('Đang chuẩn bị gói tải về 8 video bài giảng...');" class="text-amber-400 hover:underline font-semibold">Tải trọn bộ video</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 2: TÀI LIỆU HỌC TẬP VÀ GIÁO TRÌNH (DẠNG DANH SÁCH) -->
+    <section class="space-y-6 pt-4" id="materials-section">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-l-4 border-red-800 pl-3">
+        <div>
+          <span class="text-[13px] font-bold text-red-700 uppercase tracking-wider flex items-center gap-1.5">
+            <i class="fa-solid fa-folder-open"></i> HỌC LIỆU SỐ & TÀI LIỆU KHÓA HỌC
+          </span>
+          <h2 class="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
+            Tài liệu học tập & Giáo trình
+          </h2>
+          <p class="text-xs text-slate-500 mt-0.5">
+            Danh sách giáo trình, tài liệu hướng dẫn và các biểu mẫu thực hành định dạng PDF, Word (DOCX), Excel (XLSX) và tệp nén (ZIP).
+          </p>
+        </div>
+
+        <!-- BỘ LỌC ĐỊNH DẠNG TÀI LIỆU -->
+        <div class="flex flex-wrap items-center gap-1.5 text-xs font-semibold" id="materialFilterTabs">
+          <button onclick="filterMaterials('all')" class="mat-tab-btn px-3 py-1.5 rounded-full bg-slate-900 text-white shadow-sm transition">
+            Tất cả (12)
+          </button>
+          <button onclick="filterMaterials('pdf')" class="mat-tab-btn px-3 py-1.5 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 transition flex items-center gap-1">
+            <i class="fa-solid fa-file-pdf text-red-600"></i> PDF (4)
+          </button>
+          <button onclick="filterMaterials('docx')" class="mat-tab-btn px-3 py-1.5 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 transition flex items-center gap-1">
+            <i class="fa-solid fa-file-word text-blue-600"></i> Word DOCX (3)
+          </button>
+          <button onclick="filterMaterials('excel')" class="mat-tab-btn px-3 py-1.5 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 transition flex items-center gap-1">
+            <i class="fa-solid fa-file-excel text-emerald-600"></i> Excel XLSX (3)
+          </button>
+          <button onclick="filterMaterials('zip')" class="mat-tab-btn px-3 py-1.5 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 transition flex items-center gap-1">
+            <i class="fa-solid fa-file-zipper text-amber-600"></i> Tệp ZIP (2)
+          </button>
+        </div>
+      </div>
+
+      <!-- DANH SÁCH TÀI LIỆU HỌC TẬP & GIÁO TRÌNH (DẠNG DANH SÁCH) -->
+      <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden" id="materialsContainer">
+        <!-- Table Header (Desktop) -->
+        <div class="hidden md:grid grid-cols-12 gap-4 px-6 py-3.5 bg-slate-50 border-b border-slate-200 text-[13px] font-bold text-slate-500 uppercase tracking-wider">
+          <div class="col-span-1 text-center">Định dạng</div>
+          <div class="col-span-6">Tên tài liệu học tập & Giáo trình</div>
+          <div class="col-span-2 text-center">Thông số</div>
+          <div class="col-span-3 text-right">Thao tác tải về</div>
+        </div>
+
+        <!-- List Items Container -->
+        <div class="divide-y divide-slate-100" id="materialsList">
+          <!-- Rendered dynamically by JS as clean list rows -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: HỖ TRỢ VÀ ĐĂNG KÝ HỌC VIÊN -->
+    <section class="bg-gradient-to-r from-slate-900 to-[#1e293b] rounded-3xl p-6 sm:p-10 text-white shadow-xl flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="space-y-2 max-w-xl">
+        <span class="text-amber-400 font-bold text-xs uppercase tracking-wider">HỖ TRỢ HỌC VIÊN 24/7</span>
+        <h3 class="text-xl sm:text-2xl font-black text-white">Bạn cần hỗ trợ khai thác tài liệu & học liệu số?</h3>
+        <p class="text-xs text-slate-300 leading-relaxed">
+          Đội ngũ quản trị viên Học viện sẵn sàng hướng dẫn tra cứu tài liệu số hóa, giải đáp thắc mắc chuyên môn và tiếp nhận yêu cầu học liệu.
+        </p>
+      </div>
+
+      <div class="flex flex-wrap items-center gap-3 shrink-0">
+        <a href="hoi-dap.html" class="px-5 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-xs border border-white/20 transition">
+          <i class="fa-solid fa-circle-question mr-1.5 text-amber-400"></i> Gửi câu hỏi trợ giúp
+        </a>
+        <button onclick="alert('Đã gửi yêu cầu đăng ký nhận tài liệu cập nhật mới nhất qua email!');" class="px-5 py-2.5 rounded-xl bg-red-700 hover:bg-red-800 text-white font-bold text-xs shadow-lg transition">
+          <i class="fa-solid fa-bell mr-1.5"></i> Đăng ký nhận tài liệu mới
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#0b1e36] text-white mt-12 border-t border-slate-800 text-[14.5px]" style="font-family: 'Inter', sans-serif;">
+    <div class="max-w-[90rem] mx-auto px-4 sm:px-8 py-10">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <!-- Col 1 -->
+        <div class="md:col-span-2 space-y-3.5 min-w-0">
+          <div class="flex items-start sm:items-center gap-3.5 min-w-0">
+            <div class="w-12 h-12 rounded-full flex items-center justify-center p-0.5 filter drop-shadow-lg shrink-0">
+              <img src="quoc-huy.png" alt="Quốc huy Việt Nam" class="w-11 h-11 object-contain drop-shadow">
+            </div>
+            <div class="min-w-0 flex-1">
+              <h5 class="font-extrabold text-[14.5px] sm:text-[15.5px] lg:text-[16.5px] xl:text-[17.5px] tracking-wide uppercase text-amber-400 leading-snug sm:leading-relaxed">NỀN TẢNG TRUYỀN THÔNG SỐ QUỐC GIA VỀ KHOA HỌC, CÔNG NGHỆ, ĐỔI MỚI SÁNG TẠO VÀ CHUYỂN ĐỔI SỐ</h5>
+              <p class="text-[13px] xl:text-[14.5px] text-slate-300 mt-1">Cơ quan chủ quản: Bộ Khoa học và Công nghệ (MST)</p>
+            </div>
+          </div>
+          <div class="text-[13px] xl:text-[14px] text-slate-300 space-y-1.5 pt-1">
+            <p><i class="fa-solid fa-location-dot w-4 mr-1 text-red-400"></i> Địa chỉ: Đang cập nhật</p>
+            <p><i class="fa-solid fa-phone w-4 mr-1 text-emerald-400"></i> Điện thoại: Đang cập nhật • Email: Đang cập nhật</p>
+          </div>
+        </div>
+
+        <!-- Col 2: Liên kết -->
+        <div class="min-w-0">
+          <h5 class="font-bold text-[13px] xl:text-[14.5px] uppercase tracking-wider text-amber-400 mb-3.5 pb-1.5 border-b border-slate-700">Liên kết nhanh</h5>
+          <ul class="space-y-2.5 text-[13px] xl:text-[14px] text-slate-300">
+            <li><a href="chinh-sach-tra-cuu.html" class="hover:text-amber-300 transition">Văn bản chỉ đạo điều hành</a></li>
+            <li><a href="san-pham-cong-nghe.html" class="hover:text-amber-300 transition">10 Nhóm sản phẩm số trọng điểm</a></li>
+            <li><a href="su-kien.html" class="hover:text-amber-300 transition">Lịch trình sự kiện & hội thảo</a></li>
+            <li><a href="hoi-dap.html" class="hover:text-amber-300 transition">Hỏi đáp & hỗ trợ trực tuyến</a></li>
+            <li><a href="chuyen-muc-kinh-te-so.html" class="hover:text-amber-300 transition">Báo cáo dữ liệu & Chỉ số PII</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Đa phương tiện -->
+        <div class="min-w-0">
+          <h5 class="font-bold text-[13px] xl:text-[14.5px] uppercase tracking-wider text-amber-400 mb-3.5 pb-1.5 border-b border-slate-700">Đa phương tiện</h5>
+          <ul class="space-y-2.5 text-[13px] xl:text-[14px] text-slate-300">
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Video phóng sự thời sự</a></li>
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Kho tư liệu ảnh sự kiện</a></li>
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Đồ họa Infographic số hóa</a></li>
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Podcast & Bản tin phát thanh</a></li>
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Sách điện tử & Báo cáo tổng kết</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-8 pt-4 border-t border-slate-800 flex flex-col lg:flex-row items-center justify-between text-[12.5px] xl:text-[13.5px] text-slate-400 gap-3">
+        <p class="text-center lg:text-left">© 2026 Bản quyền thuộc Bộ Khoa học và Công nghệ. Ghi rõ nguồn khi phát hành lại thông tin.</p>
+        <div class="flex flex-wrap items-center justify-center gap-4 shrink-0">
+          <a href="#" class="hover:text-white transition">Điều khoản sử dụng</a>
+          <a href="#" class="hover:text-white transition">Chính sách bảo mật</a>
+          <a href="hoi-dap.html" class="hover:text-white transition">Sơ đồ cổng</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPT DỮ LIỆU & TƯƠNG TÁC -->
+  <script>
+    // Dữ liệu Video lưu trữ
+    const COURSE_VIDEOS = [
+      {
+        id: 1,
+        title: "Chuyên đề 1: Quán triệt tinh thần Nghị quyết 57/NQ-CP về Đổi mới sáng tạo khu vực công",
+        speaker: "TS. Trần Văn Nam • Viện Chiến lược và Chính sách KH&CN, Bộ KH&CN",
+        duration: "45:20",
+        thumb: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=800&q=80",
+        views: "3.420"
+      },
+      {
+        id: 2,
+        title: "Chuyên đề 2: Khung pháp lý và cơ chế thí điểm Sandbox cho công nghệ đột phá",
+        speaker: "PGS. TS. Lê Thị Quỳnh Mai • Phó Viện trưởng Viện Đổi mới Sáng tạo Quốc gia",
+        duration: "52:15",
+        thumb: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=80",
+        views: "2.890"
+      },
+      {
+        id: 3,
+        title: "Chuyên đề 3: Văn hóa dám nghĩ dám làm và giải phóng sức sáng tạo của công chức",
+        speaker: "TS. Nguyễn Hoàng Anh • Học viện Hành chính Quốc gia",
+        duration: "38:40",
+        thumb: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80",
+        views: "4.150"
+      },
+      {
+        id: 4,
+        title: "Chuyên đề 4: Chuyển đổi số trong quy trình thẩm định và cấp phép đề tài nghiên cứu",
+        speaker: "ThS. Nguyễn Thành Long • Trung tâm Chuyển giao Công nghệ Quốc gia",
+        duration: "42:10",
+        thumb: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80",
+        views: "2.310"
+      },
+      {
+        id: 5,
+        title: "Chuyên đề 5: Phương pháp xây dựng và vận hành hệ thống đo lường chỉ số PII cấp tỉnh",
+        speaker: "TS. Vũ Hải Đăng • Ban Thư ký Đánh giá Chỉ số ĐMST Địa phương",
+        duration: "48:50",
+        thumb: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=80",
+        views: "1.980"
+      },
+      {
+        id: 6,
+        title: "Chuyên đề 6: Bảo hộ quyền sở hữu trí tuệ đối với tài sản hình thành từ ngân sách",
+        speaker: "Bà Phạm Thanh Hà • Trưởng phòng Pháp chế, Cục Sở hữu Trí tuệ",
+        duration: "55:30",
+        thumb: "https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=800&q=80",
+        views: "3.120"
+      },
+      {
+        id: 7,
+        title: "Chuyên đề 7: Hợp tác Viện - Trường - Doanh nghiệp trong triển khai nhiệm vụ khoa học",
+        speaker: "GS. TSKH. Đặng Quốc Bảo • Hội đồng Khoa học Tự nhiên Quốc gia",
+        duration: "40:15",
+        thumb: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80",
+        views: "2.640"
+      },
+      {
+        id: 8,
+        title: "Tọa đàm: Tháo gỡ các nút thắt thực tế trong mua sắm và thanh quyết toán nghiên cứu",
+        speaker: "Đoàn Chuyên gia Vụ Tài chính & Vụ Pháp chế, Bộ KH&CN",
+        duration: "1:05:40",
+        thumb: "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=800&q=80",
+        views: "5.410"
+      }
+    ];
+
+    // Dữ liệu Tài liệu học liệu tải về (DOCX, PDF, EXCEL, ZIP)
+    const COURSE_MATERIALS = [
+      {
+        id: "mat-1",
+        type: "pdf",
+        ext: "PDF",
+        extClass: "bg-red-100 text-red-700 border-red-200",
+        icon: "fa-solid fa-file-pdf text-red-600",
+        name: "Giáo trình bồi dưỡng Văn hóa Đổi mới sáng tạo trong khu vực công (Toàn văn)",
+        desc: "Tài liệu đào tạo chuẩn mực do Hội đồng Khoa học Bộ KH&CN nghiệm thu ban hành.",
+        size: "4.8 MB",
+        pages: "128 Trang",
+        downloads: "1.840",
+        date: "20/08/2026"
+      },
+      {
+        id: "mat-2",
+        type: "pdf",
+        ext: "PDF",
+        extClass: "bg-red-100 text-red-700 border-red-200",
+        icon: "fa-solid fa-file-pdf text-red-600",
+        name: "Sổ tay hướng dẫn áp dụng cơ chế thử nghiệm chính sách Sandbox cấp địa phương",
+        desc: "Cẩm nang quy trình 6 bước thiết lập khung thử nghiệm giải pháp công nghệ mới.",
+        size: "2.5 MB",
+        pages: "64 Trang",
+        downloads: "2.120",
+        date: "22/08/2026"
+      },
+      {
+        id: "mat-3",
+        type: "docx",
+        ext: "DOCX",
+        extClass: "bg-blue-100 text-blue-700 border-blue-200",
+        icon: "fa-solid fa-file-word text-blue-600",
+        name: "Khung mẫu Đề án thử nghiệm chính sách Sandbox công nghệ mới (Chuẩn mẫu Bộ KH&CN)",
+        desc: "File Word soạn sẵn khung biểu mẫu, nội dung thuyết minh và lộ trình triển khai.",
+        size: "245 KB",
+        pages: "18 Trang",
+        downloads: "3.650",
+        date: "24/08/2026"
+      },
+      {
+        id: "mat-4",
+        type: "docx",
+        ext: "DOCX",
+        extClass: "bg-blue-100 text-blue-700 border-blue-200",
+        icon: "fa-solid fa-file-word text-blue-600",
+        name: "Mẫu kế hoạch hành động triển khai phong trào Đổi mới sáng tạo tại cơ quan, đơn vị",
+        desc: "Biểu mẫu phân công trách nhiệm, tiêu chí nghiệm thu sáng kiến cấp cơ sở.",
+        size: "180 KB",
+        pages: "12 Trang",
+        downloads: "2.410",
+        date: "25/08/2026"
+      },
+      {
+        id: "mat-5",
+        type: "excel",
+        ext: "XLSX",
+        extClass: "bg-emerald-100 text-emerald-700 border-emerald-200",
+        icon: "fa-solid fa-file-excel text-emerald-600",
+        name: "Bộ chỉ số KPI đo lường hiệu quả hoạt động Đổi mới sáng tạo cấp cơ sở (Bảng tính tự động)",
+        desc: "Bảng tính Excel tích hợp sẵn công thức tính điểm và trọng số theo chuẩn PII quốc gia.",
+        size: "520 KB",
+        pages: "4 Sheets",
+        downloads: "4.120",
+        date: "25/08/2026"
+      },
+      {
+        id: "mat-6",
+        type: "excel",
+        ext: "XLSX",
+        extClass: "bg-emerald-100 text-emerald-700 border-emerald-200",
+        icon: "fa-solid fa-file-excel text-emerald-600",
+        name: "Bảng kiểm (Checklist) đánh giá mức độ sẵn sàng chuyển đổi số và văn hóa đổi mới",
+        desc: "Hệ thống câu hỏi chấm điểm định lượng 7 trụ cột năng lực cho tổ chức.",
+        size: "310 KB",
+        pages: "2 Sheets",
+        downloads: "1.970",
+        date: "26/08/2026"
+      },
+      {
+        id: "mat-7",
+        type: "excel",
+        ext: "XLSX",
+        extClass: "bg-emerald-100 text-emerald-700 border-emerald-200",
+        icon: "fa-solid fa-file-excel text-emerald-600",
+        name: "Mẫu dự toán kinh phí đào tạo, bồi dưỡng và nghiên cứu khoa học cơ sở",
+        desc: "Bảng tính định mức chi chuẩn theo Thông tư hướng dẫn tài chính KH&CN hiện hành.",
+        size: "450 KB",
+        pages: "3 Sheets",
+        downloads: "2.830",
+        date: "26/08/2026"
+      },
+      {
+        id: "mat-8",
+        type: "pdf",
+        ext: "PDF",
+        extClass: "bg-red-100 text-red-700 border-red-200",
+        icon: "fa-solid fa-file-pdf text-red-600",
+        name: "Trọn bộ Slide bài giảng điện tử của Chuyên gia (12 Chuyên đề đào tạo)",
+        desc: "Tài liệu trực quan hóa đồ họa, sơ đồ tư duy và biểu đồ phục vụ tự học và giảng dạy lại.",
+        size: "15.2 MB",
+        pages: "240 Slides",
+        downloads: "5.190",
+        date: "26/08/2026"
+      },
+      {
+        id: "mat-9",
+        type: "docx",
+        ext: "DOCX",
+        extClass: "bg-blue-100 text-blue-700 border-blue-200",
+        icon: "fa-solid fa-file-word text-blue-600",
+        name: "Phiếu đăng ký sáng kiến cải tiến và giải pháp công nghệ cấp cơ sở",
+        desc: "Mẫu đơn khai báo sáng kiến, mô tả tính mới và dự kiến hiệu quả kinh tế - xã hội.",
+        size: "95 KB",
+        pages: "6 Trang",
+        downloads: "3.200",
+        date: "27/08/2026"
+      },
+      {
+        id: "mat-10",
+        type: "pdf",
+        ext: "PDF",
+        extClass: "bg-red-100 text-red-700 border-red-200",
+        icon: "fa-solid fa-file-pdf text-red-600",
+        name: "Kỷ yếu nghiên cứu trường hợp (Case Studies) điển hình về sáng tạo khu vực công",
+        desc: "Tổng hợp 15 bài học kinh nghiệm thực tiễn từ các tỉnh thành tiên phong tại Việt Nam.",
+        size: "3.6 MB",
+        pages: "92 Trang",
+        downloads: "1.420",
+        date: "27/08/2026"
+      },
+      {
+        id: "mat-11",
+        type: "zip",
+        ext: "ZIP",
+        extClass: "bg-amber-100 text-amber-700 border-amber-200",
+        icon: "fa-solid fa-file-zipper text-amber-600",
+        name: "Gói tổng hợp Văn bản quy phạm pháp luật và Chỉ đạo điều hành NQ 57 (Trọn bộ)",
+        desc: "Tập hợp 35 văn bản luật, nghị định, thông tư và quyết định liên quan trực tiếp.",
+        size: "38.5 MB",
+        pages: "35 File",
+        downloads: "6.240",
+        date: "27/08/2026"
+      },
+      {
+        id: "mat-12",
+        type: "zip",
+        ext: "ZIP",
+        extClass: "bg-amber-100 text-amber-700 border-amber-200",
+        icon: "fa-solid fa-file-zipper text-amber-600",
+        name: "Bộ học liệu offline: Video nén + Bài giảng PDF dành cho học viên vùng sâu",
+        desc: "Gói dữ liệu tối ưu dung lượng giúp học viên học tập tại địa phương không có internet mạnh.",
+        size: "185 MB",
+        pages: "Full Course",
+        downloads: "890",
+        date: "27/08/2026"
+      }
+    ];
+
+    let currentVideoIdx = 0;
+
+    // Render Video Playlist
+    function renderPlaylist() {
+      const container = document.getElementById('videoPlaylistContainer');
+      container.innerHTML = '';
+
+      COURSE_VIDEOS.forEach((vid, idx) => {
+        const isAct = idx === currentVideoIdx;
+        const item = document.createElement('div');
+        item.className = `p-2.5 rounded-xl transition cursor-pointer flex items-start gap-2.5 border ${
+          isAct 
+            ? 'bg-red-700/30 border-red-500/80 text-white shadow-md' 
+            : 'bg-white/5 border-white/5 text-slate-300 hover:bg-white/10 hover:text-white'
+        }`;
+        item.onclick = () => selectVideo(idx);
+
+        item.innerHTML = `
+          <div class="w-12 h-9 rounded-lg overflow-hidden bg-black shrink-0 relative">
+            <img src="${vid.thumb}" class="w-full h-full object-cover">
+            <span class="absolute inset-0 flex items-center justify-center bg-black/40 text-[12px] text-white">
+              <i class="fa-solid fa-play"></i>
+            </span>
+          </div>
+          <div class="space-y-1 flex-1 min-w-0">
+            <h5 class="text-xs font-bold leading-tight line-clamp-2 ${isAct ? 'text-amber-300' : 'text-slate-200'}">
+              ${vid.title}
+            </h5>
+            <div class="flex items-center justify-between text-[12px] text-slate-400">
+              <span class="font-mono text-amber-400/90">${vid.duration}</span>
+              <span>${vid.views} lượt xem</span>
+            </div>
+          </div>
+        `;
+        container.appendChild(item);
+      });
+    }
+
+    function selectVideo(idx) {
+      currentVideoIdx = idx;
+      const vid = COURSE_VIDEOS[idx];
+      document.getElementById('currentVideoThumb').src = vid.thumb;
+      document.getElementById('currentVideoNumber').textContent = (idx + 1).toString().padStart(2, '0');
+      document.getElementById('currentVideoTitleOnPlayer').textContent = vid.title;
+      document.getElementById('currentVideoHeading').textContent = vid.title;
+      document.getElementById('currentVideoSpeaker').innerHTML = `Giảng viên: <strong>${vid.speaker}</strong>`;
+      document.getElementById('currentVideoDuration').textContent = vid.duration;
+      renderPlaylist();
+    }
+
+    function playCurrentVideo() {
+      const vid = COURSE_VIDEOS[currentVideoIdx];
+      alert(`Đang phát video bài giảng trực tuyến: "${vid.title}"\nThời lượng: ${vid.duration}\nChất lượng: Full HD 1080p`);
+    }
+
+    // Render Materials List (Dạng danh sách)
+    function renderMaterials(filter = 'all') {
+      const list = document.getElementById('materialsList');
+      list.innerHTML = '';
+
+      const filtered = filter === 'all' 
+        ? COURSE_MATERIALS 
+        : COURSE_MATERIALS.filter(m => m.type === filter);
+
+      filtered.forEach((mat, idx) => {
+        const row = document.createElement('div');
+        row.className = "p-4 md:px-6 md:py-3.5 hover:bg-slate-50/90 transition flex flex-col md:grid md:grid-cols-12 md:gap-4 md:items-center group";
+        
+        row.innerHTML = `
+          <!-- Cột 1: Định dạng (Desktop col-span-1) -->
+          <div class="md:col-span-1 flex items-center md:justify-center mb-2 md:mb-0">
+            <span class="inline-flex items-center justify-center gap-1.5 px-2.5 py-1 rounded-lg text-xs font-black border ${mat.extClass} shadow-xs min-w-[75px]">
+              <i class="${mat.icon}"></i> ${mat.ext}
+            </span>
+          </div>
+
+          <!-- Cột 2: Tên tài liệu & Mô tả (Desktop col-span-6) -->
+          <div class="md:col-span-6 space-y-1">
+            <h4 class="font-bold text-sm text-slate-900 group-hover:text-red-700 transition leading-snug cursor-pointer flex items-baseline gap-2" onclick="${mat.type === 'pdf' ? `previewFile('${mat.name}', '${mat.ext}')` : `downloadFile('${mat.name}', '${mat.ext}', '${mat.size}')`}">
+              <span class="text-xs font-mono text-slate-400 font-semibold">${(idx + 1).toString().padStart(2, '0')}.</span>
+              <span>${mat.name}</span>
+            </h4>
+            <p class="text-xs text-slate-500 line-clamp-1 leading-relaxed pl-6 md:pl-0">
+              ${mat.desc}
+            </p>
+            <div class="flex md:hidden items-center gap-3 text-[13px] text-slate-400 pt-1 pl-6">
+              <span><i class="fa-regular fa-file-lines mr-1"></i>${mat.pages}</span>
+              <span>•</span>
+              <span class="font-mono text-slate-700 font-semibold">${mat.size}</span>
+              <span>•</span>
+              <span><i class="fa-solid fa-download mr-1"></i>${mat.downloads} lượt tải</span>
+            </div>
+          </div>
+
+          <!-- Cột 3: Thông số dung lượng & số trang (Desktop col-span-2) -->
+          <div class="hidden md:block md:col-span-2 text-center text-xs space-y-0.5">
+            <div class="font-bold text-slate-800 font-mono text-xs">${mat.size}</div>
+            <div class="text-[13px] text-slate-400">${mat.pages} • ${mat.downloads} tải</div>
+          </div>
+
+          <!-- Cột 4: Thao tác (Chỉ PDF có nút Xem trước, các loại khác chỉ có nút Tải về) -->
+          <div class="md:col-span-3 flex items-center md:justify-end gap-2 mt-3 md:mt-0 pt-2 md:pt-0 border-t md:border-t-0 border-slate-100">
+            ${mat.type === 'pdf' ? `
+            <button onclick="previewFile('${mat.name}', '${mat.ext}')" class="flex-1 md:flex-initial px-3.5 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold transition flex items-center justify-center gap-1.5 cursor-pointer">
+              <i class="fa-regular fa-eye text-red-600"></i> Xem trước
+            </button>
+            ` : ''}
+            <button onclick="downloadFile('${mat.name}', '${mat.ext}', '${mat.size}')" class="${mat.type === 'pdf' ? 'flex-1 md:flex-initial' : 'w-full md:w-auto min-w-[105px]'} px-4 py-1.5 rounded-xl bg-red-700 hover:bg-red-800 text-white text-xs font-bold shadow-sm transition flex items-center justify-center gap-1.5 cursor-pointer">
+              <i class="fa-solid fa-download"></i> Tải về
+            </button>
+          </div>
+        `;
+
+        list.appendChild(row);
+      });
+    }
+
+    function filterMaterials(type) {
+      // Update Tab Styles
+      const buttons = document.querySelectorAll('.mat-tab-btn');
+      buttons.forEach(btn => {
+        btn.className = "mat-tab-btn px-3 py-1.5 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 transition flex items-center gap-1";
+      });
+
+      // Find clicked button
+      event.target.closest('button').className = "mat-tab-btn px-3 py-1.5 rounded-full bg-slate-900 text-white shadow-sm transition flex items-center gap-1";
+
+      renderMaterials(type);
+    }
+
+    function previewFile(name, ext) {
+      alert(`[XEM TRƯỚC HỌC LIỆU]\nĐang mở tài liệu: "${name}"\nĐịnh dạng: .${ext.toLowerCase()}\nChế độ: Đọc trực tuyến bảo mật cao (Học viện VISTI - Bộ KH&CN).`);
+    }
+
+    function downloadFile(name, ext, size) {
+      alert(`[TẢI HỌC LIỆU VỀ MÁY]\nĐang bắt đầu tải tệp: "${name}"\nĐịnh dạng: .${ext.toLowerCase()} (${size})\nTệp tin đã được quét virus và cấp chữ ký số xác thực bởi Bộ KH&CN.`);
+    }
+
+    function scrollToMaterials() {
+      document.getElementById('materials-section').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Init Page
+    document.addEventListener('DOMContentLoaded', () => {
+      // Check query params
+      const urlParams = new URLSearchParams(window.location.search);
+      const titleParam = urlParams.get('title');
+      const audienceParam = urlParams.get('audience');
+
+      if (titleParam) {
+        document.getElementById('courseBreadcrumbTitle').textContent = titleParam;
+        document.getElementById('courseHeaderTitle').textContent = titleParam;
+      }
+      if (audienceParam) {
+        document.getElementById('courseAudienceBadge').textContent = audienceParam;
+      }
+
+      renderPlaylist();
+      renderMaterials('all');
+    });
+  </script>
+</body>
+</html>

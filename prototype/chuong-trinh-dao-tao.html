@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chương trình Đào tạo và Bồi dưỡng Văn hóa Sáng tạo Quốc gia | Bộ KH&CN</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontSize: {
+            xs: ['0.90625rem', { lineHeight: '1.35rem' }],
+            sm: ['1rem', { lineHeight: '1.45rem' }],
+            base: ['1.125rem', { lineHeight: '1.65rem' }],
+            lg: ['1.25rem', { lineHeight: '1.8rem' }],
+            xl: ['1.375rem', { lineHeight: '1.9rem' }],
+            '2xl': ['1.625rem', { lineHeight: '2.1rem' }],
+            '3xl': ['2rem', { lineHeight: '2.45rem' }]
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <style> body { font-family: 'Inter', sans-serif; } 
+    .max-w-7xl {
+      max-width: 90rem !important;
+    }
+    header h1 {
+      font-family: 'Inter', sans-serif !important;
+      font-weight: 800 !important;
+    }
+  </style>
+</head>
+<body class="bg-[#fbfcfe] text-slate-800 antialiased min-h-screen flex flex-col">
+
+  <!-- TOP UTILITY BAR (CHUẨN CHUNG ĐỒNG BỘ) -->
+  <div class="bg-[#0b1c33] text-slate-200 text-xs py-1.5 px-4 sm:px-8 border-b border-slate-700/60">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-2">
+      <div class="flex items-center gap-3">
+        <span class="text-slate-300"><i class="fa-regular fa-calendar-check mr-1.5 text-amber-400"></i>Thứ Năm, 27/08/2026</span>
+      </div>
+      <div class="flex items-center gap-4 text-[13px]">
+        <div class="flex items-center gap-1.5 font-bold">
+          <span class="text-amber-400">VI</span>
+          <span class="text-slate-500">/</span>
+          <span class="text-slate-400 hover:text-white cursor-pointer">EN</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER (CHUẨN CHUNG ĐỒNG BỘ VỚI QUỐC HUY VÀ TÌM KIẾM) -->
+  <header class="bg-white border-b border-slate-200 shadow-sm sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 py-3.5 flex flex-col md:flex-row items-center justify-between gap-4">
+      <a href="index.html" class="flex items-center gap-3.5 group">
+        <img src="quoc-huy.png" alt="Quốc huy Việt Nam" class="w-12 h-12 object-contain drop-shadow">
+        <div>
+          <h1 class="text-[14.5px] sm:text-[16px] md:text-[18px] lg:text-[18px] xl:text-[20px] font-extrabold tracking-normal uppercase text-red-800 leading-normal">
+            <span class="block whitespace-nowrap">NỀN TẢNG TRUYỀN THÔNG SỐ QUỐC GIA VỀ KHOA HỌC, CÔNG NGHỆ,</span>
+            <span class="block mt-1 whitespace-nowrap">ĐỔI MỚI SÁNG TẠO VÀ CHUYỂN ĐỔI SỐ</span>
+          </h1>
+        </div>
+      </a>
+
+      <div class="w-full md:w-80 lg:w-96 relative shrink-0">
+        <input type="text" placeholder="Tìm kiếm tin bài, video, ảnh, khóa học..." 
+          class="w-full pl-10 pr-4 py-2 bg-slate-100 focus:bg-white text-[13px] rounded-full border border-slate-300 focus:outline-none focus:ring-2 focus:ring-red-700/30">
+        <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-[13px]"></i>
+      </div>
+    </div>
+
+    <!-- NAVIGATION WITH SUBMENU TAB SỰ KIỆN -->
+        <!-- NAVIGATION -->
+        <!-- NAVIGATION -->
+    <nav class="bg-white border-t border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-8 flex items-center justify-start overflow-visible gap-1.5 text-[14.5px] sm:text-[15px] font-semibold">
+        <a href="index.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Trang chủ
+      </a>
+        
+        <!-- CHÍNH SÁCH VỚI SUBMENU CHỈ ĐẠO ĐIỀU HÀNH & GIẢI THÍCH CHÍNH SÁCH -->
+        <div class="relative group">
+          <a href="chinh-sach.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap flex items-center gap-1 cursor-pointer">
+        <span>Chính sách</span>
+        <i class="fa-solid fa-chevron-down text-[9px] text-slate-400 group-hover:text-red-800 group-hover:rotate-180 transition-transform"></i>
+      </a>
+          <!-- Submenu dropdown -->
+          <div class="hidden group-hover:block absolute left-0 top-full bg-white rounded-xl shadow-2xl border border-slate-200 py-1.5 min-w-[260px] z-50 text-slate-800 font-normal">
+            <a href="chinh-sach.html" class="flex items-center gap-2.5 px-4 py-2.5 hover:bg-slate-50 text-slate-700 hover:text-red-800 text-[14.5px] transition font-semibold">
+              <i class="fa-solid fa-landmark text-slate-400 text-[14.5px]"></i>
+              <span>Chính sách & Thể chế</span>
+            </a>
+            <a href="chinh-sach-tra-cuu.html" class="flex items-center gap-2.5 px-4 py-2.5 hover:bg-slate-50 text-slate-700 hover:text-red-800 text-[14.5px] transition font-semibold">
+              <i class="fa-solid fa-file-signature text-red-700 text-[14.5px]"></i>
+              <span>Chỉ đạo điều hành</span>
+            </a>
+            <a href="giai-thich-chinh-sach.html" class="flex items-center gap-2.5 px-4 py-2.5 hover:bg-slate-50 text-slate-700 hover:text-red-800 font-semibold text-[14.5px] transition">
+              <i class="fa-solid fa-chalkboard-user text-amber-600 text-[14.5px]"></i>
+              <span>Giải thích chính sách</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="san-pham-cong-nghe.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Sản phẩm KH&CN
+      </a>
+        <a href="bao-cao-danh-gia-truyen-thong.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Báo cáo thường niên
+      </a>
+        <a href="tai-lieu-video.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Kho tư liệu
+      </a>
+        
+        <a href="su-kien.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">Sự kiện</a>
+
+        
+        <a href="hoi-dap.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Hỏi đáp
+      </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- BREADCRUMB (THEO ĐÚNG ẢNH ĐÀO TẠO) -->
+  <div class="bg-white border-b border-slate-200 py-3 px-4 sm:px-8 text-xs">
+    <div class="max-w-7xl mx-auto flex items-center gap-2 text-slate-500">
+      <a href="index.html" class="hover:text-red-800">Trang chủ</a>
+      <i class="fa-solid fa-chevron-right text-[12px] text-slate-400"></i>
+      <a href="su-kien.html" class="hover:text-red-800">Sự kiện</a>
+      <i class="fa-solid fa-chevron-right text-[12px] text-slate-400"></i>
+      <span class="text-slate-800 font-semibold">Chương trình Văn hóa Sáng tạo Quốc gia</span>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT (THIẾT KẾ THEO ẢNH ĐÀO TẠO.PNG) -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-8 py-8 w-full flex-1 space-y-14">
+
+    <!-- 1. HERO SECTION -->
+    <section class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center pt-2">
+      <!-- Cột trái: Tiêu đề & Giới thiệu -->
+      <div class="lg:col-span-7 space-y-4">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-rose-50 border border-rose-200/80 text-rose-700 text-xs font-bold">
+          <i class="fa-regular fa-compass text-rose-600"></i>
+          <span>Chương trình Trọng điểm Quốc gia • Bộ KH&CN</span>
+        </div>
+
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 leading-[1.15] tracking-tight">
+          Khung Chương trình Đào tạo & Bồi dưỡng <span class="text-[#891819]">Văn hóa Sáng tạo</span> Quốc gia
+        </h1>
+
+        <p class="text-sm sm:text-base text-slate-600 leading-relaxed max-w-2xl font-normal">
+          Cung cấp tri thức số, kiến tạo tư duy đột phá, truyền cảm hứng và hun đúc tinh thần đổi mới sáng tạo phụng sự Tổ quốc cho mọi tầng lớp nhân dân.
+        </p>
+      </div>
+
+      <!-- Cột phải: Card Chủ đề Đột phá 2026 -->
+      <div class="lg:col-span-5">
+        <div class="group relative rounded-3xl overflow-hidden shadow-2xl border border-slate-200 bg-slate-900 transition hover:shadow-red-900/10 hover:-translate-y-1 duration-300">
+          <div class="aspect-[16/11] relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" 
+                 alt="Chủ đề đột phá 2026" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 brightness-90">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+            
+            <!-- Top Tag Pill -->
+            <div class="absolute top-4 left-4">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#82181a] text-white text-[12px] font-extrabold uppercase tracking-wider shadow">
+                <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
+                <span>CHỦ ĐỀ ĐỘT PHÁ 2026</span>
+              </span>
+            </div>
+
+            <!-- Content on Image -->
+            <div class="absolute bottom-4 left-4 right-4 space-y-1.5 text-white">
+              <span class="text-[12px] font-bold text-amber-300 uppercase tracking-widest block">
+                NGHỊ QUYẾT 57/NQ-CP
+              </span>
+              <h3 class="text-base sm:text-lg font-black leading-snug text-white">
+                Đổi mới sáng tạo: Từ Tư duy Thể chế đến Sản phẩm Make in Vietnam
+              </h3>
+            </div>
+          </div>
+
+          <!-- Bottom bar of Card -->
+          <div class="bg-white p-3.5 flex items-center justify-between text-xs border-t border-slate-100">
+            <a href="#" onclick="alert('Đang mở bài giảng trọng tâm: Đổi mới sáng tạo từ Tư duy thể chế đến Make in Vietnam'); return false;" 
+               class="text-red-700 font-bold flex items-center gap-2 hover:text-red-900 transition">
+              <span class="w-6 h-6 rounded-full bg-red-100 text-red-700 flex items-center justify-center text-[12px] shadow-sm">
+                <i class="fa-solid fa-play ml-0.5"></i>
+              </span>
+              <span>Bài giảng trọng tâm cấp Bộ</span>
+            </a>
+            <span class="text-slate-500 font-semibold text-[13px]">36 Chuyên đề</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. PHÂN HỆ BỒI DƯỠNG ĐẶC THÙ · ĐỐI TƯỢNG ĐÀO TẠO CHUYÊN BIỆT -->
+    <section class="space-y-6" id="audience-section">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-3">
+        <div>
+          <span class="text-[13px] font-black uppercase tracking-wider text-rose-700 block">
+            PHÂN HỆ BỒI DƯỠNG ĐẶC THÙ
+          </span>
+          <h2 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight mt-0.5">
+            Đối tượng đào tạo chuyên biệt
+          </h2>
+        </div>
+        <p class="text-xs text-slate-500 italic">
+          <i class="fa-solid fa-hand-pointer text-rose-600 mr-1 animate-bounce"></i> Nhấp chọn đối tượng bên dưới để lọc danh sách khóa học tương ứng
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+        
+        <!-- Card 1 (Thế hệ trẻ, HSSV) -->
+        <div id="card-aud-hssv" onclick="selectAudience('hssv')" 
+             class="aud-card bg-white rounded-2xl border-2 border-slate-900 p-5 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between group cursor-pointer ring-2 ring-slate-900/10">
+          <div>
+            <div class="aud-icon w-12 h-12 rounded-xl bg-slate-900 text-white flex items-center justify-center text-lg mb-4 shadow transition">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <h3 class="font-extrabold text-sm text-slate-900 mb-2">Thế hệ trẻ, HSSV</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Khơi dậy đam mê STEM, tư duy sáng tạo, kỹ năng số từ nhà trường và ươm mầm tài năng.
+            </p>
+          </div>
+          <div class="pt-5 mt-2 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-slate-900 group-hover:text-red-700 transition">
+            <span class="aud-count">3 Khóa tiêu biểu</span>
+            <i class="fa-solid fa-arrow-right text-[13px]"></i>
+          </div>
+        </div>
+
+        <!-- Card 2 (Cán bộ, Công chức) -->
+        <div id="card-aud-canbo" onclick="selectAudience('canbo')" 
+             class="aud-card bg-white rounded-2xl border border-slate-200 p-5 shadow-sm hover:shadow-lg hover:border-slate-300 transition-all duration-300 flex flex-col justify-between group cursor-pointer">
+          <div>
+            <div class="aud-icon w-12 h-12 rounded-xl bg-rose-50 text-rose-700 flex items-center justify-center text-lg mb-4 transition">
+              <i class="fa-solid fa-landmark"></i>
+            </div>
+            <h3 class="font-extrabold text-sm text-slate-900 mb-2">Cán bộ, Công chức</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Tư duy kiến tạo, thể chế thử nghiệm Sandbox, văn hóa đổi mới khu vực công quyền.
+            </p>
+          </div>
+          <div class="pt-5 mt-2 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-slate-700 group-hover:text-red-700 transition">
+            <span class="aud-count">3 Khóa tiêu biểu</span>
+            <i class="fa-solid fa-arrow-right text-[13px]"></i>
+          </div>
+        </div>
+
+        <!-- Card 3 (Doanh nghiệp, Startup) -->
+        <div id="card-aud-doanhnghiep" onclick="selectAudience('doanhnghiep')" 
+             class="aud-card bg-white rounded-2xl border border-slate-200 p-5 shadow-sm hover:shadow-lg hover:border-slate-300 transition-all duration-300 flex flex-col justify-between group cursor-pointer">
+          <div>
+            <div class="aud-icon w-12 h-12 rounded-xl bg-amber-50 text-amber-700 flex items-center justify-center text-lg mb-4 transition">
+              <i class="fa-solid fa-rocket"></i>
+            </div>
+            <h3 class="font-extrabold text-sm text-slate-900 mb-2">Doanh nghiệp, Startup</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Quản trị đổi mới sáng tạo, chuyển đổi số thực chiến và thương mại hóa công nghệ.
+            </p>
+          </div>
+          <div class="pt-5 mt-2 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-slate-700 group-hover:text-red-700 transition">
+            <span class="aud-count">2 Khóa tiêu biểu</span>
+            <i class="fa-solid fa-arrow-right text-[13px]"></i>
+          </div>
+        </div>
+
+        <!-- Card 4 (Nhà khoa học, NCG) -->
+        <div id="card-aud-khoahoc" onclick="selectAudience('khoahoc')" 
+             class="aud-card bg-white rounded-2xl border border-slate-200 p-5 shadow-sm hover:shadow-lg hover:border-slate-300 transition-all duration-300 flex flex-col justify-between group cursor-pointer">
+          <div>
+            <div class="aud-icon w-12 h-12 rounded-xl bg-blue-50 text-blue-700 flex items-center justify-center text-lg mb-4 transition">
+              <i class="fa-solid fa-flask"></i>
+            </div>
+            <h3 class="font-extrabold text-sm text-slate-900 mb-2">Nhà khoa học, NCG</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Kỹ năng công bố quốc tế, bảo hộ tài sản trí tuệ và định giá bằng sáng chế thương phẩm.
+            </p>
+          </div>
+          <div class="pt-5 mt-2 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-slate-700 group-hover:text-red-700 transition">
+            <span class="aud-count">2 Khóa tiêu biểu</span>
+            <i class="fa-solid fa-arrow-right text-[13px]"></i>
+          </div>
+        </div>
+
+        <!-- Card 5 (Cộng đồng xã hội) -->
+        <div id="card-aud-congdong" onclick="selectAudience('congdong')" 
+             class="aud-card bg-white rounded-2xl border border-slate-200 p-5 shadow-sm hover:shadow-lg hover:border-slate-300 transition-all duration-300 flex flex-col justify-between group cursor-pointer">
+          <div>
+            <div class="aud-icon w-12 h-12 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center text-lg mb-4 transition">
+              <i class="fa-solid fa-users"></i>
+            </div>
+            <h3 class="font-extrabold text-sm text-slate-900 mb-2">Cộng đồng xã hội</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Phổ cập kỹ năng số bình dân, tư duy phản biện khoa học và an toàn trên không gian mạng.
+            </p>
+          </div>
+          <div class="pt-5 mt-2 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-slate-700 group-hover:text-red-700 transition">
+            <span class="aud-count">2 Khóa tiêu biểu</span>
+            <i class="fa-solid fa-arrow-right text-[13px]"></i>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. KHÓA HỌC & CHƯƠNG TRÌNH NỔI BẬT -->
+    <section class="space-y-6 pt-2" id="courses-section">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-200/80 pb-4">
+        <div>
+          <span class="text-[13px] font-black uppercase tracking-wider text-rose-700 flex items-center gap-1.5">
+            <i class="fa-regular fa-circle-check"></i> CHƯƠNG TRÌNH TUYỂN CHỌN
+          </span>
+          <div class="flex flex-wrap items-center gap-3 mt-0.5">
+            <h2 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
+              Khóa học & Chương trình Nổi bật
+            </h2>
+            <span id="activeFilterBadge" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-red-100 text-red-800 text-xs font-bold shadow-sm">
+              <i class="fa-solid fa-filter text-[12px]"></i>
+              <span id="activeFilterText">Tất cả đối tượng (12 khóa)</span>
+            </span>
+          </div>
+        </div>
+
+        <!-- Filter Pills Bar -->
+        <div class="flex flex-wrap items-center gap-1.5 text-xs">
+          <button onclick="selectAudience('all')" id="btn-pill-all" class="aud-pill px-3 py-1.5 rounded-full bg-slate-900 text-white font-bold transition shadow-sm">
+            Tất cả (12)
+          </button>
+          <button onclick="selectAudience('hssv')" id="btn-pill-hssv" class="aud-pill px-3 py-1.5 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold transition">
+            HSSV (3)
+          </button>
+          <button onclick="selectAudience('canbo')" id="btn-pill-canbo" class="aud-pill px-3 py-1.5 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold transition">
+            Cán bộ (3)
+          </button>
+          <button onclick="selectAudience('doanhnghiep')" id="btn-pill-doanhnghiep" class="aud-pill px-3 py-1.5 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold transition">
+            Doanh nghiệp (2)
+          </button>
+          <button onclick="selectAudience('khoahoc')" id="btn-pill-khoahoc" class="aud-pill px-3 py-1.5 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold transition">
+            Nhà khoa học (2)
+          </button>
+          <button onclick="selectAudience('congdong')" id="btn-pill-congdong" class="aud-pill px-3 py-1.5 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold transition">
+            Cộng đồng (2)
+          </button>
+        </div>
+      </div>
+
+      <!-- Lưới Khóa học đa dạng (12 khóa phủ đủ 5 đối tượng, BỎ SAO, BỎ CẤP CHỨNG CHỈ, LINK TRANG CHI TIẾT) -->
+      <div id="courseCardsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        
+        <!-- Khóa 1 (HSSV): Gen Z Make in Vietnam -->
+        <div class="course-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-audience="hssv">
+          <div>
+            <div class="aspect-[16/10] relative overflow-hidden bg-slate-900">
+              <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=600&q=80" 
+                   alt="Hành trình Gen Z" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+              <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/90 backdrop-blur-sm text-white text-[12px] font-bold">
+                Thế hệ trẻ, HSSV
+              </span>
+              <span class="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-black/70 text-white text-[12px] font-medium flex items-center gap-1">
+                <i class="fa-regular fa-clock"></i> 24 Giờ
+              </span>
+            </div>
+            
+            <div class="p-4 space-y-2">
+              <div class="flex items-center gap-2 text-[13px] text-slate-500 font-medium">
+                <span class="text-rose-700 font-bold flex items-center gap-1"><i class="fa-solid fa-layer-group"></i> 8 Chuyên đề</span>
+              </div>
+              <h4 class="font-extrabold text-sm text-slate-900 group-hover:text-red-700 transition line-clamp-2 leading-snug">
+                Hành trình Gen Z kiến tạo công nghệ Make in Vietnam
+              </h4>
+              <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed">
+                Hệ thống kiến thức từ ý tưởng đến nguyên mẫu sản phẩm số, kết hợp phương pháp tư duy thiết kế Design Thinking.
+              </p>
+            </div>
+          </div>
+
+          <div class="p-4 pt-0 border-t border-slate-100 flex flex-col gap-2 mt-2">
+            <div class="flex items-center justify-between text-xs pt-2">
+              <span class="text-[13px] font-bold text-slate-600 bg-slate-100 px-2 py-0.5 rounded-md">Ban Đào tạo VISTI</span>
+              <span class="text-[13px] text-emerald-600 font-bold flex items-center gap-1"><i class="fa-solid fa-circle-check"></i> Đang mở</span>
+            </div>
+            <a href="khoa-hoc-chi-tiet.html?id=hssv-01&title=Hành%20trình%20Gen%20Z%20kiến%20tạo%20công%20nghệ%20Make%20in%20Vietnam&audience=Thế%20hệ%20trẻ,%20HSSV" 
+               class="w-full py-2 px-3 rounded-xl bg-slate-900 hover:bg-red-800 text-white font-bold text-xs flex items-center justify-center gap-1.5 transition shadow-sm">
+              <i class="fa-solid fa-play text-[12px]"></i>
+              <span>Vào học & Xem học liệu</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Khóa 2 (HSSV): Lập trình AI căn bản -->
+        <div class="course-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-audience="hssv">
+          <div>
+            <div class="aspect-[16/10] relative overflow-hidden bg-slate-900">
+              <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=600&q=80" 
+                   alt="Lập trình AI" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+              <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/90 backdrop-blur-sm text-white text-[12px] font-bold">
+                Thế hệ trẻ, HSSV
+              </span>
+              <span class="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-black/70 text-white text-[12px] font-medium flex items-center gap-1">
+                <i class="fa-regular fa-clock"></i> 30 Giờ
+              </span>
+            </div>
+            
+            <div class="p-4 space-y-2">
+              <div class="flex items-center gap-2 text-[13px] text-slate-500 font-medium">
+                <span class="text-rose-700 font-bold flex items-center gap-1"><i class="fa-solid fa-layer-group"></i> 10 Chuyên đề</span>
+              </div>
+              <h4 class="font-extrabold text-sm text-slate-900 group-hover:text-red-700 transition line-clamp-2 leading-snug">
+                Lập trình AI căn bản & Xây dựng Trợ lý học tập thông minh
+              </h4>
+              <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed">
+                Huấn luyện kỹ năng prompt engineering, tích hợp mô hình ngôn ngữ lớn LLM và phát triển công cụ hỗ trợ nghiên cứu khoa học trẻ.
+              </p>
+            </div>
+          </div>
+
+          <div class="p-4 pt-0 border-t border-slate-100 flex flex-col gap-2 mt-2">
+            <div class="flex items-center justify-between text-xs pt-2">
+              <span class="text-[13px] font-bold text-slate-600 bg-slate-100 px-2 py-0.5 rounded-md">Trung tâm ĐMST Quốc gia</span>
+              <span class="text-[13px] text-emerald-600 font-bold flex items-center gap-1"><i class="fa-solid fa-circle-check"></i> Đang mở</span>
+            </div>
+            <a href="khoa-hoc-chi-tiet.html?id=hssv-02&title=Lập%20trình%20AI%20căn%20bản%20và%20Xây%20dựng%20Trợ%20lý%20học%20tập&audience=Thế%20hệ%20trẻ,%20HSSV" 
+               class="w-full py-2 px-3 rounded-xl bg-slate-900 hover:bg-red-800 text-white font-bold text-xs flex items-center justify-center gap-1.5 transition shadow-sm">
+              <i class="fa-solid fa-play text-[12px]"></i>
+              <span>Vào học & Xem học liệu</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Khóa 3 (HSSV): Tư duy Khởi nghiệp Công nghệ -->
+        <div class="course-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-audience="hssv">
+          <div>
+            <div class="aspect-[16/10] relative overflow-hidden bg-slate-900">
+              <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=600&q=80" 
+                   alt="Khởi nghiệp HSSV" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+              <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/90 backdrop-blur-sm text-white text-[12px] font-bold">
+                Thế hệ trẻ, HSSV
+              </span>
+              <span class="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-black/70 text-white text-[12px] font-medium flex items-center gap-1">
+                <i class="fa-regular fa-clock"></i> 20 Giờ
+              </span>
+            </div>
+            
+            <div class="p-4 space-y-2">
+              <div class="flex items-center gap-2 text-[13px] text-slate-500 font-medium">
+                <span class="text-rose-700 font-bold flex items-center gap-1"><i class="fa-solid fa-layer-group"></i> 6 Chuyên đề</span>
+              </div>
+              <h4 class="font-extrabold text-sm text-slate-900 group-hover:text-red-700 transition line-clamp-2 leading-snug">
+                Tư duy Khởi nghiệp Công nghệ và Kỹ năng Pitching dự án
+              </h4>
+              <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed">
+                Phương pháp đóng gói ý tưởng giải pháp thành bản thuyết trình chuyên nghiệp, thu hút quỹ đầu tư và vườn ươm đại học.
+              </p>
+            </div>
+          </div>
+
+          <div class="p-4 pt-0 border-t border-slate-100 flex flex-col gap-2 mt-2">
+            <div class="flex items-center justify-between text-xs pt-2">
+              <span class="text-[13px] font-bold text-slate-600 bg-slate-100 px-2 py-0.5 rounded-md">Vườn ươm ĐMST Trẻ</span>
+              <span class="text-[13px] text-emerald-600 font-bold flex items-center gap-1"><i class="fa-solid fa-circle-check"></i> Đang mở</span>
+            </div>
+            <a href="khoa-hoc-chi-tiet.html?id=hssv-03&title=Tư%20duy%20Khởi%20nghiệp%20Công%20nghệ%20và%20Kỹ%20năng%20Pitching&audience=Thế%20hệ%20trẻ,%20HSSV" 
+               class="w-full py-2 px-3 rounded-xl bg-slate-900 hover:bg-red-800 text-white font-bold text-xs flex items-center justify-center gap-1.5 transition shadow-sm">
+              <i class="fa-solid fa-play text-[12px]"></i>
+              <span>Vào học & Xem học liệu</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Khóa 4 (Cán bộ): Nghị quyết 57 -->
+        <div class="course-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-audience="canbo">
+          <div>
+            <div class="aspect-[16/10] relative overflow-hidden bg-slate-900">
+              <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=600&q=80" 
+                   alt="Nghị quyết 57" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+              <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-[#82181a]/95 backdrop-blur-sm text-white text-[12px] font-bold">
+                Cán bộ, Công chức
+              </span>
+              <span class="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-black/70 text-white text-[12px] font-medium flex items-center gap-1">
+                <i class="fa-regular fa-clock"></i> 36 Giờ
+              </span>
+            </div>
+            
+            <div class="p-4 space-y-2">
+              <div class="flex items-center gap-2 text-[13px] text-slate-500 font-medium">
+                <span class="text-rose-700 font-bold flex items-center gap-1"><i class="fa-solid fa-layer-group"></i> 12 Chuyên đề</span>
+              </div>
+              <h4 class="font-extrabold text-sm text-slate-900 group-hover:text-red-700 transition line-clamp-2 leading-snug">
+                Nghị quyết 57 và Văn hóa đổi mới sáng tạo trong khu vực công
+              </h4>
+              <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed">
+                Đột phá tư duy điều hành, cơ chế thí điểm có kiểm soát (Sandbox) và xây dựng văn hóa dám nghĩ dám làm vì lợi ích quốc gia.
+              </p>
+            </div>
+          </div>
+
+          <div class="p-4 pt-0 border-t border-slate-100 flex flex-col gap-2 mt-2">
+            <div class="flex items-center justify-between text-xs pt-2">
+              <span class="text-[13px] font-bold text-red-800 bg-red-50 px-2 py-0.5 rounded-md">Bộ KH&CN chủ trì</span>
+              <span class="text-[13px] text-emerald-600 font-bold flex items-center gap-1"><i class="fa-solid fa-circle-check"></i> Đang mở</span>
+            </div>
+            <a href="khoa-hoc-chi-tiet.html?id=canbo-01&title=Nghị%20quyết%2057%20và%20Văn%20hóa%20đổi%20mới%20sáng%20tạo%20trong%20khu%20vực%20công&audience=Cán%20bộ,%20Công%20chức" 
+               class="w-full py-2 px-3 rounded-xl bg-slate-900 hover:bg-red-800 text-white font-bold text-xs flex items-center justify-center gap-1.5 transition shadow-sm">
+              <i class="fa-solid fa-play text-[12px]"></i>
+              <span>Vào học & Xem học liệu</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Khóa 5 (Cán bộ): Khung Sandbox Thử nghiệm -->
+        <div class="course-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-audience="canbo">
+          <div>
+            <div class="aspect-[16/10] relative overflow-hidden bg-slate-900">
+              <img src="https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=600&q=80" 
+                   alt="Cơ chế Sandbox" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+              <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-[#82181a]/95 backdrop-blur-sm text-white text-[12px] font-bold">
+                Cán bộ, Công chức
+              </span>
+              <span class="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-black/70 text-white text-[12px] font-medium flex items-center gap-1">
+                <i class="fa-regular fa-clock"></i> 28 Giờ
+              </span>
+            </div>
+            
+            <div class="p-4 space-y-2">
+              <div class="flex items-center gap-2 text-[13px] text-slate-500 font-medium">
+                <span class="text-rose-700 font-bold flex items-center gap-1"><i class="fa-solid fa-layer-group"></i> 9 Chuyên đề</span>
+              </div>
+              <h4 class="font-extrabold text-sm text-slate-900 group-hover:text-red-700 transition line-clamp-2 leading-snug">
+                Khung thể chế thử nghiệm có kiểm soát (Sandbox) công nghệ mới
+              </h4>
+              <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed">
+                Quy trình tiếp nhận, thẩm định rủi ro và quản lý mô hình kinh doanh số đột phá tại các địa phương và ngành trọng điểm.
+              </p>
+            </div>
+          </div>
+
+          <div class="p-4 pt-0 border-t border-slate-100 flex flex-col gap-2 mt-2">
+            <div class="flex items-center justify-between text-xs pt-2">
+              <span class="text-[13px] font-bold text-red-800 bg-red-50 px-2 py-0.5 rounded-md">Vụ Pháp chế - Bộ KH&CN</span>
+              <span class="text-[13px] text-emerald-600 font-bold flex items-center gap-1"><i class="fa-solid fa-circle-check"></i> Đang mở</span>
+            </div>
+            <a href="khoa-hoc-chi-tiet.html?id=canbo-02&title=Khung%20thể%20chế%20thử%20nghiệm%20có%20kiểm%20soát%20(Sandbox)&audience=Cán%20bộ,%20Công%20chức" 
+               class="w-full py-2 px-3 rounded-xl bg-slate-900 hover:bg-red-800 text-white font-bold text-xs flex items-center justify-center gap-1.5 transition shadow-sm">
+              <i class="fa-solid fa-play text-[12px]"></i>
+              <span>Vào học & Xem học liệu</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Khóa 6 (Cán bộ): Dữ liệu số & Trợ lý ảo -->
+        <div class="course-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-audience="canbo">
+          <div>
+            <div class="aspect-[16/10] relative overflow-hidden bg-slate-900">
+              <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=600&q=80" 
+                   alt="Dữ liệu số" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+              <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-[#82181a]/95 backdrop-blur-sm text-white text-[12px] font-bold">
+                Cán bộ, Công chức
+              </span>
+              <span class="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-black/70 text-white text-[12px] font-medium flex items-center gap-1">
+                <i class="fa-regular fa-clock"></i> 24 Giờ
+              </span>
+            </div>
+            
+            <div class="p-4 space-y-2">
+              <div class="flex items-center gap-2 text-[13px] text-slate-500 font-medium">
+                <span class="text-rose-700 font-bold flex items-center gap-1"><i class="fa-solid fa-layer-group"></i> 8 Chuyên đề</span>
+              </div>
+              <h4 class="font-extrabold text-sm text-slate-900 group-hover:text-red-700 transition line-clamp-2 leading-snug">
+                Ứng dụng Trợ lý ảo AI & Phân tích Dữ liệu trong tham mưu chính sách
+              </h4>
+              <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed">
+                Khai thác kho dữ liệu mở quốc gia, dùng AI tóm lược hồ sơ báo cáo và tự động hóa quy trình nghiệp vụ hành chính.
+              </p>
+            </div>
+          </div>
+
+          <div class="p-4 pt-0 border-t border-slate-100 flex flex-col gap-2 mt-2">
+            <div class="flex items-center justify-between text-xs pt-2">
+              <span class="text-[13px] font-bold text-red-800 bg-red-50 px-2 py-0.5 rounded-md">Cục CNTT & Dữ liệu số</span>
+              <span class="text-[13px] text-emerald-600 font-bold flex items-center gap-1"><i class="fa-solid fa-circle-check"></i> Đang mở</span>
+            </div>
+            <a href="khoa-hoc-chi-tiet.html?id=canbo-03&title=Ứng%20dụng%20Trợ%20lý%20ảo%20AI%20trong%20tham%20mưu%20chính%20sách&audience=Cán%20bộ,%20Công%20chức" 
+               class="w-full py-2 px-3 rounded-xl bg-slate-900 hover:bg-red-800 text-white font-bold text-xs flex items-center justify-center gap-1.5 transition shadow-sm">
+              <i class="fa-solid fa-play text-[12px]"></i>
+              <span>Vào học & Xem học liệu</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Khóa 7 (Doanh nghiệp): Ươm tạo & Sở hữu trí tuệ -->
+        <div class="course-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-audience="doanhnghiep">
+          <div>
+            <div class="aspect-[16/10] relative overflow-hidden bg-slate-900">
+              <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=600&q=80" 
+                   alt="Ươm tạo ý tưởng" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+              <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-amber-900/90 backdrop-blur-sm text-white text-[12px] font-bold">
+                Doanh nghiệp, Startup
+              </span>
+              <span class="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-black/70 text-white text-[12px] font-medium flex items-center gap-1">
+                <i class="fa-regular fa-clock"></i> 40 Giờ
+              </span>
+            </div>
+            
+            <div class="p-4 space-y-2">
+              <div class="flex items-center gap-2 text-[13px] text-slate-500 font-medium">
+                <span class="text-rose-700 font-bold flex items-center gap-1"><i class="fa-solid fa-layer-group"></i> 14 Chuyên đề</span>
+              </div>
+              <h4 class="font-extrabold text-sm text-slate-900 group-hover:text-red-700 transition line-clamp-2 leading-snug">
+                Ươm tạo ý tưởng sáng tạo & Lập chiến lược sở hữu trí tuệ
+              </h4>
+              <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed">
+                Bảo vệ tài sản vô hình, đăng ký bằng độc quyền sáng chế, thiết lập rào cản công nghệ bảo vệ doanh nghiệp khi mở rộng thị trường.
+              </p>
+            </div>
+          </div>
+
+          <div class="p-4 pt-0 border-t border-slate-100 flex flex-col gap-2 mt-2">
+            <div class="flex items-center justify-between text-xs pt-2">
+              <span class="text-[13px] font-bold text-slate-600 bg-slate-100 px-2 py-0.5 rounded-md">Cục Sở hữu trí tuệ</span>
+              <span class="text-[13px] text-emerald-600 font-bold flex items-center gap-1"><i class="fa-solid fa-circle-check"></i> Đang mở</span>
+            </div>
+            <a href="khoa-hoc-chi-tiet.html?id=dn-01&title=Ươm%20tạo%20ý%20tưởng%20sáng%20tạo%20&%20Lập%20chiến%20lược%20SHTT&audience=Doanh%20nghiệp,%20Startup" 
+               class="w-full py-2 px-3 rounded-xl bg-slate-900 hover:bg-red-800 text-white font-bold text-xs flex items-center justify-center gap-1.5 transition shadow-sm">
+              <i class="fa-solid fa-play text-[12px]"></i>
+              <span>Vào học & Xem học liệu</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Khóa 8 (Doanh nghiệp): Chuyển đổi số sản xuất cho SME -->
+        <div class="course-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-audience="doanhnghiep">
+          <div>
+            <div class="aspect-[16/10] relative overflow-hidden bg-slate-900">
+              <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&q=80" 
+                   alt="Chuyển đổi số SME" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+              <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-amber-900/90 backdrop-blur-sm text-white text-[12px] font-bold">
+                Doanh nghiệp, Startup
+              </span>
+              <span class="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-black/70 text-white text-[12px] font-medium flex items-center gap-1">
+                <i class="fa-regular fa-clock"></i> 32 Giờ
+              </span>
+            </div>
+            
+            <div class="p-4 space-y-2">
+              <div class="flex items-center gap-2 text-[13px] text-slate-500 font-medium">
+                <span class="text-rose-700 font-bold flex items-center gap-1"><i class="fa-solid fa-layer-group"></i> 10 Chuyên đề</span>
+              </div>
+              <h4 class="font-extrabold text-sm text-slate-900 group-hover:text-red-700 transition line-clamp-2 leading-snug">
+                Chuyển đổi số sản xuất và Đổi mới mô hình kinh doanh cho SME
+              </h4>
+              <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed">
+                Ứng dụng IoT, MES và ERP trong tối ưu hóa chuyền sản xuất, giảm hao phí nguyên liệu và số hóa chuỗi cung ứng Make in Vietnam.
+              </p>
+            </div>
+          </div>
+
+          <div class="p-4 pt-0 border-t border-slate-100 flex flex-col gap-2 mt-2">
+            <div class="flex items-center justify-between text-xs pt-2">
+              <span class="text-[13px] font-bold text-slate-600 bg-slate-100 px-2 py-0.5 rounded-md">Cục Phát triển Công nghệ</span>
+              <span class="text-[13px] text-emerald-600 font-bold flex items-center gap-1"><i class="fa-solid fa-circle-check"></i> Đang mở</span>
+            </div>
+            <a href="khoa-hoc-chi-tiet.html?id=dn-02&title=Chuyển%20đổi%20số%20sản%20xuất%20và%20Mô%20hình%20kinh%20doanh%20SME&audience=Doanh%20nghiệp,%20Startup" 
+               class="w-full py-2 px-3 rounded-xl bg-slate-900 hover:bg-red-800 text-white font-bold text-xs flex items-center justify-center gap-1.5 transition shadow-sm">
+              <i class="fa-solid fa-play text-[12px]"></i>
+              <span>Vào học & Xem học liệu</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Khóa 9 (Khoa học): Kỹ năng công bố quốc tế -->
+        <div class="course-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-audience="khoahoc">
+          <div>
+            <div class="aspect-[16/10] relative overflow-hidden bg-slate-900">
+              <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=600&q=80" 
+                   alt="Công bố quốc tế" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+              <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-blue-900/90 backdrop-blur-sm text-white text-[12px] font-bold">
+                Nhà khoa học, NCG
+              </span>
+              <span class="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-black/70 text-white text-[12px] font-medium flex items-center gap-1">
+                <i class="fa-regular fa-clock"></i> 32 Giờ
+              </span>
+            </div>
+            
+            <div class="p-4 space-y-2">
+              <div class="flex items-center gap-2 text-[13px] text-slate-500 font-medium">
+                <span class="text-rose-700 font-bold flex items-center gap-1"><i class="fa-solid fa-layer-group"></i> 10 Chuyên đề</span>
+              </div>
+              <h4 class="font-extrabold text-sm text-slate-900 group-hover:text-red-700 transition line-clamp-2 leading-snug">
+                Kỹ năng công bố quốc tế & Chiến lược bảo hộ Bằng sáng chế toàn cầu
+              </h4>
+              <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed">
+                Phương pháp cấu trúc bài báo ISI/Scopus, tra cứu cơ sở dữ liệu sáng chế WIPO và chiến lược đăng ký sáng chế tại Mỹ, EU, Nhật Bản.
+              </p>
+            </div>
+          </div>
+
+          <div class="p-4 pt-0 border-t border-slate-100 flex flex-col gap-2 mt-2">
+            <div class="flex items-center justify-between text-xs pt-2">
+              <span class="text-[13px] font-bold text-slate-600 bg-slate-100 px-2 py-0.5 rounded-md">Viện Hàn lâm & Bộ KH&CN</span>
+              <span class="text-[13px] text-emerald-600 font-bold flex items-center gap-1"><i class="fa-solid fa-circle-check"></i> Đang mở</span>
+            </div>
+            <a href="khoa-hoc-chi-tiet.html?id=kh-01&title=Kỹ%20năng%20công%20bố%20quốc%20tế%20&%20Bảo%20hộ%20bằng%20sáng%20chế&audience=Nhà%20khoa%20học,%20NCG" 
+               class="w-full py-2 px-3 rounded-xl bg-slate-900 hover:bg-red-800 text-white font-bold text-xs flex items-center justify-center gap-1.5 transition shadow-sm">
+              <i class="fa-solid fa-play text-[12px]"></i>
+              <span>Vào học & Xem học liệu</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Khóa 10 (Khoa học): Định giá tài sản trí tuệ & Spin-off -->
+        <div class="course-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-audience="khoahoc">
+          <div>
+            <div class="aspect-[16/10] relative overflow-hidden bg-slate-900">
+              <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=600&q=80" 
+                   alt="Thương mại hóa nghiên cứu" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+              <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-blue-900/90 backdrop-blur-sm text-white text-[12px] font-bold">
+                Nhà khoa học, NCG
+              </span>
+              <span class="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-black/70 text-white text-[12px] font-medium flex items-center gap-1">
+                <i class="fa-regular fa-clock"></i> 26 Giờ
+              </span>
+            </div>
+            
+            <div class="p-4 space-y-2">
+              <div class="flex items-center gap-2 text-[13px] text-slate-500 font-medium">
+                <span class="text-rose-700 font-bold flex items-center gap-1"><i class="fa-solid fa-layer-group"></i> 8 Chuyên đề</span>
+              </div>
+              <h4 class="font-extrabold text-sm text-slate-900 group-hover:text-red-700 transition line-clamp-2 leading-snug">
+                Định giá tài sản trí tuệ và Cơ chế liên kết Viện - Trường - Doanh nghiệp
+              </h4>
+              <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed">
+                Khung định giá công nghệ, phương thức phân chia lợi nhuận và thủ tục thành lập doanh nghiệp spin-off từ các phòng thí nghiệm trọng điểm.
+              </p>
+            </div>
+          </div>
+
+          <div class="p-4 pt-0 border-t border-slate-100 flex flex-col gap-2 mt-2">
+            <div class="flex items-center justify-between text-xs pt-2">
+              <span class="text-[13px] font-bold text-slate-600 bg-slate-100 px-2 py-0.5 rounded-md">Khu Công nghệ cao Quốc gia</span>
+              <span class="text-[13px] text-emerald-600 font-bold flex items-center gap-1"><i class="fa-solid fa-circle-check"></i> Đang mở</span>
+            </div>
+            <a href="khoa-hoc-chi-tiet.html?id=kh-02&title=Định%20giá%20tài%20sản%20trí%20tuệ%20và%20Cơ%20chế%20Spin-off&audience=Nhà%20khoa%20học,%20NCG" 
+               class="w-full py-2 px-3 rounded-xl bg-slate-900 hover:bg-red-800 text-white font-bold text-xs flex items-center justify-center gap-1.5 transition shadow-sm">
+              <i class="fa-solid fa-play text-[12px]"></i>
+              <span>Vào học & Xem học liệu</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Khóa 11 (Cộng đồng): Bình dân học vụ số -->
+        <div class="course-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-audience="congdong">
+          <div>
+            <div class="aspect-[16/10] relative overflow-hidden bg-slate-900">
+              <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=600&q=80" 
+                   alt="Bình dân học vụ số" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+              <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-emerald-900/90 backdrop-blur-sm text-white text-[12px] font-bold">
+                Cộng đồng xã hội
+              </span>
+              <span class="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-black/70 text-white text-[12px] font-medium flex items-center gap-1">
+                <i class="fa-regular fa-clock"></i> 15 Giờ
+              </span>
+            </div>
+            
+            <div class="p-4 space-y-2">
+              <div class="flex items-center gap-2 text-[13px] text-slate-500 font-medium">
+                <span class="text-rose-700 font-bold flex items-center gap-1"><i class="fa-solid fa-layer-group"></i> 6 Chuyên đề</span>
+              </div>
+              <h4 class="font-extrabold text-sm text-slate-900 group-hover:text-red-700 transition line-clamp-2 leading-snug">
+                Bình dân học vụ số và Văn hóa sáng tạo ứng dụng cộng đồng
+              </h4>
+              <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed">
+                Bài học video ngắn, dễ hiểu, hướng dẫn nhận diện tin giả, an toàn không gian mạng và ứng dụng công nghệ tiện ích cho đời sống.
+              </p>
+            </div>
+          </div>
+
+          <div class="p-4 pt-0 border-t border-slate-100 flex flex-col gap-2 mt-2">
+            <div class="flex items-center justify-between text-xs pt-2">
+              <span class="text-[13px] font-bold text-slate-600 bg-slate-100 px-2 py-0.5 rounded-md">Tổ Công nghệ số cộng đồng</span>
+              <span class="text-[13px] text-emerald-600 font-bold flex items-center gap-1"><i class="fa-solid fa-circle-check"></i> Đang mở</span>
+            </div>
+            <a href="khoa-hoc-chi-tiet.html?id=cd-01&title=Bình%20dân%20học%20vụ%20số%20và%20Văn%20hóa%20sáng%20tạo%20cộng%20đồng&audience=Cộng%20đồng%20xã%20hội" 
+               class="w-full py-2 px-3 rounded-xl bg-slate-900 hover:bg-red-800 text-white font-bold text-xs flex items-center justify-center gap-1.5 transition shadow-sm">
+              <i class="fa-solid fa-play text-[12px]"></i>
+              <span>Vào học & Xem học liệu</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Khóa 12 (Cộng đồng): Khai thác AI an toàn -->
+        <div class="course-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-audience="congdong">
+          <div>
+            <div class="aspect-[16/10] relative overflow-hidden bg-slate-900">
+              <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80" 
+                   alt="Khai thác AI an toàn" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+              <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-emerald-900/90 backdrop-blur-sm text-white text-[12px] font-bold">
+                Cộng đồng xã hội
+              </span>
+              <span class="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-black/70 text-white text-[12px] font-medium flex items-center gap-1">
+                <i class="fa-regular fa-clock"></i> 12 Giờ
+              </span>
+            </div>
+            
+            <div class="p-4 space-y-2">
+              <div class="flex items-center gap-2 text-[13px] text-slate-500 font-medium">
+                <span class="text-rose-700 font-bold flex items-center gap-1"><i class="fa-solid fa-layer-group"></i> 5 Chuyên đề</span>
+              </div>
+              <h4 class="font-extrabold text-sm text-slate-900 group-hover:text-red-700 transition line-clamp-2 leading-snug">
+                Kỹ năng khai thác Trí tuệ nhân tạo (AI) an toàn trong đời sống hằng ngày
+              </h4>
+              <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed">
+                Hướng dẫn công dân cách dùng các nền tảng AI phổ biến để viết văn bản, tra cứu chính sách, học tập và phòng chống lừa đảo deepfake.
+              </p>
+            </div>
+          </div>
+
+          <div class="p-4 pt-0 border-t border-slate-100 flex flex-col gap-2 mt-2">
+            <div class="flex items-center justify-between text-xs pt-2">
+              <span class="text-[13px] font-bold text-slate-600 bg-slate-100 px-2 py-0.5 rounded-md">Trung tâm Thông tin KH&CN</span>
+              <span class="text-[13px] text-emerald-600 font-bold flex items-center gap-1"><i class="fa-solid fa-circle-check"></i> Đang mở</span>
+            </div>
+            <a href="khoa-hoc-chi-tiet.html?id=cd-02&title=Kỹ%20năng%20khai%20thác%20AI%20an%20toàn%20trong%20đời%20sống&audience=Cộng%20đồng%20xã%20hội" 
+               class="w-full py-2 px-3 rounded-xl bg-slate-900 hover:bg-red-800 text-white font-bold text-xs flex items-center justify-center gap-1.5 transition shadow-sm">
+              <i class="fa-solid fa-play text-[12px]"></i>
+              <span>Vào học & Xem học liệu</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Thông báo khi lọc không có kết quả (nếu có) -->
+      <div id="noCoursesMessage" class="hidden text-center py-12 bg-white rounded-2xl border border-dashed border-slate-300">
+        <i class="fa-solid fa-graduation-cap text-4xl text-slate-300 mb-3 block"></i>
+        <p class="text-sm font-bold text-slate-700">Chưa có khóa học nào cho bộ lọc này.</p>
+        <button onclick="selectAudience('all')" class="mt-3 px-4 py-2 bg-red-700 text-white rounded-xl text-xs font-bold hover:bg-red-800 transition">
+          Xem lại tất cả 12 khóa học
+        </button>
+      </div>
+
+      <!-- Bottom Button CTA -->
+      <div class="text-center pt-3 flex flex-wrap items-center justify-center gap-3">
+        <button onclick="selectAudience('all')" 
+          class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-slate-900 hover:bg-red-800 text-white font-bold text-xs transition shadow-sm">
+          <span>Xem lại tất cả 12 khóa học bồi dưỡng</span>
+          <i class="fa-solid fa-rotate-right text-[13px]"></i>
+        </button>
+      </div>
+    </section>
+
+    <!-- 4. LỘ TRÌNH PHÁT TRIỂN NĂNG LỰC SÁNG TẠO QUỐC GIA -->
+    <section class="space-y-6">
+      <div class="text-center max-w-3xl mx-auto space-y-1">
+        <span class="text-[13px] font-black uppercase tracking-wider text-rose-700 inline-flex items-center gap-1.5">
+          <i class="fa-solid fa-sliders"></i> CHUẨN HÓA NĂNG LỰC TOÀN DIỆN
+        </span>
+        <h2 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
+          Lộ trình Phát triển Năng lực Sáng tạo Quốc gia
+        </h2>
+        <p class="text-xs text-slate-600 leading-relaxed">
+          Khung 4 giai đoạn chuẩn mực giúp chuyển hóa đam mê ban đầu thành những giải pháp khoa học công nghệ cụ thể có giá trị phụng sự đất nước.
+        </p>
+      </div>
+
+      <!-- 4 Khung giai đoạn -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        
+        <!-- Giai đoạn 1 -->
+        <div class="bg-white rounded-2xl border border-slate-200 p-6 shadow-sm hover:shadow-md transition flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="w-10 h-10 rounded-xl bg-slate-900 text-white font-black flex items-center justify-center text-sm shadow">
+                01
+              </span>
+              <span class="px-2.5 py-0.5 rounded-full bg-blue-100 text-blue-800 text-[12px] font-bold">
+                Giai đoạn 1
+              </span>
+            </div>
+            <h3 class="font-black text-base text-slate-900">Nhận thức & Khơi mở đam mê</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Phá vỡ rào cản tâm lý ngại đổi mới; trang bị góc nhìn hiện đại về khoa học công nghệ, khơi gợi lòng tự hào trí tuệ Việt Nam.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-100 text-[13px] font-semibold text-emerald-700 flex items-center gap-1.5">
+            <i class="fa-solid fa-circle-check"></i>
+            <span>Đạt chuẩn kiểm tra tư duy nhập môn</span>
+          </div>
+        </div>
+
+        <!-- Giai đoạn 2 -->
+        <div class="bg-white rounded-2xl border border-slate-200 p-6 shadow-sm hover:shadow-md transition flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="w-10 h-10 rounded-xl bg-red-700 text-white font-black flex items-center justify-center text-sm shadow">
+                02
+              </span>
+              <span class="px-2.5 py-0.5 rounded-full bg-rose-100 text-rose-800 text-[12px] font-bold">
+                Giai đoạn 2
+              </span>
+            </div>
+            <h3 class="font-black text-base text-slate-900">Phương pháp luận & Kỹ năng số</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Làm chủ công cụ số, AI hỗ trợ nghiên cứu, tư duy thiết kế (Design Thinking), quy chuẩn an toàn dữ liệu và kỹ năng sở hữu trí tuệ.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-100 text-[13px] font-semibold text-emerald-700 flex items-center gap-1.5">
+            <i class="fa-solid fa-circle-check"></i>
+            <span>Đồ án phương pháp nghiên cứu</span>
+          </div>
+        </div>
+
+        <!-- Giai đoạn 3 -->
+        <div class="bg-white rounded-2xl border border-slate-200 p-6 shadow-sm hover:shadow-md transition flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="w-10 h-10 rounded-xl bg-amber-700 text-white font-black flex items-center justify-center text-sm shadow">
+                03
+              </span>
+              <span class="px-2.5 py-0.5 rounded-full bg-amber-100 text-amber-800 text-[12px] font-bold">
+                Giai đoạn 3
+              </span>
+            </div>
+            <h3 class="font-black text-base text-slate-900">Thực hành dự án & Thử nghiệm</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Thử nghiệm trong môi trường Sandbox, chế tạo nguyên mẫu (MVP), phản biện cùng chuyên gia cố vấn và tiếp cận mạng lưới vườn ươm.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-100 text-[13px] font-semibold text-emerald-700 flex items-center gap-1.5">
+            <i class="fa-solid fa-circle-check"></i>
+            <span>Bảo vệ giải pháp thực chiến</span>
+          </div>
+        </div>
+
+        <!-- Giai đoạn 4 -->
+        <div class="bg-white rounded-2xl border border-slate-200 p-6 shadow-sm hover:shadow-md transition flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="w-10 h-10 rounded-xl bg-blue-900 text-white font-black flex items-center justify-center text-sm shadow">
+                04
+              </span>
+              <span class="px-2.5 py-0.5 rounded-full bg-blue-100 text-blue-800 text-[12px] font-bold">
+                Giai đoạn 4
+              </span>
+            </div>
+            <h3 class="font-black text-base text-slate-900">Lan tỏa & Đóng góp cộng đồng</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Hoàn thành lộ trình năng lực quốc gia, gia nhập mạng lưới đại sứ đổi mới sáng tạo, gia nhập mạng lưới đại sứ đổi mới sáng tạo thúc đẩy kinh tế - xã hội địa phương.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-100 text-[13px] font-bold text-amber-600 flex items-center gap-1.5">
+            <i class="fa-solid fa-award"></i>
+            <span>Công nhận Năng lực Sáng tạo Quốc gia</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. GÓC TRUYỀN CẢM HỨNG & CÂU CHUYỆN SÁNG TẠO -->
+    <section class="space-y-6 bg-slate-50/80 -mx-4 sm:-mx-8 px-4 sm:px-8 py-10 rounded-3xl border border-slate-200/80">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+        <div>
+          <span class="text-[13px] font-black uppercase tracking-wider text-rose-700 block">
+            GƯƠNG MẶT TRUYỀN CẢM HỨNG MAKE IN VIETNAM
+          </span>
+          <h2 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight mt-0.5">
+            Góc Truyền cảm hứng & Câu chuyện Sáng tạo
+          </h2>
+        </div>
+
+        <!-- Bộ lọc chuyên mục -->
+        <div class="flex items-center gap-1.5 text-xs">
+          <span class="text-slate-400 text-[13px] mr-1">Lọc chuyên mục:</span>
+          <button class="px-3 py-1 rounded-full bg-slate-900 text-white font-bold text-[13px] shadow-sm">Tất cả</button>
+          <button class="px-3 py-1 rounded-full bg-white hover:bg-slate-100 text-slate-700 text-[13px] border border-slate-200">Video</button>
+          <button class="px-3 py-1 rounded-full bg-white hover:bg-slate-100 text-slate-700 text-[13px] border border-slate-200">Podcast</button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+        
+        <!-- Cột trái: Phóng vấn đặc biệt lớn (Col 7) -->
+        <div class="lg:col-span-7 bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition">
+          <div class="aspect-video relative overflow-hidden bg-slate-900 group">
+            <img src="https://images.unsplash.com/photo-1581093588401-fbb62a02f120?auto=format&fit=crop&w=800&q=80" 
+                 alt="Phỏng vấn TS. Lê Thị Quỳnh Mai" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+            
+            <span class="absolute top-3 left-3 px-3 py-0.5 rounded-full bg-red-700 text-white text-[12px] font-extrabold uppercase">
+              PHÓNG VẤN ĐẶC BIỆT
+            </span>
+
+            <!-- Play trigger center -->
+            <button onclick="alert('Đang phát phóng sự: Ước mơ đưa trí tuệ bán dẫn Việt Nam vào chuỗi giá trị toàn cầu');" 
+              class="absolute inset-0 m-auto w-14 h-14 rounded-full bg-red-600/90 hover:bg-red-600 text-white flex items-center justify-center text-xl shadow-2xl transition hover:scale-110">
+              <i class="fa-solid fa-play ml-1"></i>
+            </button>
+
+            <span class="absolute bottom-3 right-3 px-2 py-0.5 rounded bg-black/70 text-white text-[12px] font-medium flex items-center gap-1">
+              <i class="fa-regular fa-clock"></i> 22:45
+            </span>
+          </div>
+
+          <div class="p-5 space-y-2">
+            <p class="text-[13px] text-slate-500 font-medium">
+              <strong class="text-slate-900">TS. Lê Thị Quỳnh Mai</strong> • Viện Công nghệ Vi mạch Quốc gia • 24/08/2026
+            </p>
+            <h3 class="text-base sm:text-lg font-black text-slate-900 leading-snug hover:text-red-700 transition cursor-pointer">
+              "Ước mơ đưa trí tuệ bán dẫn Việt Nam vào chuỗi giá trị toàn cầu"
+            </h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Hành trình 8 năm kiên trì từ phòng thí nghiệm trong nước đến làm chủ công nghệ thiết kế chip chuyên dụng phục vụ chuyển đổi xanh và an ninh quốc gia.
+            </p>
+          </div>
+        </div>
+
+        <!-- Cột phải: 2 câu chuyện nhỏ + Banner gửi bài (Col 5) -->
+        <div class="lg:col-span-5 space-y-4">
+          
+          <!-- Story 1: Podcast tập 12 -->
+          <div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-sm hover:shadow-md transition space-y-2">
+            <div class="flex items-center justify-between text-[13px]">
+              <span class="font-bold text-blue-700 flex items-center gap-1">
+                <i class="fa-solid fa-podcast"></i> PODCAST TẬP 12
+              </span>
+              <span class="text-slate-400 font-mono">18:30</span>
+            </div>
+            <h4 class="font-extrabold text-xs sm:text-sm text-slate-900 hover:text-red-700 transition leading-snug cursor-pointer">
+              Nông dân thời 4.0: Sáng chế hệ thống tưới tự động dựa trên cảm biến thời tiết nội địa
+            </h4>
+            <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed">
+              Chia sẻ từ bác Nguyễn Văn Hùng (Hợp tác xã Công nghệ cao Đồng Tháp) về tinh thần sáng tạo không phân biệt tuổi tác hay bằng cấp.
+            </p>
+            <div class="pt-2 border-t border-slate-100 flex items-center justify-between text-xs">
+              <button onclick="alert('Đang phát Podcast: Nông dân thời 4.0 sáng chế hệ thống tưới');" 
+                class="font-bold text-slate-900 hover:text-red-700 flex items-center gap-1.5 transition">
+                <span class="w-5 h-5 rounded-full bg-slate-900 text-white flex items-center justify-center text-[11px]"><i class="fa-solid fa-play ml-0.5"></i></span>
+                <span>Nghe podcast</span>
+              </button>
+              <button class="text-slate-400 hover:text-slate-600" title="Lưu lại"><i class="fa-regular fa-bookmark"></i></button>
+            </div>
+          </div>
+
+          <!-- Story 2: Khởi nghiệp trẻ -->
+          <div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-sm hover:shadow-md transition space-y-2">
+            <div class="flex items-center justify-between text-[13px]">
+              <span class="font-bold text-amber-700 flex items-center gap-1">
+                <i class="fa-regular fa-lightbulb"></i> KHỞI NGHIỆP TRẺ
+              </span>
+              <span class="text-slate-400 font-mono">14:10</span>
+            </div>
+            <h4 class="font-extrabold text-xs sm:text-sm text-slate-900 hover:text-red-700 transition leading-snug cursor-pointer">
+              Thương mại hóa vật liệu sinh học từ bã cà phê xuất khẩu sang 14 quốc gia
+            </h4>
+            <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed">
+              Bảo hộ bằng sáng chế tại Cục Sở hữu trí tuệ đã trở thành bệ phóng bảo vệ startup Việt khi bước ra biển lớn thế giới.
+            </p>
+            <div class="pt-2 border-t border-slate-100 flex items-center justify-between text-xs">
+              <button onclick="alert('Đang phát phóng sự: Vật liệu sinh học từ bã cà phê');" 
+                class="font-bold text-red-700 hover:text-red-900 flex items-center gap-1.5 transition">
+                <span class="w-5 h-5 rounded-full bg-red-100 text-red-700 flex items-center justify-center text-[11px]"><i class="fa-solid fa-play ml-0.5"></i></span>
+                <span>Xem phóng sự</span>
+              </button>
+              <button class="text-slate-400 hover:text-slate-600" title="Chia sẻ"><i class="fa-solid fa-share-nodes"></i></button>
+            </div>
+          </div>
+
+          <!-- CTA Gửi câu chuyện Make in Vietnam -->
+          <div class="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-4 border border-blue-200/80 flex items-center justify-between gap-3 shadow-sm">
+            <div class="flex items-center gap-3">
+              <div class="w-9 h-9 rounded-xl bg-blue-600 text-white flex items-center justify-center text-sm shrink-0 shadow">
+                <i class="fa-solid fa-bullhorn"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-slate-900 leading-tight">Bạn có sáng kiến Make in Vietnam?</p>
+                <p class="text-[13px] text-slate-500">Gửi câu chuyện để cùng lan tỏa</p>
+              </div>
+            </div>
+            <button onclick="alert('Mở form gửi bài viết / sáng kiến đổi mới sáng tạo đến Ban biên tập Cổng thông tin...');" 
+              class="px-4 py-1.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs transition shrink-0 shadow-sm">
+              Gửi bài
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER (CHUẨN CHUNG ĐỒNG BỘ 100%) -->
+  <footer class="bg-[#0b1e36] text-white mt-12 border-t border-slate-800 text-[14.5px]" style="font-family: 'Inter', sans-serif;">
+    <div class="max-w-[90rem] mx-auto px-4 sm:px-8 py-10">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <!-- Col 1 -->
+        <div class="md:col-span-2 space-y-3.5 min-w-0">
+          <div class="flex items-start sm:items-center gap-3.5 min-w-0">
+            <div class="w-12 h-12 rounded-full flex items-center justify-center p-0.5 filter drop-shadow-lg shrink-0">
+              <img src="quoc-huy.png" alt="Quốc huy Việt Nam" class="w-11 h-11 object-contain drop-shadow">
+            </div>
+            <div class="min-w-0 flex-1">
+              <h5 class="font-extrabold text-[14.5px] sm:text-[15.5px] lg:text-[16.5px] xl:text-[17.5px] tracking-wide uppercase text-amber-400 leading-snug sm:leading-relaxed">NỀN TẢNG TRUYỀN THÔNG SỐ QUỐC GIA VỀ KHOA HỌC, CÔNG NGHỆ, ĐỔI MỚI SÁNG TẠO VÀ CHUYỂN ĐỔI SỐ</h5>
+              <p class="text-[13px] xl:text-[14.5px] text-slate-300 mt-1">Cơ quan chủ quản: Bộ Khoa học và Công nghệ (MST)</p>
+            </div>
+          </div>
+          <div class="text-[13px] xl:text-[14px] text-slate-300 space-y-1.5 pt-1">
+            <p><i class="fa-solid fa-location-dot w-4 mr-1 text-red-400"></i> Địa chỉ: Đang cập nhật</p>
+            <p><i class="fa-solid fa-phone w-4 mr-1 text-emerald-400"></i> Điện thoại: Đang cập nhật • Email: Đang cập nhật</p>
+          </div>
+        </div>
+
+        <!-- Col 2: Liên kết -->
+        <div class="min-w-0">
+          <h5 class="font-bold text-[13px] xl:text-[14.5px] uppercase tracking-wider text-amber-400 mb-3.5 pb-1.5 border-b border-slate-700">Liên kết nhanh</h5>
+          <ul class="space-y-2.5 text-[13px] xl:text-[14px] text-slate-300">
+            <li><a href="chinh-sach-tra-cuu.html" class="hover:text-amber-300 transition">Văn bản chỉ đạo điều hành</a></li>
+            <li><a href="san-pham-cong-nghe.html" class="hover:text-amber-300 transition">10 Nhóm sản phẩm số trọng điểm</a></li>
+            <li><a href="su-kien.html" class="hover:text-amber-300 transition">Lịch trình sự kiện & hội thảo</a></li>
+            <li><a href="hoi-dap.html" class="hover:text-amber-300 transition">Hỏi đáp & hỗ trợ trực tuyến</a></li>
+            <li><a href="chuyen-muc-kinh-te-so.html" class="hover:text-amber-300 transition">Báo cáo dữ liệu & Chỉ số PII</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Đa phương tiện -->
+        <div class="min-w-0">
+          <h5 class="font-bold text-[13px] xl:text-[14.5px] uppercase tracking-wider text-amber-400 mb-3.5 pb-1.5 border-b border-slate-700">Đa phương tiện</h5>
+          <ul class="space-y-2.5 text-[13px] xl:text-[14px] text-slate-300">
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Video phóng sự thời sự</a></li>
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Kho tư liệu ảnh sự kiện</a></li>
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Đồ họa Infographic số hóa</a></li>
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Podcast & Bản tin phát thanh</a></li>
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Sách điện tử & Báo cáo tổng kết</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-8 pt-4 border-t border-slate-800 flex flex-col lg:flex-row items-center justify-between text-[12.5px] xl:text-[13.5px] text-slate-400 gap-3">
+        <p class="text-center lg:text-left">© 2026 Bản quyền thuộc Bộ Khoa học và Công nghệ. Ghi rõ nguồn khi phát hành lại thông tin.</p>
+        <div class="flex flex-wrap items-center justify-center gap-4 shrink-0">
+          <a href="#" class="hover:text-white transition">Điều khoản sử dụng</a>
+          <a href="#" class="hover:text-white transition">Chính sách bảo mật</a>
+          <a href="hoi-dap.html" class="hover:text-white transition">Sơ đồ cổng</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive Audience & Course Filtering Script -->
+  <script>
+    const audienceNames = {
+      'all': 'Tất cả đối tượng',
+      'hssv': 'Thế hệ trẻ, HSSV',
+      'canbo': 'Cán bộ, Công chức',
+      'doanhnghiep': 'Doanh nghiệp, Startup',
+      'khoahoc': 'Nhà khoa học, NCG',
+      'congdong': 'Cộng đồng xã hội'
+    };
+
+    function selectAudience(audKey, shouldScroll = true) {
+      // 1. Update audience cards style
+      const cards = {
+        'hssv': document.getElementById('card-aud-hssv'),
+        'canbo': document.getElementById('card-aud-canbo'),
+        'doanhnghiep': document.getElementById('card-aud-doanhnghiep'),
+        'khoahoc': document.getElementById('card-aud-khoahoc'),
+        'congdong': document.getElementById('card-aud-congdong')
+      };
+
+      Object.keys(cards).forEach(key => {
+        const card = cards[key];
+        if (!card) return;
+        const icon = card.querySelector('.aud-icon');
+        
+        if (audKey === key) {
+          card.className = "aud-card bg-red-50/40 rounded-2xl border-2 border-red-700 p-5 shadow-lg transition-all duration-300 flex flex-col justify-between group cursor-pointer ring-4 ring-red-700/15 -translate-y-1";
+          if (icon) {
+            icon.className = "aud-icon w-12 h-12 rounded-xl bg-red-700 text-white flex items-center justify-center text-lg mb-4 shadow transition";
+          }
+        } else {
+          card.className = "aud-card bg-white rounded-2xl border border-slate-200 p-5 shadow-sm hover:shadow-lg hover:border-slate-300 transition-all duration-300 flex flex-col justify-between group cursor-pointer";
+          if (icon) {
+            if (key === 'hssv') icon.className = "aud-icon w-12 h-12 rounded-xl bg-slate-900 text-white flex items-center justify-center text-lg mb-4 shadow transition";
+            if (key === 'canbo') icon.className = "aud-icon w-12 h-12 rounded-xl bg-rose-50 text-rose-700 flex items-center justify-center text-lg mb-4 transition";
+            if (key === 'doanhnghiep') icon.className = "aud-icon w-12 h-12 rounded-xl bg-amber-50 text-amber-700 flex items-center justify-center text-lg mb-4 transition";
+            if (key === 'khoahoc') icon.className = "aud-icon w-12 h-12 rounded-xl bg-blue-50 text-blue-700 flex items-center justify-center text-lg mb-4 transition";
+            if (key === 'congdong') icon.className = "aud-icon w-12 h-12 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center text-lg mb-4 transition";
+          }
+        }
+      });
+
+      // 2. Update pills
+      const pills = document.querySelectorAll('.aud-pill');
+      pills.forEach(pill => {
+        pill.className = "aud-pill px-3 py-1.5 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold transition";
+      });
+      const activePill = document.getElementById(`btn-pill-${audKey}`);
+      if (activePill) {
+        activePill.className = "aud-pill px-3 py-1.5 rounded-full bg-slate-900 text-white font-bold transition shadow-sm";
+      }
+
+      // 3. Filter course cards
+      const courseCards = document.querySelectorAll('.course-card');
+      let visibleCount = 0;
+      courseCards.forEach(card => {
+        const cardAud = card.getAttribute('data-audience');
+        if (audKey === 'all' || cardAud === audKey) {
+          card.classList.remove('hidden');
+          visibleCount++;
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+
+      // 4. Update badge & message
+      const badgeText = document.getElementById('activeFilterText');
+      if (badgeText) {
+        badgeText.textContent = `${audienceNames[audKey] || 'Tất cả'} (${visibleCount} khóa)`;
+      }
+
+      const noMsg = document.getElementById('noCoursesMessage');
+      if (noMsg) {
+        if (visibleCount === 0) {
+          noMsg.classList.remove('hidden');
+        } else {
+          noMsg.classList.add('hidden');
+        }
+      }
+
+      // 5. Smooth scroll if requested
+      if (shouldScroll && audKey !== 'all') {
+        const coursesSec = document.getElementById('courses-section');
+        if (coursesSec) {
+          coursesSec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }
+    }
+  </script>
+
+  <!-- PROTOTYPE HUD NAVIGATION -->
+  <script src="prototype-nav.js"></script>
+</body>
+</html>

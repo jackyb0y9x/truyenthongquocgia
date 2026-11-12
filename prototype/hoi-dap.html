@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hỏi đáp & Hỗ trợ | Nền tảng Truyền thông Quốc Gia</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontSize: {
+            xs: ['0.90625rem', { lineHeight: '1.35rem' }],
+            sm: ['1rem', { lineHeight: '1.45rem' }],
+            base: ['1.125rem', { lineHeight: '1.65rem' }],
+            lg: ['1.25rem', { lineHeight: '1.8rem' }],
+            xl: ['1.375rem', { lineHeight: '1.9rem' }],
+            '2xl': ['1.625rem', { lineHeight: '2.1rem' }],
+            '3xl': ['2rem', { lineHeight: '2.45rem' }]
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <style> body { font-family: 'Inter', sans-serif; } 
+    .max-w-7xl {
+      max-width: 90rem !important;
+    }
+    header h1 {
+      font-family: 'Inter', sans-serif !important;
+      font-weight: 800 !important;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col">
+
+  <!-- TOP UTILITY BAR -->
+  <div class="bg-[#0b1c33] text-slate-200 text-[13px] py-1.5 px-4 sm:px-8 border-b border-slate-700/60">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-2">
+      <div class="flex items-center gap-3">
+        <span class="text-slate-300"><i class="fa-regular fa-calendar-check mr-1.5 text-amber-400"></i>Thứ Năm, 27/08/2026</span>
+      </div>
+      <div class="flex items-center gap-4 text-[13px]">
+        <div class="flex items-center gap-1.5 font-bold">
+          <span class="text-amber-400">VI</span>
+          <span class="text-slate-500">/</span>
+          <span class="text-slate-400 hover:text-white cursor-pointer">EN</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="bg-white border-b border-slate-200 shadow-sm sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 py-3.5 flex flex-col md:flex-row items-center justify-between gap-4">
+      <a href="index.html" class="flex items-center gap-3.5 group">
+        <img src="quoc-huy.png" alt="Quốc huy Việt Nam" class="w-12 h-12 object-contain drop-shadow">
+        <div>
+          <h1 class="text-[14.5px] sm:text-[16px] md:text-[18px] lg:text-[18px] xl:text-[20px] font-extrabold tracking-normal uppercase text-red-800 leading-normal">
+            <span class="block whitespace-nowrap">NỀN TẢNG TRUYỀN THÔNG SỐ QUỐC GIA VỀ KHOA HỌC, CÔNG NGHỆ,</span>
+            <span class="block mt-1 whitespace-nowrap">ĐỔI MỚI SÁNG TẠO VÀ CHUYỂN ĐỔI SỐ</span>
+          </h1>
+        </div>
+      </a>
+
+      <div class="w-full md:w-80 lg:w-96 relative shrink-0">
+        <input type="text" placeholder="Tìm kiếm câu hỏi, hướng dẫn..." 
+          class="w-full pl-10 pr-4 py-2 bg-slate-100 focus:bg-white text-[13px] rounded-full border border-slate-300 focus:outline-none focus:ring-2 focus:ring-red-700/30">
+        <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-[13px]"></i>
+      </div>
+    </div>
+
+    <!-- NAVIGATION -->
+        <!-- NAVIGATION -->
+        <!-- NAVIGATION -->
+    <nav class="bg-white border-t border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-8 flex items-center justify-start overflow-visible gap-1.5 text-[14.5px] sm:text-[15px] font-semibold">
+        <a href="index.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Trang chủ
+      </a>
+        
+        <!-- CHÍNH SÁCH VỚI SUBMENU CHỈ ĐẠO ĐIỀU HÀNH & GIẢI THÍCH CHÍNH SÁCH -->
+        <div class="relative group">
+          <a href="chinh-sach.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap flex items-center gap-1 cursor-pointer">
+        <span>Chính sách</span>
+        <i class="fa-solid fa-chevron-down text-[9px] text-slate-400 group-hover:text-red-800 group-hover:rotate-180 transition-transform"></i>
+      </a>
+          <!-- Submenu dropdown -->
+          <div class="hidden group-hover:block absolute left-0 top-full bg-white rounded-xl shadow-2xl border border-slate-200 py-1.5 min-w-[260px] z-50 text-slate-800 font-normal">
+            <a href="chinh-sach.html" class="flex items-center gap-2.5 px-4 py-2.5 hover:bg-slate-50 text-slate-700 hover:text-red-800 text-[14.5px] transition font-semibold">
+              <i class="fa-solid fa-landmark text-slate-400 text-[14.5px]"></i>
+              <span>Chính sách & Thể chế</span>
+            </a>
+            <a href="chinh-sach-tra-cuu.html" class="flex items-center gap-2.5 px-4 py-2.5 hover:bg-slate-50 text-slate-700 hover:text-red-800 text-[14.5px] transition font-semibold">
+              <i class="fa-solid fa-file-signature text-red-700 text-[14.5px]"></i>
+              <span>Chỉ đạo điều hành</span>
+            </a>
+            <a href="giai-thich-chinh-sach.html" class="flex items-center gap-2.5 px-4 py-2.5 hover:bg-slate-50 text-slate-700 hover:text-red-800 font-semibold text-[14.5px] transition">
+              <i class="fa-solid fa-chalkboard-user text-amber-600 text-[14.5px]"></i>
+              <span>Giải thích chính sách</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="san-pham-cong-nghe.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Sản phẩm KH&CN
+      </a>
+        <a href="bao-cao-danh-gia-truyen-thong.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Báo cáo thường niên
+      </a>
+        <a href="tai-lieu-video.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Kho tư liệu
+      </a>
+        
+        <a href="su-kien.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">Sự kiện</a>
+
+        
+        <a href="hoi-dap.html" class="px-5 py-2.5 bg-[#82181a] text-white rounded-t-sm whitespace-nowrap shadow-inner flex items-center gap-1.5 font-bold">
+        <i class="fa-solid fa-comments text-[11px]"></i> <span>Hỏi đáp</span>
+      </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN BODY -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-8 py-8 w-full flex-1 space-y-10">
+
+    <!-- TITLE -->
+    <div class="space-y-2">
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+        Hỏi đáp & Hỗ trợ
+      </h2>
+      <p class="text-xs text-slate-600 max-w-4xl leading-relaxed">
+        Chào mừng bạn đến với Cổng thông tin hỗ trợ trực tuyến. Tại đây, chúng tôi tiếp nhận và giải đáp các thắc mắc của người dân, doanh nghiệp về các chính sách, dịch vụ và sản phẩm khoa học công nghệ quốc gia. Vui lòng tham khảo các câu hỏi thường gặp hoặc gửi câu hỏi mới cho chúng tôi.
+      </p>
+    </div>
+
+    <!-- 3 COLUMNS / PANELS LAYOUT -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      
+      <!-- 1. GỬI CÂU HỎI MỚI (COL 5) -->
+      <div class="lg:col-span-5 bg-white rounded-2xl p-6 sm:p-7 border border-slate-200 shadow-sm space-y-4">
+        <div class="flex items-center gap-2 pb-3 border-b border-slate-100">
+          <i class="fa-regular fa-pen-to-square text-red-700 text-base"></i>
+          <h3 class="font-bold text-sm text-slate-900">Gửi câu hỏi mới</h3>
+        </div>
+
+        <form id="askForm" onsubmit="event.preventDefault(); alert('Câu hỏi của bạn đã được gửi thành công tới Ban Biên tập! Mã tiếp nhận: Q2026-8942'); this.reset();" class="space-y-4 text-xs">
+          <div>
+            <label class="block font-semibold text-slate-700 mb-1">Họ và tên <span class="text-red-600">*</span></label>
+            <input type="text" required placeholder="Nhập họ và tên của bạn" 
+              class="w-full px-3 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-red-600/30 focus:border-red-600 bg-slate-50 focus:bg-white">
+          </div>
+
+          <div>
+            <label class="block font-semibold text-slate-700 mb-1">Email <span class="text-red-600">*</span></label>
+            <input type="email" required placeholder="example@email.com" 
+              class="w-full px-3 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-red-600/30 focus:border-red-600 bg-slate-50 focus:bg-white">
+          </div>
+
+          <div>
+            <label class="block font-semibold text-slate-700 mb-1">Chủ đề <span class="text-red-600">*</span></label>
+            <select required class="w-full px-3 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-red-600/30 focus:border-red-600 bg-slate-50 focus:bg-white">
+              <option value="">Chọn chủ đề...</option>
+              <option value="shtt">Sở hữu trí tuệ & Bằng sáng chế</option>
+              <option value="cds">Chuyển đổi số & Dữ liệu mở</option>
+              <option value="quy-dmst">Quỹ Đổi mới sáng tạo & Hỗ trợ doanh nghiệp</option>
+              <option value="tieu-chuan">Tiêu chuẩn, Đo lường & Chất lượng sản phẩm</option>
+              <option value="khac">Khác</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block font-semibold text-slate-700 mb-1">Nội dung câu hỏi <span class="text-red-600">*</span></label>
+            <textarea rows="4" required placeholder="Trình bày chi tiết câu hỏi của bạn..." 
+              class="w-full px-3 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-red-600/30 focus:border-red-600 bg-slate-50 focus:bg-white"></textarea>
+          </div>
+
+          <button type="submit" class="w-full sm:w-auto px-6 py-2.5 bg-[#82181a] hover:bg-[#6c1416] text-white font-bold rounded-xl shadow transition flex items-center justify-center gap-2">
+            <span>GỬI CÂU HỎI</span>
+            <i class="fa-solid fa-play text-[12px]"></i>
+          </button>
+        </form>
+      </div>
+
+      <!-- 2. CÂU HỎI THƯỜNG GẶP (COL 4) -->
+      <div class="lg:col-span-4 bg-white rounded-2xl p-6 sm:p-7 border border-slate-200 shadow-sm space-y-4">
+        <div class="flex items-center gap-2 pb-3 border-b border-slate-100">
+          <i class="fa-regular fa-circle-question text-red-700 text-base"></i>
+          <h3 class="font-bold text-sm text-slate-900">Câu hỏi thường gặp</h3>
+        </div>
+
+        <div class="space-y-3 text-xs" id="faqAccordion">
+          
+          <!-- Accordion 1 -->
+          <div class="border border-slate-200 rounded-xl overflow-hidden">
+            <button onclick="toggleFaq(1)" class="w-full p-4 text-left font-bold text-slate-800 bg-slate-50 hover:bg-slate-100 flex items-center justify-between transition">
+              <span>Làm thế nào để đăng ký sở hữu trí tuệ?</span>
+              <i id="faq-icon-1" class="fa-solid fa-chevron-down text-slate-400 text-xs transition duration-200"></i>
+            </button>
+            <div id="faq-content-1" class="hidden p-4 bg-white text-slate-600 text-[13px] leading-relaxed border-t border-slate-100">
+              Bạn có thể nộp hồ sơ trực tuyến qua Cổng Dịch vụ công Quốc gia hoặc trực tiếp tại Cục Sở hữu trí tuệ (386 Nguyễn Trãi, Thanh Xuân, Hà Nội). Hồ sơ bao gồm: Tờ khai, bản mô tả sáng chế/nhãn hiệu, chứng từ nộp phí.
+            </div>
+          </div>
+
+          <!-- Accordion 2 -->
+          <div class="border border-slate-200 rounded-xl overflow-hidden">
+            <button onclick="toggleFaq(2)" class="w-full p-4 text-left font-bold text-slate-800 bg-slate-50 hover:bg-slate-100 flex items-center justify-between transition">
+              <span>Quy trình xin cấp phép nghiên cứu công nghệ mới?</span>
+              <i id="faq-icon-2" class="fa-solid fa-chevron-down text-slate-400 text-xs transition duration-200"></i>
+            </button>
+            <div id="faq-content-2" class="hidden p-4 bg-white text-slate-600 text-[13px] leading-relaxed border-t border-slate-100">
+              Quy trình thực hiện theo Thông tư hướng dẫn thử nghiệm có kiểm soát (Sandbox) của Bộ KH&CN. Tổ chức nộp đề án thuyết minh tính an toàn, đạo đức và tác động xã hội tại Cục Công nghệ cao.
+            </div>
+          </div>
+
+          <!-- Accordion 3 -->
+          <div class="border border-slate-200 rounded-xl overflow-hidden">
+            <button onclick="toggleFaq(3)" class="w-full p-4 text-left font-bold text-slate-800 bg-slate-50 hover:bg-slate-100 flex items-center justify-between transition">
+              <span>Tìm thông tin quỹ hỗ trợ khởi nghiệp ở đâu?</span>
+              <i id="faq-icon-3" class="fa-solid fa-chevron-down text-slate-400 text-xs transition duration-200"></i>
+            </button>
+            <div id="faq-content-3" class="hidden p-4 bg-white text-slate-600 text-[13px] leading-relaxed border-t border-slate-100">
+              Doanh nghiệp có thể truy cập Cổng Đổi mới sáng tạo Quốc gia (NIC/NATIF) hoặc chuyên mục Đổi mới sáng tạo trên nền tảng này để xem danh sách các gói tài trợ kinh phí 100% cho dự án công nghệ lõi.
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 3. LIÊN HỆ (COL 3) -->
+      <div class="lg:col-span-3 bg-slate-50 rounded-2xl p-6 border border-slate-200 shadow-sm space-y-4 text-xs">
+        <h3 class="font-bold text-sm text-slate-900 pb-2 border-b border-slate-200 flex items-center gap-2">
+          <i class="fa-solid fa-address-book text-red-600"></i> Liên hệ
+        </h3>
+
+        <!-- Hotline Hỗ Trợ -->
+        <div class="flex items-start gap-3">
+          <div class="w-9 h-9 rounded-full bg-red-100 text-red-700 flex items-center justify-center shrink-0">
+            <i class="fa-solid fa-headset text-xs"></i>
+          </div>
+          <div>
+            <span class="text-[12px] uppercase font-bold text-slate-500 block">HOTLINE HỖ TRỢ</span>
+            <span class="text-sm font-extrabold text-red-700">Đang cập nhật</span>
+          </div>
+        </div>
+
+        <!-- Điện thoại -->
+        <div class="flex items-start gap-3">
+          <div class="w-9 h-9 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0">
+            <i class="fa-solid fa-phone text-xs"></i>
+          </div>
+          <div>
+            <span class="text-[12px] uppercase font-bold text-slate-500 block">ĐIỆN THOẠI</span>
+            <span class="font-semibold text-slate-800">Đang cập nhật</span>
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div class="flex items-start gap-3">
+          <div class="w-9 h-9 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center shrink-0">
+            <i class="fa-regular fa-envelope text-xs"></i>
+          </div>
+          <div>
+            <span class="text-[12px] uppercase font-bold text-slate-500 block">EMAIL</span>
+            <span class="font-semibold text-slate-800">Đang cập nhật</span>
+          </div>
+        </div>
+
+        <!-- Địa chỉ -->
+        <div class="flex items-start gap-3">
+          <div class="w-9 h-9 rounded-full bg-slate-200 text-slate-700 flex items-center justify-center shrink-0">
+            <i class="fa-solid fa-location-dot text-xs"></i>
+          </div>
+          <div>
+            <span class="text-[12px] uppercase font-bold text-slate-500 block">ĐỊA CHỈ</span>
+            <p class="font-medium text-slate-800 leading-snug">Đang cập nhật</p>
+          </div>
+        </div>
+
+        <!-- Trụ sở tiếp dân -->
+        <div class="flex items-start gap-3 pt-3 border-t border-slate-200">
+          <div class="w-9 h-9 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center shrink-0">
+            <i class="fa-solid fa-landmark text-xs"></i>
+          </div>
+          <div>
+            <span class="text-[12px] uppercase font-bold text-slate-500 block">TRỤ SỞ TIẾP DÂN</span>
+            <p class="font-semibold text-slate-800 leading-snug text-red-700">Đang cập nhật</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#0b1e36] text-white mt-12 border-t border-slate-800 text-[14.5px]" style="font-family: 'Inter', sans-serif;">
+    <div class="max-w-[90rem] mx-auto px-4 sm:px-8 py-10">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <!-- Col 1 -->
+        <div class="md:col-span-2 space-y-3.5 min-w-0">
+          <div class="flex items-start sm:items-center gap-3.5 min-w-0">
+            <div class="w-12 h-12 rounded-full flex items-center justify-center p-0.5 filter drop-shadow-lg shrink-0">
+              <img src="quoc-huy.png" alt="Quốc huy Việt Nam" class="w-11 h-11 object-contain drop-shadow">
+            </div>
+            <div class="min-w-0 flex-1">
+              <h5 class="font-extrabold text-[14.5px] sm:text-[15.5px] lg:text-[16.5px] xl:text-[17.5px] tracking-wide uppercase text-amber-400 leading-snug sm:leading-relaxed">NỀN TẢNG TRUYỀN THÔNG SỐ QUỐC GIA VỀ KHOA HỌC, CÔNG NGHỆ, ĐỔI MỚI SÁNG TẠO VÀ CHUYỂN ĐỔI SỐ</h5>
+              <p class="text-[13px] xl:text-[14.5px] text-slate-300 mt-1">Cơ quan chủ quản: Bộ Khoa học và Công nghệ (MST)</p>
+            </div>
+          </div>
+          <div class="text-[13px] xl:text-[14px] text-slate-300 space-y-1.5 pt-1">
+            <p><i class="fa-solid fa-location-dot w-4 mr-1 text-red-400"></i> Địa chỉ: Đang cập nhật</p>
+            <p><i class="fa-solid fa-phone w-4 mr-1 text-emerald-400"></i> Điện thoại: Đang cập nhật • Email: Đang cập nhật</p>
+          </div>
+        </div>
+
+        <!-- Col 2: Liên kết -->
+        <div class="min-w-0">
+          <h5 class="font-bold text-[13px] xl:text-[14.5px] uppercase tracking-wider text-amber-400 mb-3.5 pb-1.5 border-b border-slate-700">Liên kết nhanh</h5>
+          <ul class="space-y-2.5 text-[13px] xl:text-[14px] text-slate-300">
+            <li><a href="chinh-sach-tra-cuu.html" class="hover:text-amber-300 transition">Văn bản chỉ đạo điều hành</a></li>
+            <li><a href="san-pham-cong-nghe.html" class="hover:text-amber-300 transition">10 Nhóm sản phẩm số trọng điểm</a></li>
+            <li><a href="su-kien.html" class="hover:text-amber-300 transition">Lịch trình sự kiện & hội thảo</a></li>
+            <li><a href="hoi-dap.html" class="hover:text-amber-300 transition">Hỏi đáp & hỗ trợ trực tuyến</a></li>
+            <li><a href="chuyen-muc-kinh-te-so.html" class="hover:text-amber-300 transition">Báo cáo dữ liệu & Chỉ số PII</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Đa phương tiện -->
+        <div class="min-w-0">
+          <h5 class="font-bold text-[13px] xl:text-[14.5px] uppercase tracking-wider text-amber-400 mb-3.5 pb-1.5 border-b border-slate-700">Đa phương tiện</h5>
+          <ul class="space-y-2.5 text-[13px] xl:text-[14px] text-slate-300">
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Video phóng sự thời sự</a></li>
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Kho tư liệu ảnh sự kiện</a></li>
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Đồ họa Infographic số hóa</a></li>
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Podcast & Bản tin phát thanh</a></li>
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Sách điện tử & Báo cáo tổng kết</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-8 pt-4 border-t border-slate-800 flex flex-col lg:flex-row items-center justify-between text-[12.5px] xl:text-[13.5px] text-slate-400 gap-3">
+        <p class="text-center lg:text-left">© 2026 Bản quyền thuộc Bộ Khoa học và Công nghệ. Ghi rõ nguồn khi phát hành lại thông tin.</p>
+        <div class="flex flex-wrap items-center justify-center gap-4 shrink-0">
+          <a href="#" class="hover:text-white transition">Điều khoản sử dụng</a>
+          <a href="#" class="hover:text-white transition">Chính sách bảo mật</a>
+          <a href="hoi-dap.html" class="hover:text-white transition">Sơ đồ cổng</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="prototype-nav.js"></script>
+  <script>
+    function toggleFaq(id) {
+      const content = document.getElementById('faq-content-' + id);
+      const icon = document.getElementById('faq-icon-' + id);
+      if (content.classList.contains('hidden')) {
+        content.classList.remove('hidden');
+        icon.classList.add('rotate-180');
+      } else {
+        content.classList.add('hidden');
+        icon.classList.remove('rotate-180');
+      }
+    }
+  </script>
+</body>
+</html>

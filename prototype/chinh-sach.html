@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chính sách Khoa học, Công nghệ & Đổi mới sáng tạo | Nền tảng Truyền thông Quốc Gia</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontSize: {
+            xs: ['0.90625rem', { lineHeight: '1.35rem' }],
+            sm: ['1rem', { lineHeight: '1.45rem' }],
+            base: ['1.125rem', { lineHeight: '1.65rem' }],
+            lg: ['1.25rem', { lineHeight: '1.8rem' }],
+            xl: ['1.375rem', { lineHeight: '1.9rem' }],
+            '2xl': ['1.625rem', { lineHeight: '2.1rem' }],
+            '3xl': ['2rem', { lineHeight: '2.45rem' }]
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <style> body { font-family: 'Inter', sans-serif; } 
+    .max-w-7xl {
+      max-width: 90rem !important;
+    }
+    header h1 {
+      font-family: 'Inter', sans-serif !important;
+      font-weight: 800 !important;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col">
+
+  <!-- TOP UTILITY BAR -->
+  <div class="bg-[#0b1c33] text-slate-200 text-[13px] py-1.5 px-4 sm:px-8 border-b border-slate-700/60">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-2">
+      <div class="flex items-center gap-3">
+        <span class="text-slate-300"><i class="fa-regular fa-calendar-check mr-1.5 text-amber-400"></i>Thứ Năm, 27/08/2026</span>
+      </div>
+      <div class="flex items-center gap-4 text-[13px]">
+        <div class="flex items-center gap-1.5 font-bold">
+          <span class="text-amber-400">VI</span>
+          <span class="text-slate-500">/</span>
+          <span class="text-slate-400 hover:text-white cursor-pointer">EN</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="bg-white border-b border-slate-200 shadow-sm sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 py-3.5 flex flex-col md:flex-row items-center justify-between gap-4">
+      <a href="index.html" class="flex items-center gap-3.5 group">
+        <img src="quoc-huy.png" alt="Quốc huy Việt Nam" class="w-12 h-12 object-contain drop-shadow">
+        <div>
+          <h1 class="text-[14.5px] sm:text-[16px] md:text-[18px] lg:text-[18px] xl:text-[20px] font-extrabold tracking-normal uppercase text-red-800 leading-normal">
+            <span class="block whitespace-nowrap">NỀN TẢNG TRUYỀN THÔNG SỐ QUỐC GIA VỀ KHOA HỌC, CÔNG NGHỆ,</span>
+            <span class="block mt-1 whitespace-nowrap">ĐỔI MỚI SÁNG TẠO VÀ CHUYỂN ĐỔI SỐ</span>
+          </h1>
+        </div>
+      </a>
+
+      <div class="w-full md:w-80 lg:w-96 relative shrink-0">
+        <input type="text" placeholder="Tìm kiếm chính sách, luật, đề án, nghị định..." 
+          class="w-full pl-10 pr-4 py-2 bg-slate-100 focus:bg-white text-[13px] rounded-full border border-slate-300 focus:outline-none focus:ring-2 focus:ring-red-700/30">
+        <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-[13px]"></i>
+      </div>
+    </div>
+
+    <!-- NAVIGATION -->
+        <!-- NAVIGATION -->
+    <nav class="bg-white border-t border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-8 flex items-center justify-start overflow-visible gap-1.5 text-[14.5px] sm:text-[15px] font-semibold">
+        <a href="index.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Trang chủ
+      </a>
+        
+        <!-- CHÍNH SÁCH VỚI SUBMENU CHỈ ĐẠO ĐIỀU HÀNH & GIẢI THÍCH CHÍNH SÁCH -->
+        <div class="relative group">
+          <a href="chinh-sach.html" class="px-5 py-2.5 bg-[#82181a] text-white rounded-t-sm whitespace-nowrap shadow-inner flex items-center gap-1.5 font-bold cursor-pointer">
+        <i class="fa-solid fa-scale-balanced text-[13px]"></i> <span>Chính sách</span>
+        <i class="fa-solid fa-chevron-down text-[9px] opacity-80 group-hover:rotate-180 transition-transform"></i>
+      </a>
+          <!-- Submenu dropdown -->
+          <div class="hidden group-hover:block absolute left-0 top-full bg-white rounded-xl shadow-2xl border border-slate-200 py-1.5 min-w-[260px] z-50 text-slate-800 font-normal">
+            <a href="chinh-sach.html" class="flex items-center gap-2.5 px-4 py-2.5 bg-red-50 text-red-800 font-bold text-[14.5px] transition">
+              <i class="fa-solid fa-landmark text-red-700 text-[14.5px]"></i>
+              <span>Chính sách & Thể chế</span>
+            </a>
+            <a href="chinh-sach-tra-cuu.html" class="flex items-center gap-2.5 px-4 py-2.5 hover:bg-slate-50 text-slate-700 hover:text-red-800 text-[14.5px] transition font-semibold">
+              <i class="fa-solid fa-file-signature text-red-700 text-[14.5px]"></i>
+              <span>Chỉ đạo điều hành</span>
+            </a>
+            <a href="giai-thich-chinh-sach.html" class="flex items-center gap-2.5 px-4 py-2.5 hover:bg-slate-50 text-slate-700 hover:text-red-800 font-semibold text-[14.5px] transition">
+              <i class="fa-solid fa-chalkboard-user text-amber-600 text-[14.5px]"></i>
+              <span>Giải thích chính sách</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="san-pham-cong-nghe.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Sản phẩm KH&CN
+      </a>
+        <a href="bao-cao-danh-gia-truyen-thong.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Báo cáo thường niên
+      </a>
+        <a href="tai-lieu-video.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Kho tư liệu
+      </a>
+        
+        <a href="su-kien.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">Sự kiện</a>
+
+        
+        <a href="hoi-dap.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Hỏi đáp
+      </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- BREADCRUMB & PAGE HEADER -->
+  <div class="bg-slate-100 border-b border-slate-200 py-3 px-4 sm:px-8 text-xs">
+    <div class="max-w-7xl mx-auto flex items-center gap-2 text-slate-500">
+      <a href="index.html" class="hover:text-red-800"><i class="fa-solid fa-house"></i> Trang chủ</a>
+      <span>/</span>
+      <span class="text-red-800 font-semibold">Chính sách & thể chế</span>
+    </div>
+  </div>
+
+  <!-- MAIN SEARCH & LIST CONTENT (FORMAT TƯƠNG TỰ CHỈ ĐẠO ĐIỀU HÀNH) -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-8 py-7 w-full flex-1 space-y-6">
+
+    <!-- 3 BUTTON TƯƠNG ỨNG 3 SUB MENU CHÍNH SÁCH -->
+    <div class="flex flex-wrap items-center justify-center gap-3 pb-4 border-b border-slate-200">
+      <a href="chinh-sach.html" class="px-5 py-2.5 rounded-xl bg-[#82181a] text-white border border-[#82181a] text-xs sm:text-sm font-bold shadow-sm flex items-center gap-2 transition">
+        <i class="fa-solid fa-landmark text-xs"></i>
+        <span>Chính sách & thể chế</span>
+      </a>
+      <a href="chinh-sach-tra-cuu.html" class="px-5 py-2.5 rounded-xl bg-white hover:bg-red-50/60 text-slate-700 hover:text-[#82181a] border border-slate-200 hover:border-red-300 text-xs sm:text-sm font-semibold shadow-2xs flex items-center gap-2 transition">
+        <i class="fa-solid fa-file-signature text-xs text-slate-400"></i>
+        <span>Chỉ đạo điều hành</span>
+      </a>
+      <a href="giai-thich-chinh-sach.html" class="px-5 py-2.5 rounded-xl bg-white hover:bg-red-50/60 text-slate-700 hover:text-[#82181a] border border-slate-200 hover:border-red-300 text-xs sm:text-sm font-semibold shadow-2xs flex items-center gap-2 transition">
+        <i class="fa-solid fa-chalkboard-user text-xs text-slate-400"></i>
+        <span>Giải thích chính sách</span>
+      </a>
+    </div>
+
+    <!-- PAGE TITLE -->
+    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+      <div>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+          Hệ thống Chính sách
+        </h2>
+        <p class="text-xs text-slate-500 mt-1">
+          Hệ thống Luật, Nghị định, Chiến lược quốc gia và các cơ chế đặc thù thúc đẩy nghiên cứu, chuyển giao công nghệ và khởi nghiệp đổi mới sáng tạo.
+        </p>
+      </div>
+    </div>
+
+    <!-- ADVANCED FILTER BOX (FORMAT GIỐNG CHINH-SACH-TRA-CUU) -->
+    <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm space-y-4">
+      <form id="filterForm" onsubmit="event.preventDefault(); applyFilter();">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
+          <!-- Input Keyword -->
+          <div>
+            <label class="block font-semibold text-slate-700 mb-1">Từ khóa / Số hiệu chính sách</label>
+            <div class="relative">
+              <input type="text" id="keywordInput" value="Luật Khoa học và Công nghệ" placeholder="Nhập tên chính sách, số hiệu..." 
+                class="w-full pl-8 pr-3 py-2 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-red-700/30">
+              <i class="fa-solid fa-magnifying-glass absolute left-2.5 top-1/2 -translate-y-1/2 text-slate-400"></i>
+            </div>
+          </div>
+
+          <!-- Select Type -->
+          <div>
+            <label class="block font-semibold text-slate-700 mb-1">Thể loại chính sách</label>
+            <select id="typeSelect" class="w-full px-3 py-2 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-red-700/30">
+              <option value="">Tất cả thể loại</option>
+              <option value="Luật / Bộ luật" selected>Luật / Bộ luật</option>
+              <option value="Chiến lược quốc gia">Chiến lược quốc gia</option>
+              <option value="Nghị định quy định chi tiết">Nghị định quy định chi tiết</option>
+              <option value="Cơ chế đặc thù / Sandbox">Cơ chế đặc thù / Sandbox</option>
+              <option value="Đề án quốc gia">Đề án quốc gia</option>
+            </select>
+          </div>
+
+          <!-- Select Field -->
+          <div>
+            <label class="block font-semibold text-slate-700 mb-1">Cấp chính sách</label>
+            <select id="fieldSelect" class="w-full px-3 py-2 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-red-700/30">
+              <option value="">Tất cả cấp chính sách</option>
+              <option value="central" selected>Cấp Trung ương</option>
+              <option value="local">Cấp Địa phương</option>
+            </select>
+          </div>
+
+          <!-- Select Authority -->
+          <div>
+            <label class="block font-semibold text-slate-700 mb-1">Cơ quan phê duyệt</label>
+            <select class="w-full px-3 py-2 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-red-700/30">
+              <option value="">Tất cả cơ quan</option>
+              <option value="Quốc hội" selected>Quốc hội</option>
+              <option value="Chính phủ / Thủ tướng">Chính phủ / Thủ tướng</option>
+              <option value="Bộ Khoa học và Công nghệ">Bộ Khoa học và Công nghệ</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Quick Tags & Submit -->
+        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pt-4 border-t border-slate-100 text-xs">
+          <div class="flex flex-wrap items-center gap-2">
+            <span class="text-slate-500 text-[13px]">Chủ đề chính sách nổi bật:</span>
+            <button type="button" onclick="setKeyword('Luật KH&CN sửa đổi')" class="px-2.5 py-1 rounded bg-red-50 text-red-700 hover:bg-red-100 transition font-medium">Luật KH&CN sửa đổi</button>
+            <button type="button" onclick="setKeyword('Tự chủ tài chính Viện trường')" class="px-2.5 py-1 rounded bg-blue-50 text-blue-700 hover:bg-blue-100 transition font-medium">Tự chủ tài chính Viện trường</button>
+            <button type="button" onclick="setKeyword('Cơ chế Sandbox')" class="px-2.5 py-1 rounded bg-slate-100 text-slate-700 hover:bg-slate-200 transition font-medium">Cơ chế Sandbox</button>
+            <button type="button" onclick="setKeyword('Chiến lược Bán dẫn 2030')" class="px-2.5 py-1 rounded bg-slate-100 text-slate-700 hover:bg-slate-200 transition font-medium">Chiến lược Bán dẫn 2030</button>
+          </div>
+
+          <div class="flex items-center gap-3 w-full sm:w-auto justify-end">
+            <button type="button" onclick="resetForm()" class="group px-4 py-2 rounded-lg bg-white hover:bg-slate-50 text-slate-700 hover:text-slate-900 font-bold border border-slate-300 hover:border-slate-400 shadow-2xs transition flex items-center gap-1.5 cursor-pointer">
+              <i class="fa-solid fa-rotate-left text-slate-400 group-hover:text-slate-600 group-hover:-rotate-90 transition-transform duration-200"></i>
+              <span>Đặt lại</span>
+            </button>
+            <button type="submit" class="px-6 py-2 rounded-lg bg-[#82181a] hover:bg-red-900 text-white font-bold transition flex items-center gap-2 shadow">
+              <i class="fa-solid fa-filter text-xs"></i> Lọc chính sách
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- RESULTS HEADER & SORTING -->
+    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-xs">
+      <div class="text-slate-600">
+        Hiển thị <span class="font-bold text-slate-900">1 - 5</span> trên tổng số <span class="font-bold text-red-700">1.250</span> chính sách thể chế hiện hành
+      </div>
+      <div class="flex items-center gap-2">
+        <span class="text-slate-500">Sắp xếp:</span>
+        <select class="px-2.5 py-1 bg-white border border-slate-300 rounded text-xs focus:outline-none">
+          <option>Mới nhất ban hành</option>
+          <option>Hiệu lực thi hành</option>
+          <option>Được quan tâm nhất</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- POLICY CARDS LIST (BỐ CỤC TƯƠNG TỰ CHỈ ĐẠO ĐIỀU HÀNH) -->
+    <div class="space-y-4" id="docList">
+
+      <!-- CARD 1: LUẬT KHOA HỌC VÀ CÔNG NGHỆ & ĐMST (SỬA ĐỔI) -->
+      <div class="bg-white rounded-2xl p-6 border-2 border-red-200/80 hover:border-red-500 shadow-sm transition space-y-3 relative group">
+        <div class="flex flex-wrap items-center justify-between gap-2 text-xs">
+          <div class="flex items-center gap-2">
+            <span class="bg-red-700 text-white font-bold px-2 py-0.5 rounded">Luật Quốc hội</span>
+            <span class="font-bold text-slate-800">Luật số: 89/2025/QH15</span>
+            <span class="text-slate-300">|</span>
+            <span class="inline-flex items-center gap-1 text-emerald-600 font-semibold bg-emerald-50 px-2 py-0.5 rounded">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> Có hiệu lực thi hành
+            </span>
+          </div>
+          <div class="text-slate-500 text-[13px] flex items-center gap-1">
+            <i class="fa-regular fa-calendar"></i> Ban hành: 25/11/2025
+          </div>
+        </div>
+
+        <h3 class="text-base sm:text-lg font-bold text-slate-900 group-hover:text-red-700 transition leading-snug">
+          <a href="chinh-sach-chi-tiet.html">
+            Luật Khoa học, Công nghệ và Đổi mới sáng tạo (Sửa đổi toàn diện)
+          </a>
+        </h3>
+
+        <p class="text-xs text-slate-600 leading-relaxed">
+          Đột phá thể chế chấp nhận rủi ro trong nghiên cứu khoa học, cho phép trích lập Quỹ phát triển KH&CN doanh nghiệp linh hoạt, thương mại hóa tài sản trí tuệ công và đãi ngộ nhân tài khoa học công nghệ xuất sắc.
+        </p>
+
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-3 border-t border-slate-100 text-xs">
+          <div class="flex flex-wrap items-center gap-3 text-[13px] text-slate-500">
+            <span>Cơ quan ban hành: <strong class="text-slate-800">Quốc hội khóa XV</strong></span>
+            <span>•</span>
+            <span>Hiệu lực từ: <strong class="text-emerald-700">01/01/2026</strong></span>
+            <span>•</span>
+            <span class="text-red-700 bg-red-50 px-2 py-0.5 rounded font-semibold"><i class="fa-solid fa-book-bookmark mr-1"></i>Đạo luật gốc KH&CN</span>
+          </div>
+
+          <div class="flex items-center gap-2">
+            <a href="chinh-sach-chi-tiet.html" class="px-4 py-1.5 bg-red-700 hover:bg-red-800 text-white rounded-lg font-bold text-xs transition flex items-center gap-1 shadow-sm">
+              <span>Xem chi tiết chính sách</span>
+              <i class="fa-solid fa-arrow-right text-[12px]"></i>
+            </a>
+            <button onclick="alert('Đang tải văn bản Luật 89-2025-QH15.pdf (4.5 MB)...')" class="px-3 py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg font-semibold text-xs transition flex items-center gap-1">
+              <i class="fa-regular fa-file-pdf text-red-600"></i> Tải PDF
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 2: CHIẾN LƯỢC PHÁT TRIỂN KH, CN & ĐMST ĐẾN NĂM 2030 -->
+      <div class="bg-white rounded-2xl p-6 border border-slate-200 hover:border-slate-300 shadow-sm transition space-y-3 group">
+        <div class="flex flex-wrap items-center justify-between gap-2 text-xs">
+          <div class="flex items-center gap-2">
+            <span class="bg-blue-100 text-blue-800 font-bold px-2 py-0.5 rounded">Chiến lược Quốc gia</span>
+            <span class="font-bold text-slate-800">Quyết định: 569/QĐ-TTg</span>
+            <span class="text-slate-300">|</span>
+            <span class="inline-flex items-center gap-1 text-emerald-600 font-semibold bg-emerald-50 px-2 py-0.5 rounded">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> Triển khai trọng điểm
+            </span>
+          </div>
+          <div class="text-slate-500 text-[13px] flex items-center gap-1">
+            <i class="fa-regular fa-calendar"></i> Ban hành: 11/05/2025
+          </div>
+        </div>
+
+        <h3 class="text-base sm:text-lg font-bold text-slate-900 group-hover:text-blue-700 transition leading-snug">
+          <a href="chinh-sach-chi-tiet.html">
+            Chiến lược phát triển khoa học, công nghệ và đổi mới sáng tạo đến năm 2030
+          </a>
+        </h3>
+
+        <p class="text-xs text-slate-600 leading-relaxed">
+          Xác định KH, CN & ĐMST là quốc sách hàng đầu, động lực then chốt để phục vụ tăng trưởng kinh tế, năng suất lao động và tự chủ quốc gia, mục tiêu đóng góp của TFP vào tăng trưởng kinh tế đạt trên 50%.
+        </p>
+
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-3 border-t border-slate-100 text-xs">
+          <div class="flex flex-wrap items-center gap-3 text-[13px] text-slate-500">
+            <span>Cơ quan ban hành: <strong class="text-slate-800">Thủ tướng Chính phủ</strong></span>
+            <span>•</span>
+            <span>Giai đoạn: <strong class="text-slate-800">2021 - 2030</strong></span>
+            <span>•</span>
+            <span class="text-blue-700 bg-blue-50 px-2 py-0.5 rounded"><i class="fa-solid fa-compass mr-1"></i>Chiến lược trung - dài hạn</span>
+          </div>
+
+          <div class="flex items-center gap-2">
+            <a href="chinh-sach-chi-tiet.html" class="px-4 py-1.5 bg-slate-800 hover:bg-slate-900 text-white rounded-lg font-bold text-xs transition flex items-center gap-1">
+              <span>Xem chi tiết chính sách</span>
+              <i class="fa-solid fa-arrow-right text-[12px]"></i>
+            </a>
+            <button onclick="alert('Đang tải Quyết định 569-QD-TTg.pdf (3.2 MB)...')" class="px-3 py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg font-semibold text-xs transition flex items-center gap-1">
+              <i class="fa-regular fa-file-pdf text-red-600"></i> Tải PDF
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 3: CƠ CHẾ THỬ NGHIỆM SANDBOX CÔNG NGHỆ MỚI -->
+      <div class="bg-white rounded-2xl p-6 border border-slate-200 hover:border-slate-300 shadow-sm transition space-y-3 group">
+        <div class="flex flex-wrap items-center justify-between gap-2 text-xs">
+          <div class="flex items-center gap-2">
+            <span class="bg-purple-100 text-purple-800 font-bold px-2 py-0.5 rounded">Cơ chế Sandbox</span>
+            <span class="font-bold text-slate-800">Nghị định: 52/2026/NĐ-CP</span>
+            <span class="text-slate-300">|</span>
+            <span class="inline-flex items-center gap-1 text-emerald-600 font-semibold bg-emerald-50 px-2 py-0.5 rounded">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> Còn hiệu lực
+            </span>
+          </div>
+          <div class="text-slate-500 text-[13px] flex items-center gap-1">
+            <i class="fa-regular fa-calendar"></i> Ban hành: 18/02/2026
+          </div>
+        </div>
+
+        <h3 class="text-base sm:text-lg font-bold text-slate-900 group-hover:text-purple-700 transition leading-snug">
+          <a href="chinh-sach-chi-tiet.html">
+            Nghị định về cơ chế thử nghiệm có kiểm soát (Sandbox) đối với các mô hình kinh doanh và công nghệ mới
+          </a>
+        </h3>
+
+        <p class="text-xs text-slate-600 leading-relaxed">
+          Khung pháp lý miễn trừ trách nhiệm hành chính và thuế trong phạm vi giới hạn cho các doanh nghiệp thử nghiệm công nghệ AI tự hành, chuỗi khối y tế số và phương tiện bay không người lái (UAV).
+        </p>
+
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-3 border-t border-slate-100 text-xs">
+          <div class="flex flex-wrap items-center gap-3 text-[13px] text-slate-500">
+            <span>Cơ quan ban hành: <strong class="text-slate-800">Chính phủ</strong></span>
+            <span>•</span>
+            <span>Cơ quan điều phối: <strong class="text-slate-800">Bộ KH&CN</strong></span>
+            <span>•</span>
+            <span class="text-purple-700 bg-purple-50 px-2 py-0.5 rounded"><i class="fa-solid fa-flask mr-1"></i>Thử nghiệm Sandbox</span>
+          </div>
+
+          <div class="flex items-center gap-2">
+            <a href="chinh-sach-chi-tiet.html" class="px-4 py-1.5 bg-slate-800 hover:bg-slate-900 text-white rounded-lg font-bold text-xs transition flex items-center gap-1">
+              <span>Xem chi tiết chính sách</span>
+              <i class="fa-solid fa-arrow-right text-[12px]"></i>
+            </a>
+            <button onclick="alert('Đang tải Nghị định 52-2026-ND-CP.pdf (2.1 MB)...')" class="px-3 py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg font-semibold text-xs transition flex items-center gap-1">
+              <i class="fa-regular fa-file-pdf text-red-600"></i> Tải PDF
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 4: CHÍNH SÁCH ĐÃI NGỘ CHUYÊN GIA & TÀI CHÍNH TỰ CHỦ -->
+      <div class="bg-white rounded-2xl p-6 border border-slate-200 hover:border-slate-300 shadow-sm transition space-y-3 group">
+        <div class="flex flex-wrap items-center justify-between gap-2 text-xs">
+          <div class="flex items-center gap-2">
+            <span class="bg-amber-100 text-amber-800 font-bold px-2 py-0.5 rounded">Nghị định</span>
+            <span class="font-bold text-slate-800">Số: 108/2025/NĐ-CP</span>
+            <span class="text-slate-300">|</span>
+            <span class="inline-flex items-center gap-1 text-emerald-600 font-semibold bg-emerald-50 px-2 py-0.5 rounded">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> Còn hiệu lực
+            </span>
+          </div>
+          <div class="text-slate-500 text-[13px] flex items-center gap-1">
+            <i class="fa-regular fa-calendar"></i> Ban hành: 10/10/2025
+          </div>
+        </div>
+
+        <h3 class="text-base sm:text-lg font-bold text-slate-900 group-hover:text-amber-700 transition leading-snug">
+          <a href="chinh-sach-chi-tiet.html">
+            Nghị định về cơ chế tự chủ tài chính của tổ chức KH&CN công lập và chính sách trọng dụng chuyên gia
+          </a>
+        </h3>
+
+        <p class="text-xs text-slate-600 leading-relaxed">
+          Trao quyền tự chủ hoàn toàn về quyết định sử dụng quỹ lương, hợp tác quốc tế, chia sẻ lợi nhuận 30% từ kết quả thương mại hóa cho tác giả sáng chế và chính sách visa, nhà ở cho chuyên gia kiều bào.
+        </p>
+
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-3 border-t border-slate-100 text-xs">
+          <div class="flex flex-wrap items-center gap-3 text-[13px] text-slate-500">
+            <span>Cơ quan ban hành: <strong class="text-slate-800">Chính phủ</strong></span>
+            <span>•</span>
+            <span>Người ký: <strong class="text-slate-800">Thủ tướng Chính phủ</strong></span>
+            <span>•</span>
+            <span class="text-amber-700 bg-amber-50 px-2 py-0.5 rounded"><i class="fa-solid fa-coins mr-1"></i>Tài chính & Nhân lực</span>
+          </div>
+
+          <div class="flex items-center gap-2">
+            <a href="chinh-sach-chi-tiet.html" class="px-4 py-1.5 bg-slate-800 hover:bg-slate-900 text-white rounded-lg font-bold text-xs transition flex items-center gap-1">
+              <span>Xem chi tiết chính sách</span>
+              <i class="fa-solid fa-arrow-right text-[12px]"></i>
+            </a>
+            <button onclick="alert('Đang tải Nghị định 108-2025-ND-CP.pdf (1.9 MB)...')" class="px-3 py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg font-semibold text-xs transition flex items-center gap-1">
+              <i class="fa-regular fa-file-pdf text-red-600"></i> Tải PDF
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- PAGINATION (FORMAT GIỐNG CHỈ ĐẠO ĐIỀU HÀNH) -->
+    <div class="flex items-center justify-between pt-6 border-t border-slate-200 text-xs">
+      <div class="text-slate-500">
+        Trang <span class="font-bold text-slate-800">1</span> / 125
+      </div>
+      <div class="flex items-center gap-1">
+        <button class="px-3 py-1.5 rounded-lg border border-slate-300 text-slate-400 cursor-not-allowed">
+          <i class="fa-solid fa-chevron-left mr-1"></i> Trước
+        </button>
+        <button class="px-3 py-1.5 rounded-lg bg-red-700 text-white font-bold">1</button>
+        <button class="px-3 py-1.5 rounded-lg border border-slate-300 text-slate-700 hover:bg-slate-100">2</button>
+        <button class="px-3 py-1.5 rounded-lg border border-slate-300 text-slate-700 hover:bg-slate-100">3</button>
+        <span class="px-2 text-slate-400">...</span>
+        <button class="px-3 py-1.5 rounded-lg border border-slate-300 text-slate-700 hover:bg-slate-100">125</button>
+        <button class="px-3 py-1.5 rounded-lg border border-slate-300 text-slate-700 hover:bg-slate-100">
+          Sau <i class="fa-solid fa-chevron-right ml-1"></i>
+        </button>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- SPECIALIZED FOOTER -->
+  <footer class="bg-[#0b1e36] text-white mt-12 border-t border-slate-800 text-[14.5px]" style="font-family: 'Inter', sans-serif;">
+    <div class="max-w-[90rem] mx-auto px-4 sm:px-8 py-10">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <!-- Col 1 -->
+        <div class="md:col-span-2 space-y-3.5 min-w-0">
+          <div class="flex items-start sm:items-center gap-3.5 min-w-0">
+            <div class="w-12 h-12 rounded-full flex items-center justify-center p-0.5 filter drop-shadow-lg shrink-0">
+              <img src="quoc-huy.png" alt="Quốc huy Việt Nam" class="w-11 h-11 object-contain drop-shadow">
+            </div>
+            <div class="min-w-0 flex-1">
+              <h5 class="font-extrabold text-[14.5px] sm:text-[15.5px] lg:text-[16.5px] xl:text-[17.5px] tracking-wide uppercase text-amber-400 leading-snug sm:leading-relaxed">NỀN TẢNG TRUYỀN THÔNG SỐ QUỐC GIA VỀ KHOA HỌC, CÔNG NGHỆ, ĐỔI MỚI SÁNG TẠO VÀ CHUYỂN ĐỔI SỐ</h5>
+              <p class="text-[13px] xl:text-[14.5px] text-slate-300 mt-1">Cơ quan chủ quản: Bộ Khoa học và Công nghệ (MST)</p>
+            </div>
+          </div>
+          <div class="text-[13px] xl:text-[14px] text-slate-300 space-y-1.5 pt-1">
+            <p><i class="fa-solid fa-location-dot w-4 mr-1 text-red-400"></i> Địa chỉ: Đang cập nhật</p>
+            <p><i class="fa-solid fa-phone w-4 mr-1 text-emerald-400"></i> Điện thoại: Đang cập nhật • Email: Đang cập nhật</p>
+          </div>
+        </div>
+
+        <!-- Col 2: Liên kết -->
+        <div class="min-w-0">
+          <h5 class="font-bold text-[13px] xl:text-[14.5px] uppercase tracking-wider text-amber-400 mb-3.5 pb-1.5 border-b border-slate-700">Liên kết nhanh</h5>
+          <ul class="space-y-2.5 text-[13px] xl:text-[14px] text-slate-300">
+            <li><a href="chinh-sach-tra-cuu.html" class="hover:text-amber-300 transition">Văn bản chỉ đạo điều hành</a></li>
+            <li><a href="san-pham-cong-nghe.html" class="hover:text-amber-300 transition">10 Nhóm sản phẩm số trọng điểm</a></li>
+            <li><a href="su-kien.html" class="hover:text-amber-300 transition">Lịch trình sự kiện & hội thảo</a></li>
+            <li><a href="hoi-dap.html" class="hover:text-amber-300 transition">Hỏi đáp & hỗ trợ trực tuyến</a></li>
+            <li><a href="chuyen-muc-kinh-te-so.html" class="hover:text-amber-300 transition">Báo cáo dữ liệu & Chỉ số PII</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Đa phương tiện -->
+        <div class="min-w-0">
+          <h5 class="font-bold text-[13px] xl:text-[14.5px] uppercase tracking-wider text-amber-400 mb-3.5 pb-1.5 border-b border-slate-700">Đa phương tiện</h5>
+          <ul class="space-y-2.5 text-[13px] xl:text-[14px] text-slate-300">
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Video phóng sự thời sự</a></li>
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Kho tư liệu ảnh sự kiện</a></li>
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Đồ họa Infographic số hóa</a></li>
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Podcast & Bản tin phát thanh</a></li>
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Sách điện tử & Báo cáo tổng kết</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-8 pt-4 border-t border-slate-800 flex flex-col lg:flex-row items-center justify-between text-[12.5px] xl:text-[13.5px] text-slate-400 gap-3">
+        <p class="text-center lg:text-left">© 2026 Bản quyền thuộc Bộ Khoa học và Công nghệ. Ghi rõ nguồn khi phát hành lại thông tin.</p>
+        <div class="flex flex-wrap items-center justify-center gap-4 shrink-0">
+          <a href="#" class="hover:text-white transition">Điều khoản sử dụng</a>
+          <a href="#" class="hover:text-white transition">Chính sách bảo mật</a>
+          <a href="hoi-dap.html" class="hover:text-white transition">Sơ đồ cổng</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="prototype-nav.js"></script>
+  <script>
+    function setKeyword(val) {
+      document.getElementById('keywordInput').value = val;
+    }
+    function resetForm() {
+      document.getElementById('keywordInput').value = '';
+      document.getElementById('typeSelect').value = '';
+      document.getElementById('fieldSelect').value = '';
+    }
+    function applyFilter() {
+      alert('Đang lọc chính sách phù hợp theo tiêu chí tìm kiếm...');
+    }
+  </script>
+</body>
+</html>

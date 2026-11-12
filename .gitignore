@@ -1,0 +1,19 @@
+# Dependencies & temporary workspace
+node_modules/
+scratch/
+designs/
+
+# Internal documents, spreadsheets, slides & archives
+*.docx
+*.xlsx
+*.pptx
+*.rar
+*.zip
+BAO_CAO_*.md
+
+# Temporary & OS files
+_tmp*
+*.log
+*.bak
+.DS_Store
+Thumbs.db

@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sự kiện Khoa học, Công nghệ & Đổi mới sáng tạo | Nền tảng Truyền thông Quốc Gia</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontSize: {
+            xs: ['0.90625rem', { lineHeight: '1.35rem' }],
+            sm: ['1rem', { lineHeight: '1.45rem' }],
+            base: ['1.125rem', { lineHeight: '1.65rem' }],
+            lg: ['1.25rem', { lineHeight: '1.8rem' }],
+            xl: ['1.375rem', { lineHeight: '1.9rem' }],
+            '2xl': ['1.625rem', { lineHeight: '2.1rem' }],
+            '3xl': ['2rem', { lineHeight: '2.45rem' }]
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <style> body { font-family: 'Inter', sans-serif; } 
+    .max-w-7xl {
+      max-width: 90rem !important;
+    }
+    header h1 {
+      font-family: 'Inter', sans-serif !important;
+      font-weight: 800 !important;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col">
+
+  <!-- TOP UTILITY BAR -->
+  <div class="bg-[#0b1c33] text-slate-200 text-[13px] py-1.5 px-4 sm:px-8 border-b border-slate-700/60">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-2">
+      <div class="flex items-center gap-3">
+        <span class="text-slate-300"><i class="fa-regular fa-calendar-check mr-1.5 text-amber-400"></i>Thứ Năm, 27/08/2026</span>
+      </div>
+      <div class="flex items-center gap-4 text-[13px]">
+        <div class="flex items-center gap-1.5 font-bold">
+          <span class="text-amber-400">VI</span>
+          <span class="text-slate-500">/</span>
+          <span class="text-slate-400 hover:text-white cursor-pointer">EN</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="bg-white border-b border-slate-200 shadow-sm sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 py-3.5 flex flex-col md:flex-row items-center justify-between gap-4">
+      <a href="index.html" class="flex items-center gap-3.5 group">
+        <img src="quoc-huy.png" alt="Quốc huy Việt Nam" class="w-12 h-12 object-contain drop-shadow">
+        <div>
+          <h1 class="text-[14.5px] sm:text-[16px] md:text-[18px] lg:text-[18px] xl:text-[20px] font-extrabold tracking-normal uppercase text-red-800 leading-normal">
+            <span class="block whitespace-nowrap">NỀN TẢNG TRUYỀN THÔNG SỐ QUỐC GIA VỀ KHOA HỌC, CÔNG NGHỆ,</span>
+            <span class="block mt-1 whitespace-nowrap">ĐỔI MỚI SÁNG TẠO VÀ CHUYỂN ĐỔI SỐ</span>
+          </h1>
+        </div>
+      </a>
+
+      <div class="w-full md:w-80 lg:w-96 relative shrink-0">
+        <input type="text" placeholder="Tìm kiếm sự kiện, hội thảo..." 
+          class="w-full pl-10 pr-4 py-2 bg-slate-100 focus:bg-white text-[13px] rounded-full border border-slate-300 focus:outline-none focus:ring-2 focus:ring-red-700/30">
+        <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-[13px]"></i>
+      </div>
+    </div>
+
+    <!-- NAVIGATION -->
+        <!-- NAVIGATION -->
+        <!-- NAVIGATION -->
+    <nav class="bg-white border-t border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-8 flex items-center justify-start overflow-visible gap-1.5 text-[14.5px] sm:text-[15px] font-semibold">
+        <a href="index.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Trang chủ
+      </a>
+        
+        <!-- CHÍNH SÁCH VỚI SUBMENU CHỈ ĐẠO ĐIỀU HÀNH & GIẢI THÍCH CHÍNH SÁCH -->
+        <div class="relative group">
+          <a href="chinh-sach.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap flex items-center gap-1 cursor-pointer">
+        <span>Chính sách</span>
+        <i class="fa-solid fa-chevron-down text-[9px] text-slate-400 group-hover:text-red-800 group-hover:rotate-180 transition-transform"></i>
+      </a>
+          <!-- Submenu dropdown -->
+          <div class="hidden group-hover:block absolute left-0 top-full bg-white rounded-xl shadow-2xl border border-slate-200 py-1.5 min-w-[260px] z-50 text-slate-800 font-normal">
+            <a href="chinh-sach.html" class="flex items-center gap-2.5 px-4 py-2.5 hover:bg-slate-50 text-slate-700 hover:text-red-800 text-[14.5px] transition font-semibold">
+              <i class="fa-solid fa-landmark text-slate-400 text-[14.5px]"></i>
+              <span>Chính sách & Thể chế</span>
+            </a>
+            <a href="chinh-sach-tra-cuu.html" class="flex items-center gap-2.5 px-4 py-2.5 hover:bg-slate-50 text-slate-700 hover:text-red-800 text-[14.5px] transition font-semibold">
+              <i class="fa-solid fa-file-signature text-red-700 text-[14.5px]"></i>
+              <span>Chỉ đạo điều hành</span>
+            </a>
+            <a href="giai-thich-chinh-sach.html" class="flex items-center gap-2.5 px-4 py-2.5 hover:bg-slate-50 text-slate-700 hover:text-red-800 font-semibold text-[14.5px] transition">
+              <i class="fa-solid fa-chalkboard-user text-amber-600 text-[14.5px]"></i>
+              <span>Giải thích chính sách</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="san-pham-cong-nghe.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Sản phẩm KH&CN
+      </a>
+        <a href="bao-cao-danh-gia-truyen-thong.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Báo cáo thường niên
+      </a>
+        <a href="tai-lieu-video.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Kho tư liệu
+      </a>
+        
+        <a href="su-kien.html" class="px-5 py-2.5 bg-[#82181a] text-white rounded-t-sm whitespace-nowrap shadow-inner flex items-center gap-1.5 font-bold"><i class="fa-regular fa-calendar-days text-[11px]"></i> <span>Sự kiện</span></a>
+
+        
+        <a href="hoi-dap.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Hỏi đáp
+      </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-8 py-8 w-full flex-1 space-y-10">
+
+    <!-- TITLE -->
+    <div>
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+        Sự kiện Khoa học, Công nghệ & Đổi mới sáng tạo
+      </h2>
+      <p class="text-xs text-slate-500 mt-1">
+        Trực tiếp và lưu trữ các sự kiện, hội thảo chuyên đề quan trọng từ Bộ Khoa học và Công nghệ.
+      </p>
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- LỊCH SỰ KIỆN SẮP TỚI CỤ THỂ (UPCOMING EVENTS) -->
+    <!-- ============================================================== -->
+    <section id="upcomingEventsSection" class="space-y-6 pt-2">
+      
+      <!-- HEADER & FILTER TABS -->
+      <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm space-y-4">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-3 border-b border-slate-100">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-red-50 border border-red-200 flex items-center justify-center text-red-700 text-lg shadow-xs shrink-0">
+              <i class="fa-solid fa-calendar-days"></i>
+            </div>
+            <div>
+              <h3 class="text-lg sm:text-xl font-black text-slate-900 tracking-tight flex items-center gap-2">
+                <span>Lịch sự kiện & Hội thảo sắp tới</span>
+                <span class="bg-red-100 text-red-800 text-[12px] font-bold px-2 py-0.5 rounded-full uppercase">Tháng 9 - 10/2026</span>
+              </h3>
+              <p class="text-xs text-slate-500 mt-0.5">
+                Các sự kiện, diễn đàn và hội thảo khoa học công nghệ cấp Quốc gia có kế hoạch tổ chức chính thức.
+              </p>
+            </div>
+          </div>
+
+          <!-- Quick Action -->
+          <div class="flex items-center gap-2 shrink-0">
+            <button onclick="promptSubscribeSchedule()" class="px-3.5 py-2 rounded-xl bg-blue-50 text-blue-700 hover:bg-blue-100 text-xs font-bold border border-blue-200 transition flex items-center gap-1.5 shadow-2xs">
+              <i class="fa-regular fa-bell"></i>
+              <span>Nhận thông báo lịch mới</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- TÌM KIẾM SỰ KIỆN -->
+        <div class="flex items-center justify-end text-xs">
+          <div class="relative w-full sm:w-72 shrink-0">
+            <input type="text" id="upcomingSearchInput" oninput="searchUpcomingEvents(this.value)" placeholder="Tìm sự kiện, địa điểm, diễn giả..." 
+              class="w-full bg-slate-50 text-slate-800 placeholder-slate-400 pl-8 pr-3 py-1.5 text-xs rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-red-600 focus:bg-white transition">
+            <i class="fa-solid fa-magnifying-glass absolute left-2.5 top-1/2 -translate-y-1/2 text-slate-400 text-xs"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- DANH SÁCH SỰ KIỆN CHI TIẾT (FULL WIDTH) -->
+      <div class="space-y-4" id="upcomingEventsList">
+
+          <!-- EVENT CARD 1: BÁN DẪN -->
+          <div class="upcoming-card bg-white rounded-2xl border border-slate-200 p-5 shadow-sm hover:shadow-md hover:border-red-400 transition space-y-3"
+               data-category="semiconductor" data-title="diễn đàn cấp cao phát triển công nghiệp bán dẫn và thiết kế vi mạch việt nam 2026 nic hòa lạc">
+            
+            <div class="space-y-1.5">
+              <h4 class="text-base sm:text-lg font-black text-slate-900 leading-snug hover:text-red-700 transition">
+                Diễn đàn Cấp cao Phát triển Công nghiệp Bán dẫn và Thiết kế Vi mạch Việt Nam 2026
+              </h4>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Thúc đẩy liên kết viện - trường - doanh nghiệp, công bố gói hỗ trợ vườn ươm thiết kế vi mạch chuyên sâu và kết nối chuỗi cung ứng với các tập đoàn công nghệ toàn cầu.
+              </p>
+            </div>
+
+            <!-- Detailed Grid Info -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2.5 text-xs bg-slate-50 p-3.5 rounded-xl border border-slate-100 text-slate-700">
+              <div class="flex items-center gap-2">
+                <i class="fa-regular fa-clock text-blue-600 w-4 text-center"></i>
+                <span><strong>Thời gian:</strong> 08:00 - 12:00 • 04/09/2026</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-location-dot text-red-600 w-4 text-center"></i>
+                <span class="truncate"><strong>Địa điểm:</strong> NIC Hòa Lạc, Hà Nội</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-landmark text-amber-600 w-4 text-center"></i>
+                <span class="truncate"><strong>Chủ trì:</strong> Bộ KH&CN phối hợp NIC</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-users text-teal-600 w-4 text-center"></i>
+                <span><strong>Quy mô:</strong> 400 đại biểu</span>
+              </div>
+            </div>
+
+            <!-- TÀI LIỆU ĐÍNH KÈM CỦA SỰ KIỆN -->
+            <div class="pt-3 border-t border-slate-100 flex flex-wrap items-center justify-between gap-2.5">
+              <div class="flex flex-wrap items-center gap-2">
+                <span class="inline-flex items-center gap-1.5 text-xs text-slate-500 font-medium">
+                  <i class="fa-solid fa-paperclip text-slate-400"></i> Tài liệu đính kèm:
+                </span>
+                <a href="tai-lieu-an-pham.html" target="_blank" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-red-50 hover:bg-red-100 text-red-700 text-xs font-semibold border border-red-200 transition">
+                  <i class="fa-solid fa-file-pdf text-red-600"></i> Dien_dan_Ban_dan_2026_Agenda.pdf
+                  <span class="text-[12px] text-red-500">(3.2 MB)</span>
+                </a>
+                <a href="tai-lieu-an-pham.html" target="_blank" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold border border-slate-200 transition">
+                  <i class="fa-solid fa-file-pdf text-blue-600"></i> De_an_Vuon_uom_Vi_mach.pdf
+                  <span class="text-[12px] text-slate-500">(1.8 MB)</span>
+                </a>
+              </div>
+              <a href="tai-lieu.html" class="inline-flex items-center gap-1 text-xs font-semibold text-slate-600 hover:text-red-700 transition">
+                <i class="fa-solid fa-download"></i> Tải tất cả tài liệu (.ZIP)
+              </a>
+            </div>
+
+          </div>
+
+          <!-- EVENT CARD 2: AI & DỮ LIỆU LỚN -->
+          <div class="upcoming-card bg-white rounded-2xl border border-slate-200 p-5 shadow-sm hover:shadow-md hover:border-red-400 transition space-y-3"
+               data-category="ai" data-title="hội thảo quốc gia khung pháp lý và cơ chế sandbox cho trí tuệ nhân tạo tạo sinh genai bộ khcn">
+            
+            <div class="space-y-1.5">
+              <h4 class="text-base sm:text-lg font-black text-slate-900 leading-snug hover:text-red-700 transition">
+                Hội thảo Quốc gia: Khung pháp lý & Cơ chế thử nghiệm (Sandbox) cho Trí tuệ Nhân tạo Tạo sinh
+              </h4>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Lấy ý kiến hoàn thiện dự thảo quy định đạo đức AI, bảo vệ dữ liệu huấn luyện mô hình ngôn ngữ lớn (LLM) và thí điểm triển khai AI trong y tế, hành chính công.
+              </p>
+            </div>
+
+            <!-- Detailed Grid Info -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2.5 text-xs bg-slate-50 p-3.5 rounded-xl border border-slate-100 text-slate-700">
+              <div class="flex items-center gap-2">
+                <i class="fa-regular fa-clock text-red-600 w-4 text-center"></i>
+                <span><strong>Thời gian:</strong> 13:30 - 17:00 • 10/09/2026</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-location-dot text-red-600 w-4 text-center"></i>
+                <span class="truncate"><strong>Địa điểm:</strong> 18 Nguyễn Du, Hà Nội</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-landmark text-amber-600 w-4 text-center"></i>
+                <span class="truncate"><strong>Chủ trì:</strong> Vụ Pháp chế & Cục CNTT</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-users text-teal-600 w-4 text-center"></i>
+                <span><strong>Quy mô:</strong> 250 đại biểu</span>
+              </div>
+            </div>
+
+            <!-- TÀI LIỆU ĐÍNH KÈM CỦA SỰ KIỆN -->
+            <div class="pt-3 border-t border-slate-100 flex flex-wrap items-center justify-between gap-2.5">
+              <div class="flex flex-wrap items-center gap-2">
+                <span class="inline-flex items-center gap-1.5 text-xs text-slate-500 font-medium">
+                  <i class="fa-solid fa-paperclip text-slate-400"></i> Tài liệu đính kèm:
+                </span>
+                <a href="tai-lieu-an-pham.html" target="_blank" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-red-50 hover:bg-red-100 text-red-700 text-xs font-semibold border border-red-200 transition">
+                  <i class="fa-solid fa-file-pdf text-red-600"></i> Du_thao_Co_che_Sandbox_AI.pdf
+                  <span class="text-[12px] text-red-500">(2.5 MB)</span>
+                </a>
+                <a href="tai-lieu-an-pham.html" target="_blank" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold border border-slate-200 transition">
+                  <i class="fa-solid fa-file-word text-blue-600"></i> Phieu_gop_y_chuyen_gia.docx
+                  <span class="text-[12px] text-slate-500">(320 KB)</span>
+                </a>
+              </div>
+              <a href="tai-lieu.html" class="inline-flex items-center gap-1 text-xs font-semibold text-slate-600 hover:text-red-700 transition">
+                <i class="fa-solid fa-download"></i> Tải tất cả tài liệu (.ZIP)
+              </a>
+            </div>
+
+          </div>
+
+          <!-- EVENT CARD 3: SỞ HỮU TRÍ TUỆ -->
+          <div class="upcoming-card bg-white rounded-2xl border border-slate-200 p-5 shadow-sm hover:shadow-md hover:border-red-400 transition space-y-3"
+               data-category="ip" data-title="khóa tập huấn chuyên sâu thẩm định giá và thương mại hóa quyền sở hữu trí tuệ tphcm đại học bách khoa">
+            
+            <div class="space-y-1.5">
+              <h4 class="text-base sm:text-lg font-black text-slate-900 leading-snug hover:text-red-700 transition">
+                Khóa Tập huấn: Thẩm định giá & Thương mại hóa Quyền Sở hữu Trí tuệ trong Doanh nghiệp
+              </h4>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Hướng dẫn thực hành định giá bằng sáng chế, giải pháp hữu ích, lập hồ sơ góp vốn bằng tài sản trí tuệ và đàm phán hợp đồng chuyển giao công nghệ quốc tế.
+              </p>
+            </div>
+
+            <!-- Detailed Grid Info -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2.5 text-xs bg-slate-50 p-3.5 rounded-xl border border-slate-100 text-slate-700">
+              <div class="flex items-center gap-2">
+                <i class="fa-regular fa-clock text-emerald-600 w-4 text-center"></i>
+                <span><strong>Thời gian:</strong> 08:30 - 16:30 • 16/09/2026</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-location-dot text-red-600 w-4 text-center"></i>
+                <span class="truncate"><strong>Địa điểm:</strong> ĐH Bách Khoa TP.HCM</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-landmark text-amber-600 w-4 text-center"></i>
+                <span class="truncate"><strong>Chủ trì:</strong> Cục Sở hữu Trí tuệ (NOIP)</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-users text-teal-600 w-4 text-center"></i>
+                <span><strong>Đối tượng:</strong> Giám đốc R&D, Pháp chế DN</span>
+              </div>
+            </div>
+
+            <!-- TÀI LIỆU ĐÍNH KÈM CỦA SỰ KIỆN -->
+            <div class="pt-3 border-t border-slate-100 flex flex-wrap items-center justify-between gap-2.5">
+              <div class="flex flex-wrap items-center gap-2">
+                <span class="inline-flex items-center gap-1.5 text-xs text-slate-500 font-medium">
+                  <i class="fa-solid fa-paperclip text-slate-400"></i> Tài liệu đính kèm:
+                </span>
+                <a href="tai-lieu-an-pham.html" target="_blank" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-red-50 hover:bg-red-100 text-red-700 text-xs font-semibold border border-red-200 transition">
+                  <i class="fa-solid fa-file-pdf text-red-600"></i> So_tay_Dinh_gia_Quyen_SHTT.pdf
+                  <span class="text-[12px] text-red-500">(4.1 MB)</span>
+                </a>
+                <a href="tai-lieu-an-pham.html" target="_blank" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold border border-slate-200 transition">
+                  <i class="fa-solid fa-file-lines text-slate-600"></i> Mau_hop_dong_chuyen_giao.docx
+                  <span class="text-[12px] text-slate-500">(580 KB)</span>
+                </a>
+              </div>
+              <a href="tai-lieu.html" class="inline-flex items-center gap-1 text-xs font-semibold text-slate-600 hover:text-red-700 transition">
+                <i class="fa-solid fa-download"></i> Tải tất cả tài liệu (.ZIP)
+              </a>
+            </div>
+
+          </div>
+
+          <!-- EVENT CARD 4: TECHFEST ĐỔI MỚI SÁNG TẠO -->
+          <div class="upcoming-card bg-white rounded-2xl border border-slate-200 p-5 shadow-sm hover:shadow-md hover:border-red-400 transition space-y-3"
+               data-category="techfest" data-title="ngày hội khởi nghiệp đổi mới sáng tạo quốc gia techfest việt nam 2026 đỗ đức dục hà nội">
+            
+            <div class="space-y-1.5">
+              <h4 class="text-base sm:text-lg font-black text-slate-900 leading-snug hover:text-red-700 transition">
+                Ngày hội Khởi nghiệp Đổi mới Sáng tạo Quốc gia TECHFEST Vietnam 2026
+              </h4>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Chuỗi 15 diễn đàn chuyên đề công nghệ cao, 250 gian hàng triển lãm giải pháp Make in Viet Nam và phiên kết nối vốn đầu tư mạo hiểm quy mô 50 triệu USD.
+              </p>
+            </div>
+
+            <!-- Detailed Grid Info -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2.5 text-xs bg-slate-50 p-3.5 rounded-xl border border-slate-100 text-slate-700">
+              <div class="flex items-center gap-2">
+                <i class="fa-regular fa-clock text-amber-600 w-4 text-center"></i>
+                <span><strong>Thời gian:</strong> 25/09 - 26/09/2026</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-location-dot text-red-600 w-4 text-center"></i>
+                <span class="truncate"><strong>Địa điểm:</strong> Cung Quy hoạch Triển lãm Quốc gia, Hà Nội</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-landmark text-amber-600 w-4 text-center"></i>
+                <span class="truncate"><strong>Chủ trì:</strong> Bộ KH&CN, UBND TP. Hà Nội</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-users text-teal-600 w-4 text-center"></i>
+                <span><strong>Quy mô:</strong> 3.000+ lượt khách, 80 quỹ đầu tư</span>
+              </div>
+            </div>
+
+            <!-- TÀI LIỆU ĐÍNH KÈM CỦA SỰ KIỆN -->
+            <div class="pt-3 border-t border-slate-100 flex flex-wrap items-center justify-between gap-2.5">
+              <div class="flex flex-wrap items-center gap-2">
+                <span class="inline-flex items-center gap-1.5 text-xs text-slate-500 font-medium">
+                  <i class="fa-solid fa-paperclip text-slate-400"></i> Tài liệu đính kèm:
+                </span>
+                <a href="tai-lieu-an-pham.html" target="_blank" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-red-50 hover:bg-red-100 text-red-700 text-xs font-semibold border border-red-200 transition">
+                  <i class="fa-solid fa-file-pdf text-red-600"></i> So_do_Gian_hang_TECHFEST_2026.pdf
+                  <span class="text-[12px] text-red-500">(5.6 MB)</span>
+                </a>
+                <a href="tai-lieu-an-pham.html" target="_blank" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold border border-slate-200 transition">
+                  <i class="fa-solid fa-file-lines text-emerald-600"></i> Ban_dang_ky_ket_noi_dau_tu.pdf
+                  <span class="text-[12px] text-slate-500">(1.2 MB)</span>
+                </a>
+              </div>
+              <a href="tai-lieu.html" class="inline-flex items-center gap-1 text-xs font-semibold text-slate-600 hover:text-red-700 transition">
+                <i class="fa-solid fa-download"></i> Tải tất cả tài liệu (.ZIP)
+              </a>
+            </div>
+
+          </div>
+
+          <!-- EVENT CARD 5: CHÍNH SÁCH VỐN NATIF TRỰC TUYẾN -->
+          <div class="upcoming-card bg-white rounded-2xl border border-slate-200 p-5 shadow-sm hover:shadow-md hover:border-red-400 transition space-y-3"
+               data-category="all" data-title="tọa đàm trực tuyến hướng dẫn doanh nghiệp tiếp cận quỹ đổi mới công nghệ quốc gia natif">
+            
+            <div class="space-y-1.5">
+              <h4 class="text-base sm:text-lg font-black text-slate-900 leading-snug hover:text-red-700 transition">
+                Tọa đàm Trực tuyến: Hướng dẫn Doanh nghiệp Tiếp cận Quỹ Đổi mới Công nghệ Quốc gia (NATIF)
+              </h4>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Giải đáp trực tiếp điều kiện vay vốn ưu đãi, tài trợ không hoàn lại cho dự án R&D chuyển đổi số và quy trình xét duyệt hồ sơ nhanh qua cổng dịch vụ công.
+              </p>
+            </div>
+
+            <!-- Detailed Grid Info -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2.5 text-xs bg-slate-50 p-3.5 rounded-xl border border-slate-100 text-slate-700">
+              <div class="flex items-center gap-2">
+                <i class="fa-regular fa-clock text-teal-600 w-4 text-center"></i>
+                <span><strong>Thời gian:</strong> 09:00 - 11:30 • 30/09/2026</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-laptop text-blue-600 w-4 text-center"></i>
+                <span class="truncate"><strong>Phòng họp số:</strong> Nền tảng số Quốc gia (Phòng 01)</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-landmark text-amber-600 w-4 text-center"></i>
+                <span class="truncate"><strong>Chủ trì:</strong> Cơ quan điều hành Quỹ NATIF</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-shield-halved text-purple-600 w-4 text-center"></i>
+                <span><strong>Hình thức:</strong> Trực tuyến toàn quốc</span>
+              </div>
+            </div>
+
+            <!-- TÀI LIỆU ĐÍNH KÈM CỦA SỰ KIỆN -->
+            <div class="pt-3 border-t border-slate-100 flex flex-wrap items-center justify-between gap-2.5">
+              <div class="flex flex-wrap items-center gap-2">
+                <span class="inline-flex items-center gap-1.5 text-xs text-slate-500 font-medium">
+                  <i class="fa-solid fa-paperclip text-slate-400"></i> Tài liệu đính kèm:
+                </span>
+                <a href="tai-lieu-an-pham.html" target="_blank" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-red-50 hover:bg-red-100 text-red-700 text-xs font-semibold border border-red-200 transition">
+                  <i class="fa-solid fa-file-pdf text-red-600"></i> Huong_dan_Vay_von_NATIF_2026.pdf
+                  <span class="text-[12px] text-red-500">(2.1 MB)</span>
+                </a>
+                <a href="tai-lieu-an-pham.html" target="_blank" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold border border-slate-200 transition">
+                  <i class="fa-solid fa-file-word text-blue-600"></i> Bieu_mau_thuyet_minh_de_tai.docx
+                  <span class="text-[12px] text-slate-500">(410 KB)</span>
+                </a>
+              </div>
+              <a href="tai-lieu.html" class="inline-flex items-center gap-1 text-xs font-semibold text-slate-600 hover:text-red-700 transition">
+                <i class="fa-solid fa-download"></i> Tải tất cả tài liệu (.ZIP)
+              </a>
+            </div>
+
+          </div>
+
+      </div>
+
+    </section>
+
+    </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#0b1e36] text-white mt-12 border-t border-slate-800 text-[14.5px]" style="font-family: 'Inter', sans-serif;">
+    <div class="max-w-[90rem] mx-auto px-4 sm:px-8 py-10">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <!-- Col 1 -->
+        <div class="md:col-span-2 space-y-3.5 min-w-0">
+          <div class="flex items-start sm:items-center gap-3.5 min-w-0">
+            <div class="w-12 h-12 rounded-full flex items-center justify-center p-0.5 filter drop-shadow-lg shrink-0">
+              <img src="quoc-huy.png" alt="Quốc huy Việt Nam" class="w-11 h-11 object-contain drop-shadow">
+            </div>
+            <div class="min-w-0 flex-1">
+              <h5 class="font-extrabold text-[14.5px] sm:text-[15.5px] lg:text-[16.5px] xl:text-[17.5px] tracking-wide uppercase text-amber-400 leading-snug sm:leading-relaxed">NỀN TẢNG TRUYỀN THÔNG SỐ QUỐC GIA VỀ KHOA HỌC, CÔNG NGHỆ, ĐỔI MỚI SÁNG TẠO VÀ CHUYỂN ĐỔI SỐ</h5>
+              <p class="text-[13px] xl:text-[14.5px] text-slate-300 mt-1">Cơ quan chủ quản: Bộ Khoa học và Công nghệ (MST)</p>
+            </div>
+          </div>
+          <div class="text-[13px] xl:text-[14px] text-slate-300 space-y-1.5 pt-1">
+            <p><i class="fa-solid fa-location-dot w-4 mr-1 text-red-400"></i> Địa chỉ: Đang cập nhật</p>
+            <p><i class="fa-solid fa-phone w-4 mr-1 text-emerald-400"></i> Điện thoại: Đang cập nhật • Email: Đang cập nhật</p>
+          </div>
+        </div>
+
+        <!-- Col 2: Liên kết -->
+        <div class="min-w-0">
+          <h5 class="font-bold text-[13px] xl:text-[14.5px] uppercase tracking-wider text-amber-400 mb-3.5 pb-1.5 border-b border-slate-700">Liên kết nhanh</h5>
+          <ul class="space-y-2.5 text-[13px] xl:text-[14px] text-slate-300">
+            <li><a href="chinh-sach-tra-cuu.html" class="hover:text-amber-300 transition">Văn bản chỉ đạo điều hành</a></li>
+            <li><a href="san-pham-cong-nghe.html" class="hover:text-amber-300 transition">10 Nhóm sản phẩm số trọng điểm</a></li>
+            <li><a href="su-kien.html" class="hover:text-amber-300 transition">Lịch trình sự kiện & hội thảo</a></li>
+            <li><a href="hoi-dap.html" class="hover:text-amber-300 transition">Hỏi đáp & hỗ trợ trực tuyến</a></li>
+            <li><a href="chuyen-muc-kinh-te-so.html" class="hover:text-amber-300 transition">Báo cáo dữ liệu & Chỉ số PII</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Đa phương tiện -->
+        <div class="min-w-0">
+          <h5 class="font-bold text-[13px] xl:text-[14.5px] uppercase tracking-wider text-amber-400 mb-3.5 pb-1.5 border-b border-slate-700">Đa phương tiện</h5>
+          <ul class="space-y-2.5 text-[13px] xl:text-[14px] text-slate-300">
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Video phóng sự thời sự</a></li>
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Kho tư liệu ảnh sự kiện</a></li>
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Đồ họa Infographic số hóa</a></li>
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Podcast & Bản tin phát thanh</a></li>
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Sách điện tử & Báo cáo tổng kết</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-8 pt-4 border-t border-slate-800 flex flex-col lg:flex-row items-center justify-between text-[12.5px] xl:text-[13.5px] text-slate-400 gap-3">
+        <p class="text-center lg:text-left">© 2026 Bản quyền thuộc Bộ Khoa học và Công nghệ. Ghi rõ nguồn khi phát hành lại thông tin.</p>
+        <div class="flex flex-wrap items-center justify-center gap-4 shrink-0">
+          <a href="#" class="hover:text-white transition">Điều khoản sử dụng</a>
+          <a href="#" class="hover:text-white transition">Chính sách bảo mật</a>
+          <a href="hoi-dap.html" class="hover:text-white transition">Sơ đồ cổng</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPT LOGIC LỊCH SỰ KIỆN SẮP TỚI -->
+  <script>
+    // Lọc sự kiện theo chủ đề
+    function filterUpcomingEvents(category, btnEl) {
+      document.querySelectorAll('.upcoming-tab-btn').forEach(btn => {
+        btn.classList.remove('bg-slate-900', 'text-white', 'font-bold');
+        btn.classList.add('bg-slate-100', 'text-slate-700', 'font-semibold');
+      });
+      if (btnEl) {
+        btnEl.classList.remove('bg-slate-100', 'text-slate-700', 'font-semibold');
+        btnEl.classList.add('bg-slate-900', 'text-white', 'font-bold');
+      }
+
+      const cards = document.querySelectorAll('.upcoming-card');
+      cards.forEach(card => {
+        const cat = card.getAttribute('data-category');
+        if (category === 'all' || cat === category || cat === 'all') {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    // Tìm kiếm sự kiện theo từ khóa
+    function searchUpcomingEvents(keyword) {
+      const q = keyword.trim().toLowerCase();
+      const cards = document.querySelectorAll('.upcoming-card');
+      cards.forEach(card => {
+        const title = card.getAttribute('data-title') || '';
+        const text = card.textContent.toLowerCase();
+        if (!q || title.includes(q) || text.includes(q)) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    // Nhấp vào ngày trên Mini Calendar để cuộn tới sự kiện
+    function highlightEventByDay(day) {
+      const card = document.querySelector(`.upcoming-card[data-day="${day}"]`);
+      if (card) {
+        card.style.display = '';
+        card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        card.classList.add('ring-4', 'ring-red-500', 'shadow-2xl');
+        setTimeout(() => {
+          card.classList.remove('ring-4', 'ring-red-500', 'shadow-2xl');
+        }, 2500);
+      }
+    }
+
+    // Modal Đăng ký tham dự
+    function openRegisterModal(name, time, loc) {
+      document.getElementById('modalEventName').textContent = name;
+      document.getElementById('modalEventTime').innerHTML = `<i class="fa-regular fa-clock text-red-600 mr-1"></i> ${time}`;
+      document.getElementById('modalEventLocation').innerHTML = `<i class="fa-solid fa-location-dot text-slate-500 mr-1"></i> ${loc}`;
+      document.getElementById('eventRegisterModal').classList.remove('hidden');
+    }
+
+    function closeRegisterModal() {
+      document.getElementById('eventRegisterModal').classList.add('hidden');
+    }
+
+    function handleRegisterSubmit(e) {
+      e.preventDefault();
+      const ticketId = 'MST-EV2026-' + Math.floor(1000 + Math.random() * 9000);
+      alert(`ĐĂNG KÝ THÀNH CÔNG!\n\nCảm ơn Quý đại biểu đã đăng ký tham dự.\n• Mã vé điện tử của bạn: ${ticketId}\n• Giấy mời chính thức và mã QR Check-in đã được gửi tới email của bạn.\n• Ban tổ chức sẽ liên hệ hỗ trợ trước sự kiện 24 giờ.`);
+      closeRegisterModal();
+    }
+
+    function promptSubscribeSchedule() {
+      const email = prompt("Vui lòng nhập Email để nhận Lịch sự kiện KH&CN hàng tuần:", "daibieu@doanhnghiep.vn");
+      if (email) {
+        alert(`Hệ thống đã ghi nhận email "${email}". Bạn sẽ nhận được bản tin lịch sự kiện và giấy mời tự động vào sáng thứ Hai hàng tuần!`);
+      }
+    }
+
+    function handleQuickSubscribe(e) {
+      e.preventDefault();
+      alert("Đăng ký nhận bản tin Lịch sự kiện KH&CN thành công! Chúng tôi đã gửi email kích hoạt xác thực.");
+    }
+
+    function downloadEventDoc(docName) {
+      alert(`Đang tải xuống tài liệu: ${docName}\n(Định dạng PDF chuẩn do Ban tổ chức phát hành).`);
+    }
+
+    function showEventAgendaModal(eventId) {
+      const card = document.querySelectorAll('.upcoming-card')[eventId - 1];
+      if (card) {
+        const title = card.querySelector('h4').textContent.trim();
+        alert(`CHƯƠNG TRÌNH DỰ KIẾN (AGENDA):\n\n${title}\n\n• 08:00 - 08:30: Đón tiếp đại biểu & Check-in QR\n• 08:30 - 09:00: Phát biểu khai mạc của Lãnh đạo Bộ KH&CN\n• 09:00 - 10:30: Báo cáo tham luận & Công bố giải pháp\n• 10:30 - 11:30: Tọa đàm bàn tròn (Q&A)\n• 11:30 - 12:00: Ký kết hợp tác và Bế mạc`);
+      }
+    }
+  </script>
+
+  <script src="prototype-nav.js"></script>
+</body>
+</html>

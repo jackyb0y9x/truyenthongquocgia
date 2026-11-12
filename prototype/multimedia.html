@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multimedia & Tin tức nổi bật | Nền tảng Truyền thông Quốc Gia</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontSize: {
+            xs: ['0.90625rem', { lineHeight: '1.35rem' }],
+            sm: ['1rem', { lineHeight: '1.45rem' }],
+            base: ['1.125rem', { lineHeight: '1.65rem' }],
+            lg: ['1.25rem', { lineHeight: '1.8rem' }],
+            xl: ['1.375rem', { lineHeight: '1.9rem' }],
+            '2xl': ['1.625rem', { lineHeight: '2.1rem' }],
+            '3xl': ['2rem', { lineHeight: '2.45rem' }]
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <style> 
+    body { font-family: 'Inter', sans-serif; } 
+    @keyframes marqueeText {
+      0% { transform: translateX(100vw); }
+      100% { transform: translateX(-100%); }
+    }
+    .marquee-text-flow {
+      display: inline-block;
+      white-space: nowrap;
+      animation: marqueeText 32s linear infinite;
+    }
+    .marquee-text-flow:hover {
+      animation-play-state: paused;
+    }
+  
+    .max-w-7xl {
+      max-width: 90rem !important;
+    }
+    header h1 {
+      font-family: 'Inter', sans-serif !important;
+      font-weight: 800 !important;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col">
+
+  <!-- TOP UTILITY BAR -->
+  <div class="bg-[#0b1c33] text-slate-200 text-[13px] py-1.5 px-4 sm:px-8 border-b border-slate-700/60">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-2">
+      <div class="flex items-center gap-3">
+        <span class="text-slate-300"><i class="fa-regular fa-calendar-check mr-1.5 text-amber-400"></i>Thứ Năm, 27/08/2026</span>
+      </div>
+      <div class="flex items-center gap-4 text-[13px]">
+        <div class="flex items-center gap-1.5 font-bold">
+          <span class="text-amber-400">VI</span>
+          <span class="text-slate-500">/</span>
+          <span class="text-slate-400 hover:text-white cursor-pointer">EN</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="bg-white border-b border-slate-200 shadow-sm sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 py-3.5 flex flex-col md:flex-row items-center justify-between gap-4">
+      <a href="index.html" class="flex items-center gap-3.5 group">
+        <img src="quoc-huy.png" alt="Quốc huy Việt Nam" class="w-12 h-12 object-contain drop-shadow">
+        <div>
+          <h1 class="text-[14.5px] sm:text-[16px] md:text-[18px] lg:text-[18px] xl:text-[20px] font-extrabold tracking-normal uppercase text-red-800 leading-normal">
+            <span class="block whitespace-nowrap">NỀN TẢNG TRUYỀN THÔNG SỐ QUỐC GIA VỀ KHOA HỌC, CÔNG NGHỆ,</span>
+            <span class="block mt-1 whitespace-nowrap">ĐỔI MỚI SÁNG TẠO VÀ CHUYỂN ĐỔI SỐ</span>
+          </h1>
+        </div>
+      </a>
+
+      <div class="w-full md:w-80 lg:w-96 relative shrink-0">
+        <input type="text" placeholder="Tìm kiếm tin bài, video, ảnh..." 
+          class="w-full pl-10 pr-4 py-2 bg-slate-100 focus:bg-white text-[13px] rounded-full border border-slate-300 focus:outline-none focus:ring-2 focus:ring-red-700/30">
+        <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-[13px]"></i>
+      </div>
+    </div>
+
+    <!-- NAVIGATION -->
+        <!-- NAVIGATION -->
+        <!-- NAVIGATION -->
+    <nav class="bg-white border-t border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-8 flex items-center justify-start overflow-visible gap-1.5 text-[14.5px] sm:text-[15px] font-semibold">
+        <a href="index.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Trang chủ
+      </a>
+        
+        <!-- CHÍNH SÁCH VỚI SUBMENU CHỈ ĐẠO ĐIỀU HÀNH & GIẢI THÍCH CHÍNH SÁCH -->
+        <div class="relative group">
+          <a href="chinh-sach.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap flex items-center gap-1 cursor-pointer">
+        <span>Chính sách</span>
+        <i class="fa-solid fa-chevron-down text-[9px] text-slate-400 group-hover:text-red-800 group-hover:rotate-180 transition-transform"></i>
+      </a>
+          <!-- Submenu dropdown -->
+          <div class="hidden group-hover:block absolute left-0 top-full bg-white rounded-xl shadow-2xl border border-slate-200 py-1.5 min-w-[260px] z-50 text-slate-800 font-normal">
+            <a href="chinh-sach.html" class="flex items-center gap-2.5 px-4 py-2.5 hover:bg-slate-50 text-slate-700 hover:text-red-800 text-[14.5px] transition font-semibold">
+              <i class="fa-solid fa-landmark text-slate-400 text-[14.5px]"></i>
+              <span>Chính sách & Thể chế</span>
+            </a>
+            <a href="chinh-sach-tra-cuu.html" class="flex items-center gap-2.5 px-4 py-2.5 hover:bg-slate-50 text-slate-700 hover:text-red-800 text-[14.5px] transition font-semibold">
+              <i class="fa-solid fa-file-signature text-red-700 text-[14.5px]"></i>
+              <span>Chỉ đạo điều hành</span>
+            </a>
+            <a href="giai-thich-chinh-sach.html" class="flex items-center gap-2.5 px-4 py-2.5 hover:bg-slate-50 text-slate-700 hover:text-red-800 font-semibold text-[14.5px] transition">
+              <i class="fa-solid fa-chalkboard-user text-amber-600 text-[14.5px]"></i>
+              <span>Giải thích chính sách</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="san-pham-cong-nghe.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Sản phẩm KH&CN
+      </a>
+        <a href="bao-cao-danh-gia-truyen-thong.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Báo cáo thường niên
+      </a>
+        <a href="tai-lieu-video.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Kho tư liệu
+      </a>
+        
+        <a href="su-kien.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">Sự kiện</a>
+
+        
+        <a href="hoi-dap.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Hỏi đáp
+      </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- BREADCRUMB -->
+  <div class="bg-slate-100 border-b border-slate-200 py-3 px-4 sm:px-8 text-xs">
+    <div class="max-w-7xl mx-auto flex items-center gap-2 text-slate-500">
+      <a href="index.html" class="hover:text-red-800"><i class="fa-solid fa-house"></i> Trang chủ</a>
+      <span>/</span>
+      <span class="text-red-800 font-semibold">Tin tức</span>
+    </div>
+  </div>
+
+  <!-- BREAKING NEWS TICKER -->
+  <div class="bg-slate-900 border-b border-slate-800 text-white px-4 sm:px-8 py-2.5 text-xs overflow-hidden relative shadow-inner">
+    <div class="max-w-7xl mx-auto flex items-center gap-3">
+      <div class="shrink-0 flex items-center gap-1.5 bg-red-700 text-white px-2.5 py-0.5 rounded-full text-[13px] font-black uppercase tracking-wider shadow-sm z-10">
+        <i class="fa-solid fa-bolt text-amber-300 text-[12px] animate-pulse"></i>
+        <span>TIÊU ĐIỂM</span>
+      </div>
+      <div class="overflow-hidden whitespace-nowrap flex-1">
+        <div class="marquee-text-flow inline-flex items-center gap-8">
+          <a href="chuyen-muc-dmst.html" class="inline-flex items-center gap-2 text-amber-300 font-semibold hover:text-white transition tracking-wide text-xs sm:text-sm">
+            <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
+            Hà Nội sẽ chủ động nắm bắt cơ hội, chuyển giao công nghệ đột phá giai đoạn 2026 - 2030
+          </a>
+          <span class="text-slate-600 font-bold">•</span>
+          <a href="chuyen-muc-chuyen-doi-so.html" class="inline-flex items-center gap-2 text-sky-300 font-semibold hover:text-white transition tracking-wide text-xs sm:text-sm">
+            <span class="w-1.5 h-1.5 rounded-full bg-sky-400"></span>
+            Đổi mới sáng tạo và chuyển đổi số toàn diện: Động lực đột phá phát triển kinh tế tri thức quốc gia giai đoạn 2026 - 2030
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-8 py-8 w-full flex-1 space-y-12">
+
+    <!-- PAGE HEADER & FORMAT PILLS -->
+    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+        Tin tức nổi bật
+      </h2>
+
+      <div class="flex flex-wrap items-center gap-1.5 text-xs font-semibold">
+        <a href="multimedia.html" class="px-4 py-1.5 rounded-full bg-[#0e2646] text-white font-bold shadow-md transition flex items-center gap-1.5">
+          <i class="fa-regular fa-newspaper text-[12px] text-amber-400"></i> Tin tổng hợp
+        </a>
+        <a href="multimedia-video.html" class="px-4 py-1.5 rounded-full bg-white border border-slate-300 text-slate-700 hover:bg-slate-100 transition flex items-center gap-1.5">
+          <i class="fa-solid fa-play text-[12px] text-red-600"></i> Video
+        </a>
+        <a href="multimedia-photo.html" class="px-4 py-1.5 rounded-full bg-white border border-slate-300 text-slate-700 hover:bg-slate-100 transition flex items-center gap-1.5">
+          <i class="fa-regular fa-image text-[12px] text-blue-600"></i> Ảnh
+        </a>
+        <a href="multimedia-infographic.html" class="px-4 py-1.5 rounded-full bg-white border border-slate-300 text-slate-700 hover:bg-slate-100 transition flex items-center gap-1.5">
+          <i class="fa-solid fa-chart-pie text-[12px] text-emerald-600"></i> Infographic
+        </a>
+        <a href="multimedia-books.html" class="px-4 py-1.5 rounded-full bg-white border border-slate-300 text-slate-700 hover:bg-slate-100 transition flex items-center gap-1.5">
+          <i class="fa-solid fa-book text-[12px] text-amber-700"></i> Books
+        </a>
+        <a href="multimedia-voice.html" class="px-4 py-1.5 rounded-full bg-white border border-slate-300 text-slate-700 hover:bg-slate-100 transition flex items-center gap-1.5">
+          <i class="fa-solid fa-podcast text-[12px] text-purple-600"></i> Voice
+        </a>
+      </div>
+    </div>
+
+    <!-- HERO SPOTLIGHT SLIDER -->
+    <div class="relative rounded-2xl overflow-hidden shadow-xl bg-slate-950">
+      <div class="h-80 sm:h-96 relative flex items-end p-6 sm:p-10"
+           style="background-image: linear-gradient(to top, rgba(0,0,0,0.95) 15%, rgba(0,0,0,0.4) 60%, rgba(0,0,0,0.1)), url('https://mic.mediacdn.vn/thumb_w/750/.v-thumb/639352410187198464/2026/4/9/123phienhopthunhatbcd57ok-wm-1774927659-1775735654878216182153.mp4.jpg'); background-size: cover; background-position: center;">
+        
+        <div class="relative z-10 max-w-3xl space-y-2 text-white">
+          <span class="inline-block bg-red-700 text-white text-[12px] font-bold px-2.5 py-0.5 rounded uppercase">
+            TIÊU ĐIỂM
+          </span>
+          <h3 class="text-xl sm:text-3xl font-black leading-snug">
+            Triển khai toàn diện Nghị quyết 57/NQ-CP: Đột phá thể chế và nguồn lực công nghệ quốc gia
+          </h3>
+          <p class="text-xs text-slate-300">Bộ Khoa học và Công nghệ • Ban Chỉ đạo thực hiện Nghị quyết 57</p>
+        </div>
+
+        <!-- Slider nav controls -->
+        <button class="absolute left-4 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-black/50 text-white flex items-center justify-center hover:bg-black/80 transition">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button class="absolute right-4 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-black/50 text-white flex items-center justify-center hover:bg-black/80 transition">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- TIN MỚI -->
+    <section>
+      <div class="flex items-center justify-between mb-4 border-l-4 border-red-800 pl-3">
+        <h3 class="text-lg font-bold text-slate-900">Tin mới</h3>
+        <span class="text-xs text-slate-500">Cập nhật liên tục trong ngày</span>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <!-- 1 -->
+        <a href="chinh-sach-chi-tiet.html" class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition group">
+          <div class="h-32 bg-slate-200 overflow-hidden">
+            <img src="https://mic.mediacdn.vn/zoom/560_350/639352410187198464/2026/7/15/17841043433002202274505589963961g5081826906783871663963b1b54d59fcf7da010eddec1a1e716-17841200796081718906185-0-0-1600-2560-crop-1784120358326590592508.jpg" class="w-full h-full object-cover group-hover:scale-105 transition" alt="Cổng thông tin NQ 57">
+          </div>
+          <div class="p-3.5 space-y-1.5 text-xs">
+            <span class="inline-block bg-amber-50 text-amber-800 text-[12px] font-bold px-1.5 py-0.2 rounded">Đang được quan tâm</span>
+            <h4 class="font-bold text-slate-800 group-hover:text-red-700 line-clamp-2">Triển khai Nghị quyết 57: Quản trị kết quả để tạo chuyển biến thực chất</h4>
+          </div>
+        </a>
+
+        <!-- 2 -->
+        <a href="chuyen-muc-kinh-te-so.html" class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition group">
+          <div class="h-32 bg-slate-200 overflow-hidden">
+            <img src="https://mic.mediacdn.vn/zoom/560_350/639352410187198464/2026/10/14/-ra-co-hoi-lon-de-viet-nam-but-pha-vuon-len-nho-khoa-hoc-cong-nghe-doi-moi-sang-tao-va-chuyen-doi-so-17640627816141183624283-0-12-555-900-crop-17919600076031954114266.jpg" class="w-full h-full object-cover group-hover:scale-105 transition" alt="Kinh tế số NQ 57">
+          </div>
+          <div class="p-3.5 space-y-1.5 text-xs">
+            <span class="inline-block bg-blue-50 text-blue-800 text-[12px] font-bold px-1.5 py-0.2 rounded">Vì bạn theo dõi Kinh tế số</span>
+            <h4 class="font-bold text-slate-800 group-hover:text-red-700 line-clamp-2">Nghị quyết 57 mở ra cơ hội lớn để Việt Nam bứt phá nhờ KHCN và CĐS</h4>
+          </div>
+        </a>
+
+        <!-- 3 -->
+        <a href="chuyen-muc-chuyen-doi-so.html" class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition group">
+          <div class="h-32 bg-slate-200 overflow-hidden">
+            <img src="https://mic.mediacdn.vn/zoom/560_350/639352410187198464/2026/6/10/11f747-17810778474411408485072-0-0-1281-2049-crop-1781077881745336430234.jpg" class="w-full h-full object-cover group-hover:scale-105 transition" alt="Chuyển đổi số NQ 57">
+          </div>
+          <div class="p-3.5 space-y-1.5 text-xs">
+            <span class="inline-block bg-teal-50 text-teal-800 text-[12px] font-bold px-1.5 py-0.2 rounded">Vì bạn theo dõi Chuyển đổi số</span>
+            <h4 class="font-bold text-slate-800 group-hover:text-red-700 line-clamp-2">Nghị quyết 57-NQ/TW: Tình hình triển khai trên hệ thống giám sát</h4>
+          </div>
+        </a>
+
+        <!-- 4 -->
+        <a href="chinh-sach-chi-tiet.html" class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition group">
+          <div class="h-32 bg-slate-200 overflow-hidden">
+            <img src="https://mic.mediacdn.vn/zoom/560_350/639352410187198464/2026/6/30/1-485985-17828039681562016587819-0-0-677-1083-crop-1782804203350692812851.jpg" class="w-full h-full object-cover group-hover:scale-105 transition" alt="Các địa phương triển khai NQ 57">
+          </div>
+          <div class="p-3.5 space-y-1.5 text-xs">
+            <span class="inline-block bg-amber-50 text-amber-800 text-[12px] font-bold px-1.5 py-0.2 rounded">Đang được quan tâm</span>
+            <h4 class="font-bold text-slate-800 group-hover:text-red-700 line-clamp-2">Các địa phương đẩy mạnh triển khai đồng bộ Nghị quyết 57-NQ/TW</h4>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- SECTION TIN TỔNG HỢP (VĂN BẢN THÔNG THƯỜNG - ĐẦY ĐẶN & PHONG PHÚ) -->
+    <section id="tonghop-sec" class="space-y-6">
+      <div class="flex items-center justify-between border-l-4 border-red-800 pl-3">
+        <h3 class="text-lg font-bold text-slate-900 flex items-center gap-2">
+          <i class="fa-regular fa-newspaper text-red-700"></i> Tin tổng hợp & Dòng sự kiện
+        </h3>
+        <span class="text-xs text-slate-500">Tin bài văn bản chuyên sâu toàn diện</span>
+      </div>
+
+      <!-- Khối trên: Tiêu điểm lớn bên trái + 4 tin cập nhật bên phải -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+        <!-- Cột trái (7 cột): Tin văn bản tiêu điểm lớn, bài dài đầy đặn -->
+        <div class="lg:col-span-7 bg-white rounded-2xl border border-slate-200 p-6 sm:p-7 shadow-sm flex flex-col justify-between hover:shadow-md transition">
+          <div class="space-y-3.5">
+            <div class="flex flex-wrap items-center gap-2 text-xs">
+              <span class="bg-red-50 text-red-700 font-bold px-2.5 py-0.5 rounded-full border border-red-200">TIÊU ĐIỂM CHÍNH SÁCH</span>
+              <span class="text-slate-400">•</span>
+              <span class="text-slate-500 font-medium"><i class="fa-regular fa-clock mr-1"></i>Hôm nay, 08:30</span>
+              <span class="text-slate-400">•</span>
+
+            </div>
+
+            <h3 class="text-xl sm:text-2xl font-black text-slate-900 hover:text-red-700 transition leading-snug">
+              <a href="san-pham-chi-tiet.html?id=SP-AI-01&name=M%C3%B4%20h%C3%ACnh%20Ng%C3%B4n%20ng%E1%BB%AF%20l%E1%BB%9Bn%20Ti%E1%BA%BFng%20Vi%E1%BB%87t">
+                Chính phủ ban hành Nghị quyết đột phá phát triển hạ tầng tính toán Trí tuệ nhân tạo và kinh tế dữ liệu số quốc gia
+              </a>
+            </h3>
+
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-serif-body">
+              Nghị quyết số 57/NQ-CP khẳng định khoa học công nghệ, đổi mới sáng tạo và chuyển đổi số là động lực tăng trưởng then chốt của đất nước giai đoạn 2026 - 2030. Chính phủ đặt mục tiêu kinh tế số đóng góp tối thiểu 35% GDP, đưa Việt Nam vào nhóm 3 quốc gia dẫn đầu ASEAN về chỉ số phát triển AI và làm chủ hạ tầng đám mây có chủ quyền số.
+            </p>
+
+            <p class="text-xs text-slate-600 leading-relaxed font-serif-body hidden sm:block">
+              Hệ thống cơ chế chính sách đặc thù sẽ được triển khai đồng bộ: Miễn giảm thuế thu nhập doanh nghiệp trong 4 năm đầu cho các dự án trung tâm tính toán hiệu năng cao; cấp bảo trợ trực tiếp cho các mô hình ngôn ngữ lớn (LLM) tiếng Việt; đồng thời thành lập hành lang pháp lý thử nghiệm có kiểm soát (Sandbox) tại Khu công nghệ cao Hòa Lạc và Khu công nghệ cao TP. Hồ Chí Minh.
+            </p>
+
+            <!-- Trích dẫn điểm mới nổi bật -->
+            <div class="p-3.5 bg-slate-50 rounded-xl border-l-4 border-red-700 text-xs text-slate-700 space-y-1">
+              <span class="font-bold text-red-800 uppercase text-[12px] tracking-wider block">Điểm đột phá thể chế:</span>
+              <p class="italic text-slate-600">
+                "Chấp nhận rủi ro khoa học trong nghiên cứu mạo hiểm, trao quyền tự chủ tối đa cho viện nghiên cứu, trường đại học gắn liền với kết quả thương mại hóa sản phẩm Make in Viet Nam."
+              </p>
+            </div>
+          </div>
+
+          <div class="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+            <span class="flex items-center gap-1.5"></span>
+            <a href="san-pham-chi-tiet.html?id=SP-AI-01&name=M%C3%B4%20h%C3%ACnh%20Ng%C3%B4n%20ng%E1%BB%AF%20l%E1%BB%9Bn%20Ti%E1%BA%BFng%20Vi%E1%BB%87t" class="text-red-700 font-bold hover:underline flex items-center gap-1">
+              Đọc toàn văn văn bản <i class="fa-solid fa-arrow-right text-[12px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Cột phải (5 cột): Danh sách tin tức văn bản phong phú, đầy đặn -->
+        <div class="lg:col-span-5 bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 shadow-sm flex flex-col justify-between space-y-3 divide-y divide-slate-100">
+          <div>
+            <div class="flex items-center justify-between pb-2">
+              <h4 class="font-bold text-xs uppercase tracking-wider text-slate-800 flex items-center gap-1.5">
+                <i class="fa-solid fa-bolt text-amber-500"></i> Dòng sự kiện nổi bật
+              </h4>
+              <span class="text-[12px] text-slate-400 font-medium">4 tin mới nhất</span>
+            </div>
+
+            <!-- Tin 1 -->
+            <article class="pt-3 space-y-1 group">
+              <div class="flex items-center gap-2 text-[13px] text-slate-400">
+                <span class="text-blue-700 font-bold bg-blue-50 px-1.5 py-0.5 rounded">Kinh tế số</span>
+                <span>•</span>
+                <span>27/08/2026</span>
+              </div>
+              <h5 class="font-bold text-xs sm:text-sm text-slate-900 group-hover:text-red-700 transition line-clamp-2 leading-snug">
+                <a href="chuyen-muc-kinh-te-so.html">Bộ KH&CN chủ trì hội thảo đánh giá mức độ đóng góp của kinh tế số vào tăng trưởng GRDP địa phương</a>
+              </h5>
+              <p class="text-[13px] text-slate-500 line-clamp-2 leading-relaxed">
+                Hơn 40 tỉnh, thành phố hoàn thành chỉ tiêu tích hợp dữ liệu kinh tế số theo chuẩn kết nối LGSP quốc gia, mở rộng thanh toán số tại 100% chợ truyền thống.
+              </p>
+            </article>
+
+            <!-- Tin 2 -->
+            <article class="pt-3 space-y-1 group">
+              <div class="flex items-center gap-2 text-[13px] text-slate-400">
+                <span class="text-amber-700 font-bold bg-amber-50 px-1.5 py-0.5 rounded">Sở hữu trí tuệ</span>
+                <span>•</span>
+                <span>26/08/2026</span>
+              </div>
+              <h5 class="font-bold text-xs sm:text-sm text-slate-900 group-hover:text-red-700 transition line-clamp-2 leading-snug">
+                <a href="chuyen-muc-so-huu-tri-tue.html">Cấp chứng nhận bảo hộ độc quyền cho 15 sáng chế công nghệ cao lĩnh vực năng lượng tái tạo và lưu trữ điện</a>
+              </h5>
+              <p class="text-[13px] text-slate-500 line-clamp-2 leading-relaxed">
+                Rút ngắn thời gian thẩm định đơn đăng ký sở hữu trí tuệ xuống còn dưới 9 tháng nhờ ứng dụng trợ lý số tự động đối soát ngữ nghĩa véc-tơ.
+              </p>
+            </article>
+
+            <!-- Tin 3 -->
+            <article class="pt-3 space-y-1 group">
+              <div class="flex items-center gap-2 text-[13px] text-slate-400">
+                <span class="text-emerald-700 font-bold bg-emerald-50 px-1.5 py-0.5 rounded">Đổi mới sáng tạo</span>
+                <span>•</span>
+                <span>25/08/2026</span>
+              </div>
+              <h5 class="font-bold text-xs sm:text-sm text-slate-900 group-hover:text-red-700 transition line-clamp-2 leading-snug">
+                <a href="chuyen-muc-dmst.html">Ra mắt Quỹ Hỗ trợ Đổi mới sáng tạo Quốc gia quy mô 5.000 tỷ đồng hỗ trợ doanh nghiệp DeepTech Việt</a>
+              </h5>
+              <p class="text-[13px] text-slate-500 line-clamp-2 leading-relaxed">
+                Tập trung vốn mồi đầu tư mạo hiểm cho các dự án khởi nghiệp công nghệ sinh học, lượng tử, robot thông minh và vi mạch bán dẫn.
+              </p>
+            </article>
+
+            <!-- Tin 4 -->
+            <article class="pt-3 space-y-1 group">
+              <div class="flex items-center gap-2 text-[13px] text-slate-400">
+                <span class="text-purple-700 font-bold bg-purple-50 px-1.5 py-0.5 rounded">Bán dẫn AI</span>
+                <span>•</span>
+                <span>24/08/2026</span>
+              </div>
+              <h5 class="font-bold text-xs sm:text-sm text-slate-900 group-hover:text-red-700 transition line-clamp-2 leading-snug">
+                <a href="san-pham-ban-dan.html">Khai giảng chương trình đào tạo 5.000 kỹ sư vi mạch bán dẫn chuyên sâu hợp tác quốc tế</a>
+              </h5>
+              <p class="text-[13px] text-slate-500 line-clamp-2 leading-relaxed">
+                Liên minh 6 trường đại học kỹ thuật hàng đầu phối hợp các tập đoàn bán dẫn thiết lập phòng lab mô phỏng thiết kế chip chuẩn 7nm.
+              </p>
+            </article>
+          </div>
+
+          <div class="pt-3 mt-2 border-t border-slate-100 flex items-center justify-between text-xs">
+            <span class="text-[13px] text-slate-500"></span>
+            <a href="chuyen-muc-khcn.html" class="text-red-700 font-bold hover:underline flex items-center gap-1">
+              Xem luồng tin theo chuyên mục <i class="fa-solid fa-angle-right text-[12px]"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Khối dưới bổ sung: Hàng 3 tin bài văn bản chuyên đề (Lấp đầy hoàn toàn khoảng trống ở dưới) -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5 pt-1">
+        <!-- Card văn bản 1 -->
+        <div class="bg-white rounded-2xl border border-slate-200 p-5 shadow-sm space-y-2.5 hover:shadow-md hover:border-red-200 transition group flex flex-col justify-between">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between text-[13px] text-slate-400">
+              <span class="text-red-700 font-bold bg-red-50 px-2 py-0.5 rounded">Khoa học & Đời sống</span>
+              <span>27/08/2026</span>
+            </div>
+            <h4 class="font-bold text-sm text-slate-900 group-hover:text-red-700 transition line-clamp-2 leading-snug">
+              <a href="chuyen-muc-khcn.html">Thúc đẩy thương mại hóa kết quả nghiên cứu khoa học: Cởi trói cơ chế định giá tài sản công</a>
+            </h4>
+            <p class="text-xs text-slate-600 line-clamp-3 leading-relaxed">
+              Nghị định mới cho phép các nhà khoa học và viện trường được hưởng tối đa 35% giá trị hợp đồng chuyển giao, tạo động lực mạnh mẽ đưa công trình nghiên cứu từ phòng thí nghiệm ra thị trường.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+            <span class="text-[13px]">Tác giả: Ban Thể chế</span>
+            <a href="chuyen-muc-khcn.html" class="text-red-700 hover:text-red-800 font-bold flex items-center gap-1 text-[13px]">
+              Chi tiết <i class="fa-solid fa-arrow-right text-[11px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card văn bản 2 -->
+        <div class="bg-white rounded-2xl border border-slate-200 p-5 shadow-sm space-y-2.5 hover:shadow-md hover:border-blue-200 transition group flex flex-col justify-between">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between text-[13px] text-slate-400">
+              <span class="text-blue-700 font-bold bg-blue-50 px-2 py-0.5 rounded">Hạ tầng số</span>
+              <span>26/08/2026</span>
+            </div>
+            <h4 class="font-bold text-sm text-slate-900 group-hover:text-blue-700 transition line-clamp-2 leading-snug">
+              <a href="chuyen-muc-buu-chinh-vien-thong.html">Quy hoạch mạng lưới viễn thông băng rộng 5G thương mại hóa phủ sóng 99% khu công nghiệp cả nước</a>
+            </h4>
+            <p class="text-xs text-slate-600 line-clamp-3 leading-relaxed">
+              Hạ tầng trạm thu phát sóng Open RAN Make in Viet Nam đáp ứng tiêu chuẩn an toàn cấp độ 4, phục vụ các nhà máy thông minh và trung tâm logistics cảng biển tự động hóa cao.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+            <span class="text-[13px]">Tác giả: Ban Hạ tầng</span>
+            <a href="chuyen-muc-buu-chinh-vien-thong.html" class="text-blue-700 hover:text-blue-800 font-bold flex items-center gap-1 text-[13px]">
+              Chi tiết <i class="fa-solid fa-arrow-right text-[11px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card văn bản 3 -->
+        <div class="bg-white rounded-2xl border border-slate-200 p-5 shadow-sm space-y-2.5 hover:shadow-md hover:border-emerald-200 transition group flex flex-col justify-between">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between text-[13px] text-slate-400">
+              <span class="text-emerald-700 font-bold bg-emerald-50 px-2 py-0.5 rounded">Tiêu chuẩn chất lượng</span>
+              <span>25/08/2026</span>
+            </div>
+            <h4 class="font-bold text-sm text-slate-900 group-hover:text-emerald-700 transition line-clamp-2 leading-snug">
+              <a href="chuyen-muc-tieu-chuan-do-luong.html">Ban hành Bộ tiêu chuẩn TCVN cho hệ thống truy xuất nguồn gốc số và hộ chiếu điện tử sản phẩm</a>
+            </h4>
+            <p class="text-xs text-slate-600 line-clamp-3 leading-relaxed">
+              Tiêu chuẩn mới hài hòa theo chuẩn quốc tế GS1 và quy định khắt khe của Liên minh châu Âu (EU), giúp hàng hóa nông sản công nghệ cao Việt Nam mở rộng xuất khẩu thuận lợi.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+            <span class="text-[13px]">Tác giả: Ban Đo lường</span>
+            <a href="chuyen-muc-tieu-chuan-do-luong.html" class="text-emerald-700 hover:text-emerald-800 font-bold flex items-center gap-1 text-[13px]">
+              Chi tiết <i class="fa-solid fa-arrow-right text-[11px]"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- SECTION VIDEO -->
+    <section id="video-sec" class="space-y-4">
+      <div class="flex items-center justify-between border-l-4 border-red-800 pl-3">
+        <h3 class="text-lg font-bold text-slate-900 flex items-center gap-2">
+          <i class="fa-solid fa-circle-play text-red-700"></i> Video Phóng sự & Thời sự KH&CN
+        </h3>
+        <a href="multimedia-video.html" class="text-xs text-red-700 font-bold hover:underline">Xem tất cả Video →</a>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <!-- V1 -->
+        <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition group">
+          <div class="h-36 bg-slate-800 relative overflow-hidden">
+            <img src="https://mic.mediacdn.vn/zoom/560_350/639352410187198464/2026/10/14/-ra-co-hoi-lon-de-viet-nam-but-pha-vuon-len-nho-khoa-hoc-cong-nghe-doi-moi-sang-tao-va-chuyen-doi-so-17640627816141183624283-0-12-555-900-crop-17919600076031954114266.jpg" class="w-full h-full object-cover group-hover:scale-105 transition" alt="Nghị quyết 57 MST">
+            <span class="absolute bottom-2 right-2 bg-black/80 text-white text-[12px] px-1.5 py-0.5 rounded font-mono">02:29</span>
+            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition bg-black/30">
+              <i class="fa-solid fa-play text-white text-2xl"></i>
+            </div>
+          </div>
+          <div class="p-3.5">
+            <h4 class="font-bold text-xs text-slate-900 group-hover:text-red-700 line-clamp-2">Nghị quyết 57 mở ra cơ hội lớn để Việt Nam bứt phá nhờ KHCN, ĐMST và CĐS</h4>
+          </div>
+        </div>
+
+        <!-- V2 -->
+        <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition group">
+          <div class="h-36 bg-slate-800 relative overflow-hidden">
+            <img src="https://mic.mediacdn.vn/zoom/560_350/639352410187198464/2026/8/4/trien-khai-nghi-quyet-57-quan-tri-ket-qua-de-tao-chuyen-bien-thuc-chat-00-00-05-20-still001-17858601249781615368464-0-85-1080-1813-crop-1785860154238822347715.png" class="w-full h-full object-cover group-hover:scale-105 transition" alt="Triển khai Nghị quyết 57">
+            <span class="absolute bottom-2 right-2 bg-black/80 text-white text-[12px] px-1.5 py-0.5 rounded font-mono">02:18</span>
+            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition bg-black/30">
+              <i class="fa-solid fa-play text-white text-2xl"></i>
+            </div>
+          </div>
+          <div class="p-3.5">
+            <h4 class="font-bold text-xs text-slate-900 group-hover:text-red-700 line-clamp-2">Triển khai Nghị quyết 57: Quản trị kết quả để tạo chuyển biến thực chất</h4>
+          </div>
+        </div>
+
+        <!-- V3 -->
+        <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition group">
+          <div class="h-36 bg-slate-800 relative overflow-hidden">
+            <img src="https://mic.mediacdn.vn/zoom/560_350/639352410187198464/2026/8/19/1-312818-1787108290347-1787108291436142272388-34-0-747-1140-crop-1787108965852827414626.jpg" class="w-full h-full object-cover group-hover:scale-105 transition" alt="Hệ sinh thái công nghệ NQ 57">
+            <span class="absolute bottom-2 right-2 bg-black/80 text-white text-[12px] px-1.5 py-0.5 rounded font-mono">01:40</span>
+            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition bg-black/30">
+              <i class="fa-solid fa-play text-white text-2xl"></i>
+            </div>
+          </div>
+          <div class="p-3.5">
+            <h4 class="font-bold text-xs text-slate-900 group-hover:text-red-700 line-clamp-2">Hệ sinh thái công nghệ và phương tiện không người lái đột phá từ Nghị quyết 57</h4>
+          </div>
+        </div>
+
+        <!-- V4 -->
+        <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition group">
+          <div class="h-36 bg-slate-800 relative overflow-hidden">
+            <img src="https://mic.mediacdn.vn/zoom/560_350/639352410187198464/2026/7/5/010720260217-z7995724204418-508c2e1e10b4f7a6202bcc181fe889bb-17832367327091491676511-84-0-1334-2000-crop-1783236737333193343026.jpg" class="w-full h-full object-cover group-hover:scale-105 transition" alt="Hiệu quả cụ thể Nghị quyết 57">
+            <span class="absolute bottom-2 right-2 bg-black/80 text-white text-[12px] px-1.5 py-0.5 rounded font-mono">04:58</span>
+            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition bg-black/30">
+              <i class="fa-solid fa-play text-white text-2xl"></i>
+            </div>
+          </div>
+          <div class="p-3.5">
+            <h4 class="font-bold text-xs text-slate-900 group-hover:text-red-700 line-clamp-2">Triển khai Nghị quyết 57 phải đo được bằng sản phẩm và hiệu quả cụ thể</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION ẢNH -->
+    <section id="photo-sec" class="space-y-4">
+      <div class="flex items-center justify-between border-l-4 border-red-800 pl-3">
+        <h3 class="text-lg font-bold text-slate-900 flex items-center gap-2">
+          <i class="fa-regular fa-image text-blue-700"></i> Phóng sự Ảnh & Hoạt động
+        </h3>
+        <a href="multimedia-photo.html" class="text-xs text-red-700 font-bold hover:underline">Xem tất cả Ảnh →</a>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-4">
+        <!-- Big Photo Card (Col 7) -->
+        <div class="lg:col-span-7 rounded-2xl overflow-hidden relative h-64 sm:h-80 shadow group">
+          <img src="https://mic.mediacdn.vn/zoom/560_350/639352410187198464/2026/10/24/fec72f0437a5e8745337caa48cf9b10e204d3145017t11000l1-aiien7-17928078642721410459650-0-47-595-1000-crop-17928078818391056008190.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Lan tỏa tinh thần Nghị quyết 57">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent p-6 flex flex-col justify-end text-white">
+            <h4 class="font-bold text-base sm:text-xl group-hover:text-amber-300 transition">Lan tỏa tinh thần Nghị quyết 57-NQ/TW từ Cuộc thi trực tuyến toàn quốc</h4>
+            <span class="text-xs text-slate-300 mt-1"><i class="fa-solid fa-camera mr-1"></i>12 ảnh • MST.GOV.VN</span>
+          </div>
+        </div>
+
+        <!-- 4 Small Photo Cards (Col 5) -->
+        <div class="lg:col-span-5 grid grid-cols-2 gap-3">
+          <div class="rounded-xl overflow-hidden relative h-32 sm:h-38 shadow group">
+            <img src="https://mic.mediacdn.vn/zoom/560_350/639352410187198464/2026/10/1/photo-1790847167008-17908471698471336286555-0-74-805-1362-crop-17908474063331642582332.jpeg" class="w-full h-full object-cover group-hover:scale-105 transition" alt="Nghệ An triển khai NQ 57">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent p-3 flex items-end text-white text-[13px] font-bold">
+              Nghệ An đôn đốc thực hiện nhiệm vụ theo Nghị quyết 57
+            </div>
+          </div>
+
+          <div class="rounded-xl overflow-hidden relative h-32 sm:h-38 shadow group">
+            <img src="https://mic.mediacdn.vn/zoom/560_350/639352410187198464/2026/9/5/hinh-anh-3-1788612734007824862819-0-28-320-540-crop-17886128305461553852089.jpeg" class="w-full h-full object-cover group-hover:scale-105 transition" alt="An Giang triển khai NQ 57">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent p-3 flex items-end text-white text-[13px] font-bold">
+              An Giang tập trung tháo gỡ điểm nghẽn thực hiện Nghị quyết 57
+            </div>
+          </div>
+
+          <div class="rounded-xl overflow-hidden relative h-32 sm:h-38 shadow group">
+            <img src="https://mic.mediacdn.vn/zoom/560_350/639352410187198464/2026/8/23/chatgpt-image-172714-23-thg-8-2026-1-17874808969631407266217-0-166-941-1672-crop-1787481214332893593353.png" class="w-full h-full object-cover group-hover:scale-105 transition" alt="Tây Ninh triển khai NQ 57">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent p-3 flex items-end text-white text-[13px] font-bold">
+              Tây Ninh quyết liệt tạo nền tảng thực hiện Nghị quyết 57-NQ/TW
+            </div>
+          </div>
+
+          <div class="rounded-xl overflow-hidden relative h-32 sm:h-38 shadow group">
+            <img src="https://mic.mediacdn.vn/zoom/560_350/639352410187198464/2026/6/4/193a1dc3b882c5d4824935e681108196-17805569889081545410304-0-0-754-1206-crop-17805570812211936123531.jpg" class="w-full h-full object-cover group-hover:scale-105 transition" alt="Tuyên Quang triển khai NQ 57">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent p-3 flex items-end text-white text-[13px] font-bold">
+              Tuyên Quang triển khai hiệu quả Nghị quyết 57
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION INFOGRAPHIC & BOOKS -->
+    <div id="info-sec" class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+      
+      <!-- INFOGRAPHIC (LEFT) -->
+      <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm space-y-4">
+        <div class="flex items-center justify-between pb-3 border-b border-slate-100">
+          <h4 class="font-bold text-sm text-slate-900 flex items-center gap-2">
+            <i class="fa-solid fa-chart-pie text-emerald-600"></i> Infographic
+          </h4>
+          <a href="multimedia-infographic.html" class="text-xs text-red-700 font-bold hover:underline">Xem tất cả →</a>
+        </div>
+
+        <div class="space-y-4 text-xs">
+          <div class="rounded-xl overflow-hidden h-44 relative bg-slate-900 group">
+            <img src="https://mic.mediacdn.vn/zoom/560_350/639352410187198464/2026/7/22/infonhiem-vu-trong-tam-theo-nq57-17847170026701073134971-0-0-960-1536-crop-178471703575979911915.png" class="w-full h-full object-cover group-hover:scale-105 transition" alt="infographic Nghị quyết 57">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-4 flex flex-col justify-end text-white">
+              <h5 class="font-bold text-sm leading-snug">Một số nhiệm vụ trọng tâm lĩnh vực Công nghiệp công nghệ số theo Nghị quyết 57/NQ-TW</h5>
+              <p class="text-[13px] text-slate-300 mt-1">Đồ họa trực quan hóa hệ thống chỉ tiêu chiến lược và nhóm giải pháp trọng tâm phát triển công nghệ cao và kinh tế số quốc gia.</p>
+            </div>
+          </div>
+
+          <div class="space-y-2 pt-1">
+            <a href="#" class="block text-slate-700 hover:text-red-700 font-medium">→ Hướng dẫn triển khai công tác bình đẳng giới năm 2026</a>
+            <a href="#" class="block text-slate-700 hover:text-red-700 font-medium">→ Công nghệ chiến lược được hỗ trợ tới 100% kinh phí</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- BOOKS (RIGHT) -->
+      <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm space-y-4">
+        <div class="flex items-center justify-between pb-3 border-b border-slate-100">
+          <h4 class="font-bold text-sm text-slate-900 flex items-center gap-2">
+            <i class="fa-solid fa-book text-amber-700"></i> Books & Ấn phẩm
+          </h4>
+          <a href="multimedia-books.html" class="text-xs text-red-700 font-bold hover:underline">Xem tất cả →</a>
+        </div>
+
+        <div class="space-y-3 text-xs">
+          <div class="flex items-center gap-3 p-2.5 rounded-xl bg-slate-50 border border-slate-100 hover:bg-slate-100 transition group cursor-pointer">
+            <div class="w-12 h-16 bg-amber-700 text-white rounded flex items-center justify-center shrink-0 shadow font-bold text-sm">
+              <i class="fa-solid fa-book-open"></i>
+            </div>
+            <div>
+              <h5 class="font-bold text-slate-900 group-hover:text-red-700">Ngành Khoa học và Công nghệ – Khơi thông nguồn lực kiến tạo tương lai</h5>
+              <span class="text-[12px] text-slate-400">Xuất bản 2026 • 240 trang</span>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3 p-2.5 rounded-xl bg-slate-50 border border-slate-100 hover:bg-slate-100 transition group cursor-pointer">
+            <div class="w-12 h-16 bg-blue-800 text-white rounded flex items-center justify-center shrink-0 shadow font-bold text-sm">
+              <i class="fa-solid fa-book-bookmark"></i>
+            </div>
+            <div>
+              <h5 class="font-bold text-slate-900 group-hover:text-red-700">Bộ Khoa học và Công nghệ – Kế thừa lịch sử, hướng tới tương lai</h5>
+              <span class="text-[12px] text-slate-400">Kỷ yếu ngành KH&CN • 180 trang</span>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3 p-2.5 rounded-xl bg-slate-50 border border-slate-100 hover:bg-slate-100 transition group cursor-pointer">
+            <div class="w-12 h-16 bg-emerald-800 text-white rounded flex items-center justify-center shrink-0 shadow font-bold text-sm">
+              <i class="fa-solid fa-chart-simple"></i>
+            </div>
+            <div>
+              <h5 class="font-bold text-slate-900 group-hover:text-red-700">Báo cáo tổng kết năm 2024, phương hướng, nhiệm vụ năm 2025</h5>
+              <span class="text-[12px] text-slate-400">Báo cáo thường niên • 95 trang</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- SECTION VOICE / PODCAST -->
+    <section id="voice-sec" class="space-y-4">
+      <div class="flex items-center justify-between border-l-4 border-red-800 pl-3">
+        <h3 class="text-lg font-bold text-slate-900 flex items-center gap-2">
+          <i class="fa-solid fa-podcast text-purple-700"></i> Voice & Podcasts
+        </h3>
+        <a href="multimedia-voice.html" class="text-xs text-red-700 font-bold hover:underline">Xem tất cả →</a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+        <!-- Audio 1 -->
+        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex items-center gap-3.5 group">
+          <button onclick="alert('Đang phát podcast: Bộ trưởng nói về công tác cán bộ...');" 
+            class="w-11 h-11 rounded-full bg-purple-600 hover:bg-purple-700 text-white flex items-center justify-center shrink-0 shadow transition">
+            <i class="fa-solid fa-play ml-0.5 text-sm"></i>
+          </button>
+          <div class="space-y-1">
+            <h4 class="font-bold text-slate-900 group-hover:text-purple-700 line-clamp-1">Bộ trưởng Nguyễn Mạnh Hùng nói về công tác cán bộ</h4>
+            <span class="text-[12px] text-slate-400 flex items-center gap-1"><i class="fa-regular fa-clock"></i> 08:12 • 02/05/2026</span>
+          </div>
+        </div>
+
+        <!-- Audio 2 -->
+        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex items-center gap-3.5 group">
+          <button onclick="alert('Đang phát podcast: Gia hạn thí điểm tài khoản viễn thông...');" 
+            class="w-11 h-11 rounded-full bg-purple-600 hover:bg-purple-700 text-white flex items-center justify-center shrink-0 shadow transition">
+            <i class="fa-solid fa-play ml-0.5 text-sm"></i>
+          </button>
+          <div class="space-y-1">
+            <h4 class="font-bold text-slate-900 group-hover:text-purple-700 line-clamp-1">Gia hạn thí điểm dùng tài khoản viễn thông thanh toán dịch vụ giá trị nhỏ</h4>
+            <span class="text-[12px] text-slate-400 flex items-center gap-1"><i class="fa-regular fa-clock"></i> 05:47 • 01/12/2025</span>
+          </div>
+        </div>
+
+        <!-- Audio 3 -->
+        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex items-center gap-3.5 group">
+          <button onclick="alert('Đang phát podcast: Tổng kết quản lý tần số vô tuyến...');" 
+            class="w-11 h-11 rounded-full bg-purple-600 hover:bg-purple-700 text-white flex items-center justify-center shrink-0 shadow transition">
+            <i class="fa-solid fa-play ml-0.5 text-sm"></i>
+          </button>
+          <div class="space-y-1">
+            <h4 class="font-bold text-slate-900 group-hover:text-purple-700 line-clamp-1">Tổng kết công tác phối hợp quản lý tần số vô tuyến điện</h4>
+            <span class="text-[12px] text-slate-400 flex items-center gap-1"><i class="fa-regular fa-clock"></i> 04:20 • 01/12/2025</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#0b1e36] text-white mt-12 border-t border-slate-800 text-[14.5px]" style="font-family: 'Inter', sans-serif;">
+    <div class="max-w-[90rem] mx-auto px-4 sm:px-8 py-10">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <!-- Col 1 -->
+        <div class="md:col-span-2 space-y-3.5 min-w-0">
+          <div class="flex items-start sm:items-center gap-3.5 min-w-0">
+            <div class="w-12 h-12 rounded-full flex items-center justify-center p-0.5 filter drop-shadow-lg shrink-0">
+              <img src="quoc-huy.png" alt="Quốc huy Việt Nam" class="w-11 h-11 object-contain drop-shadow">
+            </div>
+            <div class="min-w-0 flex-1">
+              <h5 class="font-extrabold text-[14.5px] sm:text-[15.5px] lg:text-[16.5px] xl:text-[17.5px] tracking-wide uppercase text-amber-400 leading-snug sm:leading-relaxed">NỀN TẢNG TRUYỀN THÔNG SỐ QUỐC GIA VỀ KHOA HỌC, CÔNG NGHỆ, ĐỔI MỚI SÁNG TẠO VÀ CHUYỂN ĐỔI SỐ</h5>
+              <p class="text-[13px] xl:text-[14.5px] text-slate-300 mt-1">Cơ quan chủ quản: Bộ Khoa học và Công nghệ (MST)</p>
+            </div>
+          </div>
+          <div class="text-[13px] xl:text-[14px] text-slate-300 space-y-1.5 pt-1">
+            <p><i class="fa-solid fa-location-dot w-4 mr-1 text-red-400"></i> Địa chỉ: Đang cập nhật</p>
+            <p><i class="fa-solid fa-phone w-4 mr-1 text-emerald-400"></i> Điện thoại: Đang cập nhật • Email: Đang cập nhật</p>
+          </div>
+        </div>
+
+        <!-- Col 2: Liên kết -->
+        <div class="min-w-0">
+          <h5 class="font-bold text-[13px] xl:text-[14.5px] uppercase tracking-wider text-amber-400 mb-3.5 pb-1.5 border-b border-slate-700">Liên kết nhanh</h5>
+          <ul class="space-y-2.5 text-[13px] xl:text-[14px] text-slate-300">
+            <li><a href="chinh-sach-tra-cuu.html" class="hover:text-amber-300 transition">Văn bản chỉ đạo điều hành</a></li>
+            <li><a href="san-pham-cong-nghe.html" class="hover:text-amber-300 transition">10 Nhóm sản phẩm số trọng điểm</a></li>
+            <li><a href="su-kien.html" class="hover:text-amber-300 transition">Lịch trình sự kiện & hội thảo</a></li>
+            <li><a href="hoi-dap.html" class="hover:text-amber-300 transition">Hỏi đáp & hỗ trợ trực tuyến</a></li>
+            <li><a href="chuyen-muc-kinh-te-so.html" class="hover:text-amber-300 transition">Báo cáo dữ liệu & Chỉ số PII</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Đa phương tiện -->
+        <div class="min-w-0">
+          <h5 class="font-bold text-[13px] xl:text-[14.5px] uppercase tracking-wider text-amber-400 mb-3.5 pb-1.5 border-b border-slate-700">Đa phương tiện</h5>
+          <ul class="space-y-2.5 text-[13px] xl:text-[14px] text-slate-300">
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Video phóng sự thời sự</a></li>
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Kho tư liệu ảnh sự kiện</a></li>
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Đồ họa Infographic số hóa</a></li>
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Podcast & Bản tin phát thanh</a></li>
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Sách điện tử & Báo cáo tổng kết</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-8 pt-4 border-t border-slate-800 flex flex-col lg:flex-row items-center justify-between text-[12.5px] xl:text-[13.5px] text-slate-400 gap-3">
+        <p class="text-center lg:text-left">© 2026 Bản quyền thuộc Bộ Khoa học và Công nghệ. Ghi rõ nguồn khi phát hành lại thông tin.</p>
+        <div class="flex flex-wrap items-center justify-center gap-4 shrink-0">
+          <a href="#" class="hover:text-white transition">Điều khoản sử dụng</a>
+          <a href="#" class="hover:text-white transition">Chính sách bảo mật</a>
+          <a href="hoi-dap.html" class="hover:text-white transition">Sơ đồ cổng</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="prototype-nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sản phẩm, dịch vụ công nghệ số trọng điểm | Nền tảng Truyền thông Quốc Gia</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontSize: {
+            xs: ['0.90625rem', { lineHeight: '1.35rem' }],
+            sm: ['1rem', { lineHeight: '1.45rem' }],
+            base: ['1.125rem', { lineHeight: '1.65rem' }],
+            lg: ['1.25rem', { lineHeight: '1.8rem' }],
+            xl: ['1.375rem', { lineHeight: '1.9rem' }],
+            '2xl': ['1.625rem', { lineHeight: '2.1rem' }],
+            '3xl': ['2rem', { lineHeight: '2.45rem' }]
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <style> body { font-family: 'Inter', sans-serif; } 
+    .max-w-7xl {
+      max-width: 90rem !important;
+    }
+    header h1 {
+      font-family: 'Inter', sans-serif !important;
+      font-weight: 800 !important;
+    }
+  </style>
+  <script>
+    function openProductModal(id) {
+      window.location.href = 'san-pham-danh-sach.html?id=' + id;
+    }
+  </script>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col">
+
+  <!-- TOP UTILITY BAR -->
+  <div class="bg-[#0b1c33] text-slate-200 text-[13px] py-1.5 px-4 sm:px-8 border-b border-slate-700/60">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-2">
+      <div class="flex items-center gap-3">
+        <span class="text-slate-300"><i class="fa-regular fa-calendar-check mr-1.5 text-amber-400"></i>Thứ Năm, 27/08/2026</span>
+      </div>
+      <div class="flex items-center gap-4 text-[13px]">
+        <div class="flex items-center gap-1.5 font-bold">
+          <span class="text-amber-400">VI</span>
+          <span class="text-slate-500">/</span>
+          <span class="text-slate-400 hover:text-white cursor-pointer">EN</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="bg-white border-b border-slate-200 shadow-sm sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 py-3.5 flex flex-col md:flex-row items-center justify-between gap-4">
+      <a href="index.html" class="flex items-center gap-3.5 group">
+        <img src="quoc-huy.png" alt="Quốc huy Việt Nam" class="w-12 h-12 object-contain drop-shadow">
+        <div>
+          <h1 class="text-[14.5px] sm:text-[16px] md:text-[18px] lg:text-[18px] xl:text-[20px] font-extrabold tracking-normal uppercase text-red-800 leading-normal">
+            <span class="block whitespace-nowrap">NỀN TẢNG TRUYỀN THÔNG SỐ QUỐC GIA VỀ KHOA HỌC, CÔNG NGHỆ,</span>
+            <span class="block mt-1 whitespace-nowrap">ĐỔI MỚI SÁNG TẠO VÀ CHUYỂN ĐỔI SỐ</span>
+          </h1>
+        </div>
+      </a>
+
+      <div class="w-full md:w-80 lg:w-96 relative shrink-0">
+        <input type="text" placeholder="Tìm kiếm tin bài, video, ảnh, sản phẩm..." 
+          class="w-full pl-10 pr-4 py-2 bg-slate-100 focus:bg-white text-[13px] rounded-full border border-slate-300 focus:outline-none focus:ring-2 focus:ring-red-700/30">
+        <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-[13px]"></i>
+      </div>
+    </div>
+
+    <!-- NAVIGATION -->
+        <!-- NAVIGATION -->
+        <!-- NAVIGATION -->
+    <nav class="bg-white border-t border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-8 flex items-center justify-start overflow-visible gap-1.5 text-[14.5px] sm:text-[15px] font-semibold">
+        <a href="index.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Trang chủ
+      </a>
+        
+        <!-- CHÍNH SÁCH VỚI SUBMENU CHỈ ĐẠO ĐIỀU HÀNH & GIẢI THÍCH CHÍNH SÁCH -->
+        <div class="relative group">
+          <a href="chinh-sach.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap flex items-center gap-1 cursor-pointer">
+        <span>Chính sách</span>
+        <i class="fa-solid fa-chevron-down text-[9px] text-slate-400 group-hover:text-red-800 group-hover:rotate-180 transition-transform"></i>
+      </a>
+          <!-- Submenu dropdown -->
+          <div class="hidden group-hover:block absolute left-0 top-full bg-white rounded-xl shadow-2xl border border-slate-200 py-1.5 min-w-[260px] z-50 text-slate-800 font-normal">
+            <a href="chinh-sach.html" class="flex items-center gap-2.5 px-4 py-2.5 hover:bg-slate-50 text-slate-700 hover:text-red-800 text-[14.5px] transition font-semibold">
+              <i class="fa-solid fa-landmark text-slate-400 text-[14.5px]"></i>
+              <span>Chính sách & Thể chế</span>
+            </a>
+            <a href="chinh-sach-tra-cuu.html" class="flex items-center gap-2.5 px-4 py-2.5 hover:bg-slate-50 text-slate-700 hover:text-red-800 text-[14.5px] transition font-semibold">
+              <i class="fa-solid fa-file-signature text-red-700 text-[14.5px]"></i>
+              <span>Chỉ đạo điều hành</span>
+            </a>
+            <a href="giai-thich-chinh-sach.html" class="flex items-center gap-2.5 px-4 py-2.5 hover:bg-slate-50 text-slate-700 hover:text-red-800 font-semibold text-[14.5px] transition">
+              <i class="fa-solid fa-chalkboard-user text-amber-600 text-[14.5px]"></i>
+              <span>Giải thích chính sách</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="san-pham-cong-nghe.html" class="px-5 py-2.5 bg-[#82181a] text-white rounded-t-sm whitespace-nowrap shadow-inner flex items-center gap-1.5 font-bold">
+        <i class="fa-solid fa-microchip text-[11px]"></i> <span>Sản phẩm KH&CN</span>
+      </a>
+        <a href="bao-cao-danh-gia-truyen-thong.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Báo cáo thường niên
+      </a>
+        <a href="tai-lieu-video.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Kho tư liệu
+      </a>
+        
+        <a href="su-kien.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">Sự kiện</a>
+
+        
+        <a href="hoi-dap.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Hỏi đáp
+      </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN BODY -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-8 py-8 w-full flex-1 space-y-10">
+
+    <!-- PAGE TITLE SECTION -->
+    <div class="text-center max-w-3xl mx-auto space-y-2">
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+        Sản phẩm, dịch vụ công nghệ số trọng điểm
+      </h2>
+      <p class="text-xs text-slate-600">
+        Theo Thông tư số 31/2025/TT-BKHCN quy định Danh mục sản phẩm, dịch vụ công nghệ số trọng điểm ưu tiên đầu tư và bảo hộ Make in Viet Nam.
+      </p>
+    </div>
+
+    <!-- 10 NHÓM CÔNG NGHỆ CHIẾN LƯỢC (BỐ CỤC 50/50) -->
+    <section class="space-y-6 pt-2">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-l-4 border-red-800 pl-3">
+        <div>
+          <h3 class="text-xl font-extrabold text-slate-900 tracking-tight">Danh mục 10 Nhóm Công nghệ chiến lược</h3>
+        </div>
+        <div class="flex items-center gap-2">
+          
+        </div>
+      </div>
+
+      <!-- DANH SÁCH 10 NHÓM SẢN PHẨM DẠNG 50/50 -->
+      <div class="space-y-4">
+
+        <!-- 1. AI & Digital Twin -->
+        <div class="bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 shadow-sm hover:shadow-lg hover:border-red-600/40 hover:-translate-y-0.5 transition duration-300 group">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
+            <!-- Nửa bên trái (50%): Tên sản phẩm -->
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-red-50 text-red-600 border border-red-100 flex items-center justify-center shrink-0 text-xl font-bold group-hover:scale-110 group-hover:bg-red-600 group-hover:text-white transition duration-300 shadow-sm">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+              <div class="space-y-1">
+                <div class="flex items-center gap-2">
+                  <span class="text-[12px] font-bold text-slate-400 font-mono tracking-wider">NHÓM #01</span>
+                  <span class="text-[12px] font-bold px-2 py-0.5 rounded-full bg-red-50 text-red-700 border border-red-200/60">Make in Viet Nam</span>
+                </div>
+                <h4 class="text-base font-bold text-slate-900 group-hover:text-red-700 transition">
+                  1. Trí tuệ nhân tạo, Dữ liệu lớn & Bản sao số
+                </h4>
+                <p class="text-[13px] text-slate-400">Lĩnh vực: Thuật toán AI, Thị giác máy tính & Xử lý ngôn ngữ tự nhiên</p>
+              </div>
+            </div>
+
+            <!-- Nửa bên phải (50%): Mô tả & Nút xem chi tiết -->
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-t lg:border-t-0 lg:border-l border-slate-100 lg:pl-6 pt-3 lg:pt-0">
+              <p class="text-xs text-slate-600 leading-relaxed flex-1">
+                Mô hình ngôn ngữ lớn tiếng Việt (Vietnamese LLM), trợ lý ảo dịch vụ công, nền tảng phân tích dữ liệu lớn và giải pháp bản sao số (Digital Twin) mô phỏng đô thị thông minh.
+              </p>
+              <a href="san-pham-ai.html" class="inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-xl bg-slate-100 hover:bg-red-800 text-slate-700 hover:text-white text-xs font-semibold whitespace-nowrap transition shadow-sm shrink-0 group/btn">
+                <span>Xem chi tiết</span>
+                <i class="fa-solid fa-arrow-right text-[12px] group-hover/btn:translate-x-1 transition"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Cloud & Quantum -->
+        <div class="bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 shadow-sm hover:shadow-lg hover:border-blue-600/40 hover:-translate-y-0.5 transition duration-300 group">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
+            <!-- Nửa bên trái (50%): Tên sản phẩm -->
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 border border-blue-100 flex items-center justify-center shrink-0 text-xl font-bold group-hover:scale-110 group-hover:bg-blue-600 group-hover:text-white transition duration-300 shadow-sm">
+                <i class="fa-solid fa-cloud"></i>
+              </div>
+              <div class="space-y-1">
+                <div class="flex items-center gap-2">
+                  <span class="text-[12px] font-bold text-slate-400 font-mono tracking-wider">NHÓM #02</span>
+                  <span class="text-[12px] font-bold px-2 py-0.5 rounded-full bg-blue-50 text-blue-700 border border-blue-200/60">Hạ tầng số Quốc gia</span>
+                </div>
+                <h4 class="text-base font-bold text-slate-900 group-hover:text-blue-700 transition">
+                  2. Điện toán đám mây & Tính toán lượng tử
+                </h4>
+                <p class="text-[13px] text-slate-400">Lĩnh vực: Đám mây chủ quyền, Trung tâm dữ liệu siêu lớn & Mật mã lượng tử</p>
+              </div>
+            </div>
+
+            <!-- Nửa bên phải (50%): Mô tả & Nút xem chi tiết -->
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-t lg:border-t-0 lg:border-l border-slate-100 lg:pl-6 pt-3 lg:pt-0">
+              <p class="text-xs text-slate-600 leading-relaxed flex-1">
+                Hạ tầng đám mây AI Sovereign Cloud đạt an toàn thông tin cấp độ 4, trung tâm dữ liệu Hyperscale DC, giải pháp truyền thông lượng tử và mã hóa dữ liệu an toàn quốc gia.
+              </p>
+              <a href="san-pham-cloud.html" class="inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-xl bg-slate-100 hover:bg-blue-800 text-slate-700 hover:text-white text-xs font-semibold whitespace-nowrap transition shadow-sm shrink-0 group/btn">
+                <span>Xem chi tiết</span>
+                <i class="fa-solid fa-arrow-right text-[12px] group-hover/btn:translate-x-1 transition"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Blockchain -->
+        <div class="bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 shadow-sm hover:shadow-lg hover:border-purple-600/40 hover:-translate-y-0.5 transition duration-300 group">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
+            <!-- Nửa bên trái (50%): Tên sản phẩm -->
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-purple-50 text-purple-600 border border-purple-100 flex items-center justify-center shrink-0 text-xl font-bold group-hover:scale-110 group-hover:bg-purple-600 group-hover:text-white transition duration-300 shadow-sm">
+                <i class="fa-solid fa-link"></i>
+              </div>
+              <div class="space-y-1">
+                <div class="flex items-center gap-2">
+                  <span class="text-[12px] font-bold text-slate-400 font-mono tracking-wider">NHÓM #03</span>
+                  <span class="text-[12px] font-bold px-2 py-0.5 rounded-full bg-purple-50 text-purple-700 border border-purple-200/60">Sổ cái phân tán</span>
+                </div>
+                <h4 class="text-base font-bold text-slate-900 group-hover:text-purple-700 transition">
+                  3. Chuỗi khối (Blockchain) & Truy xuất nguồn gốc
+                </h4>
+                <p class="text-[13px] text-slate-400">Lĩnh vực: Định danh số, Xác thực văn bằng & Quản trị chuỗi cung ứng</p>
+              </div>
+            </div>
+
+            <!-- Nửa bên phải (50%): Mô tả & Nút xem chi tiết -->
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-t lg:border-t-0 lg:border-l border-slate-100 lg:pl-6 pt-3 lg:pt-0">
+              <p class="text-xs text-slate-600 leading-relaxed flex-1">
+                Mạng chuỗi khối quốc gia phục vụ định danh số công dân, hệ thống chứng thực văn bằng chứng chỉ số, truy xuất nguồn gốc nông sản GS1 và quản lý hợp đồng thông minh minh bạch.
+              </p>
+              <a href="san-pham-blockchain.html" class="inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-xl bg-slate-100 hover:bg-purple-800 text-slate-700 hover:text-white text-xs font-semibold whitespace-nowrap transition shadow-sm shrink-0 group/btn">
+                <span>Xem chi tiết</span>
+                <i class="fa-solid fa-arrow-right text-[12px] group-hover/btn:translate-x-1 transition"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. 5G/6G -->
+        <div class="bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 shadow-sm hover:shadow-lg hover:border-teal-600/40 hover:-translate-y-0.5 transition duration-300 group">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
+            <!-- Nửa bên trái (50%): Tên sản phẩm -->
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-teal-50 text-teal-600 border border-teal-100 flex items-center justify-center shrink-0 text-xl font-bold group-hover:scale-110 group-hover:bg-teal-600 group-hover:text-white transition duration-300 shadow-sm">
+                <i class="fa-solid fa-tower-cell"></i>
+              </div>
+              <div class="space-y-1">
+                <div class="flex items-center gap-2">
+                  <span class="text-[12px] font-bold text-slate-400 font-mono tracking-wider">NHÓM #04</span>
+                  <span class="text-[12px] font-bold px-2 py-0.5 rounded-full bg-teal-50 text-teal-700 border border-teal-200/60">Viễn thông thế hệ mới</span>
+                </div>
+                <h4 class="text-base font-bold text-slate-900 group-hover:text-teal-700 transition">
+                  4. Thiết bị & Giải pháp mạng di động 5G / 6G
+                </h4>
+                <p class="text-[13px] text-slate-400">Lĩnh vực: Trạm thu phát sóng gNodeB, Mạng lõi 5G SA & Open RAN</p>
+              </div>
+            </div>
+
+            <!-- Nửa bên phải (50%): Mô tả & Nút xem chi tiết -->
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-t lg:border-t-0 lg:border-l border-slate-100 lg:pl-6 pt-3 lg:pt-0">
+              <p class="text-xs text-slate-600 leading-relaxed flex-1">
+                Trạm vô tuyến 5G gNodeB và Open RAN Make in Viet Nam, thiết bị truyền dẫn quang tốc độ terabit, mạng lõi 5G SA và giải pháp kết nối mạng vệ tinh viễn thông băng rộng.
+              </p>
+              <a href="san-pham-5g.html" class="inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-xl bg-slate-100 hover:bg-teal-800 text-slate-700 hover:text-white text-xs font-semibold whitespace-nowrap transition shadow-sm shrink-0 group/btn">
+                <span>Xem chi tiết</span>
+                <i class="fa-solid fa-arrow-right text-[12px] group-hover/btn:translate-x-1 transition"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Robot -->
+        <div class="bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 shadow-sm hover:shadow-lg hover:border-amber-600/40 hover:-translate-y-0.5 transition duration-300 group">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
+            <!-- Nửa bên trái (50%): Tên sản phẩm -->
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-600 border border-amber-100 flex items-center justify-center shrink-0 text-xl font-bold group-hover:scale-110 group-hover:bg-amber-600 group-hover:text-white transition duration-300 shadow-sm">
+                <i class="fa-solid fa-robot"></i>
+              </div>
+              <div class="space-y-1">
+                <div class="flex items-center gap-2">
+                  <span class="text-[12px] font-bold text-slate-400 font-mono tracking-wider">NHÓM #05</span>
+                  <span class="text-[12px] font-bold px-2 py-0.5 rounded-full bg-amber-50 text-amber-700 border border-amber-200/60">Cơ điện tử & Tự động hóa</span>
+                </div>
+                <h4 class="text-base font-bold text-slate-900 group-hover:text-amber-700 transition">
+                  5. Robot tự hành & Hệ thống tự động hóa công nghiệp
+                </h4>
+                <p class="text-[13px] text-slate-400">Lĩnh vực: Robot AGV/AMR, Cánh tay robot công nghiệp & Điều hành MES</p>
+              </div>
+            </div>
+
+            <!-- Nửa bên phải (50%): Mô tả & Nút xem chi tiết -->
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-t lg:border-t-0 lg:border-l border-slate-100 lg:pl-6 pt-3 lg:pt-0">
+              <p class="text-xs text-slate-600 leading-relaxed flex-1">
+                Robot di động tự hành (AMR/AGV), cánh tay robot công nghiệp chính xác cao, phần mềm điều hành sản xuất nhà máy thông minh (MES) và thiết bị tự động hóa kho bãi logistics.
+              </p>
+              <a href="san-pham-robot.html" class="inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-xl bg-slate-100 hover:bg-amber-700 text-slate-700 hover:text-white text-xs font-semibold whitespace-nowrap transition shadow-sm shrink-0 group/btn">
+                <span>Xem chi tiết</span>
+                <i class="fa-solid fa-arrow-right text-[12px] group-hover/btn:translate-x-1 transition"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Semiconductor -->
+        <div class="bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 shadow-sm hover:shadow-lg hover:border-indigo-600/40 hover:-translate-y-0.5 transition duration-300 group">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
+            <!-- Nửa bên trái (50%): Tên sản phẩm -->
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-indigo-50 text-indigo-600 border border-indigo-100 flex items-center justify-center shrink-0 text-xl font-bold group-hover:scale-110 group-hover:bg-indigo-600 group-hover:text-white transition duration-300 shadow-sm">
+                <i class="fa-solid fa-microchip"></i>
+              </div>
+              <div class="space-y-1">
+                <div class="flex items-center gap-2">
+                  <span class="text-[12px] font-bold text-slate-400 font-mono tracking-wider">NHÓM #06</span>
+                  <span class="text-[12px] font-bold px-2 py-0.5 rounded-full bg-indigo-50 text-indigo-700 border border-indigo-200/60">Công nghiệp cốt lõi</span>
+                </div>
+                <h4 class="text-base font-bold text-slate-900 group-hover:text-indigo-700 transition">
+                  6. Thiết kế vi mạch bán dẫn & Chip chuyên dụng
+                </h4>
+                <p class="text-[13px] text-slate-400">Lĩnh vực: Vi mạch ASIC/FPGA, Chip Edge AI & Vi điều khiển công nghiệp</p>
+              </div>
+            </div>
+
+            <!-- Nửa bên phải (50%): Mô tả & Nút xem chi tiết -->
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-t lg:border-t-0 lg:border-l border-slate-100 lg:pl-6 pt-3 lg:pt-0">
+              <p class="text-xs text-slate-600 leading-relaxed flex-1">
+                Dịch vụ thiết kế và đo kiểm vi mạch tích hợp (ASIC/FPGA), chip xử lý AI nhúng tại biên (Edge AI), bộ vi điều khiển IoT năng lượng thấp và mô-đun quản lý năng lượng thông minh.
+              </p>
+              <a href="san-pham-ban-dan.html" class="inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-xl bg-slate-100 hover:bg-indigo-800 text-slate-700 hover:text-white text-xs font-semibold whitespace-nowrap transition shadow-sm shrink-0 group/btn">
+                <span>Xem chi tiết</span>
+                <i class="fa-solid fa-arrow-right text-[12px] group-hover/btn:translate-x-1 transition"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. Hàng không vũ trụ -->
+        <div class="bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 shadow-sm hover:shadow-lg hover:border-sky-600/40 hover:-translate-y-0.5 transition duration-300 group">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
+            <!-- Nửa bên trái (50%): Tên sản phẩm -->
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-sky-50 text-sky-600 border border-sky-100 flex items-center justify-center shrink-0 text-xl font-bold group-hover:scale-110 group-hover:bg-sky-600 group-hover:text-white transition duration-300 shadow-sm">
+                <i class="fa-solid fa-shuttle-space"></i>
+              </div>
+              <div class="space-y-1">
+                <div class="flex items-center gap-2">
+                  <span class="text-[12px] font-bold text-slate-400 font-mono tracking-wider">NHÓM #07</span>
+                  <span class="text-[12px] font-bold px-2 py-0.5 rounded-full bg-sky-50 text-sky-700 border border-sky-200/60">Công nghệ cao Vũ trụ</span>
+                </div>
+                <h4 class="text-base font-bold text-slate-900 group-hover:text-sky-700 transition">
+                  7. Công nghệ Hàng không, Vũ trụ & Thiết bị bay UAV
+                </h4>
+                <p class="text-[13px] text-slate-400">Lĩnh vực: Vệ tinh viễn thám, Phương tiện bay không người lái & Trạm mặt đất</p>
+              </div>
+            </div>
+
+            <!-- Nửa bên phải (50%): Mô tả & Nút xem chi tiết -->
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-t lg:border-t-0 lg:border-l border-slate-100 lg:pl-6 pt-3 lg:pt-0">
+              <p class="text-xs text-slate-600 leading-relaxed flex-1">
+                Vệ tinh viễn thám quang học quan sát trái đất độ phân giải cao, thiết bị bay không người lái (UAV) tầm xa phục vụ giám sát môi trường, nông nghiệp chính xác và cứu hộ cứu nạn.
+              </p>
+              <a href="san-pham-hang-khong.html" class="inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-xl bg-slate-100 hover:bg-sky-800 text-slate-700 hover:text-white text-xs font-semibold whitespace-nowrap transition shadow-sm shrink-0 group/btn">
+                <span>Xem chi tiết</span>
+                <i class="fa-solid fa-arrow-right text-[12px] group-hover/btn:translate-x-1 transition"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8. An ninh mạng -->
+        <div class="bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 shadow-sm hover:shadow-lg hover:border-emerald-600/40 hover:-translate-y-0.5 transition duration-300 group">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
+            <!-- Nửa bên trái (50%): Tên sản phẩm -->
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 border border-emerald-100 flex items-center justify-center shrink-0 text-xl font-bold group-hover:scale-110 group-hover:bg-emerald-600 group-hover:text-white transition duration-300 shadow-sm">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+              <div class="space-y-1">
+                <div class="flex items-center gap-2">
+                  <span class="text-[12px] font-bold text-slate-400 font-mono tracking-wider">NHÓM #08</span>
+                  <span class="text-[12px] font-bold px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200/60">An ninh chủ quyền số</span>
+                </div>
+                <h4 class="text-base font-bold text-slate-900 group-hover:text-emerald-700 transition">
+                  8. An toàn thông tin, An ninh mạng & Giám sát SOC
+                </h4>
+                <p class="text-[13px] text-slate-400">Lĩnh vực: Trung tâm điều hành SOC, Tường lửa thế hệ mới & Định danh sinh trắc</p>
+              </div>
+            </div>
+
+            <!-- Nửa bên phải (50%): Mô tả & Nút xem chi tiết -->
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-t lg:border-t-0 lg:border-l border-slate-100 lg:pl-6 pt-3 lg:pt-0">
+              <p class="text-xs text-slate-600 leading-relaxed flex-1">
+                Hệ thống giám sát điều hành an toàn an ninh mạng tự động (NextGen SOC), giải pháp phòng chống mã độc bảo vệ hạ tầng thông tin trọng yếu và nền tảng xác thực sinh trắc học số.
+              </p>
+              <a href="san-pham-an-ninh-mang.html" class="inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-xl bg-slate-100 hover:bg-emerald-800 text-slate-700 hover:text-white text-xs font-semibold whitespace-nowrap transition shadow-sm shrink-0 group/btn">
+                <span>Xem chi tiết</span>
+                <i class="fa-solid fa-arrow-right text-[12px] group-hover/btn:translate-x-1 transition"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9. Nền tảng số quốc gia -->
+        <div class="bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 shadow-sm hover:shadow-lg hover:border-pink-600/40 hover:-translate-y-0.5 transition duration-300 group">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
+            <!-- Nửa bên trái (50%): Tên sản phẩm -->
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-pink-50 text-pink-600 border border-pink-100 flex items-center justify-center shrink-0 text-xl font-bold group-hover:scale-110 group-hover:bg-pink-600 group-hover:text-white transition duration-300 shadow-sm">
+                <i class="fa-solid fa-diagram-project"></i>
+              </div>
+              <div class="space-y-1">
+                <div class="flex items-center gap-2">
+                  <span class="text-[12px] font-bold text-slate-400 font-mono tracking-wider">NHÓM #09</span>
+                  <span class="text-[12px] font-bold px-2 py-0.5 rounded-full bg-pink-50 text-pink-700 border border-pink-200/60">Nền tảng Quốc gia</span>
+                </div>
+                <h4 class="text-base font-bold text-slate-900 group-hover:text-pink-700 transition">
+                  9. Nền tảng số Quốc gia & Kinh tế số doanh nghiệp
+                </h4>
+                <p class="text-[13px] text-slate-400">Lĩnh vực: Trục liên thông NDXP, Hóa đơn điện tử & Thanh toán số liên ngân hàng</p>
+              </div>
+            </div>
+
+            <!-- Nửa bên phải (50%): Mô tả & Nút xem chi tiết -->
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-t lg:border-t-0 lg:border-l border-slate-100 lg:pl-6 pt-3 lg:pt-0">
+              <p class="text-xs text-slate-600 leading-relaxed flex-1">
+                Nền tảng tích hợp chia sẻ dữ liệu liên thông quốc gia (NDXP), dịch vụ định danh công dân VNeID, hóa đơn điện tử, sàn thương mại số cho SMEs và hệ thống thanh toán số toàn diện.
+              </p>
+              <a href="san-pham-nen-tang-so.html" class="inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-xl bg-slate-100 hover:bg-pink-800 text-slate-700 hover:text-white text-xs font-semibold whitespace-nowrap transition shadow-sm shrink-0 group/btn">
+                <span>Xem chi tiết</span>
+                <i class="fa-solid fa-arrow-right text-[12px] group-hover/btn:translate-x-1 transition"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 10. IoT -->
+        <div class="bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 shadow-sm hover:shadow-lg hover:border-orange-600/40 hover:-translate-y-0.5 transition duration-300 group">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
+            <!-- Nửa bên trái (50%): Tên sản phẩm -->
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-orange-50 text-orange-600 border border-orange-100 flex items-center justify-center shrink-0 text-xl font-bold group-hover:scale-110 group-hover:bg-orange-600 group-hover:text-white transition duration-300 shadow-sm">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <div class="space-y-1">
+                <div class="flex items-center gap-2">
+                  <span class="text-[12px] font-bold text-slate-400 font-mono tracking-wider">NHÓM #10</span>
+                  <span class="text-[12px] font-bold px-2 py-0.5 rounded-full bg-orange-50 text-orange-700 border border-orange-200/60">Kết nối vạn vật</span>
+                </div>
+                <h4 class="text-base font-bold text-slate-900 group-hover:text-orange-700 transition">
+                  10. Internet vạn vật công nghiệp (IIoT) & Cảm biến thông minh
+                </h4>
+                <p class="text-[13px] text-slate-400">Lĩnh vực: Đo lường Smart Metering, IoT Gateway & Tự động hóa nông nghiệp</p>
+              </div>
+            </div>
+
+            <!-- Nửa bên phải (50%): Mô tả & Nút xem chi tiết -->
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-t lg:border-t-0 lg:border-l border-slate-100 lg:pl-6 pt-3 lg:pt-0">
+              <p class="text-xs text-slate-600 leading-relaxed flex-1">
+                Mạng lưới cảm biến đo lường công nghiệp (Smart Metering), thiết bị kết nối IoT Gateway công nghiệp, nền tảng điều khiển môi trường nuôi trồng tự động và giám sát năng lượng diện rộng.
+              </p>
+              <a href="san-pham-iot.html" class="inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-xl bg-slate-100 hover:bg-orange-800 text-slate-700 hover:text-white text-xs font-semibold whitespace-nowrap transition shadow-sm shrink-0 group/btn">
+                <span>Xem chi tiết</span>
+                <i class="fa-solid fa-arrow-right text-[12px] group-hover/btn:translate-x-1 transition"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================== -->
+    <!-- DANH MỤC SẢN PHẨM CÔNG NGHỆ CHIẾN LƯỢC (CHIA LÀM 2 CỘT MÀN HÌNH) -->
+    <!-- ======================================================== -->
+    <section class="space-y-6 pt-6 border-t border-slate-200" id="san-pham-chien-luoc">
+      <!-- Section Header -->
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-l-4 border-red-800 pl-3">
+        <div>
+          <span class="text-[13px] font-bold text-red-700 uppercase tracking-wider flex items-center gap-1.5">
+            <i class="fa-solid fa-layer-group"></i> CHIẾN LƯỢC QUỐC GIA · QUYẾT ĐỊNH CỦA THỦ TƯỚNG CHÍNH PHỦ
+          </span>
+          <h3 class="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight">
+            Sản phẩm KHCN chiến lược
+          </h3>
+          <p class="text-xs text-slate-500 mt-0.5">
+            Bao gồm 30 sản phẩm công nghệ chiến lược phân chia thành 02 nhóm trọng điểm. Click vào từng sản phẩm để xem danh sách giải pháp Make in Viet Nam.
+          </p>
+        </div>
+        <div class="flex items-center gap-2 shrink-0">
+          
+        </div>
+      </div>
+
+      <!-- 2 CỘT TRÊN MÀN HÌNH: CỘT 1 (NHÓM 1) & CỘT 2 (NHÓM 2) -->
+      <div class="grid grid-cols-1 xl:grid-cols-2 gap-6 items-start">
+
+        <!-- =================== CỘT 1: NHÓM 1 (THEO ẢNH 1 - MÀU XANH DƯƠNG) =================== -->
+        <div class="bg-white rounded-3xl border-2 border-[#0e4595] overflow-hidden shadow-md flex flex-col justify-between">
+          <div>
+            <!-- Banner Header Xanh Dương (Theo Ảnh 1) -->
+            <div class="bg-[#0e4595] text-white p-4 sm:p-5 flex items-center gap-3.5">
+              <span class="text-xl sm:text-2xl font-black uppercase tracking-wider shrink-0 border-r border-white/40 pr-3.5 leading-none">
+                NHÓM 1:
+              </span>
+              <span class="text-xs sm:text-[15px] font-bold leading-snug">
+                Nhóm các sản phẩm công nghệ chiến lược đã có thị trường, có thể tạo ra tác động lớn và trực tiếp đến phát triển kinh tế
+              </span>
+            </div>
+
+                        <!-- Danh sách 22 sản phẩm chia đều 2 bên (11 hàng ngang cân đối) -->
+            <div class="p-3 sm:p-5 space-y-1 divide-y divide-slate-100">
+              <!-- Hàng 1: Sản phẩm 1 & 12 -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 items-stretch pt-1 first:pt-0">
+                <!-- Cột Trái: Sản phẩm 1 -->
+                <div onclick="openProductModal(1)" class="p-2 sm:px-2.5 rounded-xl hover:bg-blue-50/70 border border-transparent hover:border-blue-200/80 transition-all duration-200 cursor-pointer flex items-start gap-2.5 group h-full">
+                  <span class="w-6 h-6 rounded-full bg-[#0e4595] text-white flex items-center justify-center text-xs font-black shrink-0 shadow-sm group-hover:scale-110 transition mt-0.5">1</span>
+                  <div class="text-xs font-bold text-slate-800 group-hover:text-[#0e4595] transition leading-snug flex-1">
+                    Mô hình ngôn ngữ lớn tiếng Việt, trợ lý ảo và trí tuệ nhân tạo (AI) chuyên ngành.
+                  </div>
+                  <i class="fa-solid fa-arrow-right text-[12px] text-slate-300 group-hover:text-[#0e4595] transition shrink-0 mt-1"></i>
+                </div>
+
+                <!-- Cột Phải: Sản phẩm 12 -->
+                <div onclick="openProductModal(12)" class="p-2 sm:px-2.5 sm:pl-3.5 rounded-xl hover:bg-blue-50/70 border border-transparent hover:border-blue-200/80 sm:border-l sm:border-slate-200 transition-all duration-200 cursor-pointer flex items-start gap-2.5 group h-full">
+                  <span class="w-6 h-6 rounded-full bg-[#0e4595] text-white flex items-center justify-center text-xs font-black shrink-0 shadow-sm group-hover:scale-110 transition mt-0.5">12</span>
+                  <div class="text-xs font-bold text-slate-800 group-hover:text-[#0e4595] transition leading-snug flex-1">
+                    Hệ thống sản xuất sản phẩm y tế cá thể hóa ứng dụng công nghệ in 3D.
+                  </div>
+                  <i class="fa-solid fa-arrow-right text-[12px] text-slate-300 group-hover:text-[#0e4595] transition shrink-0 mt-1"></i>
+                </div>
+              </div>
+              <!-- Hàng 2: Sản phẩm 2 & 13 -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 items-stretch pt-1 first:pt-0">
+                <!-- Cột Trái: Sản phẩm 2 -->
+                <div onclick="openProductModal(2)" class="p-2 sm:px-2.5 rounded-xl hover:bg-blue-50/70 border border-transparent hover:border-blue-200/80 transition-all duration-200 cursor-pointer flex items-start gap-2.5 group h-full">
+                  <span class="w-6 h-6 rounded-full bg-[#0e4595] text-white flex items-center justify-center text-xs font-black shrink-0 shadow-sm group-hover:scale-110 transition mt-0.5">2</span>
+                  <div class="text-xs font-bold text-slate-800 group-hover:text-[#0e4595] transition leading-snug flex-1">
+                    AI camera xử lý tại biên.
+                  </div>
+                  <i class="fa-solid fa-arrow-right text-[12px] text-slate-300 group-hover:text-[#0e4595] transition shrink-0 mt-1"></i>
+                </div>
+
+                <!-- Cột Phải: Sản phẩm 13 -->
+                <div onclick="openProductModal(13)" class="p-2 sm:px-2.5 sm:pl-3.5 rounded-xl hover:bg-blue-50/70 border border-transparent hover:border-blue-200/80 sm:border-l sm:border-slate-200 transition-all duration-200 cursor-pointer flex items-start gap-2.5 group h-full">
+                  <span class="w-6 h-6 rounded-full bg-[#0e4595] text-white flex items-center justify-center text-xs font-black shrink-0 shadow-sm group-hover:scale-110 transition mt-0.5">13</span>
+                  <div class="text-xs font-bold text-slate-800 group-hover:text-[#0e4595] transition leading-snug flex-1">
+                    Hệ thống cảm biến sinh học thông minh.
+                  </div>
+                  <i class="fa-solid fa-arrow-right text-[12px] text-slate-300 group-hover:text-[#0e4595] transition shrink-0 mt-1"></i>
+                </div>
+              </div>
+              <!-- Hàng 3: Sản phẩm 3 & 14 -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 items-stretch pt-1 first:pt-0">
+                <!-- Cột Trái: Sản phẩm 3 -->
+                <div onclick="openProductModal(3)" class="p-2 sm:px-2.5 rounded-xl hover:bg-blue-50/70 border border-transparent hover:border-blue-200/80 transition-all duration-200 cursor-pointer flex items-start gap-2.5 group h-full">
+                  <span class="w-6 h-6 rounded-full bg-[#0e4595] text-white flex items-center justify-center text-xs font-black shrink-0 shadow-sm group-hover:scale-110 transition mt-0.5">3</span>
+                  <div class="text-xs font-bold text-slate-800 group-hover:text-[#0e4595] transition leading-snug flex-1">
+                    Nền tảng bản sao số.
+                  </div>
+                  <i class="fa-solid fa-arrow-right text-[12px] text-slate-300 group-hover:text-[#0e4595] transition shrink-0 mt-1"></i>
+                </div>
+
+                <!-- Cột Phải: Sản phẩm 14 -->
+                <div onclick="openProductModal(14)" class="p-2 sm:px-2.5 sm:pl-3.5 rounded-xl hover:bg-blue-50/70 border border-transparent hover:border-blue-200/80 sm:border-l sm:border-slate-200 transition-all duration-200 cursor-pointer flex items-start gap-2.5 group h-full">
+                  <span class="w-6 h-6 rounded-full bg-[#0e4595] text-white flex items-center justify-center text-xs font-black shrink-0 shadow-sm group-hover:scale-110 transition mt-0.5">14</span>
+                  <div class="text-xs font-bold text-slate-800 group-hover:text-[#0e4595] transition leading-snug flex-1">
+                    Vắc xin và chế phẩm sinh học thế hệ mới dùng trong chăn nuôi, thú y, thủy sản, trồng trọt và bảo vệ thực vật.
+                  </div>
+                  <i class="fa-solid fa-arrow-right text-[12px] text-slate-300 group-hover:text-[#0e4595] transition shrink-0 mt-1"></i>
+                </div>
+              </div>
+              <!-- Hàng 4: Sản phẩm 4 & 15 -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 items-stretch pt-1 first:pt-0">
+                <!-- Cột Trái: Sản phẩm 4 -->
+                <div onclick="openProductModal(4)" class="p-2 sm:px-2.5 rounded-xl hover:bg-blue-50/70 border border-transparent hover:border-blue-200/80 transition-all duration-200 cursor-pointer flex items-start gap-2.5 group h-full">
+                  <span class="w-6 h-6 rounded-full bg-[#0e4595] text-white flex items-center justify-center text-xs font-black shrink-0 shadow-sm group-hover:scale-110 transition mt-0.5">4</span>
+                  <div class="text-xs font-bold text-slate-800 group-hover:text-[#0e4595] transition leading-snug flex-1">
+                    Nền tảng điện toán đám mây.
+                  </div>
+                  <i class="fa-solid fa-arrow-right text-[12px] text-slate-300 group-hover:text-[#0e4595] transition shrink-0 mt-1"></i>
+                </div>
+
+                <!-- Cột Phải: Sản phẩm 15 -->
+                <div onclick="openProductModal(15)" class="p-2 sm:px-2.5 sm:pl-3.5 rounded-xl hover:bg-blue-50/70 border border-transparent hover:border-blue-200/80 sm:border-l sm:border-slate-200 transition-all duration-200 cursor-pointer flex items-start gap-2.5 group h-full">
+                  <span class="w-6 h-6 rounded-full bg-[#0e4595] text-white flex items-center justify-center text-xs font-black shrink-0 shadow-sm group-hover:scale-110 transition mt-0.5">15</span>
+                  <div class="text-xs font-bold text-slate-800 group-hover:text-[#0e4595] transition leading-snug flex-1">
+                    Hệ thống sản xuất, thu hoạch và chế biến sâu sản phẩm, phụ phẩm nông nghiệp và sinh khối.
+                  </div>
+                  <i class="fa-solid fa-arrow-right text-[12px] text-slate-300 group-hover:text-[#0e4595] transition shrink-0 mt-1"></i>
+                </div>
+              </div>
+              <!-- Hàng 5: Sản phẩm 5 & 16 -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 items-stretch pt-1 first:pt-0">
+                <!-- Cột Trái: Sản phẩm 5 -->
+                <div onclick="openProductModal(5)" class="p-2 sm:px-2.5 rounded-xl hover:bg-blue-50/70 border border-transparent hover:border-blue-200/80 transition-all duration-200 cursor-pointer flex items-start gap-2.5 group h-full">
+                  <span class="w-6 h-6 rounded-full bg-[#0e4595] text-white flex items-center justify-center text-xs font-black shrink-0 shadow-sm group-hover:scale-110 transition mt-0.5">5</span>
+                  <div class="text-xs font-bold text-slate-800 group-hover:text-[#0e4595] transition leading-snug flex-1">
+                    Hạ tầng mạng chuỗi khối và hệ thống truy xuất nguồn gốc.
+                  </div>
+                  <i class="fa-solid fa-arrow-right text-[12px] text-slate-300 group-hover:text-[#0e4595] transition shrink-0 mt-1"></i>
+                </div>
+
+                <!-- Cột Phải: Sản phẩm 16 -->
+                <div onclick="openProductModal(16)" class="p-2 sm:px-2.5 sm:pl-3.5 rounded-xl hover:bg-blue-50/70 border border-transparent hover:border-blue-200/80 sm:border-l sm:border-slate-200 transition-all duration-200 cursor-pointer flex items-start gap-2.5 group h-full">
+                  <span class="w-6 h-6 rounded-full bg-[#0e4595] text-white flex items-center justify-center text-xs font-black shrink-0 shadow-sm group-hover:scale-110 transition mt-0.5">16</span>
+                  <div class="text-xs font-bold text-slate-800 group-hover:text-[#0e4595] transition leading-snug flex-1">
+                    Giống cây trồng, vật nuôi, thủy sản thế hệ mới được tạo ra từ công nghệ tế bào, chỉnh sửa gen và công nghệ sinh học.
+                  </div>
+                  <i class="fa-solid fa-arrow-right text-[12px] text-slate-300 group-hover:text-[#0e4595] transition shrink-0 mt-1"></i>
+                </div>
+              </div>
+              <!-- Hàng 6: Sản phẩm 6 & 17 -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 items-stretch pt-1 first:pt-0">
+                <!-- Cột Trái: Sản phẩm 6 -->
+                <div onclick="openProductModal(6)" class="p-2 sm:px-2.5 rounded-xl hover:bg-blue-50/70 border border-transparent hover:border-blue-200/80 transition-all duration-200 cursor-pointer flex items-start gap-2.5 group h-full">
+                  <span class="w-6 h-6 rounded-full bg-[#0e4595] text-white flex items-center justify-center text-xs font-black shrink-0 shadow-sm group-hover:scale-110 transition mt-0.5">6</span>
+                  <div class="text-xs font-bold text-slate-800 group-hover:text-[#0e4595] transition leading-snug flex-1">
+                    Thiết bị và hệ thống mạng di động 5G/5G-Advanced.
+                  </div>
+                  <i class="fa-solid fa-arrow-right text-[12px] text-slate-300 group-hover:text-[#0e4595] transition shrink-0 mt-1"></i>
+                </div>
+
+                <!-- Cột Phải: Sản phẩm 17 -->
+                <div onclick="openProductModal(17)" class="p-2 sm:px-2.5 sm:pl-3.5 rounded-xl hover:bg-blue-50/70 border border-transparent hover:border-blue-200/80 sm:border-l sm:border-slate-200 transition-all duration-200 cursor-pointer flex items-start gap-2.5 group h-full">
+                  <span class="w-6 h-6 rounded-full bg-[#0e4595] text-white flex items-center justify-center text-xs font-black shrink-0 shadow-sm group-hover:scale-110 transition mt-0.5">17</span>
+                  <div class="text-xs font-bold text-slate-800 group-hover:text-[#0e4595] transition leading-snug flex-1">
+                    Vật liệu tiên tiến và vật liệu chức năng hiệu năng cao cho công nghiệp chế biến, chế tạo.
+                  </div>
+                  <i class="fa-solid fa-arrow-right text-[12px] text-slate-300 group-hover:text-[#0e4595] transition shrink-0 mt-1"></i>
+                </div>
+              </div>
+              <!-- Hàng 7: Sản phẩm 7 & 18 -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 items-stretch pt-1 first:pt-0">
+                <!-- Cột Trái: Sản phẩm 7 -->
+                <div onclick="openProductModal(7)" class="p-2 sm:px-2.5 rounded-xl hover:bg-blue-50/70 border border-transparent hover:border-blue-200/80 transition-all duration-200 cursor-pointer flex items-start gap-2.5 group h-full">
+                  <span class="w-6 h-6 rounded-full bg-[#0e4595] text-white flex items-center justify-center text-xs font-black shrink-0 shadow-sm group-hover:scale-110 transition mt-0.5">7</span>
+                  <div class="text-xs font-bold text-slate-800 group-hover:text-[#0e4595] transition leading-snug flex-1">
+                    Robot di động tự hành và robot công nghiệp.
+                  </div>
+                  <i class="fa-solid fa-arrow-right text-[12px] text-slate-300 group-hover:text-[#0e4595] transition shrink-0 mt-1"></i>
+                </div>
+
+                <!-- Cột Phải: Sản phẩm 18 -->
+                <div onclick="openProductModal(18)" class="p-2 sm:px-2.5 sm:pl-3.5 rounded-xl hover:bg-blue-50/70 border border-transparent hover:border-blue-200/80 sm:border-l sm:border-slate-200 transition-all duration-200 cursor-pointer flex items-start gap-2.5 group h-full">
+                  <span class="w-6 h-6 rounded-full bg-[#0e4595] text-white flex items-center justify-center text-xs font-black shrink-0 shadow-sm group-hover:scale-110 transition mt-0.5">18</span>
+                  <div class="text-xs font-bold text-slate-800 group-hover:text-[#0e4595] transition leading-snug flex-1">
+                    Pin, ắc quy tiên tiến và hệ thống tích trữ năng lượng tích hợp (BESS).
+                  </div>
+                  <i class="fa-solid fa-arrow-right text-[12px] text-slate-300 group-hover:text-[#0e4595] transition shrink-0 mt-1"></i>
+                </div>
+              </div>
+              <!-- Hàng 8: Sản phẩm 8 & 19 -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 items-stretch pt-1 first:pt-0">
+                <!-- Cột Trái: Sản phẩm 8 -->
+                <div onclick="openProductModal(8)" class="p-2 sm:px-2.5 rounded-xl hover:bg-blue-50/70 border border-transparent hover:border-blue-200/80 transition-all duration-200 cursor-pointer flex items-start gap-2.5 group h-full">
+                  <span class="w-6 h-6 rounded-full bg-[#0e4595] text-white flex items-center justify-center text-xs font-black shrink-0 shadow-sm group-hover:scale-110 transition mt-0.5">8</span>
+                  <div class="text-xs font-bold text-slate-800 group-hover:text-[#0e4595] transition leading-snug flex-1">
+                    Nền tảng, giải pháp và mô hình phục vụ sản xuất thông minh.
+                  </div>
+                  <i class="fa-solid fa-arrow-right text-[12px] text-slate-300 group-hover:text-[#0e4595] transition shrink-0 mt-1"></i>
+                </div>
+
+                <!-- Cột Phải: Sản phẩm 19 -->
+                <div onclick="openProductModal(19)" class="p-2 sm:px-2.5 sm:pl-3.5 rounded-xl hover:bg-blue-50/70 border border-transparent hover:border-blue-200/80 sm:border-l sm:border-slate-200 transition-all duration-200 cursor-pointer flex items-start gap-2.5 group h-full">
+                  <span class="w-6 h-6 rounded-full bg-[#0e4595] text-white flex items-center justify-center text-xs font-black shrink-0 shadow-sm group-hover:scale-110 transition mt-0.5">19</span>
+                  <div class="text-xs font-bold text-slate-800 group-hover:text-[#0e4595] transition leading-snug flex-1">
+                    Hệ thống sản xuất, lưu trữ, vận chuyển và phân phối hydrogen xanh, nhiên liệu sinh học.
+                  </div>
+                  <i class="fa-solid fa-arrow-right text-[12px] text-slate-300 group-hover:text-[#0e4595] transition shrink-0 mt-1"></i>
+                </div>
+              </div>
+              <!-- Hàng 9: Sản phẩm 9 & 20 -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 items-stretch pt-1 first:pt-0">
+                <!-- Cột Trái: Sản phẩm 9 -->
+                <div onclick="openProductModal(9)" class="p-2 sm:px-2.5 rounded-xl hover:bg-blue-50/70 border border-transparent hover:border-blue-200/80 transition-all duration-200 cursor-pointer flex items-start gap-2.5 group h-full">
+                  <span class="w-6 h-6 rounded-full bg-[#0e4595] text-white flex items-center justify-center text-xs font-black shrink-0 shadow-sm group-hover:scale-110 transition mt-0.5">9</span>
+                  <div class="text-xs font-bold text-slate-800 group-hover:text-[#0e4595] transition leading-snug flex-1">
+                    Giải pháp bảo mật và an ninh mạng cho hạ tầng quan trọng và cơ sở dữ liệu quốc gia.
+                  </div>
+                  <i class="fa-solid fa-arrow-right text-[12px] text-slate-300 group-hover:text-[#0e4595] transition shrink-0 mt-1"></i>
+                </div>
+
+                <!-- Cột Phải: Sản phẩm 20 -->
+                <div onclick="openProductModal(20)" class="p-2 sm:px-2.5 sm:pl-3.5 rounded-xl hover:bg-blue-50/70 border border-transparent hover:border-blue-200/80 sm:border-l sm:border-slate-200 transition-all duration-200 cursor-pointer flex items-start gap-2.5 group h-full">
+                  <span class="w-6 h-6 rounded-full bg-[#0e4595] text-white flex items-center justify-center text-xs font-black shrink-0 shadow-sm group-hover:scale-110 transition mt-0.5">20</span>
+                  <div class="text-xs font-bold text-slate-800 group-hover:text-[#0e4595] transition leading-snug flex-1">
+                    Thiết bị điện cao áp, siêu cao áp; máy điện, động cơ điện và hệ thống truyền tải - truyền động điện hiện đại, hiệu suất cao.
+                  </div>
+                  <i class="fa-solid fa-arrow-right text-[12px] text-slate-300 group-hover:text-[#0e4595] transition shrink-0 mt-1"></i>
+                </div>
+              </div>
+              <!-- Hàng 10: Sản phẩm 10 & 21 -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 items-stretch pt-1 first:pt-0">
+                <!-- Cột Trái: Sản phẩm 10 -->
+                <div onclick="openProductModal(10)" class="p-2 sm:px-2.5 rounded-xl hover:bg-blue-50/70 border border-transparent hover:border-blue-200/80 transition-all duration-200 cursor-pointer flex items-start gap-2.5 group h-full">
+                  <span class="w-6 h-6 rounded-full bg-[#0e4595] text-white flex items-center justify-center text-xs font-black shrink-0 shadow-sm group-hover:scale-110 transition mt-0.5">10</span>
+                  <div class="text-xs font-bold text-slate-800 group-hover:text-[#0e4595] transition leading-snug flex-1">
+                    Vắc xin thế hệ mới dùng cho người.
+                  </div>
+                  <i class="fa-solid fa-arrow-right text-[12px] text-slate-300 group-hover:text-[#0e4595] transition shrink-0 mt-1"></i>
+                </div>
+
+                <!-- Cột Phải: Sản phẩm 21 -->
+                <div onclick="openProductModal(21)" class="p-2 sm:px-2.5 sm:pl-3.5 rounded-xl hover:bg-blue-50/70 border border-transparent hover:border-blue-200/80 sm:border-l sm:border-slate-200 transition-all duration-200 cursor-pointer flex items-start gap-2.5 group h-full">
+                  <span class="w-6 h-6 rounded-full bg-[#0e4595] text-white flex items-center justify-center text-xs font-black shrink-0 shadow-sm group-hover:scale-110 transition mt-0.5">21</span>
+                  <div class="text-xs font-bold text-slate-800 group-hover:text-[#0e4595] transition leading-snug flex-1">
+                    Hệ thống thu giữ, sử dụng và lưu trữ carbon.
+                  </div>
+                  <i class="fa-solid fa-arrow-right text-[12px] text-slate-300 group-hover:text-[#0e4595] transition shrink-0 mt-1"></i>
+                </div>
+              </div>
+              <!-- Hàng 11: Sản phẩm 11 & 22 -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 items-stretch pt-1 first:pt-0">
+                <!-- Cột Trái: Sản phẩm 11 -->
+                <div onclick="openProductModal(11)" class="p-2 sm:px-2.5 rounded-xl hover:bg-blue-50/70 border border-transparent hover:border-blue-200/80 transition-all duration-200 cursor-pointer flex items-start gap-2.5 group h-full">
+                  <span class="w-6 h-6 rounded-full bg-[#0e4595] text-white flex items-center justify-center text-xs font-black shrink-0 shadow-sm group-hover:scale-110 transition mt-0.5">11</span>
+                  <div class="text-xs font-bold text-slate-800 group-hover:text-[#0e4595] transition leading-snug flex-1">
+                    Liệu pháp tế bào (tế bào gốc, tế bào miễn dịch) dùng cho người.
+                  </div>
+                  <i class="fa-solid fa-arrow-right text-[12px] text-slate-300 group-hover:text-[#0e4595] transition shrink-0 mt-1"></i>
+                </div>
+
+                <!-- Cột Phải: Sản phẩm 22 -->
+                <div onclick="openProductModal(22)" class="p-2 sm:px-2.5 sm:pl-3.5 rounded-xl hover:bg-blue-50/70 border border-transparent hover:border-blue-200/80 sm:border-l sm:border-slate-200 transition-all duration-200 cursor-pointer flex items-start gap-2.5 group h-full">
+                  <span class="w-6 h-6 rounded-full bg-[#0e4595] text-white flex items-center justify-center text-xs font-black shrink-0 shadow-sm group-hover:scale-110 transition mt-0.5">22</span>
+                  <div class="text-xs font-bold text-slate-800 group-hover:text-[#0e4595] transition leading-snug flex-1">
+                    Thiết bị, phương tiện bay không người lái (UAV); hệ thống quản lý, phát hiện, giám sát và chế áp UAV.
+                  </div>
+                  <i class="fa-solid fa-arrow-right text-[12px] text-slate-300 group-hover:text-[#0e4595] transition shrink-0 mt-1"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Footer Nhóm 1 -->
+          <div class="bg-blue-50/60 p-3 sm:px-5 border-t border-blue-100 flex items-center justify-between text-xs text-blue-900">
+            <span class="font-medium text-[13px] flex items-center gap-1.5">
+              <i class="fa-solid fa-circle-info text-blue-600"></i> Click từng sản phẩm để xem giải pháp Make in Viet Nam
+            </span>
+            <span class="text-[13px] font-bold bg-[#0e4595] text-white px-2.5 py-0.5 rounded-full">22 Sản phẩm</span>
+          </div>
+        </div>
+
+        <!-- =================== CỘT 2: NHÓM 2 (THEO ẢNH 2 - MÀU XANH LÁ) =================== -->
+        <div class="bg-white rounded-3xl border-2 border-[#087f46] overflow-hidden shadow-md flex flex-col justify-between">
+          <div>
+            <!-- Banner Header Xanh Lá (Theo Ảnh 2) -->
+            <div class="bg-[#087f46] text-white p-4 sm:p-5 flex items-center gap-3.5">
+              <span class="text-xl sm:text-2xl font-black uppercase tracking-wider shrink-0 border-r border-white/40 pr-3.5 leading-none">
+                NHÓM 2:
+              </span>
+              <span class="text-xs sm:text-[15px] font-bold leading-snug">
+                Nhóm các sản phẩm công nghệ tạo động lực tăng trưởng mới, công nghệ nền tảng cho tương lai, công nghệ bảo đảm tự chủ trong lĩnh vực an ninh, quốc phòng
+              </span>
+            </div>
+
+                        <!-- Danh sách 8 sản phẩm chia đều 2 bên (4 hàng ngang cân đối) -->
+            <div class="p-3 sm:p-5 space-y-1 divide-y divide-slate-100">
+              <!-- Hàng 1: Sản phẩm 23 & 27 -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 items-stretch pt-1 first:pt-0">
+                <!-- Cột Trái: Sản phẩm 23 -->
+                <div onclick="openProductModal(23)" class="p-2 sm:px-2.5 rounded-xl hover:bg-emerald-50/70 border border-transparent hover:border-emerald-200/80 transition-all duration-200 cursor-pointer flex items-start gap-2.5 group h-full">
+                  <span class="w-6 h-6 rounded-full bg-[#087f46] text-white flex items-center justify-center text-xs font-black shrink-0 shadow-sm group-hover:scale-110 transition mt-0.5">23</span>
+                  <div class="text-xs font-bold text-slate-800 group-hover:text-[#087f46] transition leading-snug flex-1">
+                    Chip chuyên dụng.
+                  </div>
+                  <i class="fa-solid fa-arrow-right text-[12px] text-slate-300 group-hover:text-[#087f46] transition shrink-0 mt-1"></i>
+                </div>
+
+                <!-- Cột Phải: Sản phẩm 27 -->
+                <div onclick="openProductModal(27)" class="p-2 sm:px-2.5 sm:pl-3.5 rounded-xl hover:bg-emerald-50/70 border border-transparent hover:border-emerald-200/80 sm:border-l sm:border-slate-200 transition-all duration-200 cursor-pointer flex items-start gap-2.5 group h-full">
+                  <span class="w-6 h-6 rounded-full bg-[#087f46] text-white flex items-center justify-center text-xs font-black shrink-0 shadow-sm group-hover:scale-110 transition mt-0.5">27</span>
+                  <div class="text-xs font-bold text-slate-800 group-hover:text-[#087f46] transition leading-snug flex-1">
+                    Lò phản ứng hạt nhân mô-đun nhỏ (SMR).
+                  </div>
+                  <i class="fa-solid fa-arrow-right text-[12px] text-slate-300 group-hover:text-[#087f46] transition shrink-0 mt-1"></i>
+                </div>
+              </div>
+              <!-- Hàng 2: Sản phẩm 24 & 28 -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 items-stretch pt-1 first:pt-0">
+                <!-- Cột Trái: Sản phẩm 24 -->
+                <div onclick="openProductModal(24)" class="p-2 sm:px-2.5 rounded-xl hover:bg-emerald-50/70 border border-transparent hover:border-emerald-200/80 transition-all duration-200 cursor-pointer flex items-start gap-2.5 group h-full">
+                  <span class="w-6 h-6 rounded-full bg-[#087f46] text-white flex items-center justify-center text-xs font-black shrink-0 shadow-sm group-hover:scale-110 transition mt-0.5">24</span>
+                  <div class="text-xs font-bold text-slate-800 group-hover:text-[#087f46] transition leading-snug flex-1">
+                    Truyền thông lượng tử, tính toán lượng tử và cảm biến lượng tử.
+                  </div>
+                  <i class="fa-solid fa-arrow-right text-[12px] text-slate-300 group-hover:text-[#087f46] transition shrink-0 mt-1"></i>
+                </div>
+
+                <!-- Cột Phải: Sản phẩm 28 -->
+                <div onclick="openProductModal(28)" class="p-2 sm:px-2.5 sm:pl-3.5 rounded-xl hover:bg-emerald-50/70 border border-transparent hover:border-emerald-200/80 sm:border-l sm:border-slate-200 transition-all duration-200 cursor-pointer flex items-start gap-2.5 group h-full">
+                  <span class="w-6 h-6 rounded-full bg-[#087f46] text-white flex items-center justify-center text-xs font-black shrink-0 shadow-sm group-hover:scale-110 transition mt-0.5">28</span>
+                  <div class="text-xs font-bold text-slate-800 group-hover:text-[#087f46] transition leading-snug flex-1">
+                    Vệ tinh và chùm vệ tinh quỹ đạo thấp quan sát Trái đất.
+                  </div>
+                  <i class="fa-solid fa-arrow-right text-[12px] text-slate-300 group-hover:text-[#087f46] transition shrink-0 mt-1"></i>
+                </div>
+              </div>
+              <!-- Hàng 3: Sản phẩm 25 & 29 -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 items-stretch pt-1 first:pt-0">
+                <!-- Cột Trái: Sản phẩm 25 -->
+                <div onclick="openProductModal(25)" class="p-2 sm:px-2.5 rounded-xl hover:bg-emerald-50/70 border border-transparent hover:border-emerald-200/80 transition-all duration-200 cursor-pointer flex items-start gap-2.5 group h-full">
+                  <span class="w-6 h-6 rounded-full bg-[#087f46] text-white flex items-center justify-center text-xs font-black shrink-0 shadow-sm group-hover:scale-110 transition mt-0.5">25</span>
+                  <div class="text-xs font-bold text-slate-800 group-hover:text-[#087f46] transition leading-snug flex-1">
+                    Hệ thống khai thác, chế biến sâu và sản phẩm chế biến sâu từ khoáng sản, dầu khí và đất hiếm.
+                  </div>
+                  <i class="fa-solid fa-arrow-right text-[12px] text-slate-300 group-hover:text-[#087f46] transition shrink-0 mt-1"></i>
+                </div>
+
+                <!-- Cột Phải: Sản phẩm 29 -->
+                <div onclick="openProductModal(29)" class="p-2 sm:px-2.5 sm:pl-3.5 rounded-xl hover:bg-emerald-50/70 border border-transparent hover:border-emerald-200/80 sm:border-l sm:border-slate-200 transition-all duration-200 cursor-pointer flex items-start gap-2.5 group h-full">
+                  <span class="w-6 h-6 rounded-full bg-[#087f46] text-white flex items-center justify-center text-xs font-black shrink-0 shadow-sm group-hover:scale-110 transition mt-0.5">29</span>
+                  <div class="text-xs font-bold text-slate-800 group-hover:text-[#087f46] transition leading-snug flex-1">
+                    Công trình xây dựng đường sắt tốc độ cao.
+                  </div>
+                  <i class="fa-solid fa-arrow-right text-[12px] text-slate-300 group-hover:text-[#087f46] transition shrink-0 mt-1"></i>
+                </div>
+              </div>
+              <!-- Hàng 4: Sản phẩm 26 & 30 -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 items-stretch pt-1 first:pt-0">
+                <!-- Cột Trái: Sản phẩm 26 -->
+                <div onclick="openProductModal(26)" class="p-2 sm:px-2.5 rounded-xl hover:bg-emerald-50/70 border border-transparent hover:border-emerald-200/80 transition-all duration-200 cursor-pointer flex items-start gap-2.5 group h-full">
+                  <span class="w-6 h-6 rounded-full bg-[#087f46] text-white flex items-center justify-center text-xs font-black shrink-0 shadow-sm group-hover:scale-110 transition mt-0.5">26</span>
+                  <div class="text-xs font-bold text-slate-800 group-hover:text-[#087f46] transition leading-snug flex-1">
+                    Hệ thống, thiết bị, dịch vụ và giải pháp công nghệ thăm dò lòng đất, biển sâu, công trình biển và năng lượng ngoài khơi.
+                  </div>
+                  <i class="fa-solid fa-arrow-right text-[12px] text-slate-300 group-hover:text-[#087f46] transition shrink-0 mt-1"></i>
+                </div>
+
+                <!-- Cột Phải: Sản phẩm 30 -->
+                <div onclick="openProductModal(30)" class="p-2 sm:px-2.5 sm:pl-3.5 rounded-xl hover:bg-emerald-50/70 border border-transparent hover:border-emerald-200/80 sm:border-l sm:border-slate-200 transition-all duration-200 cursor-pointer flex items-start gap-2.5 group h-full">
+                  <span class="w-6 h-6 rounded-full bg-[#087f46] text-white flex items-center justify-center text-xs font-black shrink-0 shadow-sm group-hover:scale-110 transition mt-0.5">30</span>
+                  <div class="text-xs font-bold text-slate-800 group-hover:text-[#087f46] transition leading-snug flex-1">
+                    Nền tảng công nghiệp, phương tiện, thiết bị và các hệ thống tích hợp đường sắt tốc độ cao, đường sắt đô thị.
+                  </div>
+                  <i class="fa-solid fa-arrow-right text-[12px] text-slate-300 group-hover:text-[#087f46] transition shrink-0 mt-1"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- Box Chính sách đặc thù cho Nhóm 2 -->
+            <div class="mx-4 sm:mx-5 mb-4 p-3.5 rounded-2xl bg-emerald-50/90 border border-emerald-200/80 text-xs text-emerald-950 space-y-1.5">
+              <div class="font-bold flex items-center gap-1.5 text-emerald-900 text-xs">
+                <i class="fa-solid fa-shield-halved text-emerald-700"></i> Cơ chế ưu đãi đặc thù cho Nhóm 2:
+              </div>
+              <p class="text-[13px] text-emerald-800 leading-relaxed">
+                Tập trung nguồn lực nhà nước, ưu đãi thuế TNDN 10% trong 15 năm, tài trợ đến 100% chi phí R&D và bảo hộ mua sắm công sản phẩm Make in Viet Nam.
+              </p>
+            </div>
+          </div>
+
+          <!-- Footer Nhóm 2 -->
+          <div class="bg-emerald-50/60 p-3 sm:px-5 border-t border-emerald-100 flex items-center justify-between text-xs text-emerald-900">
+            <span class="font-medium text-[13px] flex items-center gap-1.5">
+              <i class="fa-solid fa-circle-info text-emerald-600"></i> Click từng sản phẩm để xem giải pháp Make in Viet Nam
+            </span>
+            <span class="text-[13px] font-bold bg-[#087f46] text-white px-2.5 py-0.5 rounded-full">08 Sản phẩm</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  
+    <!-- ======================================================== -->
+    <!-- DANH MỤC SẢN PHẨM KH&CN CHƯƠNG TRÌNH KC & CHƯƠNG TRÌNH KX -->
+    <!-- ======================================================== -->
+    <section class="space-y-6 pt-6 border-t border-slate-200" id="san-pham-kc-kx">
+      <!-- Section Header -->
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-l-4 border-rose-800 pl-3">
+        <div>
+          <span class="text-[13px] font-bold text-rose-800 uppercase tracking-wider flex items-center gap-1.5">
+            <i class="fa-solid fa-atom"></i> CHƯƠNG TRÌNH TRỌNG ĐIỂM CẤP QUỐC GIA · BỘ KHOA HỌC VÀ CÔNG NGHỆ
+          </span>
+          <h3 class="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight">
+            Sản phẩm KH&CN thuộc Chương trình KC & KX
+          </h3>
+          <p class="text-xs text-slate-500 mt-0.5">
+            Các kết quả nghiên cứu làm chủ công nghệ, sáng chế và thiết bị thương mại (Chương trình KC) cùng hệ thống luận cứ, báo cáo tư vấn chính sách quốc gia (Chương trình KX) được nghiệm thu và bàn giao ứng dụng.
+          </p>
+        </div>
+      </div>
+
+      <!-- 2 CỘT SHOWCASE: CHƯƠNG TRÌNH KC & CHƯƠNG TRÌNH KX -->
+      <div class="grid grid-cols-1 xl:grid-cols-2 gap-6 items-stretch">
+
+        <!-- =================== CỘT 1: CHƯƠNG TRÌNH KC (KỸ THUẬT & CÔNG NGHỆ) =================== -->
+        <div class="bg-white rounded-3xl border-2 border-[#82181a] overflow-hidden shadow-md flex flex-col justify-between">
+          <div>
+            <!-- Banner Header KC (Clickable) -->
+            <a href="san-pham-kc.html" class="bg-gradient-to-r from-[#82181a] to-rose-900 text-white p-4 sm:p-5 flex items-center justify-between gap-3.5 hover:opacity-95 transition block group" title="Xem tất cả sản phẩm Chương trình KC">
+              <div class="flex items-center gap-3">
+                <span class="text-xl sm:text-2xl font-black uppercase tracking-wider shrink-0 border-r border-white/40 pr-3 leading-none">
+                  CHƯƠNG TRÌNH KC
+                </span>
+                <span class="text-xs sm:text-[15px] font-bold leading-snug">
+                  Nghiên cứu ứng dụng & phát triển công nghệ phục vụ sản xuất, đời sống và quốc phòng
+                </span>
+              </div>
+              <span class="text-xs font-black px-2.5 py-1 rounded-full bg-white/20 text-white shrink-0 flex items-center gap-1 group-hover:bg-white/30 transition">
+                616 SP <i class="fa-solid fa-arrow-right text-[12px]"></i>
+              </span>
+            </a>
+
+            <!-- Tóm tắt & Phân nhóm KC (Click từng nhóm sang trang chi tiết) -->
+            <div class="p-4 sm:p-6 space-y-4">
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Tập trung nghiên cứu làm chủ công nghệ lõi, tự chủ chế tạo thiết bị, giải pháp kỹ thuật có TRL 6-9, bảo hộ quyền sở hữu trí tuệ và thương mại hóa cùng các doanh nghiệp Make in Viet Nam.
+              </p>
+
+              <div class="flex items-center justify-between pt-1 border-t border-slate-100">
+                <span class="text-xs font-bold text-slate-800 uppercase tracking-wider flex items-center gap-2">
+                  <i class="fa-solid fa-list-ol text-rose-700"></i> Các phân nhóm chương trình KC:
+                </span>
+                <span class="text-[13px] text-slate-400 flex items-center gap-1">
+                  <i class="fa-solid fa-hand-pointer text-[12px]"></i> Click xem chi tiết nhóm
+                </span>
+              </div>
+
+              <!-- 8 Nhóm con KC click sang trang chi tiết -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs">
+                <a href="san-pham-kc.html?group=KC.01" class="p-3 rounded-xl bg-slate-50 border border-slate-200/80 hover:border-rose-400 hover:bg-rose-50/50 hover:shadow-sm transition flex items-center justify-between group/item cursor-pointer">
+                  <span class="font-medium text-slate-800 group-hover/item:text-rose-800 transition">KC.01: CNTT, AI & Tự động hóa</span>
+                  <span class="text-[13px] font-bold text-rose-700 flex items-center gap-1">
+                    92 SP <i class="fa-solid fa-chevron-right text-[11px] opacity-60 group-hover/item:translate-x-0.5 transition-transform"></i>
+                  </span>
+                </a>
+                <a href="san-pham-kc.html?group=KC.02" class="p-3 rounded-xl bg-slate-50 border border-slate-200/80 hover:border-rose-400 hover:bg-rose-50/50 hover:shadow-sm transition flex items-center justify-between group/item cursor-pointer">
+                  <span class="font-medium text-slate-800 group-hover/item:text-rose-800 transition">KC.02: Vật liệu mới & Vi mạch Bán dẫn</span>
+                  <span class="text-[13px] font-bold text-rose-700 flex items-center gap-1">
+                    74 SP <i class="fa-solid fa-chevron-right text-[11px] opacity-60 group-hover/item:translate-x-0.5 transition-transform"></i>
+                  </span>
+                </a>
+                <a href="san-pham-kc.html?group=KC.03" class="p-3 rounded-xl bg-slate-50 border border-slate-200/80 hover:border-rose-400 hover:bg-rose-50/50 hover:shadow-sm transition flex items-center justify-between group/item cursor-pointer">
+                  <span class="font-medium text-slate-800 group-hover/item:text-rose-800 transition">KC.03: Cơ khí & Thiết bị y tế cao</span>
+                  <span class="text-[13px] font-bold text-rose-700 flex items-center gap-1">
+                    85 SP <i class="fa-solid fa-chevron-right text-[11px] opacity-60 group-hover/item:translate-x-0.5 transition-transform"></i>
+                  </span>
+                </a>
+                <a href="san-pham-kc.html?group=KC.04" class="p-3 rounded-xl bg-slate-50 border border-slate-200/80 hover:border-rose-400 hover:bg-rose-50/50 hover:shadow-sm transition flex items-center justify-between group/item cursor-pointer">
+                  <span class="font-medium text-slate-800 group-hover/item:text-rose-800 transition">KC.04: Công nghệ sinh học & Dược</span>
+                  <span class="text-[13px] font-bold text-rose-700 flex items-center gap-1">
+                    98 SP <i class="fa-solid fa-chevron-right text-[11px] opacity-60 group-hover/item:translate-x-0.5 transition-transform"></i>
+                  </span>
+                </a>
+                <a href="san-pham-kc.html?group=KC.05" class="p-3 rounded-xl bg-slate-50 border border-slate-200/80 hover:border-rose-400 hover:bg-rose-50/50 hover:shadow-sm transition flex items-center justify-between group/item cursor-pointer">
+                  <span class="font-medium text-slate-800 group-hover/item:text-rose-800 transition">KC.05: Năng lượng mới & Tích trữ pin</span>
+                  <span class="text-[13px] font-bold text-rose-700 flex items-center gap-1">
+                    68 SP <i class="fa-solid fa-chevron-right text-[11px] opacity-60 group-hover/item:translate-x-0.5 transition-transform"></i>
+                  </span>
+                </a>
+                <a href="san-pham-kc.html?group=KC.06" class="p-3 rounded-xl bg-slate-50 border border-slate-200/80 hover:border-rose-400 hover:bg-rose-50/50 hover:shadow-sm transition flex items-center justify-between group/item cursor-pointer">
+                  <span class="font-medium text-slate-800 group-hover/item:text-rose-800 transition">KC.06: Nông nghiệp công nghệ cao</span>
+                  <span class="text-[13px] font-bold text-rose-700 flex items-center gap-1">
+                    82 SP <i class="fa-solid fa-chevron-right text-[11px] opacity-60 group-hover/item:translate-x-0.5 transition-transform"></i>
+                  </span>
+                </a>
+                <a href="san-pham-kc.html?group=KC.07" class="p-3 rounded-xl bg-slate-50 border border-slate-200/80 hover:border-rose-400 hover:bg-rose-50/50 hover:shadow-sm transition flex items-center justify-between group/item cursor-pointer">
+                  <span class="font-medium text-slate-800 group-hover/item:text-rose-800 transition">KC.07: Kinh tế biển & Công nghệ biển</span>
+                  <span class="text-[13px] font-bold text-rose-700 flex items-center gap-1">
+                    56 SP <i class="fa-solid fa-chevron-right text-[11px] opacity-60 group-hover/item:translate-x-0.5 transition-transform"></i>
+                  </span>
+                </a>
+                <a href="san-pham-kc.html?group=KC.08" class="p-3 rounded-xl bg-slate-50 border border-slate-200/80 hover:border-rose-400 hover:bg-rose-50/50 hover:shadow-sm transition flex items-center justify-between group/item cursor-pointer">
+                  <span class="font-medium text-slate-800 group-hover/item:text-rose-800 transition">KC.08: Môi trường & Kinh tế tuần hoàn</span>
+                  <span class="text-[13px] font-bold text-rose-700 flex items-center gap-1">
+                    61 SP <i class="fa-solid fa-chevron-right text-[11px] opacity-60 group-hover/item:translate-x-0.5 transition-transform"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- =================== CỘT 2: CHƯƠNG TRÌNH KX (KHOA HỌC XÃ HỘI & LUẬN CỨ CHÍNH SÁCH) =================== -->
+        <div class="bg-white rounded-3xl border-2 border-[#b45309] overflow-hidden shadow-md flex flex-col justify-between">
+          <div>
+            <!-- Banner Header KX (Clickable) -->
+            <a href="san-pham-kx.html" class="bg-gradient-to-r from-[#b45309] to-amber-700 text-white p-4 sm:p-5 flex items-center justify-between gap-3.5 hover:opacity-95 transition block group" title="Xem tất cả báo cáo Chương trình KX">
+              <div class="flex items-center gap-3">
+                <span class="text-xl sm:text-2xl font-black uppercase tracking-wider shrink-0 border-r border-white/40 pr-3 leading-none">
+                  CHƯƠNG TRÌNH KX
+                </span>
+                <span class="text-xs sm:text-[15px] font-bold leading-snug">
+                  Luận cứ khoa học và tư vấn chính sách phục vụ phát triển kinh tế - xã hội và bảo vệ Tổ quốc
+                </span>
+              </div>
+              <span class="text-xs font-black px-2.5 py-1 rounded-full bg-white/20 text-white shrink-0 flex items-center gap-1 group-hover:bg-white/30 transition">
+                252 BC <i class="fa-solid fa-arrow-right text-[12px]"></i>
+              </span>
+            </a>
+
+            <!-- Tóm tắt & Phân nhóm KX (Click từng nhóm sang trang chi tiết) -->
+            <div class="p-4 sm:p-6 space-y-4">
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Cung cấp cơ sở lý luận và luận cứ khoa học vững chắc phục vụ xây dựng văn kiện Đại hội Đảng, hoàn thiện hệ thống thể chế, pháp luật của Quốc hội và công tác điều hành vĩ mô của Chính phủ.
+              </p>
+
+              <div class="flex items-center justify-between pt-1 border-t border-slate-100">
+                <span class="text-xs font-bold text-slate-800 uppercase tracking-wider flex items-center gap-2">
+                  <i class="fa-solid fa-scale-balanced text-amber-700"></i> Các phân nhóm chương trình KX:
+                </span>
+                <span class="text-[13px] text-slate-400 flex items-center gap-1">
+                  <i class="fa-solid fa-hand-pointer text-[12px]"></i> Click xem chi tiết nhóm
+                </span>
+              </div>
+
+              <!-- 6 Nhóm con KX click sang trang chi tiết -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs">
+                <a href="san-pham-kx.html?group=KX.01" class="p-3 rounded-xl bg-slate-50 border border-slate-200/80 hover:border-amber-400 hover:bg-amber-50/50 hover:shadow-sm transition flex items-center justify-between group/item cursor-pointer">
+                  <span class="font-medium text-slate-800 group-hover/item:text-amber-800 transition">KX.01: Lý luận & Kinh tế thị trường</span>
+                  <span class="text-[13px] font-bold text-amber-700 flex items-center gap-1">
+                    46 BC <i class="fa-solid fa-chevron-right text-[11px] opacity-60 group-hover/item:translate-x-0.5 transition-transform"></i>
+                  </span>
+                </a>
+                <a href="san-pham-kx.html?group=KX.02" class="p-3 rounded-xl bg-slate-50 border border-slate-200/80 hover:border-amber-400 hover:bg-amber-50/50 hover:shadow-sm transition flex items-center justify-between group/item cursor-pointer">
+                  <span class="font-medium text-slate-800 group-hover/item:text-amber-800 transition">KX.02: Đổi mới mô hình tăng trưởng</span>
+                  <span class="text-[13px] font-bold text-amber-700 flex items-center gap-1">
+                    52 BC <i class="fa-solid fa-chevron-right text-[11px] opacity-60 group-hover/item:translate-x-0.5 transition-transform"></i>
+                  </span>
+                </a>
+                <a href="san-pham-kx.html?group=KX.03" class="p-3 rounded-xl bg-slate-50 border border-slate-200/80 hover:border-amber-400 hover:bg-amber-50/50 hover:shadow-sm transition flex items-center justify-between group/item cursor-pointer">
+                  <span class="font-medium text-slate-800 group-hover/item:text-amber-800 transition">KX.03: Phát triển văn hóa & Con người số</span>
+                  <span class="text-[13px] font-bold text-amber-700 flex items-center gap-1">
+                    41 BC <i class="fa-solid fa-chevron-right text-[11px] opacity-60 group-hover/item:translate-x-0.5 transition-transform"></i>
+                  </span>
+                </a>
+                <a href="san-pham-kx.html?group=KX.04" class="p-3 rounded-xl bg-slate-50 border border-slate-200/80 hover:border-amber-400 hover:bg-amber-50/50 hover:shadow-sm transition flex items-center justify-between group/item cursor-pointer">
+                  <span class="font-medium text-slate-800 group-hover/item:text-amber-800 transition">KX.04: Thể chế pháp lý & Nhà nước số</span>
+                  <span class="text-[13px] font-bold text-amber-700 flex items-center gap-1">
+                    39 BC <i class="fa-solid fa-chevron-right text-[11px] opacity-60 group-hover/item:translate-x-0.5 transition-transform"></i>
+                  </span>
+                </a>
+                <a href="san-pham-kx.html?group=KX.05" class="p-3 rounded-xl bg-slate-50 border border-slate-200/80 hover:border-amber-400 hover:bg-amber-50/50 hover:shadow-sm transition flex items-center justify-between group/item cursor-pointer">
+                  <span class="font-medium text-slate-800 group-hover/item:text-amber-800 transition">KX.05: Quốc phòng, An ninh & Đối ngoại</span>
+                  <span class="text-[13px] font-bold text-amber-700 flex items-center gap-1">
+                    36 BC <i class="fa-solid fa-chevron-right text-[11px] opacity-60 group-hover/item:translate-x-0.5 transition-transform"></i>
+                  </span>
+                </a>
+                <a href="san-pham-kx.html?group=KX.06" class="p-3 rounded-xl bg-slate-50 border border-slate-200/80 hover:border-amber-400 hover:bg-amber-50/50 hover:shadow-sm transition flex items-center justify-between group/item cursor-pointer">
+                  <span class="font-medium text-slate-800 group-hover/item:text-amber-800 transition">KX.06: Quản trị công & Chính quyền số</span>
+                  <span class="text-[13px] font-bold text-amber-700 flex items-center gap-1">
+                    38 BC <i class="fa-solid fa-chevron-right text-[11px] opacity-60 group-hover/item:translate-x-0.5 transition-transform"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#0b1e36] text-white mt-12 border-t border-slate-800 text-[14.5px]" style="font-family: 'Inter', sans-serif;">
+    <div class="max-w-[90rem] mx-auto px-4 sm:px-8 py-10">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <!-- Col 1 -->
+        <div class="md:col-span-2 space-y-3.5 min-w-0">
+          <div class="flex items-start sm:items-center gap-3.5 min-w-0">
+            <div class="w-12 h-12 rounded-full flex items-center justify-center p-0.5 filter drop-shadow-lg shrink-0">
+              <img src="quoc-huy.png" alt="Quốc huy Việt Nam" class="w-11 h-11 object-contain drop-shadow">
+            </div>
+            <div class="min-w-0 flex-1">
+              <h5 class="font-extrabold text-[14.5px] sm:text-[15.5px] lg:text-[16.5px] xl:text-[17.5px] tracking-wide uppercase text-amber-400 leading-snug sm:leading-relaxed">NỀN TẢNG TRUYỀN THÔNG SỐ QUỐC GIA VỀ KHOA HỌC, CÔNG NGHỆ, ĐỔI MỚI SÁNG TẠO VÀ CHUYỂN ĐỔI SỐ</h5>
+              <p class="text-[13px] xl:text-[14.5px] text-slate-300 mt-1">Cơ quan chủ quản: Bộ Khoa học và Công nghệ (MST)</p>
+            </div>
+          </div>
+          <div class="text-[13px] xl:text-[14px] text-slate-300 space-y-1.5 pt-1">
+            <p><i class="fa-solid fa-location-dot w-4 mr-1 text-red-400"></i> Địa chỉ: Đang cập nhật</p>
+            <p><i class="fa-solid fa-phone w-4 mr-1 text-emerald-400"></i> Điện thoại: Đang cập nhật • Email: Đang cập nhật</p>
+          </div>
+        </div>
+
+        <!-- Col 2: Liên kết -->
+        <div class="min-w-0">
+          <h5 class="font-bold text-[13px] xl:text-[14.5px] uppercase tracking-wider text-amber-400 mb-3.5 pb-1.5 border-b border-slate-700">Liên kết nhanh</h5>
+          <ul class="space-y-2.5 text-[13px] xl:text-[14px] text-slate-300">
+            <li><a href="chinh-sach-tra-cuu.html" class="hover:text-amber-300 transition">Văn bản chỉ đạo điều hành</a></li>
+            <li><a href="san-pham-cong-nghe.html" class="hover:text-amber-300 transition">10 Nhóm sản phẩm số trọng điểm</a></li>
+            <li><a href="su-kien.html" class="hover:text-amber-300 transition">Lịch trình sự kiện & hội thảo</a></li>
+            <li><a href="hoi-dap.html" class="hover:text-amber-300 transition">Hỏi đáp & hỗ trợ trực tuyến</a></li>
+            <li><a href="chuyen-muc-kinh-te-so.html" class="hover:text-amber-300 transition">Báo cáo dữ liệu & Chỉ số PII</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Đa phương tiện -->
+        <div class="min-w-0">
+          <h5 class="font-bold text-[13px] xl:text-[14.5px] uppercase tracking-wider text-amber-400 mb-3.5 pb-1.5 border-b border-slate-700">Đa phương tiện</h5>
+          <ul class="space-y-2.5 text-[13px] xl:text-[14px] text-slate-300">
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Video phóng sự thời sự</a></li>
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Kho tư liệu ảnh sự kiện</a></li>
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Đồ họa Infographic số hóa</a></li>
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Podcast & Bản tin phát thanh</a></li>
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Sách điện tử & Báo cáo tổng kết</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-8 pt-4 border-t border-slate-800 flex flex-col lg:flex-row items-center justify-between text-[12.5px] xl:text-[13.5px] text-slate-400 gap-3">
+        <p class="text-center lg:text-left">© 2026 Bản quyền thuộc Bộ Khoa học và Công nghệ. Ghi rõ nguồn khi phát hành lại thông tin.</p>
+        <div class="flex flex-wrap items-center justify-center gap-4 shrink-0">
+          <a href="#" class="hover:text-white transition">Điều khoản sử dụng</a>
+          <a href="#" class="hover:text-white transition">Chính sách bảo mật</a>
+          <a href="hoi-dap.html" class="hover:text-white transition">Sơ đồ cổng</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL DANH SÁCH SẢN PHẨM (KHI CLICK VÀO BẤT KỲ MỤC NÀO TRONG 30 SẢN PHẨM CHIẾN LƯỢC) -->
+  <div id="productModal" class="fixed inset-0 z-50 bg-slate-950/70 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-3xl w-full max-h-[90vh] flex flex-col shadow-2xl border border-slate-200 overflow-hidden transform transition-all animate-in fade-in zoom-in duration-200">
+      
+      <!-- Modal Header -->
+      <div id="modalHeader" class="p-5 sm:p-6 text-white flex items-start justify-between gap-4 bg-[#0e4595] transition-colors duration-300">
+        <div>
+          <span id="modalGroupBadge" class="text-[12px] font-black uppercase tracking-wider px-2.5 py-0.5 rounded bg-white/20 border border-white/30 inline-block mb-1.5">
+            NHÓM 1 • ĐÃ CÓ THỊ TRƯỜNG & TÁC ĐỘNG KINH TẾ LỚN
+          </span>
+          <h3 id="modalTitle" class="text-base sm:text-lg font-bold leading-snug">
+            1. Mô hình ngôn ngữ lớn tiếng Việt, trợ lý ảo và trí tuệ nhân tạo (AI) chuyên ngành.
+          </h3>
+          <p id="modalDesc" class="text-xs text-slate-200 mt-1 line-clamp-2">
+            Danh mục sản phẩm, giải pháp công nghệ chiến lược Make in Viet Nam được ưu tiên phát triển và hỗ trợ xúc tiến thị trường.
+          </p>
+        </div>
+        <button onclick="closeProductModal()" class="w-8 h-8 rounded-full bg-white/20 hover:bg-white/30 flex items-center justify-center text-white shrink-0 transition" title="Đóng">
+          <i class="fa-solid fa-xmark text-sm"></i>
+        </button>
+      </div>
+
+      <!-- Modal Body (Danh sách sản phẩm) -->
+      <div class="p-5 sm:p-6 overflow-y-auto space-y-3.5 flex-1 divide-y divide-slate-100" id="modalProductList">
+        <!-- Products list dynamically rendered -->
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="p-4 bg-slate-50 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
+        <span class="text-slate-500 text-[13px] flex items-center gap-1">
+          <i class="fa-solid fa-circle-check text-emerald-600"></i> Dữ liệu sản phẩm thẩm định kỹ thuật cấp Quốc gia
+        </span>
+        <div class="flex items-center gap-2">
+          <button onclick="closeProductModal()" class="px-4 py-2 rounded-xl bg-slate-200 hover:bg-slate-300 text-slate-700 font-semibold transition">
+            Đóng
+          </button>
+          <a id="modalFullViewBtn" href="san-pham-danh-sach.html?id=1" class="px-4 py-2 rounded-xl bg-red-700 hover:bg-red-800 text-white font-semibold transition flex items-center gap-1.5 shadow-sm">
+            <span>Mở trang danh sách đầy đủ</span>
+            <i class="fa-solid fa-arrow-up-right-from-square text-[12px]"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SCRIPT DATA & MODAL LOGIC -->
+  <script src="san-pham-chien-luoc-data.js"></script>
+  <script>
+    function openProductModal(id) {
+      window.location.href = 'san-pham-danh-sach.html?id=' + id;
+    }
+
+    function closeProductModal() {
+      const modal = document.getElementById('productModal');
+      modal.classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    // Close on escape key
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeProductModal();
+    });
+
+    // Close on backdrop click
+    document.getElementById('productModal')?.addEventListener('click', (e) => {
+      if (e.target.id === 'productModal') closeProductModal();
+    });
+  </script>
+
+  <script src="prototype-nav.js"></script>
+</body>
+</html>

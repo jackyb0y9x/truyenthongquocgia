@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chương trình KX: Luận cứ Khoa học & Tư vấn Chính sách Quốc gia | Cổng Thông Tin KH&CN Quốc Gia</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontSize: {
+            xs: ['0.90625rem', { lineHeight: '1.35rem' }],
+            sm: ['1rem', { lineHeight: '1.45rem' }],
+            base: ['1.125rem', { lineHeight: '1.65rem' }],
+            lg: ['1.25rem', { lineHeight: '1.8rem' }],
+            xl: ['1.375rem', { lineHeight: '1.9rem' }],
+            '2xl': ['1.625rem', { lineHeight: '2.1rem' }],
+            '3xl': ['2rem', { lineHeight: '2.45rem' }]
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .kx-card { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+    .kx-card:hover { transform: translateY(-3px); }
+  
+    .max-w-7xl {
+      max-width: 90rem !important;
+    }
+    header h1 {
+      font-family: 'Inter', sans-serif !important;
+      font-weight: 800 !important;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col">
+
+  <!-- TOP UTILITY BAR -->
+  <div class="bg-[#0b1c33] text-slate-200 text-[13px] py-1.5 px-4 sm:px-8 border-b border-slate-700/60">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-2">
+      <div class="flex items-center gap-3">
+        <span class="text-slate-300"><i class="fa-regular fa-calendar-check mr-1.5 text-amber-400"></i>Thứ Năm, 27/08/2026</span>
+      </div>
+      <div class="flex items-center gap-4 text-[13px]">
+        <div class="flex items-center gap-1.5 font-bold">
+          <span class="text-amber-400">VI</span>
+          <span class="text-slate-500">/</span>
+          <span class="text-slate-400 hover:text-white cursor-pointer">EN</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="bg-white border-b border-slate-200 shadow-sm sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 py-3.5 flex flex-col md:flex-row items-center justify-between gap-4">
+      <a href="index.html" class="flex items-center gap-3.5 group">
+        <img src="quoc-huy.png" alt="Quốc huy Việt Nam" class="w-12 h-12 object-contain drop-shadow">
+        <div>
+          <h1 class="text-[14.5px] sm:text-[16px] md:text-[18px] lg:text-[18px] xl:text-[20px] font-extrabold tracking-normal uppercase text-red-800 leading-normal">
+            <span class="block whitespace-nowrap">NỀN TẢNG TRUYỀN THÔNG SỐ QUỐC GIA VỀ KHOA HỌC, CÔNG NGHỆ,</span>
+            <span class="block mt-1 whitespace-nowrap">ĐỔI MỚI SÁNG TẠO VÀ CHUYỂN ĐỔI SỐ</span>
+          </h1>
+        </div>
+      </a>
+
+      <div class="w-full md:w-80 lg:w-96 relative shrink-0">
+        <input type="text" placeholder="Tìm kiếm tin bài, video, ảnh, sản phẩm..." 
+          class="w-full pl-10 pr-4 py-2 bg-slate-100 focus:bg-white text-[13px] rounded-full border border-slate-300 focus:outline-none focus:ring-2 focus:ring-red-700/30">
+        <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-[13px]"></i>
+      </div>
+    </div>
+
+    <!-- NAVIGATION -->
+        <!-- NAVIGATION -->
+        <!-- NAVIGATION -->
+    <nav class="bg-white border-t border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-8 flex items-center justify-start overflow-visible gap-1.5 text-[14.5px] sm:text-[15px] font-semibold">
+        <a href="index.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Trang chủ
+      </a>
+        
+        <!-- CHÍNH SÁCH VỚI SUBMENU CHỈ ĐẠO ĐIỀU HÀNH & GIẢI THÍCH CHÍNH SÁCH -->
+        <div class="relative group">
+          <a href="chinh-sach.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap flex items-center gap-1 cursor-pointer">
+        <span>Chính sách</span>
+        <i class="fa-solid fa-chevron-down text-[9px] text-slate-400 group-hover:text-red-800 group-hover:rotate-180 transition-transform"></i>
+      </a>
+          <!-- Submenu dropdown -->
+          <div class="hidden group-hover:block absolute left-0 top-full bg-white rounded-xl shadow-2xl border border-slate-200 py-1.5 min-w-[260px] z-50 text-slate-800 font-normal">
+            <a href="chinh-sach.html" class="flex items-center gap-2.5 px-4 py-2.5 hover:bg-slate-50 text-slate-700 hover:text-red-800 text-[14.5px] transition font-semibold">
+              <i class="fa-solid fa-landmark text-slate-400 text-[14.5px]"></i>
+              <span>Chính sách & Thể chế</span>
+            </a>
+            <a href="chinh-sach-tra-cuu.html" class="flex items-center gap-2.5 px-4 py-2.5 hover:bg-slate-50 text-slate-700 hover:text-red-800 text-[14.5px] transition font-semibold">
+              <i class="fa-solid fa-file-signature text-red-700 text-[14.5px]"></i>
+              <span>Chỉ đạo điều hành</span>
+            </a>
+            <a href="giai-thich-chinh-sach.html" class="flex items-center gap-2.5 px-4 py-2.5 hover:bg-slate-50 text-slate-700 hover:text-red-800 font-semibold text-[14.5px] transition">
+              <i class="fa-solid fa-chalkboard-user text-amber-600 text-[14.5px]"></i>
+              <span>Giải thích chính sách</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="san-pham-cong-nghe.html" class="px-5 py-2.5 bg-[#82181a] text-white rounded-t-sm whitespace-nowrap shadow-inner flex items-center gap-1.5 font-bold">
+        <i class="fa-solid fa-microchip text-[11px]"></i> <span>Sản phẩm KH&CN</span>
+      </a>
+        <a href="bao-cao-danh-gia-truyen-thong.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Báo cáo thường niên
+      </a>
+        <a href="tai-lieu-video.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Kho tư liệu
+      </a>
+        
+        <a href="su-kien.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">Sự kiện</a>
+
+        
+        <a href="hoi-dap.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Hỏi đáp
+      </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- BREADCRUMB & CATEGORY HEADER SECTION -->
+  <section class="bg-gradient-to-r from-slate-900 via-blue-950 to-slate-900 text-white py-12 border-b border-blue-900/60 relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- Breadcrumb -->
+      <div class="flex items-center space-x-2 text-xs text-slate-300 mb-3">
+        <a href="index.html" class="hover:underline flex items-center"><i class="fa-solid fa-house mr-1"></i> Trang chủ</a>
+        <span>/</span>
+        <a href="san-pham-cong-nghe.html" class="hover:underline">Sản phẩm KH&CN</a>
+        <span>/</span>
+        <span class="text-blue-400 font-semibold">Chương trình KX (KH Xã hội, Nhân văn & Luận cứ Chính sách)</span>
+      </div>
+
+      <div>
+        <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 border-blue-400/30 text-xs font-semibold mb-3 border">
+          <i class="fa-solid fa-scale-balanced"></i>
+          <span>CHƯƠNG TRÌNH TRỌNG ĐIỂM CẤP NHÀ NƯỚC • KHXH & NHÂN VĂN</span>
+        </div>
+        <h1 class="text-2xl sm:text-4xl font-extrabold tracking-tight text-white leading-tight">
+          Chương trình KX: Luận cứ Khoa học & Tư vấn Chính sách Quốc gia
+        </h1>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MAIN BODY -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-8 py-8 w-full flex-1 space-y-8">
+
+    <!-- BỘ LỌC TÌM KIẾM ĐA CHIỀU (ADVANCED FILTER) -->
+    <div class="bg-white p-5 rounded-3xl border border-slate-200 shadow-sm space-y-4 text-xs">
+      <div class="flex items-center justify-between pb-3 border-b border-slate-100">
+        <h3 class="font-extrabold text-sm text-slate-900 flex items-center gap-2">
+          <i class="fa-solid fa-filter text-amber-700"></i> TRA CỨU LUẬN CỨ CHÍNH SÁCH CHƯƠNG TRÌNH KX
+        </h3>
+        <span class="text-slate-500 font-mono text-[13px]" id="resultCountBadge">Hiển thị 8 báo cáo tiêu biểu</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-3.5">
+        <!-- Từ khóa -->
+        <div>
+          <label class="block font-semibold text-slate-700 mb-1">Nội dung tìm kiếm:</label>
+          <div class="relative">
+            <input type="text" id="kxSearchInput" placeholder="Tên báo cáo, luận cứ, chủ nhiệm đề tài..." 
+              class="w-full pl-8 pr-3 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-700/30 text-xs bg-slate-50 focus:bg-white transition">
+            <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-xs"></i>
+          </div>
+        </div>
+
+        <!-- Phân nhóm KX -->
+        <div>
+          <label class="block font-semibold text-slate-700 mb-1">Phân nhóm chương trình KX:</label>
+          <select id="kxGroupSelect" class="w-full px-3 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-700/30 text-xs bg-slate-50 focus:bg-white transition cursor-pointer">
+            <option value="">Toàn bộ phân nhóm KX</option>
+            <option value="KX.01">KX.01: Lý luận phát triển & Kinh tế thị trường</option>
+            <option value="KX.02">KX.02: Đổi mới mô hình tăng trưởng & Năng suất</option>
+            <option value="KX.03">KX.03: Văn hóa số & Hệ giá trị con người VN</option>
+            <option value="KX.04">KX.04: Thể chế pháp lý & Nhà nước pháp quyền</option>
+            <option value="KX.05">KX.05: Quốc phòng, An ninh & Đối ngoại chiến lược</option>
+            <option value="KX.06">KX.06: Quản trị công & Chính quyền số</option>
+          </select>
+        </div>
+
+        <!-- Cơ quan tiếp nhận & thụ hưởng -->
+        <div>
+          <label class="block font-semibold text-slate-700 mb-1">Cơ quan thụ hưởng chính sách:</label>
+          <select id="kxBeneficiarySelect" class="w-full px-3 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-700/30 text-xs bg-slate-50 focus:bg-white transition cursor-pointer">
+            <option value="">Tất cả cơ quan thụ hưởng</option>
+            <option value="Ban Kinh tế Trung ương">Ban Kinh tế Trung ương</option>
+            <option value="Văn phòng Quốc hội">Văn phòng Quốc hội / Ủy ban của Quốc hội</option>
+            <option value="Văn phòng Chính phủ">Văn phòng Chính phủ</option>
+            <option value="Ban Tuyên giáo Trung ương">Ban Tuyên giáo Trung ương</option>
+            <option value="Bộ Khoa học và Công nghệ">Bộ Khoa học và Công nghệ</option>
+            <option value="Bộ Công an">Bộ Công an / Hội đồng Quốc phòng & An ninh</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-3.5 items-end pt-1">
+        <!-- Đơn vị nghiên cứu chủ trì -->
+        <div>
+          <label class="block font-semibold text-slate-700 mb-1">Đơn vị chủ trì nghiên cứu:</label>
+          <select id="kxHostSelect" class="w-full px-3 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-700/30 text-xs bg-slate-50 focus:bg-white transition cursor-pointer">
+            <option value="">Tất cả đơn vị chủ trì</option>
+            <option value="Viện Hàn lâm KHXH">Viện Hàn lâm Khoa học Xã hội Việt Nam</option>
+            <option value="ĐHQG Hà Nội">ĐHQG Hà Nội</option>
+            <option value="ĐHQG TP.Hồ Chí Minh">ĐHQG TP.Hồ Chí Minh</option>
+            <option value="Học viện Chính trị Quốc gia">Học viện Chính trị Quốc gia Hồ Chí Minh</option>
+            <option value="Học viện Hành chính Quốc gia">Học viện Hành chính Quốc gia</option>
+          </select>
+        </div>
+
+        <!-- Năm bàn giao -->
+        <div>
+          <label class="block font-semibold text-slate-700 mb-1">Năm nghiệm thu & bàn giao:</label>
+          <select id="kxYearSelect" class="w-full px-3 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-700/30 text-xs bg-slate-50 focus:bg-white transition cursor-pointer">
+            <option value="">Tất cả các năm</option>
+            <option value="2026">2026</option>
+            <option value="2025">2025</option>
+            <option value="2024">2024</option>
+            <option value="2023">2023</option>
+            <option value="2022">2022</option>
+          </select>
+        </div>
+
+        <!-- Nút tìm kiếm & Đặt lại -->
+        <div class="flex items-center gap-2">
+          <button type="button" onclick="applyKxFilter()" class="flex-1 py-2.5 px-4 rounded-xl bg-[#b45309] hover:bg-amber-800 text-white font-bold text-xs shadow-md transition flex items-center justify-center gap-1.5">
+            <i class="fa-solid fa-magnifying-glass"></i> Lọc dữ liệu
+          </button>
+          <button type="button" onclick="resetKxFilter()" class="py-2.5 px-3.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold text-xs border border-slate-200 transition">
+            <i class="fa-solid fa-rotate-left"></i> Đặt lại
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- DANH SÁCH BÁO CÁO KX (GRID DẠNG CARDS HIỆN ĐẠI) -->
+    <div id="kxProductContainer" class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+      <!-- Dynamically Rendered by JS -->
+    </div>
+
+  </main>
+
+  <!-- MODAL XEM CHI TIẾT BÁO CÁO KX -->
+  <div id="kxModal" class="fixed inset-0 z-50 bg-slate-950/70 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-3xl w-full max-h-[90vh] flex flex-col shadow-2xl border border-slate-200 overflow-hidden">
+      <div class="p-5 sm:p-6 text-white bg-gradient-to-r from-[#b45309] to-amber-800 flex items-start justify-between gap-4">
+        <div>
+          <span id="modalKxBadge" class="text-[12px] font-black uppercase tracking-wider px-2.5 py-0.5 rounded bg-white/20 border border-white/30 inline-block mb-1.5">
+            KX.01 • LÝ LUẬN & CHÍNH SÁCH KINH TẾ
+          </span>
+          <h3 id="modalKxTitle" class="text-base sm:text-lg font-bold leading-snug">
+            Tên báo cáo tư vấn chính sách
+          </h3>
+          <p id="modalKxHost" class="text-xs text-amber-100 mt-1">Chủ nhiệm đề tài: GS.TS. Nguyễn Văn A</p>
+        </div>
+        <button onclick="closeKxModal()" class="w-8 h-8 rounded-full bg-white/20 hover:bg-white/30 flex items-center justify-center text-white shrink-0 transition">
+          <i class="fa-solid fa-xmark text-sm"></i>
+        </button>
+      </div>
+
+      <div class="p-6 overflow-y-auto space-y-4 text-xs text-slate-700 flex-1" id="modalKxBody">
+        <!-- Injected dynamically -->
+      </div>
+
+      <div class="p-4 bg-slate-50 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
+        <span class="text-slate-500 text-[13px] flex items-center gap-1">
+          <i class="fa-solid fa-stamp text-amber-600"></i> Báo cáo tư vấn đã bàn giao và được cơ quan tiếp nhận đánh giá cao
+        </span>
+        <div class="flex items-center gap-2">
+          <button onclick="closeKxModal()" class="px-4 py-2 rounded-xl bg-slate-200 hover:bg-slate-300 text-slate-700 font-semibold transition">
+            Đóng
+          </button>
+          <a href="#" class="px-4 py-2 rounded-xl bg-[#b45309] hover:bg-amber-800 text-white font-semibold transition flex items-center gap-1.5 shadow-sm">
+            <i class="fa-solid fa-file-pdf text-[12px]"></i> Tải tóm tắt Policy Brief
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#0b1e36] text-white mt-12 border-t border-slate-800 text-[14.5px]" style="font-family: 'Inter', sans-serif;">
+    <div class="max-w-[90rem] mx-auto px-4 sm:px-8 py-10">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <!-- Col 1 -->
+        <div class="md:col-span-2 space-y-3.5 min-w-0">
+          <div class="flex items-start sm:items-center gap-3.5 min-w-0">
+            <div class="w-12 h-12 rounded-full flex items-center justify-center p-0.5 filter drop-shadow-lg shrink-0">
+              <img src="quoc-huy.png" alt="Quốc huy Việt Nam" class="w-11 h-11 object-contain drop-shadow">
+            </div>
+            <div class="min-w-0 flex-1">
+              <h5 class="font-extrabold text-[14.5px] sm:text-[15.5px] lg:text-[16.5px] xl:text-[17.5px] tracking-wide uppercase text-amber-400 leading-snug sm:leading-relaxed">NỀN TẢNG TRUYỀN THÔNG SỐ QUỐC GIA VỀ KHOA HỌC, CÔNG NGHỆ, ĐỔI MỚI SÁNG TẠO VÀ CHUYỂN ĐỔI SỐ</h5>
+              <p class="text-[13px] xl:text-[14.5px] text-slate-300 mt-1">Cơ quan chủ quản: Bộ Khoa học và Công nghệ (MST)</p>
+            </div>
+          </div>
+          <div class="text-[13px] xl:text-[14px] text-slate-300 space-y-1.5 pt-1">
+            <p><i class="fa-solid fa-location-dot w-4 mr-1 text-red-400"></i> Địa chỉ: Đang cập nhật</p>
+            <p><i class="fa-solid fa-phone w-4 mr-1 text-emerald-400"></i> Điện thoại: Đang cập nhật • Email: Đang cập nhật</p>
+          </div>
+        </div>
+
+        <!-- Col 2: Liên kết -->
+        <div class="min-w-0">
+          <h5 class="font-bold text-[13px] xl:text-[14.5px] uppercase tracking-wider text-amber-400 mb-3.5 pb-1.5 border-b border-slate-700">Liên kết nhanh</h5>
+          <ul class="space-y-2.5 text-[13px] xl:text-[14px] text-slate-300">
+            <li><a href="chinh-sach-tra-cuu.html" class="hover:text-amber-300 transition">Văn bản chỉ đạo điều hành</a></li>
+            <li><a href="san-pham-cong-nghe.html" class="hover:text-amber-300 transition">10 Nhóm sản phẩm số trọng điểm</a></li>
+            <li><a href="su-kien.html" class="hover:text-amber-300 transition">Lịch trình sự kiện & hội thảo</a></li>
+            <li><a href="hoi-dap.html" class="hover:text-amber-300 transition">Hỏi đáp & hỗ trợ trực tuyến</a></li>
+            <li><a href="chuyen-muc-kinh-te-so.html" class="hover:text-amber-300 transition">Báo cáo dữ liệu & Chỉ số PII</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Đa phương tiện -->
+        <div class="min-w-0">
+          <h5 class="font-bold text-[13px] xl:text-[14.5px] uppercase tracking-wider text-amber-400 mb-3.5 pb-1.5 border-b border-slate-700">Đa phương tiện</h5>
+          <ul class="space-y-2.5 text-[13px] xl:text-[14px] text-slate-300">
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Video phóng sự thời sự</a></li>
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Kho tư liệu ảnh sự kiện</a></li>
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Đồ họa Infographic số hóa</a></li>
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Podcast & Bản tin phát thanh</a></li>
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Sách điện tử & Báo cáo tổng kết</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-8 pt-4 border-t border-slate-800 flex flex-col lg:flex-row items-center justify-between text-[12.5px] xl:text-[13.5px] text-slate-400 gap-3">
+        <p class="text-center lg:text-left">© 2026 Bản quyền thuộc Bộ Khoa học và Công nghệ. Ghi rõ nguồn khi phát hành lại thông tin.</p>
+        <div class="flex flex-wrap items-center justify-center gap-4 shrink-0">
+          <a href="#" class="hover:text-white transition">Điều khoản sử dụng</a>
+          <a href="#" class="hover:text-white transition">Chính sách bảo mật</a>
+          <a href="hoi-dap.html" class="hover:text-white transition">Sơ đồ cổng</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPT DATA & RENDER -->
+  <script>
+    const KX_REPORTS = [
+      {
+        id: "KX01-BC01",
+        group: "KX.01",
+        groupName: "Lý luận & Kinh tế thị trường",
+        name: "Luận cứ khoa học về hoàn thiện thể chế kinh tế thị trường định hướng XHCN trong bối cảnh CMCN 4.0",
+        host: "Viện Hàn lâm Khoa học Xã hội Việt Nam",
+        beneficiary: "Ban Kinh tế Trung ương & Hội đồng Lý luận Trung ương",
+        year: "2026",
+        impact: "Đã đưa vào Văn kiện Đại hội Đảng",
+        desc: "Làm rõ mối quan hệ giữa nhà nước, thị trường và xã hội trong kỷ nguyên số; cung cấp hệ thống 12 khuyến nghị đột phá về phân bổ nguồn lực dựa trên dữ liệu số, quyền sở hữu tài sản vô hình và cơ chế sandbox thử nghiệm mô hình kinh tế mới.",
+        recommendations: "1. Thể chế hóa dữ liệu như một tư liệu sản xuất mới • 2. Cơ chế phân bổ vốn nhà nước thông qua quỹ đầu tư mạo hiểm công nghệ • 3. Quy chế thử nghiệm chính sách sandbox",
+        status: "Đã bàn giao và áp dụng soạn thảo Văn kiện"
+      },
+      {
+        id: "KX02-BC01",
+        group: "KX.02",
+        groupName: "Đổi mới mô hình tăng trưởng",
+        name: "Báo cáo tư vấn chính sách: Đổi mới mô hình tăng trưởng dựa trên KH, CN & Đổi mới sáng tạo, phát triển kinh tế xanh",
+        host: "ĐHQG Hà Nội",
+        beneficiary: "Văn phòng Chính phủ & Bộ Kế hoạch và Đầu tư",
+        year: "2025",
+        impact: "Đã thể chế hóa thành Nghị quyết Chính phủ",
+        desc: "Xây dựng khung mô hình lượng hóa đóng góp của Năng suất các yếu tố tổng hợp (TFP) và Đổi mới sáng tạo vào tăng trưởng GDP giai đoạn 2026 - 2035; kiến nghị gói chính sách kích cầu nghiên cứu R&D trong khối doanh nghiệp tư nhân.",
+        recommendations: "1. Miễn thuế TNDN 4 năm cho DN đầu tư > 3% doanh thu vào R&D • 2. Tín dụng xanh ưu đãi lãi suất 3%/năm cho dự án công nghệ sạch • 3. Thành lập sàn giao dịch công nghệ quốc gia",
+        status: "Được Chính phủ ban hành trong Nghị quyết chuyên đề"
+      },
+      {
+        id: "KX02-BC02",
+        group: "KX.02",
+        groupName: "Đổi mới mô hình tăng trưởng",
+        name: "Luận cứ cơ sở khoa học và thực tiễn xây dựng Luật Công nghiệp Công nghệ số và Luật KH&CN sửa đổi",
+        host: "Viện Chiến lược và Chính sách KH&CN (Bộ KH&CN)",
+        beneficiary: "Văn phòng Quốc hội & Ủy ban KH, CN & MT của Quốc hội",
+        year: "2026",
+        impact: "Phục vụ thẩm tra dự án Luật tại Quốc hội",
+        desc: "Hệ thống hóa kinh nghiệm quốc tế và thực tiễn Việt Nam về bảo hộ công nghiệp bán dẫn, trí tuệ nhân tạo, quy chế miễn trừ trách nhiệm rủi ro trong nghiên cứu khoa học công nghệ mạo hiểm và cơ chế tài chính đặc thù cho viện trường.",
+        recommendations: "1. Quy định 'Quỹ đầu tư mạo hiểm rủi ro KHCN' có chấp nhận thất bại • 2. Cơ chế tiền lương và biệt phái linh hoạt cho nhà khoa học đầu ngành • 3. Ưu đãi thuế tiêu thụ đặc biệt cho thiết bị số Make in VN",
+        status: "Ủy ban Quốc hội sử dụng làm tài liệu thẩm tra chính thức"
+      },
+      {
+        id: "KX03-BC01",
+        group: "KX.03",
+        groupName: "Văn hóa & Con người số",
+        name: "Hệ giá trị quốc gia, hệ giá trị văn hóa và chuẩn mực con người Việt Nam thời kỳ chuyển đổi số và hội nhập",
+        host: "Trường ĐH Khoa học Xã hội và Nhân văn - ĐHQG TP.Hồ Chí Minh",
+        beneficiary: "Ban Tuyên giáo Trung ương & Bộ Văn hóa, Thể thao và Du lịch",
+        year: "2025",
+        impact: "Đã đưa vào Chỉ thị và Chương trình hành động",
+        desc: "Nghiên cứu tác động của mạng xã hội, trí tuệ nhân tạo tạo sinh và không gian ảo đến bản sắc văn hóa dân tộc và lối sống giới trẻ; đề xuất bộ quy tắc ứng xử văn hóa số và chuẩn mực công dân số Việt Nam hiện đại.",
+        recommendations: "1. Ban hành Bộ Quy chuẩn văn hóa ứng xử trên không gian số • 2. Đưa giáo dục kỹ năng số và tư duy phản biện vào chương trình phổ thông • 3. Quỹ hỗ trợ sáng tạo nội dung văn hóa số thuần phong mỹ tục",
+        status: "Ban Tuyên giáo TW ban hành hướng dẫn thực thi toàn quốc"
+      },
+      {
+        id: "KX04-BC01",
+        group: "KX.04",
+        groupName: "Thể chế pháp lý & Nhà nước số",
+        name: "Luận cứ hoàn thiện khuôn khổ pháp lý thử nghiệm có kiểm soát (Sandbox) cho Fintech, AI và Tài sản số",
+        host: "ĐH Luật Hà Nội",
+        beneficiary: "Văn phòng Chính phủ & Ngân hàng Nhà nước Việt Nam",
+        year: "2026",
+        impact: "Đang phục vụ soạn thảo Nghị định Sandbox quốc gia",
+        desc: "Xác định ranh giới pháp lý an toàn giữa bảo vệ quyền lợi người tiêu dùng, kiểm soát rửa tiền và khuyến khích đổi mới sáng tạo công nghệ tài chính; xây dựng dự thảo tiêu chí cấp phép, giám sát và giải thể mô hình thử nghiệm có điều kiện.",
+        recommendations: "1. Cơ chế không xử lý hình sự đối với thử nghiệm công nghệ có đăng ký trước • 2. Giới hạn quy mô thử nghiệm 10.000 người dùng • 3. Bảo hiểm trách nhiệm dân sự bắt buộc cho đơn vị tham gia sandbox",
+        status: "Ngân hàng Nhà nước tích hợp vào Dự thảo Nghị định"
+      },
+      {
+        id: "KX05-BC01",
+        group: "KX.05",
+        groupName: "Quốc phòng, An ninh & Đối ngoại",
+        name: "Báo cáo chiến lược: Phòng ngừa và ứng phó các nguy cơ an ninh phi truyền thống và an toàn chủ quyền số",
+        host: "Học viện An ninh Nhân dân",
+        beneficiary: "Bộ Công an & Hội đồng Quốc phòng và An ninh",
+        year: "2025",
+        impact: "Báo cáo tối mật phục vụ chỉ đạo của Đảng và Nhà nước",
+        desc: "Phân tích toàn diện nguy cơ tấn công mạng vào hạ tầng thông tin trọng yếu quốc gia (điện lực, ngân hàng, giao thông); đề xuất chiến lược tự chủ chuỗi cung ứng công nghệ thông tin và giải pháp phòng chống chiến tranh thông tin trên mạng xã hội.",
+        recommendations: "1. Chuẩn hóa quy định lưu trữ dữ liệu công dân tại trung tâm dữ liệu nội địa • 2. Bắt buộc kiểm định an toàn phần mềm Make in VN trước khi đấu thầu công • 3. Thành lập lực lượng tác chiến không gian mạng chuyên trách",
+        status: "Bộ Công an tiếp nhận triển khai kế hoạch bảo vệ hạ tầng trọng yếu"
+      },
+      {
+        id: "KX06-BC01",
+        group: "KX.06",
+        groupName: "Quản trị công & Chính quyền số",
+        name: "Khung quản trị dữ liệu công và mô hình phân cấp, phân quyền hiệu quả trong xây dựng Chính phủ số",
+        host: "Học viện Hành chính Quốc gia",
+        beneficiary: "Văn phòng Chính phủ & UBND các tỉnh, thành phố trực thuộc Trung ương",
+        year: "2026",
+        impact: "Đã ban hành thành Khung kiến trúc Chính phủ điện tử 3.0",
+        desc: "Đề xuất quy chế chia sẻ dữ liệu liên thông 'một lần khai báo - dùng trọn đời', cơ chế phân định trách nhiệm bảo mật giữa cơ quan chủ quản cơ sở dữ liệu quốc gia và địa phương khai thác; phương án tinh gọn bộ máy trên nền tảng số.",
+        recommendations: "1. Cắt giảm 50% giấy tờ hành chính khi dữ liệu dân cư đã được xác thực • 2. Phân quyền cho cấp xã phê duyệt hồ sơ dịch vụ công toàn trình • 3. Đánh giá KPI công chức qua mức độ hài lòng số",
+        status: "Được Thủ tướng Chính phủ phê duyệt đưa vào Đề án 06 mở rộng"
+      },
+      {
+        id: "KX06-BC02",
+        group: "KX.06",
+        groupName: "Quản trị công & Chính quyền số",
+        name: "Bộ chỉ số và Cẩm nang nghiệp vụ đánh giá mức độ sẵn sàng chuyển đổi số trong cơ quan hành chính nhà nước",
+        host: "Viện Nghiên cứu Quản lý Kinh tế Trung ương (CIEM)",
+        beneficiary: "Bộ Nội vụ & 63 tỉnh/thành phố trên cả nước",
+        year: "2025",
+        impact: "Được áp dụng làm chuẩn xếp hạng Cải cách hành chính PAR Index",
+        desc: "Bộ công cụ đo lường gồm 5 nhóm tiêu chí định lượng: Hạ tầng số, Dịch vụ công số, Nhân lực số, An toàn thông tin và Văn hóa đổi mới sáng tạo; kèm theo bộ cẩm nang 200 trang tháo gỡ 150 vướng mắc thực tiễn khi triển khai dịch vụ công.",
+        recommendations: "1. Xếp hạng công khai mức độ số hóa của từng sở, ban, ngành hàng quý • 2. Đào tạo bắt buộc 40 giờ/năm về kỹ năng số cho cán bộ công chức • 3. Thưởng tài chính cho sáng kiến tiết kiệm chi phí qua tự động hóa",
+        status: "Đã xuất bản và chuyển giao cho 63 tỉnh/thành phố thực hiện"
+      }
+    ];
+
+    let currentKxList = [...KX_REPORTS];
+
+    function renderKxList(items) {
+      const container = document.getElementById('kxProductContainer');
+      const badge = document.getElementById('resultCountBadge');
+      container.innerHTML = '';
+      badge.innerText = 'Hiển thị ' + items.length + ' báo cáo tư vấn phù hợp';
+
+      if (items.length === 0) {
+        container.innerHTML = '<div class="col-span-full py-12 text-center text-slate-400 text-xs bg-white rounded-3xl border border-slate-200"><i class="fa-solid fa-file-circle-xmark text-3xl mb-2 block text-slate-300"></i>Không tìm thấy báo cáo tư vấn chính sách nào phù hợp với điều kiện tìm kiếm.</div>';
+        return;
+      }
+
+      items.forEach(p => {
+        const card = document.createElement('div');
+        card.className = "kx-card bg-white rounded-3xl border border-slate-200 p-5 sm:p-6 shadow-sm hover:shadow-xl hover:border-amber-400 transition flex flex-col justify-between space-y-4 group";
+        
+        card.innerHTML = `
+          <div class="space-y-3">
+            <div class="flex items-center justify-between gap-2 text-[12px]">
+              <span class="font-mono font-bold px-2.5 py-0.5 rounded-full bg-amber-50 text-amber-900 border border-amber-200">
+                ${p.group} • ${p.groupName}
+              </span>
+              <span class="font-bold px-2 py-0.5 rounded-full bg-blue-50 text-blue-900 border border-blue-200 flex items-center gap-1">
+                <i class="fa-solid fa-stamp text-[11px] text-blue-600"></i> ${p.impact.split('•')[0]}
+              </span>
+            </div>
+
+            <h4 class="text-sm sm:text-base font-extrabold text-slate-900 group-hover:text-amber-800 transition line-clamp-2 leading-snug">
+              ${p.name}
+            </h4>
+
+            <p class="text-xs text-slate-600 line-clamp-3 leading-relaxed">
+              ${p.desc}
+            </p>
+
+            <div class="space-y-1.5 pt-2 border-t border-slate-100 text-[13px]">
+              <div class="flex items-start gap-1.5 text-slate-700">
+                <i class="fa-solid fa-university text-amber-700 mt-0.5 text-[12px] shrink-0"></i>
+                <span class="line-clamp-1"><strong>Chủ trì nghiên cứu:</strong> ${p.host}</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between gap-2">
+            <span class="text-[13px] text-slate-400 font-mono">Năm: ${p.year}</span>
+            <button onclick="viewKxDetail('${p.id}')" class="px-3.5 py-1.5 rounded-xl bg-slate-100 hover:bg-[#b45309] text-slate-700 hover:text-white font-semibold text-xs transition flex items-center gap-1.5 shadow-sm">
+              <span>Xem luận cứ chính sách</span>
+              <i class="fa-solid fa-arrow-right text-[12px]"></i>
+            </button>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    function applyKxFilter() {
+      const q = document.getElementById('kxSearchInput').value.toLowerCase().trim();
+      const group = document.getElementById('kxGroupSelect').value;
+      const ben = document.getElementById('kxBeneficiarySelect').value;
+      const host = document.getElementById('kxHostSelect').value;
+      const year = document.getElementById('kxYearSelect').value;
+
+      currentKxList = KX_REPORTS.filter(p => {
+        if (q && !p.name.toLowerCase().includes(q) && !p.desc.toLowerCase().includes(q) && !p.host.toLowerCase().includes(q) && !p.beneficiary.toLowerCase().includes(q)) return false;
+        if (group && p.group !== group) return false;
+        if (ben && !p.beneficiary.includes(ben)) return false;
+        if (host && !p.host.includes(host)) return false;
+        if (year && p.year !== year) return false;
+        return true;
+      });
+
+      
+    // Check URL param for group filtering on page load
+    const urlParams = new URLSearchParams(window.location.search);
+    const groupParam = urlParams.get('group');
+    if (groupParam) {
+      const select = document.getElementById('kxGroupSelect');
+      if (select) {
+        select.value = groupParam;
+      }
+    }
+    applyKxFilter();
+  
+    }
+
+    function resetKxFilter() {
+      document.getElementById('kxSearchInput').value = '';
+      document.getElementById('kxGroupSelect').value = '';
+      document.getElementById('kxBeneficiarySelect').value = '';
+      document.getElementById('kxHostSelect').value = '';
+      document.getElementById('kxYearSelect').value = '';
+      currentKxList = [...KX_REPORTS];
+      renderKxList(currentKxList);
+    }
+
+    function viewKxDetail(id) {
+      const p = KX_REPORTS.find(item => item.id === id);
+      if (!p) return;
+
+      document.getElementById('modalKxBadge').innerText = p.group + ' • ' + p.groupName;
+      document.getElementById('modalKxTitle').innerText = p.name;
+      document.getElementById('modalKxHost').innerText = 'Chủ trì: ' + p.host;
+
+      document.getElementById('modalKxBody').innerHTML = `
+        <div class="space-y-3">
+          <div class="bg-amber-50 p-3.5 rounded-2xl border border-amber-100 space-y-1.5">
+            <div class="font-bold text-amber-900 text-xs flex items-center gap-1.5">
+              <i class="fa-solid fa-landmark"></i> THÔNG TIN BÀN GIAO & HIỆU QUẢ CHÍNH SÁCH
+            </div>
+            <p class="text-amber-900"><strong>Mã đề tài:</strong> ${p.id} • <strong>Năm hoàn thành:</strong> ${p.year}</p>
+            
+            <p class="text-amber-900"><strong>Mức độ tác động:</strong> ${p.impact}</p>
+          </div>
+
+          <div>
+            <h5 class="font-bold text-slate-900 mb-1">Tóm tắt nội dung luận cứ & nghiên cứu:</h5>
+            <p class="leading-relaxed text-slate-600">${p.desc}</p>
+          </div>
+
+          <div>
+            <h5 class="font-bold text-slate-900 mb-1">Các đề xuất, kiến nghị chính sách trọng điểm:</h5>
+            <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 text-[13px] text-slate-700 space-y-1">
+              ${p.recommendations.split('•').map(r => '<p class="flex items-start gap-1.5"><i class="fa-solid fa-check text-emerald-600 text-[12px] mt-0.5"></i> ' + r.trim() + '</p>').join('')}
+            </div>
+          </div>
+
+          
+        </div>
+      `;
+
+      document.getElementById('kxModal').classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeKxModal() {
+      document.getElementById('kxModal').classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    // Init render
+    renderKxList(currentKxList);
+
+    // Escape listener
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeKxModal();
+    });
+  </script>
+  <script src="prototype-nav.js"></script>
+</body>
+</html>

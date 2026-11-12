@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chi tiết Sản phẩm Công nghệ số | Nền tảng Truyền thông Quốc Gia</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontSize: {
+            xs: ['0.90625rem', { lineHeight: '1.35rem' }],
+            sm: ['1rem', { lineHeight: '1.45rem' }],
+            base: ['1.125rem', { lineHeight: '1.65rem' }],
+            lg: ['1.25rem', { lineHeight: '1.8rem' }],
+            xl: ['1.375rem', { lineHeight: '1.9rem' }],
+            '2xl': ['1.625rem', { lineHeight: '2.1rem' }],
+            '3xl': ['2rem', { lineHeight: '2.45rem' }]
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <style> 
+    body { font-family: 'Inter', sans-serif; } 
+    .font-news { font-family: 'Merriweather', Georgia, serif; }
+  
+    .max-w-7xl {
+      max-width: 90rem !important;
+    }
+    header h1 {
+      font-family: 'Inter', sans-serif !important;
+      font-weight: 800 !important;
+    }
+  </style>
+</head>
+<body class="bg-white text-slate-800 antialiased min-h-screen flex flex-col">
+
+  <!-- TOP UTILITY BAR -->
+  <div class="bg-[#0b1c33] text-slate-200 text-[13px] py-1.5 px-4 sm:px-8 border-b border-slate-700/60">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-2">
+      <div class="flex items-center gap-3">
+        <span class="text-slate-300"><i class="fa-regular fa-calendar-check mr-1.5 text-amber-400"></i>Thứ Năm, 27/08/2026</span>
+      </div>
+      <div class="flex items-center gap-4 text-[13px]">
+        <div class="flex items-center gap-1.5 font-bold">
+          <span class="text-amber-400">VI</span>
+          <span class="text-slate-500">/</span>
+          <span class="text-slate-400 hover:text-white cursor-pointer">EN</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="bg-white border-b border-slate-200 shadow-sm sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 py-3.5 flex flex-col md:flex-row items-center justify-between gap-4">
+      <a href="index.html" class="flex items-center gap-3.5 group">
+        <img src="quoc-huy.png" alt="Quốc huy Việt Nam" class="w-12 h-12 object-contain drop-shadow">
+        <div>
+          <h1 class="text-[14.5px] sm:text-[16px] md:text-[18px] lg:text-[18px] xl:text-[20px] font-extrabold tracking-normal uppercase text-red-800 leading-normal">
+            <span class="block whitespace-nowrap">NỀN TẢNG TRUYỀN THÔNG SỐ QUỐC GIA VỀ KHOA HỌC, CÔNG NGHỆ,</span>
+            <span class="block mt-1 whitespace-nowrap">ĐỔI MỚI SÁNG TẠO VÀ CHUYỂN ĐỔI SỐ</span>
+          </h1>
+        </div>
+      </a>
+
+      <div class="w-full md:w-80 lg:w-96 relative shrink-0">
+        <input type="text" placeholder="Tìm kiếm tin bài, sản phẩm, giải pháp..." 
+          class="w-full pl-10 pr-4 py-2 bg-slate-100 focus:bg-white text-[13px] rounded-full border border-slate-300 focus:outline-none focus:ring-2 focus:ring-red-700/30">
+        <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-[13px]"></i>
+      </div>
+    </div>
+
+    <!-- NAVIGATION -->
+        <!-- NAVIGATION -->
+        <!-- NAVIGATION -->
+    <nav class="bg-white border-t border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-8 flex items-center justify-start overflow-visible gap-1.5 text-[14.5px] sm:text-[15px] font-semibold">
+        <a href="index.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Trang chủ
+      </a>
+        
+        <!-- CHÍNH SÁCH VỚI SUBMENU CHỈ ĐẠO ĐIỀU HÀNH & GIẢI THÍCH CHÍNH SÁCH -->
+        <div class="relative group">
+          <a href="chinh-sach.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap flex items-center gap-1 cursor-pointer">
+        <span>Chính sách</span>
+        <i class="fa-solid fa-chevron-down text-[9px] text-slate-400 group-hover:text-red-800 group-hover:rotate-180 transition-transform"></i>
+      </a>
+          <!-- Submenu dropdown -->
+          <div class="hidden group-hover:block absolute left-0 top-full bg-white rounded-xl shadow-2xl border border-slate-200 py-1.5 min-w-[260px] z-50 text-slate-800 font-normal">
+            <a href="chinh-sach.html" class="flex items-center gap-2.5 px-4 py-2.5 hover:bg-slate-50 text-slate-700 hover:text-red-800 text-[14.5px] transition font-semibold">
+              <i class="fa-solid fa-landmark text-slate-400 text-[14.5px]"></i>
+              <span>Chính sách & Thể chế</span>
+            </a>
+            <a href="chinh-sach-tra-cuu.html" class="flex items-center gap-2.5 px-4 py-2.5 hover:bg-slate-50 text-slate-700 hover:text-red-800 text-[14.5px] transition font-semibold">
+              <i class="fa-solid fa-file-signature text-red-700 text-[14.5px]"></i>
+              <span>Chỉ đạo điều hành</span>
+            </a>
+            <a href="giai-thich-chinh-sach.html" class="flex items-center gap-2.5 px-4 py-2.5 hover:bg-slate-50 text-slate-700 hover:text-red-800 font-semibold text-[14.5px] transition">
+              <i class="fa-solid fa-chalkboard-user text-amber-600 text-[14.5px]"></i>
+              <span>Giải thích chính sách</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="san-pham-cong-nghe.html" class="px-5 py-2.5 bg-[#82181a] text-white rounded-t-sm whitespace-nowrap shadow-inner flex items-center gap-1.5 font-bold">
+        <i class="fa-solid fa-microchip text-[11px]"></i> <span>Sản phẩm KH&CN</span>
+      </a>
+        <a href="bao-cao-danh-gia-truyen-thong.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Báo cáo thường niên
+      </a>
+        <a href="tai-lieu-video.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Kho tư liệu
+      </a>
+        
+        <a href="su-kien.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">Sự kiện</a>
+
+        
+        <a href="hoi-dap.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Hỏi đáp
+      </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- BREADCRUMB & BACK ACTION -->
+  <div class="bg-slate-50 border-b border-slate-200 py-3 px-4 sm:px-8 text-xs">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
+      <div class="flex items-center gap-2 text-slate-500 overflow-hidden truncate">
+        <a href="index.html" class="hover:text-red-800 shrink-0"><i class="fa-solid fa-house"></i> Trang chủ</a>
+        <span>/</span>
+        <a href="san-pham-cong-nghe.html" class="hover:text-red-800 shrink-0">Sản phẩm công nghệ</a>
+        <span>/</span>
+        <span id="breadcrumbCategory" class="shrink-0 text-slate-600">Trí tuệ nhân tạo</span>
+        <span>/</span>
+        <span id="breadcrumbProductName" class="text-red-800 font-semibold truncate">Mô hình Ngôn ngữ lớn Tiếng Việt (PhởGPT Enterprise)</span>
+      </div>
+
+      <button onclick="window.history.back()" class="shrink-0 font-bold text-slate-700 hover:text-red-800 flex items-center gap-1.5 transition">
+        <i class="fa-solid fa-arrow-left text-xs"></i> Quay lại
+      </button>
+    </div>
+  </div>
+
+  <!-- MAIN ARTICLE CONTAINER (GIỐNG TRANG TIN TỨC THƯỜNG) -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-8 py-8 w-full flex-1">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+
+      <!-- LEFT: BÀI VIẾT NỘI DUNG DẠNG TEXT THUẦN (COL 8) -->
+      <article class="lg:col-span-8 space-y-6">
+
+        <!-- TIÊU ĐỀ & META TIN TỨC -->
+        <header class="space-y-4 pb-6 border-b border-slate-200">
+          <div class="flex items-center gap-2 text-xs">
+            <span id="articleCategoryTag" class="text-red-800 font-bold uppercase tracking-wider">Sản phẩm công nghệ số trọng điểm</span>
+            <span class="text-slate-300">•</span>
+            <span id="productCodeBadge" class="font-mono text-slate-500 bg-slate-100 px-2 py-0.5 rounded text-[13px] font-semibold">SP-AI-01</span>
+            <span class="text-slate-300">•</span>
+            <span class="text-emerald-700 font-medium bg-emerald-50 px-2 py-0.5 rounded text-[13px]">Make in Viet Nam</span>
+          </div>
+
+          <h1 id="productTitle" class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 leading-tight">
+            Mô hình Ngôn ngữ lớn Tiếng Việt (Vietnamese LLM - PhởGPT Enterprise)
+          </h1>
+
+          <div class="flex flex-wrap items-center justify-between gap-3 text-xs text-slate-500 pt-1">
+            <div class="flex flex-wrap items-center gap-3">
+              <span class="font-semibold text-slate-800 flex items-center gap-1.5">
+                <i class="fa-solid fa-building text-slate-400"></i>
+                <span id="productOwner">Viện Nghiên cứu Trí tuệ nhân tạo (VinAI / MST Lab)</span>
+              </span>
+              <span>•</span>
+              <span class="flex items-center gap-1">
+                <i class="fa-regular fa-clock text-slate-400"></i>
+                Ngày đăng: <span id="productDate">15/01/2026</span>
+              </span>
+              <span>•</span>
+              <span>Phiên bản: <strong>v3.2 LTS</strong></span>
+            </div>
+
+            <!-- Toolbar chia sẻ, in -->
+            <div class="flex items-center gap-2">
+              <button onclick="window.print()" class="p-1.5 text-slate-500 hover:text-slate-800 transition" title="In tin bài">
+                <i class="fa-solid fa-print"></i>
+              </button>
+              <button onclick="navigator.clipboard.writeText(window.location.href); alert('Đã sao chép liên kết bài viết!');" class="p-1.5 text-slate-500 hover:text-slate-800 transition" title="Chia sẻ">
+                <i class="fa-solid fa-share-nodes"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- SAPO / ĐOẠN MỞ ĐẦU (LEAD PARAGRAPH) -->
+          <p id="productSapo" class="text-base sm:text-lg font-semibold text-slate-700 leading-relaxed italic border-l-4 border-red-800 pl-4 py-1">
+            Mô hình nền tảng 70 tỷ tham số được huấn luyện hoàn toàn từ kho dữ liệu số có chủ quyền, phục vụ đắc lực cho công tác giải quyết thủ tục hành chính công, xây dựng văn bản quy phạm pháp luật và bảo đảm an toàn dữ liệu số quốc gia.
+          </p>
+        </header>
+
+        <!-- ẢNH ĐẠI DIỆN MINH HỌA -->
+        <figure class="my-6">
+          <div class="w-full h-72 sm:h-96 rounded-xl overflow-hidden bg-slate-900 shadow-sm">
+            <img id="productImage" src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80" 
+              alt="Ảnh sản phẩm công nghệ" class="w-full h-full object-cover">
+          </div>
+          <figcaption class="text-xs text-slate-500 italic mt-2 text-center">
+            Hạ tầng mô hình ngôn ngữ lớn tiếng Việt được vận hành và kiểm thử tại Trung tâm Đổi mới sáng tạo Quốc gia (NIC).
+          </figcaption>
+        </figure>
+
+        <!-- NỘI DUNG VĂN BẢN THUẦN (BODY TEXT NHƯ MỘT BÀI BÁO) -->
+        <div class="font-news text-slate-800 text-[17px] sm:text-base leading-relaxed space-y-5">
+
+          <h2 class="font-sans font-bold text-xl sm:text-2xl text-slate-900 pt-2">
+            Nguồn gốc ý tưởng và bài toán chủ quyền dữ liệu số quốc gia
+          </h2>
+
+          <p>
+            Ý tưởng phát triển mô hình bắt nguồn từ cuối năm 2023, trong bối cảnh làn sóng Trí tuệ nhân tạo tạo sinh (Generative AI) bùng nổ mạnh mẽ trên phạm vi toàn cầu. Thời điểm đó, hầu hết các mô hình ngôn ngữ lớn thương mại của các tập đoàn quốc tế khi áp dụng tại Việt Nam đều bộc lộ những rào cản nghiêm trọng. Một mặt, các hệ thống ngoại ngữ không hiểu sâu sắc bối cảnh văn hóa, lịch sử và hệ thống thuật ngữ hành chính - pháp lý đặc thù của Việt Nam. Mặt khác, việc gửi toàn bộ dữ liệu nghiệp vụ, báo cáo cơ mật của các cơ quan nhà nước và doanh nghiệp lên các đám mây công cộng tiềm ẩn nguy cơ lộ lọt dữ liệu nhạy cảm ra ngoài lãnh thổ.
+          </p>
+
+          <p>
+            Nhận thức rõ thách thức này, dưới sự định hướng và bảo trợ của Bộ Khoa học và Công nghệ trong khuôn khổ Chương trình Khoa học Công nghệ trọng điểm quốc gia KC.01, đội ngũ các nhà khoa học, chuyên gia hàng đầu về Xử lý ngôn ngữ tự nhiên (NLP) đã tập hợp cùng các kỹ sư công nghệ trong nước để hiện thực hóa khát vọng: Xây dựng một "bộ não số" thuần Việt, bảo đảm 100% dữ liệu huấn luyện có chủ quyền số, tuân thủ pháp luật Việt Nam, phục vụ đắc lực cho quản trị nhà nước, hỗ trợ công chức và cung cấp giải pháp AI an toàn tuyệt đối cho các tổ chức tài chính, y tế trong nước.
+          </p>
+
+          <h2 class="font-sans font-bold text-xl sm:text-2xl text-slate-900 pt-4">
+            Quá trình khởi nghiệp và lộ trình phát triển dự án
+          </h2>
+
+          <p>
+            Hành trình đưa sản phẩm từ ý tưởng trong phòng thí nghiệm đến giải pháp Make in Viet Nam được định hình qua từng giai đoạn phát triển cụ thể:
+          </p>
+
+          <p>
+            <strong>Giai đoạn khởi tạo (Quý IV/2023):</strong> Đội ngũ nòng cốt gồm 45 kỹ sư AI và các chuyên gia ngôn ngữ học đã tập trung xây dựng kho dữ liệu ngữ liệu sạch. Trong vòng 6 tháng, hơn 100 tỷ token dữ liệu tiếng Việt chất lượng cao đã được thu thập, phân loại, làm sạch và khử trùng lặp từ nguồn văn bản pháp luật, báo chí chính thống và sách nghiên cứu chuyên khảo.
+          </p>
+
+          <p>
+            <strong>Huấn luyện và tối ưu mô hình nền tảng (Quý II/2024):</strong> Dự án được bố trí hạ tầng tính toán tại Trung tâm Đổi mới sáng tạo Quốc gia (NIC Hòa Lạc) với cụm máy chủ trang bị 128 GPU hiệu năng cao. Phiên bản nền tảng 13B đầu tiên ra đời và vượt qua kỳ kiểm định năng lực tiếng Việt toàn diện VMLU (Vietnam Multitask Language Understanding) với số điểm 78.4%.
+          </p>
+
+          <p>
+            <strong>Thử nghiệm thực tế trong cơ chế Sandbox (Quý I/2025):</strong> Sản phẩm được đưa vào thử nghiệm có kiểm soát tại Cổng Dịch vụ công của Bộ Khoa học và Công nghệ cùng Ủy ban nhân dân một số địa phương trọng điểm như Đà Nẵng, Bắc Ninh. Tại đây, hệ thống đảm nhiệm vai trò trợ lý hỗ trợ cán bộ thụ lý hồ sơ và giải đáp thắc mắc thủ tục của công dân, giúp giảm tải hơn 60% khối lượng cuộc gọi và văn bản hướng dẫn hành chính.
+          </p>
+
+          <p>
+            <strong>Hoàn thiện và thương mại hóa (Năm 2026):</strong> Đến đầu năm 2026, sản phẩm nâng cấp thành công lên phiên bản 70 tỷ tham số (70B Dense), hoàn thành toàn bộ bài kiểm tra an toàn bảo mật cấp độ 4 và chính thức được Hội đồng chuyên ngành công nhận là "Sản phẩm công nghệ số trọng điểm Make in Viet Nam", mở đường cho việc chuyển giao rộng rãi đến các cơ quan ban ngành và doanh nghiệp.
+          </p>
+
+          <h2 class="font-sans font-bold text-xl sm:text-2xl text-slate-900 pt-4">
+            Chi tiết kỹ thuật và kiến trúc công nghệ
+          </h2>
+
+          <p>
+            Về mặt kỹ thuật, sản phẩm được thiết kế trên nền tảng kiến trúc Decoder-only Transformer hiện đại với quy mô 70 tỷ tham số (Dense Architecture). Để giải quyết bài toán biểu diễn tiếng Việt, nhóm phát triển đã xây dựng riêng bộ tách từ (Tokenizer BPE) tùy biến gồm 64.000 từ vị, giúp giảm thiểu đáng kể số lượng mảnh ghép từ, tăng tốc độ xử lý thêm 35% so với việc dùng tokenizer tiếng Anh chuẩn.
+          </p>
+
+          <p>
+            Cửa sổ ngữ cảnh (Context Window) của mô hình đạt 128.000 tokens, cho phép nạp và tóm tắt trực tiếp các tập tài liệu pháp lý, hồ sơ thầu, báo cáo tài chính dài hàng trăm trang mà không làm đứt đoạn mạch thông tin logic. Về hiệu năng tính toán, mô hình đạt tốc độ suy luận trung bình 85 tokens/giây trên mỗi luồng người dùng, độ trễ nhận từ đầu tiên (Time to First Token - TTFT) chỉ dưới 220 mili-giây trên hạ tầng máy chủ cục bộ.
+          </p>
+
+          <p>
+            Đặc biệt, hệ thống ứng dụng kiến trúc tích hợp mở RAG (Retrieval-Augmented Generation) kết hợp cùng cơ sở dữ liệu véc-tơ nội bộ. Khi tiếp nhận câu hỏi, hệ thống sẽ thực hiện truy vấn đối chiếu trực tiếp với kho dữ liệu nghiệp vụ của cơ quan trước khi tạo sinh câu trả lời, từ đó loại bỏ triệt để hiện tượng thông tin ảo giác (hallucination).
+          </p>
+
+          <p>
+            Về tiêu chuẩn an toàn thông tin, giải pháp đáp ứng đầy đủ tiêu chuẩn TCVN 11930:2017 cấp độ 4, sở hữu chứng nhận quản lý an toàn thông tin ISO/IEC 27001:2022 và tuân thủ nghiêm ngặt các quy định về bảo vệ dữ liệu cá nhân theo Nghị định 13/2023/NĐ-CP của Chính phủ. Mô hình cung cấp đa dạng phương thức kết nối bao gồm chuẩn RESTful API, gRPC, WebSocket cùng thư viện SDK hỗ trợ triển khai linh hoạt trên các hạ tầng On-Premises, Private Cloud hoặc mô hình lai (Hybrid Cloud).
+          </p>
+
+          <h2 class="font-sans font-bold text-xl sm:text-2xl text-slate-900 pt-4">
+            Ứng dụng thực tiễn và định hướng mở rộng
+          </h2>
+
+          <p>
+            Hiện nay, hệ sinh thái sản phẩm đã ghi nhận hơn 120.000 thủ tục hành chính công và nghiệp vụ được xử lý tự động với tỷ lệ hài lòng đạt trên 94%. Thời gian tra cứu và tổng hợp hồ sơ của chuyên viên giảm bình quân 65%, giúp tối ưu hóa đáng kể nguồn nhân lực công.
+          </p>
+
+          <p>
+            Nhiều đơn vị đầu ngành đã chính thức ký kết thỏa thuận chuyển giao công nghệ và tích hợp giải pháp vào quy trình nghiệp vụ như: Văn phòng Ủy ban Quốc gia về Chuyển đổi số, Ngân hàng Ngoại thương Việt Nam (Vietcombank), Tổng Công ty Hàng không Việt Nam (Vietnam Airlines). Trong giai đoạn tiếp theo, nhóm nghiên cứu tiếp tục hoàn thiện các mô hình chuyên biệt cho ngành Y tế và Tố tụng, đồng thời xúc tiến đưa sản phẩm sang thị trường các nước trong khu vực Đông Nam Á.
+          </p>
+
+        </div>
+
+      </article>
+
+      <!-- RIGHT: SIDEBAR THÔNG TIN ĐÍNH KÈM & TIN BÀI LIÊN QUAN (COL 4) -->
+      <aside class="lg:col-span-4 space-y-6 font-sans">
+
+        <!-- THÔNG TIN TỔNG QUAN SẢN PHẨM (TÓM TẮT DẠNG META) -->
+        <div class="border-t-2 border-red-800 pt-3 space-y-3">
+          <h3 class="font-bold text-xs uppercase tracking-wider text-slate-900">
+            Thông tin sản phẩm
+          </h3>
+          <dl class="space-y-2 text-xs divide-y divide-slate-100">
+            <div class="pt-1.5 flex justify-between">
+              <dt class="text-slate-500">Mã định danh:</dt>
+              <dd class="font-mono font-bold text-slate-800" id="sbCode">SP-AI-01</dd>
+            </div>
+            <div class="pt-1.5 flex justify-between">
+              <dt class="text-slate-500">Chủ sở hữu:</dt>
+              <dd class="text-right font-medium text-slate-800" id="sbOwner">VinAI / MST Lab</dd>
+            </div>
+            <div class="pt-1.5 flex justify-between">
+              <dt class="text-slate-500">Phân loại:</dt>
+              <dd class="text-slate-800 font-medium">Phần mềm / Thuật toán AI</dd>
+            </div>
+            <div class="pt-1.5 flex justify-between">
+              <dt class="text-slate-500">Cơ quan bảo trợ:</dt>
+              <dd class="text-slate-800 font-medium">Bộ Khoa học và Công nghệ</dd>
+            </div>
+            <div class="pt-1.5 flex justify-between">
+              <dt class="text-slate-500">Mức sẵn sàng:</dt>
+              <dd class="text-emerald-700 font-bold">TRL 9 (Hoàn thiện)</dd>
+            </div>
+            <div class="pt-1.5 flex justify-between">
+              <dt class="text-slate-500">Quyết định phê duyệt:</dt>
+              <dd class="font-mono text-red-800 font-semibold">31/QĐ-BKHCN-2025</dd>
+            </div>
+          </dl>
+        </div>
+
+        <!-- HỒ SƠ TÀI LIỆU KỸ THUẬT TẢI VỀ -->
+        <div class="border-t-2 border-slate-300 pt-3 space-y-3">
+          <h3 class="font-bold text-xs uppercase tracking-wider text-slate-900">
+            Tài liệu đính kèm
+          </h3>
+          <ul class="space-y-2 text-xs">
+            <li>
+              <a href="#" onclick="alert('Đang tải Bản cáo bạch kỹ thuật Whitepaper...'); return false;" class="group flex items-start gap-2.5 p-2 rounded hover:bg-slate-50 transition">
+                <i class="fa-solid fa-file-pdf text-red-600 mt-0.5 text-sm"></i>
+                <div>
+                  <span class="font-medium text-slate-800 group-hover:text-red-800 block">Bản cáo bạch kỹ thuật (Whitepaper)</span>
+                  <span class="text-[13px] text-slate-400">PDF • 4.2 MB</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" onclick="alert('Đang tải Tài liệu tích hợp API & SDK...'); return false;" class="group flex items-start gap-2.5 p-2 rounded hover:bg-slate-50 transition">
+                <i class="fa-solid fa-file-code text-blue-600 mt-0.5 text-sm"></i>
+                <div>
+                  <span class="font-medium text-slate-800 group-hover:text-blue-800 block">Đặc tả kỹ thuật tích hợp API & SDK</span>
+                  <span class="text-[13px] text-slate-400">PDF • 1.8 MB</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" onclick="alert('Đang tải Bản sao Giấy chứng nhận Make in Viet Nam...'); return false;" class="group flex items-start gap-2.5 p-2 rounded hover:bg-slate-50 transition">
+                <i class="fa-solid fa-certificate text-amber-500 mt-0.5 text-sm"></i>
+                <div>
+                  <span class="font-medium text-slate-800 group-hover:text-amber-700 block">Chứng nhận Make in Viet Nam</span>
+                  <span class="text-[13px] text-slate-400">PDF • 850 KB</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- SẢN PHẨM CÙNG LĨNH VỰC LIÊN QUAN -->
+        <div class="border-t-2 border-slate-300 pt-3 space-y-3">
+          <h3 class="font-bold text-xs uppercase tracking-wider text-slate-900">
+            Sản phẩm cùng lĩnh vực
+          </h3>
+          <div class="space-y-3 text-xs">
+            <article class="space-y-1">
+              <a href="san-pham-chi-tiet.html?id=SP-AI-02&name=N%E1%BB%81n%20t%E1%BA%A3ng%20B%E1%BA%A3n%20sao%20s%E1%BB%91%20%C4%90%C3%B4%20th%E1%BB%8B%20th%C3%B4ng%20minh" class="font-bold text-slate-800 hover:text-red-800 line-clamp-2 transition leading-snug">
+                Nền tảng Bản sao số Đô thị thông minh (Vietnam Digital Twin City)
+              </a>
+              <div class="text-[13px] text-slate-400">Mô phỏng 3D thời gian thực giao thông và hạ tầng lưới điện.</div>
+            </article>
+
+            <article class="space-y-1">
+              <a href="san-pham-chi-tiet.html?id=SP-AI-03&name=H%E1%BB%87%20th%E1%BB%91ng%20Tr%E1%BB%A3%20l%C3%BD%20%E1%BA%A3o%20C%C3%B4ng%20ch%E1%BB%A9c%20s%E1%BB%91" class="font-bold text-slate-800 hover:text-red-800 line-clamp-2 transition leading-snug">
+                Hệ thống Trợ lý ảo Công chức số (Virtual Assistant for Public Servants)
+              </a>
+              <div class="text-[13px] text-slate-400">Tra cứu 120.000 văn bản quy phạm pháp luật hỗ trợ cán bộ một cửa.</div>
+            </article>
+
+            <article class="space-y-1">
+              <a href="san-pham-chi-tiet.html?id=SP-CL-01&name=%C4%90%C3%A1m%20m%C3%A2y%20AI%20Ch%E1%BB%A7%20quy%E1%BB%81n%20Qu%E1%BB%91c%20gia" class="font-bold text-slate-800 hover:text-red-800 line-clamp-2 transition leading-snug">
+                Đám mây AI Chủ quyền Quốc gia (Vietnam Sovereign AI Cloud)
+              </a>
+              <div class="text-[13px] text-slate-400">Hạ tầng phân tán bảo mật cấp độ 4 tích hợp cụm GPU H100.</div>
+            </article>
+          </div>
+        </div>
+
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- SPECIALIZED FOOTER -->
+  <footer class="bg-[#0b1e36] text-white mt-12 border-t border-slate-800 text-[14.5px]" style="font-family: 'Inter', sans-serif;">
+    <div class="max-w-[90rem] mx-auto px-4 sm:px-8 py-10">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <!-- Col 1 -->
+        <div class="md:col-span-2 space-y-3.5 min-w-0">
+          <div class="flex items-start sm:items-center gap-3.5 min-w-0">
+            <div class="w-12 h-12 rounded-full flex items-center justify-center p-0.5 filter drop-shadow-lg shrink-0">
+              <img src="quoc-huy.png" alt="Quốc huy Việt Nam" class="w-11 h-11 object-contain drop-shadow">
+            </div>
+            <div class="min-w-0 flex-1">
+              <h5 class="font-extrabold text-[14.5px] sm:text-[15.5px] lg:text-[16.5px] xl:text-[17.5px] tracking-wide uppercase text-amber-400 leading-snug sm:leading-relaxed">NỀN TẢNG TRUYỀN THÔNG SỐ QUỐC GIA VỀ KHOA HỌC, CÔNG NGHỆ, ĐỔI MỚI SÁNG TẠO VÀ CHUYỂN ĐỔI SỐ</h5>
+              <p class="text-[13px] xl:text-[14.5px] text-slate-300 mt-1">Cơ quan chủ quản: Bộ Khoa học và Công nghệ (MST)</p>
+            </div>
+          </div>
+          <div class="text-[13px] xl:text-[14px] text-slate-300 space-y-1.5 pt-1">
+            <p><i class="fa-solid fa-location-dot w-4 mr-1 text-red-400"></i> Địa chỉ: Đang cập nhật</p>
+            <p><i class="fa-solid fa-phone w-4 mr-1 text-emerald-400"></i> Điện thoại: Đang cập nhật • Email: Đang cập nhật</p>
+          </div>
+        </div>
+
+        <!-- Col 2: Liên kết -->
+        <div class="min-w-0">
+          <h5 class="font-bold text-[13px] xl:text-[14.5px] uppercase tracking-wider text-amber-400 mb-3.5 pb-1.5 border-b border-slate-700">Liên kết nhanh</h5>
+          <ul class="space-y-2.5 text-[13px] xl:text-[14px] text-slate-300">
+            <li><a href="chinh-sach-tra-cuu.html" class="hover:text-amber-300 transition">Văn bản chỉ đạo điều hành</a></li>
+            <li><a href="san-pham-cong-nghe.html" class="hover:text-amber-300 transition">10 Nhóm sản phẩm số trọng điểm</a></li>
+            <li><a href="su-kien.html" class="hover:text-amber-300 transition">Lịch trình sự kiện & hội thảo</a></li>
+            <li><a href="hoi-dap.html" class="hover:text-amber-300 transition">Hỏi đáp & hỗ trợ trực tuyến</a></li>
+            <li><a href="chuyen-muc-kinh-te-so.html" class="hover:text-amber-300 transition">Báo cáo dữ liệu & Chỉ số PII</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Đa phương tiện -->
+        <div class="min-w-0">
+          <h5 class="font-bold text-[13px] xl:text-[14.5px] uppercase tracking-wider text-amber-400 mb-3.5 pb-1.5 border-b border-slate-700">Đa phương tiện</h5>
+          <ul class="space-y-2.5 text-[13px] xl:text-[14px] text-slate-300">
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Video phóng sự thời sự</a></li>
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Kho tư liệu ảnh sự kiện</a></li>
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Đồ họa Infographic số hóa</a></li>
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Podcast & Bản tin phát thanh</a></li>
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Sách điện tử & Báo cáo tổng kết</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-8 pt-4 border-t border-slate-800 flex flex-col lg:flex-row items-center justify-between text-[12.5px] xl:text-[13.5px] text-slate-400 gap-3">
+        <p class="text-center lg:text-left">© 2026 Bản quyền thuộc Bộ Khoa học và Công nghệ. Ghi rõ nguồn khi phát hành lại thông tin.</p>
+        <div class="flex flex-wrap items-center justify-center gap-4 shrink-0">
+          <a href="#" class="hover:text-white transition">Điều khoản sử dụng</a>
+          <a href="#" class="hover:text-white transition">Chính sách bảo mật</a>
+          <a href="hoi-dap.html" class="hover:text-white transition">Sơ đồ cổng</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="prototype-nav.js"></script>
+  <script>
+    // Đọc URL query để nhận diện sản phẩm nếu có
+    const urlParams = new URLSearchParams(window.location.search);
+    const productId = urlParams.get('id');
+    const productNameParam = urlParams.get('name');
+
+    if (productId) {
+      const codeBadge = document.getElementById('productCodeBadge');
+      const sbCodeEl = document.getElementById('sbCode');
+      if (codeBadge) codeBadge.innerText = productId;
+      if (sbCodeEl) sbCodeEl.innerText = productId;
+    }
+
+    if (productNameParam) {
+      const titleEl = document.getElementById('productTitle');
+      const bcEl = document.getElementById('breadcrumbProductName');
+      const decoded = decodeURIComponent(productNameParam);
+      if (titleEl) titleEl.innerText = decoded;
+      if (bcEl) bcEl.innerText = decoded;
+    }
+  </script>
+</body>
+</html>

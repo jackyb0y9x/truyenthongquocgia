@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giải thích Chính sách & Hướng dẫn Thực thi | Nền tảng Truyền thông Quốc Gia</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontSize: {
+            xs: ['0.90625rem', { lineHeight: '1.35rem' }],
+            sm: ['1rem', { lineHeight: '1.45rem' }],
+            base: ['1.125rem', { lineHeight: '1.65rem' }],
+            lg: ['1.25rem', { lineHeight: '1.8rem' }],
+            xl: ['1.375rem', { lineHeight: '1.9rem' }],
+            '2xl': ['1.625rem', { lineHeight: '2.1rem' }],
+            '3xl': ['2rem', { lineHeight: '2.45rem' }]
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .doc-font { font-family: 'Merriweather', serif; }
+    .custom-scrollbar::-webkit-scrollbar { width: 6px; height: 6px; }
+    .custom-scrollbar::-webkit-scrollbar-track { background: #f1f5f9; }
+    .custom-scrollbar::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+  
+    .max-w-7xl {
+      max-width: 90rem !important;
+    }
+    header h1 {
+      font-family: 'Inter', sans-serif !important;
+      font-weight: 800 !important;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col">
+
+  <!-- TOP UTILITY BAR -->
+  <div class="bg-[#0b1c33] text-slate-200 text-[13px] py-1.5 px-4 sm:px-8 border-b border-slate-700/60">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-2">
+      <div class="flex items-center gap-3">
+        <span class="text-slate-300"><i class="fa-regular fa-calendar-check mr-1.5 text-amber-400"></i>Thứ Năm, 27/08/2026</span>
+      </div>
+      <div class="flex items-center gap-4 text-[13px]">
+        <div class="flex items-center gap-1.5 font-bold">
+          <span class="text-amber-400">VI</span>
+          <span class="text-slate-500">/</span>
+          <span class="text-slate-400 hover:text-white cursor-pointer">EN</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="bg-white border-b border-slate-200 shadow-sm sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 py-3.5 flex flex-col md:flex-row items-center justify-between gap-4">
+      <a href="index.html" class="flex items-center gap-3.5 group">
+        <img src="quoc-huy.png" alt="Quốc huy Việt Nam" class="w-12 h-12 object-contain drop-shadow">
+        <div>
+          <h1 class="text-[14.5px] sm:text-[16px] md:text-[18px] lg:text-[18px] xl:text-[20px] font-extrabold tracking-normal uppercase text-red-800 leading-normal">
+            <span class="block whitespace-nowrap">NỀN TẢNG TRUYỀN THÔNG SỐ QUỐC GIA VỀ KHOA HỌC, CÔNG NGHỆ,</span>
+            <span class="block mt-1 whitespace-nowrap">ĐỔI MỚI SÁNG TẠO VÀ CHUYỂN ĐỔI SỐ</span>
+          </h1>
+        </div>
+      </a>
+
+      <div class="w-full md:w-80 lg:w-96 relative shrink-0">
+        <input type="text" id="headerSearch" placeholder="Tìm kiếm văn bản, giải thích chính sách..." 
+          class="w-full pl-10 pr-4 py-2 bg-slate-100 focus:bg-white text-[13px] rounded-full border border-slate-300 focus:outline-none focus:ring-2 focus:ring-red-700/30">
+        <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-[13px]"></i>
+      </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="bg-white border-t border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-8 flex items-center justify-start overflow-visible gap-1.5 text-[14.5px] sm:text-[15px] font-semibold">
+        <a href="index.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+          Trang chủ
+        </a>
+        
+        <!-- CHÍNH SÁCH VỚI SUBMENU CHỈ ĐẠO ĐIỀU HÀNH & GIẢI THÍCH CHÍNH SÁCH -->
+        <div class="relative group">
+          <a href="chinh-sach.html" class="px-5 py-2.5 bg-[#82181a] text-white rounded-t-sm whitespace-nowrap shadow-inner flex items-center gap-1.5 font-bold cursor-pointer">
+            <i class="fa-solid fa-scale-balanced text-[13px]"></i> <span>Chính sách</span>
+            <i class="fa-solid fa-chevron-down text-[9px] opacity-80 group-hover:rotate-180 transition-transform"></i>
+          </a>
+          <!-- Submenu dropdown -->
+          <div class="hidden group-hover:block absolute left-0 top-full bg-white rounded-xl shadow-2xl border border-slate-200 py-1.5 min-w-[260px] z-50 text-slate-800 font-normal">
+            <a href="chinh-sach.html" class="flex items-center gap-2.5 px-4 py-2.5 hover:bg-slate-50 text-slate-700 hover:text-red-800 text-[14.5px] transition font-semibold">
+              <i class="fa-solid fa-landmark text-slate-400 text-[14.5px]"></i>
+              <span>Chính sách & Thể chế</span>
+            </a>
+            <a href="chinh-sach-tra-cuu.html" class="flex items-center gap-2.5 px-4 py-2.5 hover:bg-slate-50 text-slate-700 hover:text-red-800 text-[14.5px] transition font-semibold">
+              <i class="fa-solid fa-file-signature text-red-700 text-[14.5px]"></i>
+              <span>Chỉ đạo điều hành</span>
+            </a>
+            <a href="giai-thich-chinh-sach.html" class="flex items-center gap-2.5 px-4 py-2.5 bg-red-50 text-red-800 font-bold text-[14.5px] transition">
+              <i class="fa-solid fa-chalkboard-user text-amber-600 text-[14.5px]"></i>
+              <span>Giải thích chính sách</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="san-pham-cong-nghe.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+          Sản phẩm KH&CN
+        </a>
+        <a href="bao-cao-danh-gia-truyen-thong.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+          Báo cáo thường niên
+        </a>
+        <a href="tai-lieu-video.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+          Kho tư liệu
+        </a>
+        
+        <a href="su-kien.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">Sự kiện</a>
+
+        
+        <a href="hoi-dap.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+          Hỏi đáp
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- BREADCRUMB (ĐÃ BỎ KÊNH ĐỐI THOẠI TRỰC TIẾP CÙNG BAN SOẠN THẢO) -->
+  <div class="bg-slate-100 border-b border-slate-200 py-3 px-4 sm:px-8 text-xs">
+    <div class="max-w-7xl mx-auto flex items-center gap-2 text-slate-500 overflow-hidden truncate">
+      <a href="index.html" class="hover:text-red-800 shrink-0"><i class="fa-solid fa-house"></i> Trang chủ</a>
+      <span>/</span>
+      <a href="chinh-sach.html" class="hover:text-red-800 shrink-0">Chính sách</a>
+      <span>/</span>
+      <span class="text-red-800 font-semibold truncate">Giải thích chính sách & Hướng dẫn thực thi</span>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-8 py-7 w-full flex-1 space-y-6">
+
+    <!-- 3 BUTTON TƯƠNG ỨNG 3 SUB MENU CHÍNH SÁCH -->
+    <div class="flex flex-wrap items-center justify-center gap-3 pb-4 border-b border-slate-200">
+      <a href="chinh-sach.html" class="px-5 py-2.5 rounded-xl bg-white hover:bg-red-50/60 text-slate-700 hover:text-[#82181a] border border-slate-200 hover:border-red-300 text-xs sm:text-sm font-semibold shadow-2xs flex items-center gap-2 transition">
+        <i class="fa-solid fa-landmark text-xs text-slate-400"></i>
+        <span>Chính sách & thể chế</span>
+      </a>
+      <a href="chinh-sach-tra-cuu.html" class="px-5 py-2.5 rounded-xl bg-white hover:bg-red-50/60 text-slate-700 hover:text-[#82181a] border border-slate-200 hover:border-red-300 text-xs sm:text-sm font-semibold shadow-2xs flex items-center gap-2 transition">
+        <i class="fa-solid fa-file-signature text-xs text-slate-400"></i>
+        <span>Chỉ đạo điều hành</span>
+      </a>
+      <a href="giai-thich-chinh-sach.html" class="px-5 py-2.5 rounded-xl bg-[#82181a] text-white border border-[#82181a] text-xs sm:text-sm font-bold shadow-sm flex items-center gap-2 transition">
+        <i class="fa-solid fa-chalkboard-user text-xs"></i>
+        <span>Giải thích chính sách</span>
+      </a>
+    </div>
+
+    <!-- BỘ LỌC CỦA CHÍNH SÁCH ÁP DỤNG SANG BÊN GIẢI THÍCH -->
+    <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm space-y-4">
+      <form id="filterForm" onsubmit="event.preventDefault(); applyFilter();">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
+          <!-- Input Keyword -->
+          <div>
+            <label class="block font-semibold text-slate-700 mb-1">Từ khóa / Số hiệu chính sách</label>
+            <div class="relative">
+              <input type="text" id="keywordInput" placeholder="Nhập tên chính sách, số hiệu, cán bộ..." 
+                class="w-full pl-8 pr-3 py-2 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-red-700/30">
+              <i class="fa-solid fa-magnifying-glass absolute left-2.5 top-1/2 -translate-y-1/2 text-slate-400"></i>
+            </div>
+          </div>
+
+          <!-- Select Type (Thể loại chính sách) -->
+          <div>
+            <label class="block font-semibold text-slate-700 mb-1">Thể loại chính sách</label>
+            <select id="typeSelect" class="w-full px-3 py-2 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-red-700/30">
+              <option value="">Tất cả thể loại</option>
+              <option value="Nghị quyết">Nghị quyết</option>
+              <option value="Luật">Luật / Bộ luật</option>
+              <option value="Nghị định">Nghị định quy định chi tiết</option>
+              <option value="Thông tư">Thông tư</option>
+              <option value="Quyết định">Quyết định</option>
+              <option value="Kế hoạch">Kế hoạch triển khai</option>
+            </select>
+          </div>
+
+          <!-- Select Level (Cấp chính sách) -->
+          <div>
+            <label class="block font-semibold text-slate-700 mb-1">Cấp chính sách</label>
+            <select id="fieldSelect" class="w-full px-3 py-2 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-red-700/30">
+              <option value="">Tất cả cấp chính sách</option>
+              <option value="central">Cấp Trung ương</option>
+              <option value="local">Cấp Địa phương</option>
+            </select>
+          </div>
+
+          <!-- Select Authority (Cơ quan phê duyệt) -->
+          <div>
+            <label class="block font-semibold text-slate-700 mb-1">Cơ quan phê duyệt</label>
+            <select id="authoritySelect" class="w-full px-3 py-2 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-red-700/30">
+              <option value="">Tất cả cơ quan</option>
+              <option value="Quốc hội">Quốc hội</option>
+              <option value="Chính phủ">Chính phủ / Thủ tướng Chính phủ</option>
+              <option value="Bộ Khoa học và Công nghệ">Bộ Khoa học và Công nghệ</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-end gap-3 pt-3 border-t border-slate-100 text-xs">
+          <button type="button" onclick="resetFilter()" class="group px-4 py-2 rounded-lg bg-white hover:bg-slate-50 text-slate-700 hover:text-slate-900 font-bold border border-slate-300 hover:border-slate-400 shadow-2xs transition flex items-center gap-1.5 cursor-pointer">
+            <i class="fa-solid fa-rotate-left text-slate-400 group-hover:text-slate-600 group-hover:-rotate-90 transition-transform duration-200"></i>
+            <span>Đặt lại</span>
+          </button>
+          <button type="submit" class="px-6 py-2 rounded-lg bg-[#82181a] hover:bg-red-900 text-white font-bold transition flex items-center gap-2 shadow">
+            <i class="fa-solid fa-filter text-xs"></i> Lọc chính sách
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- MAIN TWO-COLUMN WORKSPACE: LEFT ACTIVE EXPLAINER, RIGHT POLICY LIST -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+
+      <!-- LEFT: ACTIVE POLICY EXPLANATION CONTAINER (COL 8) -->
+      <div class="lg:col-span-8 space-y-6" id="activePolicyContainer">
+
+        <!-- ACTIVE POLICY CARD -->
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 sm:p-7 space-y-6">
+          
+          <!-- Document Header Info -->
+          <div class="border-b border-slate-100 pb-4 space-y-2">
+            <div class="flex flex-wrap items-center justify-between gap-2 text-xs">
+              <span id="activeDocNumber" class="text-red-800 font-bold uppercase tracking-wider font-mono">NGHỊ QUYẾT SỐ 57/NQ-CP</span>
+              <span id="activeDocDate" class="text-slate-400 font-mono">Ban hành: 14/03/2026 • Hiệu lực: 01/04/2026</span>
+            </div>
+            <h3 id="activeDocTitle" class="text-lg sm:text-xl font-black text-slate-900 leading-snug">
+              Nghị quyết về phát triển hạ tầng tính toán Trí tuệ nhân tạo quốc gia và Chuyển đổi số giai đoạn 2026 - 2030
+            </h3>
+            <div id="activeDocAgency" class="text-xs text-slate-600 flex items-center gap-1.5">
+              <i class="fa-solid fa-landmark text-slate-400"></i>
+              <span>Cơ quan chủ trì: <strong>Ban soạn thảo liên ngành (Bộ KH&CN chủ trì, phối hợp Bộ Tư pháp, Bộ Tài chính)</strong></span>
+            </div>
+          </div>
+
+          <!-- CÁN BỘ GIẢI THÍCH PROFILE (ĐÃ ĐỔI TÊN & BỎ XEM TOÀN VĂN VĂN BẢN GỐC) -->
+          <div class="bg-slate-50 rounded-xl p-4 border border-slate-200/80 flex items-center justify-between gap-4">
+            <div class="flex items-center gap-3.5">
+              <div class="w-12 h-12 rounded-full bg-slate-800 text-white flex items-center justify-center font-bold text-base shrink-0 overflow-hidden border border-slate-300 shadow-xs">
+                <img id="speakerPhoto" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Cán bộ giải thích" class="w-full h-full object-cover">
+              </div>
+              <div class="space-y-0.5">
+                <span class="text-[12px] font-bold text-red-800 uppercase tracking-wider block">Cán bộ giải thích</span>
+                <h4 id="speakerName" class="text-sm sm:text-base font-bold text-slate-900 leading-tight">TS. Nguyễn Hoàng Nam</h4>
+                <p id="speakerTitle" class="text-xs text-slate-600">Vụ trưởng Vụ Pháp chế • Thường trực Ban soạn thảo Nghị quyết 57</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- KHU VỰC NỘI DUNG GIẢI THÍCH: GOM VIDEO VÀ BÀI VIẾT VÀO LÀM 1 (VIDEO HIỂN THỊ TRƯỚC, XONG ĐẾN BÀI VIẾT) -->
+          <div class="space-y-6">
+
+            <!-- 1. VIDEO GIẢI THÍCH (Hiển thị trước nếu có video) -->
+            <div id="videoContainer" class="space-y-3">
+              <div class="relative bg-black rounded-xl overflow-hidden aspect-video shadow-lg group">
+                <img id="videoThumbnail" src="https://mic.mediacdn.vn/thumb_w/750/.v-thumb/639352410187198464/2026/4/9/123phienhopthunhatbcd57ok-wm-1774927659-1775735654878216182153.mp4.jpg" class="w-full h-full object-cover opacity-80" alt="Video">
+                
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20 flex flex-col justify-between p-5">
+                  <div class="flex items-center justify-between">
+                    <span class="bg-red-700 text-white text-[13px] font-bold px-2.5 py-1 rounded flex items-center gap-1.5">
+                      <i class="fa-solid fa-video"></i> VIDEO GIẢI THÍCH TỪ CÁN BỘ
+                    </span>
+                    <span id="videoDuration" class="text-white text-xs font-mono bg-black/60 px-2 py-0.5 rounded">Thời lượng: 32:45</span>
+                  </div>
+
+                  <div class="text-center">
+                    <button onclick="alert('Đang phát video giải thích chính sách từ Cán bộ...');" 
+                      class="w-16 h-16 rounded-full bg-red-600 hover:bg-red-500 text-white flex items-center justify-center text-2xl shadow-2xl transition hover:scale-110 mx-auto">
+                      <i class="fa-solid fa-play ml-1"></i>
+                    </button>
+                  </div>
+
+                  <div class="text-white space-y-1">
+                    <h5 id="videoTitle" class="text-sm sm:text-base font-bold">Phiên giải thích chuyên sâu: Hướng dẫn tháo gỡ vướng mắc đầu tư hạ tầng AI và cơ chế Sandbox</h5>
+                    <p class="text-xs text-slate-300">Phát hành chính thức bởi Cơ quan chủ trì soạn thảo</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2. BÀI VIẾT HƯỚNG DẪN THỰC THI (Hiển thị sau video nếu có bài viết) -->
+            <div id="articleContainer" class="space-y-4">
+              <div class="flex items-center gap-2 pb-1 border-b border-slate-200">
+                <i class="fa-solid fa-book-open text-red-800"></i>
+                <h4 class="font-bold text-sm text-slate-900 uppercase tracking-wide">Hướng dẫn thực thi chi tiết</h4>
+              </div>
+
+              <div class="doc-font text-slate-800 text-sm leading-relaxed space-y-4 bg-slate-50/70 p-5 sm:p-6 rounded-xl border border-slate-200" id="articleBody">
+                <h4 class="font-sans font-black text-base text-slate-900 border-b border-slate-200 pb-2">
+                  Cẩm nang Thực thi NQ 57: 4 Điểm mới đột phá và Quy trình áp dụng chuẩn xác
+                </h4>
+                <p><strong>1. Làm rõ khái niệm "Khoán kinh phí đến sản phẩm cuối cùng":</strong> Nhà khoa học và chủ nhiệm đề tài được toàn quyền chủ động quyết định cơ cấu chi tiêu trong phạm vi tổng mức ngân sách được duyệt mà không phải giải trình chi tiết từng hóa đơn tiếp khách, văn phòng phẩm hay hội thảo nhỏ lẻ.</p>
+                <p><strong>2. Tiêu chí xác định doanh nghiệp được miễn thuế TNDN 4 năm đầu:</strong> Phải có dự án R&D được Bộ KH&CN xác nhận thuộc Danh mục 30 Nhóm sản phẩm công nghệ chiến lược quốc gia; tỷ lệ chi cho R&D đạt tối thiểu 3% doanh thu thuần hàng năm.</p>
+                <p><strong>3. Thủ tục tiếp cận kho dữ liệu số mở dùng chung (National Open Data):</strong> Cơ quan nghiên cứu gửi công văn điện tử thông qua Nền tảng Truyền thông số Quốc gia, Ban điều phối sẽ cấp khóa API định danh trong vòng 48 giờ làm việc sau khi kiểm tra điều kiện an toàn cấp độ 4.</p>
+                <p><strong>4. Phân định trách nhiệm thi hành giữa Bộ và Địa phương:</strong> Các tỉnh/thành phố có trách nhiệm bố trí mặt bằng sạch tại khu công nghệ cao trong vòng 60 ngày kể từ khi dự án trung tâm dữ liệu AI được phê duyệt chủ trương đầu tư.</p>
+              </div>
+
+              <!-- ACTION: TẢI TÀI LIỆU HƯỚNG DẪN THỰC THI CHÍNH THỨC -->
+              <div id="attachmentBox" class="bg-red-50/60 p-4 rounded-xl border border-red-200 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs">
+                <div>
+                  <div class="font-bold text-red-900 flex items-center gap-1.5">
+                    <i class="fa-solid fa-file-pdf text-red-600"></i> Tài liệu nghiệp vụ hướng dẫn thực thi:
+                  </div>
+                  <div class="text-slate-600 text-[13px]" id="attachmentFileName">So_tay_Huong_dan_Thuc_thi_NQ57_BKHCN.pdf (Bản ban hành chính thức • 3.8 MB)</div>
+                </div>
+                <a href="tai-lieu-an-pham.html" target="_blank" class="px-4 py-2 rounded-xl bg-red-800 hover:bg-red-700 text-white font-bold transition flex items-center gap-1.5 shrink-0 shadow-sm">
+                  <i class="fa-solid fa-file-arrow-down"></i> Tải tài liệu PDF
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- NÚT LIÊN KẾT KÊNH HỎI ĐÁP & HỖ TRỢ THỰC THI (GOM CHUNG NỔI BẬT) -->
+          <div class="pt-5 border-t border-slate-200">
+            <div class="bg-gradient-to-r from-[#0e2646] via-[#153a6b] to-[#0e2646] rounded-2xl p-5 sm:p-6 text-white shadow-xl border border-slate-700/80 flex flex-col sm:flex-row items-center justify-between gap-5">
+              <div class="flex items-center gap-4 text-center sm:text-left">
+                <div class="w-13 h-13 rounded-2xl bg-gradient-to-br from-amber-400 to-amber-600 text-slate-950 flex items-center justify-center text-2xl shadow-lg shrink-0">
+                  <i class="fa-solid fa-comments-question-check"></i>
+                </div>
+                <div>
+                  <h5 class="text-sm sm:text-base font-black text-white tracking-wide">
+                    Bạn có câu hỏi hoặc vướng mắc khi thực thi chính sách này?
+                  </h5>
+                  <p class="text-xs text-slate-300 mt-1">
+                    Gửi yêu cầu giải đáp và phản ánh vướng mắc thực tiễn trực tiếp tới Cán bộ giải thích qua Kênh Hỏi đáp Quốc gia.
+                  </p>
+                </div>
+              </div>
+
+              <a href="hoi-dap.html" class="inline-flex items-center justify-center gap-2.5 px-6 py-3 rounded-xl bg-gradient-to-r from-red-600 via-red-500 to-amber-500 hover:from-red-500 hover:to-amber-400 text-white font-extrabold text-xs sm:text-sm tracking-wide shadow-xl shadow-red-950/50 hover:shadow-red-500/40 transition-all duration-300 transform hover:-translate-y-0.5 shrink-0 group">
+                <i class="fa-solid fa-circle-question text-amber-200 text-base group-hover:rotate-12 transition-transform"></i>
+                <span>Gửi câu hỏi tới Kênh Hỏi đáp</span>
+                <i class="fa-solid fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- RIGHT: LIST OF POLICIES WITH EXPLANATIONS (COL 4) -->
+      <div class="lg:col-span-4 space-y-4">
+        
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-sm p-4 sm:p-5 space-y-3">
+          <div class="pb-2.5 border-b border-slate-100 flex items-center justify-between gap-2">
+            <h4 class="font-bold text-xs uppercase tracking-wide text-slate-900 flex items-center gap-2">
+              <i class="fa-solid fa-list-check text-red-800"></i> Danh mục chính sách đã có giải thích
+            </h4>
+            <span id="policyCountBadge" class="text-[13px] font-bold text-red-800 bg-red-50 border border-red-200 px-2.5 py-0.5 rounded-full whitespace-nowrap shrink-0">...</span>
+          </div>
+
+          <!-- POLICY ITEM LIST -->
+          <div class="space-y-2.5" id="explainedPolicyList">
+            <!-- Dynamically Rendered / Static Initial Content -->
+          </div>
+
+          <!-- PHÂN TRANG DANH MỤC (KHI CÓ NHIỀU NỘI DUNG) -->
+          <div id="policyPagination" class="pt-3 border-t border-slate-100">
+            <!-- Dynamically Rendered Pagination -->
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#0b1e36] text-white mt-12 border-t border-slate-800 text-[14.5px]" style="font-family: 'Inter', sans-serif;">
+    <div class="max-w-[90rem] mx-auto px-4 sm:px-8 py-10">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <!-- Col 1 -->
+        <div class="md:col-span-2 space-y-3.5 min-w-0">
+          <div class="flex items-start sm:items-center gap-3.5 min-w-0">
+            <div class="w-12 h-12 rounded-full flex items-center justify-center p-0.5 filter drop-shadow-lg shrink-0">
+              <img src="quoc-huy.png" alt="Quốc huy Việt Nam" class="w-11 h-11 object-contain drop-shadow">
+            </div>
+            <div class="min-w-0 flex-1">
+              <h5 class="font-extrabold text-[14.5px] sm:text-[15.5px] lg:text-[16.5px] xl:text-[17.5px] tracking-wide uppercase text-amber-400 leading-snug sm:leading-relaxed">NỀN TẢNG TRUYỀN THÔNG SỐ QUỐC GIA VỀ KHOA HỌC, CÔNG NGHỆ, ĐỔI MỚI SÁNG TẠO VÀ CHUYỂN ĐỔI SỐ</h5>
+              <p class="text-[13px] xl:text-[14.5px] text-slate-300 mt-1">Cơ quan chủ quản: Bộ Khoa học và Công nghệ (MST)</p>
+            </div>
+          </div>
+          <div class="text-[13px] xl:text-[14px] text-slate-300 space-y-1.5 pt-1">
+            <p><i class="fa-solid fa-location-dot w-4 mr-1 text-red-400"></i> Địa chỉ: Đang cập nhật</p>
+            <p><i class="fa-solid fa-phone w-4 mr-1 text-emerald-400"></i> Điện thoại: Đang cập nhật • Email: Đang cập nhật</p>
+          </div>
+        </div>
+
+        <!-- Col 2: Liên kết -->
+        <div class="min-w-0">
+          <h5 class="font-bold text-[13px] xl:text-[14.5px] uppercase tracking-wider text-amber-400 mb-3.5 pb-1.5 border-b border-slate-700">Liên kết nhanh</h5>
+          <ul class="space-y-2.5 text-[13px] xl:text-[14px] text-slate-300">
+            <li><a href="chinh-sach-tra-cuu.html" class="hover:text-amber-300 transition">Văn bản chỉ đạo điều hành</a></li>
+            <li><a href="san-pham-cong-nghe.html" class="hover:text-amber-300 transition">10 Nhóm sản phẩm số trọng điểm</a></li>
+            <li><a href="su-kien.html" class="hover:text-amber-300 transition">Lịch trình sự kiện & hội thảo</a></li>
+            <li><a href="hoi-dap.html" class="hover:text-amber-300 transition">Hỏi đáp & hỗ trợ trực tuyến</a></li>
+            <li><a href="chuyen-muc-kinh-te-so.html" class="hover:text-amber-300 transition">Báo cáo dữ liệu & Chỉ số PII</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Đa phương tiện -->
+        <div class="min-w-0">
+          <h5 class="font-bold text-[13px] xl:text-[14.5px] uppercase tracking-wider text-amber-400 mb-3.5 pb-1.5 border-b border-slate-700">Đa phương tiện</h5>
+          <ul class="space-y-2.5 text-[13px] xl:text-[14px] text-slate-300">
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Video phóng sự thời sự</a></li>
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Kho tư liệu ảnh sự kiện</a></li>
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Đồ họa Infographic số hóa</a></li>
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Podcast & Bản tin phát thanh</a></li>
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Sách điện tử & Báo cáo tổng kết</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-8 pt-4 border-t border-slate-800 flex flex-col lg:flex-row items-center justify-between text-[12.5px] xl:text-[13.5px] text-slate-400 gap-3">
+        <p class="text-center lg:text-left">© 2026 Bản quyền thuộc Bộ Khoa học và Công nghệ. Ghi rõ nguồn khi phát hành lại thông tin.</p>
+        <div class="flex flex-wrap items-center justify-center gap-4 shrink-0">
+          <a href="#" class="hover:text-white transition">Điều khoản sử dụng</a>
+          <a href="#" class="hover:text-white transition">Chính sách bảo mật</a>
+          <a href="hoi-dap.html" class="hover:text-white transition">Sơ đồ cổng</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="prototype-nav.js"></script>
+  <script>
+    // DATA CỦA CÁC CHÍNH SÁCH ĐÃ CÓ GIẢI THÍCH
+    // Hỗ trợ 3 trường hợp:
+    // 1. Có cả Video và Bài viết (hiển thị Video trước, xong đến Bài viết)
+    // 2. Chỉ có Bài viết (không có Video)
+    // 3. Chỉ có Video (không có Bài viết)
+    const POLICIES = [
+      {
+        id: "57-nq-cp",
+        number: "NGHỊ QUYẾT SỐ 57/NQ-CP",
+        type: "Nghị quyết",
+        level: "central",
+        field: "ai",
+        authority: "Chính phủ",
+        date: "Ban hành: 14/03/2026 • Hiệu lực: 01/04/2026",
+        title: "Nghị quyết về phát triển hạ tầng tính toán Trí tuệ nhân tạo quốc gia và Chuyển đổi số giai đoạn 2026 - 2030",
+        agency: "Ban soạn thảo liên ngành (Bộ KH&CN chủ trì, phối hợp Bộ Tư pháp, Bộ Tài chính)",
+        speakerPhoto: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80",
+        speakerName: "TS. Nguyễn Hoàng Nam",
+        speakerTitle: "Vụ trưởng Vụ Pháp chế • Thường trực Ban soạn thảo Nghị quyết 57",
+        hasVideo: true,
+        videoDuration: "Thời lượng: 32:45",
+        videoThumbnail: "https://mic.mediacdn.vn/thumb_w/750/.v-thumb/639352410187198464/2026/4/9/123phienhopthunhatbcd57ok-wm-1774927659-1775735654878216182153.mp4.jpg",
+        videoTitle: "Phiên giải thích chuyên sâu: Hướng dẫn tháo gỡ vướng mắc đầu tư hạ tầng AI và cơ chế Sandbox",
+        hasArticle: true,
+        attachmentName: "So_tay_Huong_dan_Thuc_thi_NQ57_BKHCN.pdf (Bản ban hành chính thức • 3.8 MB)",
+        articleHtml: `
+          <h4 class="font-sans font-black text-base text-slate-900 border-b border-slate-200 pb-2">
+            Cẩm nang Thực thi NQ 57: 4 Điểm mới đột phá và Quy trình áp dụng chuẩn xác
+          </h4>
+          <p><strong>1. Làm rõ khái niệm "Khoán kinh phí đến sản phẩm cuối cùng":</strong> Nhà khoa học và chủ nhiệm đề tài được toàn quyền chủ động quyết định cơ cấu chi tiêu trong phạm vi tổng mức ngân sách được duyệt mà không phải giải trình chi tiết từng hóa đơn tiếp khách, văn phòng phẩm hay hội thảo nhỏ lẻ.</p>
+          <p><strong>2. Tiêu chí xác định doanh nghiệp được miễn thuế TNDN 4 năm đầu:</strong> Phải có dự án R&D được Bộ KH&CN xác nhận thuộc Danh mục 30 Nhóm sản phẩm công nghệ chiến lược quốc gia; tỷ lệ chi cho R&D đạt tối thiểu 3% doanh thu thuần hàng năm.</p>
+          <p><strong>3. Thủ tục tiếp cận kho dữ liệu số mở dùng chung (National Open Data):</strong> Cơ quan nghiên cứu gửi công văn điện tử thông qua Nền tảng Truyền thông số Quốc gia, Ban điều phối sẽ cấp khóa API định danh trong vòng 48 giờ làm việc sau khi kiểm tra điều kiện an toàn cấp độ 4.</p>
+          <p><strong>4. Phân định trách nhiệm thi hành giữa Bộ và Địa phương:</strong> Các tỉnh/thành phố có trách nhiệm bố trí mặt bằng sạch tại khu công nghệ cao trong vòng 60 ngày kể từ khi dự án trung tâm dữ liệu AI được phê duyệt chủ trương đầu tư.</p>
+        `
+      },
+      {
+        id: "luat-khcn",
+        number: "LUẬT KHOA HỌC, CÔNG NGHỆ VÀ ĐỔI MỚI SÁNG TẠO",
+        type: "Luật",
+        level: "central",
+        field: "finance",
+        authority: "Quốc hội",
+        date: "Thông qua tại Kỳ họp thứ 11, Quốc hội khóa XV",
+        title: "Cơ chế khoán chi đến sản phẩm cuối cùng và tự chủ tài chính đề tài nghiên cứu phát triển (R&D)",
+        agency: "Ủy ban Khoa học, Công nghệ và Môi trường của Quốc hội & Bộ KH&CN",
+        speakerPhoto: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80",
+        speakerName: "GS.TS. Trần Đình Khoa",
+        speakerTitle: "Phó Trưởng Ban soạn thảo Dự án Luật KH, CN & ĐMST",
+        hasVideo: true,
+        videoDuration: "Thời lượng: 41:10",
+        videoThumbnail: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=750&q=80",
+        videoTitle: "Giải thích Luật mới: Tự chủ tài chính, chấp nhận rủi ro trong nghiên cứu khoa học và cơ chế chia sẻ lợi nhuận",
+        hasArticle: true,
+        attachmentName: "Huong_dan_Thuc_thi_Luat_KHCN_DoiMoiSangTao.pdf (3.1 MB)",
+        articleHtml: `
+          <h4 class="font-sans font-black text-base text-slate-900 border-b border-slate-200 pb-2">
+            Hướng dẫn thực thi Luật KH, CN & ĐMST: Đột phá cơ chế khoán tài chính
+          </h4>
+          <p><strong>1. Quy định về chấp nhận rủi ro khoa học:</strong> Lần đầu tiên pháp luật bảo vệ quyền được thất bại trong nghiên cứu mạo hiểm. Tổ chức chủ trì đề tài được nghiệm thu trên cơ sở phương pháp luận đúng, báo cáo khoa học trung thực mà không bị thu hồi ngân sách.</p>
+          <p><strong>2. Phân cấp mua sắm trang thiết bị phòng thí nghiệm:</strong> Viện trưởng và Hiệu trưởng trường đại học được quyền tự chủ lựa chọn thiết bị công nghệ chuyên dụng không vượt quá 5 tỷ đồng mà không phải đấu thầu tập trung.</p>
+          <p><strong>3. Thu nhập của nhà khoa học:</strong> Bỏ trần phụ cấp đề tài; thù lao của chuyên gia được tính theo giá thị trường quốc tế đối với các chuyên gia người Việt Nam ở nước ngoài và chuyên gia quốc tế.</p>
+        `
+      },
+      {
+        id: "18-2026-nd-cp",
+        number: "NGHỊ ĐỊNH SỐ 18/2026/NĐ-CP",
+        type: "Nghị định",
+        level: "central",
+        field: "sandbox",
+        authority: "Chính phủ",
+        date: "Ban hành: 05/02/2026 • Hiệu lực: 20/03/2026",
+        title: "Quy định cơ chế thử nghiệm có kiểm soát (Sandbox) trong lĩnh vực công nghệ số và giải pháp đổi mới sáng tạo",
+        agency: "Cục Phát triển Đổi mới sáng tạo - Bộ Khoa học và Công nghệ",
+        speakerPhoto: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80",
+        speakerName: "ThS. Lê Thị Mai",
+        speakerTitle: "Cục trưởng Cục Phát triển Đổi mới sáng tạo • Thường trực Tổ công tác Sandbox",
+        hasVideo: true,
+        videoDuration: "Thời lượng: 28:15",
+        videoThumbnail: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=750&q=80",
+        videoTitle: "Hướng dẫn thực thi Nghị định Sandbox: Điều kiện nộp hồ sơ, phạm vi miễn trừ trách nhiệm và thời hạn thử nghiệm",
+        hasArticle: true,
+        attachmentName: "Quy_trinh_tham_dinh_ho_so_Sandbox_Congnghe.pdf (2.4 MB)",
+        articleHtml: `
+          <h4 class="font-sans font-black text-base text-slate-900 border-b border-slate-200 pb-2">
+            Sổ tay hướng dẫn nộp hồ sơ tham gia Thử nghiệm có kiểm soát (Sandbox)
+          </h4>
+          <p><strong>1. Đối tượng áp dụng:</strong> Doanh nghiệp công nghệ thành lập tại Việt Nam sở hữu giải pháp AI ứng dụng, y tế số, fintech thế hệ mới hoặc chuỗi khối đã có phiên bản mẫu thử nghiệm (MVP).</p>
+          <p><strong>2. Thời hạn thử nghiệm tối đa:</strong> 24 tháng, có thể gia hạn 01 lần không quá 12 tháng. Trong thời gian này, cơ quan quản lý sẽ đồng hành theo dõi để xây dựng quy chuẩn chính thức.</p>
+          <p><strong>3. Cam kết an toàn dữ liệu:</strong> Toàn bộ dữ liệu người dùng tham gia thử nghiệm phải được lưu trữ trên hạ tầng máy chủ đặt tại lãnh thổ Việt Nam và mã hóa hai chiều.</p>
+        `
+      },
+      {
+        id: "29-2026-nd-cp",
+        number: "NGHỊ ĐỊNH SỐ 29/2026/NĐ-CP",
+        type: "Nghị định",
+        level: "central",
+        field: "semiconductor",
+        authority: "Chính phủ",
+        date: "Ban hành: 18/01/2026 • Hiệu lực: 01/03/2026",
+        title: "Chính sách ưu đãi đặc biệt về thuế thu nhập doanh nghiệp và tiền thuê đất cho ngành công nghiệp Vi mạch Bán dẫn",
+        agency: "Viện Nghiên cứu Chiến lược Công nghệ & Bộ Kế hoạch và Đầu tư",
+        speakerPhoto: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80",
+        speakerName: "TS. Vũ Đức Trọng",
+        speakerTitle: "Viện trưởng Viện Nghiên cứu Chiến lược Công nghệ",
+        hasVideo: true,
+        videoDuration: "Thời lượng: 36:50",
+        videoThumbnail: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=750&q=80",
+        videoTitle: "Hướng dẫn thực thi: Điều kiện thụ hưởng gói hỗ trợ đào tạo nhân lực vi mạch và miễn tiền thuê đất 15 năm",
+        hasArticle: true,
+        attachmentName: "Cam_nang_Uu_dai_Dau_tu_Ban_dan_2026.pdf (4.5 MB)",
+        articleHtml: `
+          <h4 class="font-sans font-black text-base text-slate-900 border-b border-slate-200 pb-2">
+            Cẩm nang tiếp cận các gói hỗ trợ công nghiệp Bán dẫn 2026 - 2030
+          </h4>
+          <p><strong>1. Danh mục lĩnh vực được hưởng ưu đãi tối đa:</strong> Thiết kế vi mạch số (Digital IC), vi mạch tương tự (Analog), đóng gói và kiểm thử tiên tiến (Advanced Packaging), chế tạo vật liệu bán dẫn.</p>
+          <p><strong>2. Miễn thuế nhập khẩu linh kiện, vật tư:</strong> Áp dụng đối với toàn bộ máy móc, hóa chất chuyên dụng trong sản xuất vi mạch chưa sản xuất được trong nước trong thời hạn 05 năm.</p>
+        `
+      },
+      {
+        id: "08-2026-tt-bkhcn",
+        number: "THÔNG TƯ SỐ 08/2026/TT-BKHCN",
+        type: "Thông tư",
+        level: "central",
+        field: "ip",
+        authority: "Bộ Khoa học và Công nghệ",
+        date: "Ban hành: 10/01/2026 • Hiệu lực: 25/02/2026",
+        title: "Quy trình định giá, góp vốn và thương mại hóa kết quả nghiên cứu khoa học, sáng chế từ viện nghiên cứu, trường đại học",
+        agency: "Cục Sở hữu Trí tuệ (NOIP) - Bộ Khoa học và Công nghệ",
+        speakerPhoto: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=150&q=80",
+        speakerName: "Luật sư Nguyễn Văn Hậu",
+        speakerTitle: "Phụ trách Pháp chế Chuyển giao Công nghệ • Cục Sở hữu Trí tuệ",
+        hasVideo: false, // CHỈ CÓ BÀI VIẾT
+        videoDuration: "",
+        videoThumbnail: "",
+        videoTitle: "",
+        hasArticle: true,
+        attachmentName: "So_tay_Dinh_gia_Tai_san_Tri_tue_Vien_Truong.pdf (2.8 MB)",
+        articleHtml: `
+          <h4 class="font-sans font-black text-base text-slate-900 border-b border-slate-200 pb-2">
+            Hướng dẫn định giá và góp vốn bằng Quyền Sở hữu Trí tuệ
+          </h4>
+          <p><strong>1. Tháo gỡ nút thắt lớn nhất:</strong> Không còn bắt buộc phải qua thẩm định giá của cơ quan nhà nước nếu các bên sáng lập tự nguyện thỏa thuận giá trị góp vốn dưới 10 tỷ đồng và có sự bảo lãnh của Hội đồng khoa học trường/viện.</p>
+          <p><strong>2. Phân chia tỷ lệ cổ phần:</strong> Nhóm tác giả sáng chế trực tiếp tạo ra công nghệ được nắm giữ tối thiểu 35% tổng số cổ phần góp vốn từ tài sản trí tuệ đó.</p>
+          <p><strong>3. Trình tự đăng ký góp vốn:</strong> Cơ quan chủ quản có trách nhiệm thẩm tra tính hợp pháp của quyền sở hữu công nghiệp trong vòng 15 ngày làm việc kể từ khi nhận đủ hồ sơ.</p>
+        `
+      },
+      {
+        id: "148-qd-ttg",
+        number: "QUYẾT ĐỊNH SỐ 148/QĐ-TTg",
+        type: "Quyết định",
+        level: "central",
+        field: "ai",
+        authority: "Chính phủ",
+        date: "Ban hành: 28/02/2026 • Hiệu lực: 28/02/2026",
+        title: "Phê duyệt Kế hoạch hành động phát triển Hệ sinh thái Trí tuệ nhân tạo (AI) quốc gia tầm nhìn 2035",
+        agency: "Vụ Công nghệ cao - Bộ Khoa học và Công nghệ",
+        speakerPhoto: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=150&q=80",
+        speakerName: "ThS. Phạm Hoàng Tùng",
+        speakerTitle: "Phó Vụ trưởng Vụ Công nghệ cao • Tổ trưởng Điều phối Đề án AI",
+        hasVideo: true, // CHỈ CÓ VIDEO
+        videoDuration: "Thời lượng: 24:30",
+        videoThumbnail: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=750&q=80",
+        videoTitle: "Tọa đàm chuyên đề: Định hướng phân bổ nguồn lực quốc gia cho các phòng thí nghiệm AI trọng điểm",
+        hasArticle: false,
+        attachmentName: "Quyet_dinh_148_QD-TTg_Ke_hoach_AI_2035.pdf (1.9 MB)",
+        articleHtml: ""
+      },
+      {
+        id: "108-kh-ubnd-hn",
+        number: "KẾ HOẠCH SỐ 108/KH-UBND",
+        type: "Kế hoạch",
+        level: "local",
+        field: "sandbox",
+        authority: "UBND TP. Hà Nội",
+        date: "Ban hành: 18/03/2026 • Hiệu lực: 18/03/2026",
+        title: "Kế hoạch triển khai mạng lưới Trung tâm Đổi mới sáng tạo mở và Thử nghiệm chính sách công nghệ tại Thủ đô",
+        agency: "Sở Khoa học và Công nghệ TP. Hà Nội",
+        speakerPhoto: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80",
+        speakerName: "ThS. Đặng Quốc Toàn",
+        speakerTitle: "Phó Giám đốc Sở KH&CN TP. Hà Nội • Trưởng Ban điều phối ĐMST",
+        hasVideo: true,
+        videoDuration: "Thời lượng: 21:15",
+        videoThumbnail: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=750&q=80",
+        videoTitle: "Hướng dẫn thực thi: Hỗ trợ mặt bằng và gói ngân sách 500 triệu đồng cho doanh nghiệp ĐMST Thủ đô",
+        hasArticle: true,
+        attachmentName: "Ke_hoach_108_KH-UBND_HaNoi_DMST.pdf (2.2 MB)",
+        articleHtml: `
+          <h4 class="font-sans font-black text-base text-slate-900 border-b border-slate-200 pb-2">
+            Hướng dẫn tiếp cận cơ chế hỗ trợ của TP. Hà Nội
+          </h4>
+          <p><strong>1. Điều kiện tham gia:</strong> Doanh nghiệp công nghệ thành lập trên địa bàn Hà Nội dưới 5 năm, có mô hình thử nghiệm ứng dụng AI, năng lượng xanh hoặc công nghệ sinh học.</p>
+          <p><strong>2. Thủ tục nhận hỗ trợ:</strong> Nộp hồ sơ trực tuyến qua Cổng dịch vụ công của Sở KH&CN Hà Nội, thời gian xét duyệt trong vòng 10 ngày làm việc.</p>
+        `
+      },
+      {
+        id: "749-qd-ttg",
+        number: "QUYẾT ĐỊNH SỐ 749/QĐ-TTg",
+        type: "Quyết định",
+        level: "central",
+        field: "ai",
+        authority: "Chính phủ",
+        date: "Ban hành: 03/06/2025 • Hiệu lực: 03/06/2025",
+        title: "Chương trình Chuyển đổi số quốc gia đến năm 2025, định hướng đến năm 2030 và Chiến lược dữ liệu số",
+        agency: "Cục Chuyển đổi số Quốc gia • Bộ Thông tin và Truyền thông",
+        speakerPhoto: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80",
+        speakerName: "TS. Nguyễn Minh Hải",
+        speakerTitle: "Phó Cục trưởng Cục Chuyển đổi số Quốc gia",
+        hasVideo: true,
+        videoDuration: "Thời lượng: 29:40",
+        videoThumbnail: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=750&q=80",
+        videoTitle: "Hướng dẫn thực thi: Tiêu chí nền tảng số xuất sắc và lộ trình chuyển đổi số toàn diện cho doanh nghiệp",
+        hasArticle: true,
+        attachmentName: "Huong_dan_Khung_Chuyen_doi_so_Quoc_gia.pdf (3.5 MB)",
+        articleHtml: `
+          <h4 class="font-sans font-black text-base text-slate-900 border-b border-slate-200 pb-2">
+            Hướng dẫn áp dụng Khung chuyển đổi số cho cơ quan, doanh nghiệp
+          </h4>
+          <p><strong>1. Mô hình nền tảng số dùng chung:</strong> Ưu tiên triển khai các giải pháp điện toán đám mây và hạ tầng số mở để kết nối liên thông dữ liệu giữa các bộ, ngành và địa phương.</p>
+          <p><strong>2. Đánh giá mức độ chuyển đổi số (DTI):</strong> Ban hành bộ chỉ số DTI chuẩn quốc gia áp dụng thường niên từ cấp xã, phường đến cấp bộ, ngành.</p>
+        `
+      },
+      {
+        id: "13-2023-nd-cp",
+        number: "NGHỊ ĐỊNH SỐ 13/2023/NĐ-CP",
+        type: "Nghị định",
+        level: "central",
+        field: "sandbox",
+        authority: "Chính phủ",
+        date: "Ban hành: 17/04/2023 • Hiệu lực: 01/07/2023",
+        title: "Bảo vệ dữ liệu cá nhân trong các nền tảng công nghệ số, điện toán đám mây và hệ thống thông tin quốc gia",
+        agency: "Cục An toàn thông tin • Bộ Thông tin và Truyền thông",
+        speakerPhoto: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80",
+        speakerName: "ThS. Đỗ Thị Thu Trang",
+        speakerTitle: "Chuyên gia cao cấp Pháp chế Dữ liệu số",
+        hasVideo: true,
+        videoDuration: "Thời lượng: 33:15",
+        videoThumbnail: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=750&q=80",
+        videoTitle: "Giải đáp vướng mắc: Quy trình đánh giá tác động xử lý dữ liệu cá nhân (DPIA) cho doanh nghiệp công nghệ",
+        hasArticle: true,
+        attachmentName: "So_tay_Tuan_thu_Nghi_dinh_13_Bao_ve_Du_lieu.pdf (2.9 MB)",
+        articleHtml: `
+          <h4 class="font-sans font-black text-base text-slate-900 border-b border-slate-200 pb-2">
+            Cẩm nang tuân thủ bảo vệ dữ liệu cá nhân trong kỷ nguyên số
+          </h4>
+          <p><strong>1. Trách nhiệm của bên kiểm soát dữ liệu:</strong> Doanh nghiệp cung cấp giải pháp số phải xây dựng quy chế bảo mật, chỉ định bộ phận hoặc cán bộ chuyên trách bảo vệ dữ liệu.</p>
+          <p><strong>2. Hồ sơ đánh giá tác động:</strong> Hoàn thiện và gửi hồ sơ đánh giá tác động xử lý dữ liệu tới cơ quan quản lý chuyên trách trong vòng 60 ngày kể từ ngày tiến hành xử lý.</p>
+        `
+      },
+      {
+        id: "569-qd-ttg",
+        number: "QUYẾT ĐỊNH SỐ 569/QĐ-TTg",
+        type: "Quyết định",
+        level: "central",
+        field: "finance",
+        authority: "Chính phủ",
+        date: "Ban hành: 11/05/2025 • Hiệu lực: 11/05/2025",
+        title: "Chiến lược phát triển khoa học, công nghệ và đổi mới sáng tạo đến năm 2030, tầm nhìn 2045",
+        agency: "Vụ Kế hoạch - Tài chính • Bộ Khoa học và Công nghệ",
+        speakerPhoto: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80",
+        speakerName: "GS.TS. Phan Văn Quý",
+        speakerTitle: "Thành viên Hội đồng Tư vấn Chính sách Khoa học Quốc gia",
+        hasVideo: true,
+        videoDuration: "Thời lượng: 38:00",
+        videoThumbnail: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=750&q=80",
+        videoTitle: "Phân tích chiến lược: Đột phá cơ chế đầu tư mạo hiểm và quỹ phát triển KH&CN ngoài ngân sách nhà nước",
+        hasArticle: true,
+        attachmentName: "Chien_luoc_KHCN_DoiMoiSangTao_2030.pdf (4.1 MB)",
+        articleHtml: `
+          <h4 class="font-sans font-black text-base text-slate-900 border-b border-slate-200 pb-2">
+            Định hướng mục tiêu và nhiệm vụ chiến lược KH&CN 2030
+          </h4>
+          <p><strong>1. Đóng góp của năng suất nhân tố tổng hợp (TFP):</strong> Phấn đấu TFP đóng góp trên 50% vào tăng trưởng kinh tế giai đoạn 2026 - 2030.</p>
+          <p><strong>2. Huy động vốn xã hội:</strong> Nâng tỷ lệ đầu tư cho R&D từ khu vực tư nhân chiếm trên 65% tổng chi đầu tư cho toàn xã hội.</p>
+        `
+      },
+      {
+        id: "03-2026-tt-bkhcn",
+        number: "THÔNG TƯ SỐ 03/2026/TT-BKHCN",
+        type: "Thông tư",
+        level: "central",
+        field: "semiconductor",
+        authority: "Bộ Khoa học và Công nghệ",
+        date: "Ban hành: 15/01/2026 • Hiệu lực: 01/03/2026",
+        title: "Hướng dẫn quản lý các dự án nghiên cứu, thiết kế và phát triển vi mạch bán dẫn trọng điểm quốc gia",
+        agency: "Vụ Công nghệ cao • Bộ Khoa học và Công nghệ",
+        speakerPhoto: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=150&q=80",
+        speakerName: "TS. Lê Hồng Phong",
+        speakerTitle: "Tổ trưởng Tổ thẩm định Công nghệ Bán dẫn",
+        hasVideo: false,
+        videoDuration: "",
+        videoThumbnail: "",
+        videoTitle: "",
+        hasArticle: true,
+        attachmentName: "Huong_dan_Quan_ly_Du_an_Ban_dan_BKHCN.pdf (2.6 MB)",
+        articleHtml: `
+          <h4 class="font-sans font-black text-base text-slate-900 border-b border-slate-200 pb-2">
+            Quy trình phê duyệt và cấp kinh phí đề tài thiết kế vi mạch
+          </h4>
+          <p><strong>1. Cơ chế tài trợ bản quyền phần mềm EDA:</strong> Doanh nghiệp và viện nghiên cứu được hỗ trợ tới 70% chi phí bản quyền công cụ thiết kế EDA chuẩn quốc tế.</p>
+          <p><strong>2. Hỗ trợ chế tạo thử nghiệm (Tape-out):</strong> Ngân sách hỗ trợ trực tiếp chi phí chế tạo wafer mẫu tại các nhà máy đúc chip (Foundry) đối với các chip có tính thương mại hóa cao.</p>
+        `
+      },
+      {
+        id: "215-kh-ubnd-hcm",
+        number: "KẾ HOẠCH SỐ 215/KH-UBND",
+        type: "Kế hoạch",
+        level: "local",
+        field: "ai",
+        authority: "UBND TP. Hồ Chí Minh",
+        date: "Ban hành: 12/03/2026 • Hiệu lực: 12/03/2026",
+        title: "Kế hoạch phát triển Trung tâm Tính toán hiệu năng cao và Ươm tạo doanh nghiệp Trí tuệ nhân tạo TP. Hồ Chí Minh",
+        agency: "Sở Khoa học và Công nghệ TP. Hồ Chí Minh",
+        speakerPhoto: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=150&q=80",
+        speakerName: "ThS. Trương Gia Bảo",
+        speakerTitle: "Phó Giám đốc Trung tâm Đổi mới Sáng tạo TP.HCM",
+        hasVideo: true,
+        videoDuration: "Thời lượng: 26:50",
+        videoThumbnail: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=750&q=80",
+        videoTitle: "Hướng dẫn thực thi: Đăng ký giờ tính toán GPU miễn phí cho các nhóm nghiên cứu AI tại TP. Hồ Chí Minh",
+        hasArticle: true,
+        attachmentName: "Ke_hoach_215_GPU_AI_TPHCM.pdf (1.8 MB)",
+        articleHtml: `
+          <h4 class="font-sans font-black text-base text-slate-900 border-b border-slate-200 pb-2">
+            Chính sách hỗ trợ năng lực tính toán GPU của TP.HCM
+          </h4>
+          <p><strong>1. Đối tượng được cấp GPU miễn phí:</strong> Các trường đại học, viện nghiên cứu và startup AI có pháp nhân tại TP.HCM được cấp tối đa 500 giờ tính toán cụm A100/H100 phục vụ huấn luyện mô hình ngôn ngữ lớn (LLM).</p>
+          <p><strong>2. Đăng ký qua nền tảng:</strong> Nộp hồ sơ và bản mô tả thuật toán trực tuyến, xét duyệt tự động qua cổng công nghệ số trong vòng 5 ngày làm việc.</p>
+        `
+      }
+    ];
+
+    const ITEMS_PER_PAGE = 4;
+    let currentPage = 1;
+    let currentSelectedIdx = 0;
+    let filteredIndices = POLICIES.map((_, i) => i);
+
+    // RENDER DANH MỤC CHÍNH SÁCH BÊN PHẢI VỚI PHÂN TRANG
+    function renderPolicyList() {
+      const container = document.getElementById('explainedPolicyList');
+      const paginationContainer = document.getElementById('policyPagination');
+      container.innerHTML = '';
+      if (paginationContainer) paginationContainer.innerHTML = '';
+
+      const totalItems = filteredIndices.length;
+      const totalPages = Math.ceil(totalItems / ITEMS_PER_PAGE) || 1;
+
+      if (currentPage > totalPages) currentPage = totalPages;
+      if (currentPage < 1) currentPage = 1;
+
+      const badgeCount = document.getElementById('policyCountBadge');
+      if (badgeCount) badgeCount.innerText = totalItems + ' văn bản';
+
+      if (totalItems === 0) {
+        container.innerHTML = '<div class="text-center py-8 text-slate-400 text-xs"><i class="fa-solid fa-folder-open text-2xl mb-2 block"></i>Không tìm thấy chính sách phù hợp với bộ lọc.</div>';
+        return;
+      }
+
+      const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+      const pageIndices = filteredIndices.slice(startIndex, startIndex + ITEMS_PER_PAGE);
+
+      pageIndices.forEach(idx => {
+        const p = POLICIES[idx];
+        const isActive = (idx === currentSelectedIdx);
+
+        const div = document.createElement('div');
+        div.className = `policy-item p-3 rounded-xl border ${isActive ? 'border-red-600 bg-red-50/60 shadow-xs ring-1 ring-red-400/40' : 'border-slate-200 hover:border-slate-300 bg-white hover:bg-slate-50'} cursor-pointer transition space-y-1.5`;
+        div.onclick = () => selectPolicy(idx);
+
+        div.innerHTML = `
+          <div class="flex items-center justify-between text-[13px]">
+            <span class="font-bold ${isActive ? 'text-red-800' : 'text-slate-700'} font-mono">${p.number}</span>
+            ${p.hasVideo ? '<span class="text-[12px] text-red-600 bg-red-100/70 px-1.5 py-0.5 rounded font-bold flex items-center gap-1"><i class="fa-solid fa-circle-play text-[11px]"></i> Video</span>' : '<span class="text-[12px] text-slate-600 bg-slate-100 px-1.5 py-0.5 rounded font-bold flex items-center gap-1"><i class="fa-solid fa-file-lines text-[11px]"></i> Bài viết</span>'}
+          </div>
+          <h5 class="text-xs font-bold text-slate-900 line-clamp-2 leading-snug">
+            ${p.title}
+          </h5>
+          <div class="text-[13px] text-slate-600 flex items-center gap-1.5">
+            <i class="fa-solid fa-user-tie text-slate-400 text-[12px]"></i>
+            <span class="truncate">${p.speakerName} (${p.speakerTitle.split('•')[0].trim()})</span>
+          </div>
+        `;
+        container.appendChild(div);
+      });
+
+      // RENDER PHÂN TRANG
+      if (paginationContainer) {
+        const endItem = Math.min(startIndex + ITEMS_PER_PAGE, totalItems);
+        let paginationHtml = `
+          <div class="flex items-center justify-between text-xs gap-2">
+            <span class="text-[13px] text-slate-500 font-medium">
+              ${startIndex + 1} - ${endItem} / ${totalItems}
+            </span>
+            <div class="flex items-center gap-1">
+              <button onclick="changePage(${currentPage - 1})" ${currentPage === 1 ? 'disabled class="w-7 h-7 rounded-lg border border-slate-200 text-slate-300 cursor-not-allowed flex items-center justify-center"' : 'class="w-7 h-7 rounded-lg border border-slate-200 text-slate-600 hover:bg-slate-100 flex items-center justify-center transition"'} title="Trang trước">
+                <i class="fa-solid fa-chevron-left text-[12px]"></i>
+              </button>
+        `;
+
+        for (let i = 1; i <= totalPages; i++) {
+          if (i === currentPage) {
+            paginationHtml += `
+              <button class="w-7 h-7 rounded-lg bg-[#82181a] text-white font-bold text-xs flex items-center justify-center shadow-xs">
+                ${i}
+              </button>
+            `;
+          } else {
+            paginationHtml += `
+              <button onclick="changePage(${i})" class="w-7 h-7 rounded-lg border border-slate-200 text-slate-700 hover:bg-slate-100 font-semibold text-xs flex items-center justify-center transition">
+                ${i}
+              </button>
+            `;
+          }
+        }
+
+        paginationHtml += `
+              <button onclick="changePage(${currentPage + 1})" ${currentPage === totalPages ? 'disabled class="w-7 h-7 rounded-lg border border-slate-200 text-slate-300 cursor-not-allowed flex items-center justify-center"' : 'class="w-7 h-7 rounded-lg border border-slate-200 text-slate-600 hover:bg-slate-100 flex items-center justify-center transition"'} title="Trang sau">
+                <i class="fa-solid fa-chevron-right text-[12px]"></i>
+              </button>
+            </div>
+          </div>
+        `;
+        paginationContainer.innerHTML = paginationHtml;
+      }
+    }
+
+    // CHUYỂN TRANG PHÂN TRANG
+    function changePage(page) {
+      const totalPages = Math.ceil(filteredIndices.length / ITEMS_PER_PAGE) || 1;
+      if (page < 1 || page > totalPages) return;
+      currentPage = page;
+      renderPolicyList();
+    }
+
+    // CHỌN CHÍNH SÁCH ĐỂ HIỂN THỊ CHI TIẾT
+    function selectPolicy(index) {
+      currentSelectedIdx = index;
+
+      // Đảm bảo trang phân trang hiển thị đúng trang chứa chính sách này
+      const pos = filteredIndices.indexOf(index);
+      if (pos !== -1) {
+        currentPage = Math.floor(pos / ITEMS_PER_PAGE) + 1;
+      }
+
+      renderPolicyList();
+
+      const p = POLICIES[index];
+      
+      // Header info
+      document.getElementById('activeDocNumber').innerText = p.number;
+      document.getElementById('activeDocDate').innerText = p.date;
+      document.getElementById('activeDocTitle').innerText = p.title;
+      document.getElementById('activeDocAgency').innerHTML = '<i class="fa-solid fa-landmark text-slate-400"></i> <span>Cơ quan chủ trì: <strong>' + p.agency + '</strong></span>';
+      
+      // Speaker info (Cán bộ giải thích)
+      document.getElementById('speakerPhoto').src = p.speakerPhoto;
+      document.getElementById('speakerName').innerText = p.speakerName;
+      document.getElementById('speakerTitle').innerText = p.speakerTitle;
+
+      // 1. Video section (Hiển thị nếu có video, ẩn nếu không có)
+      const videoContainer = document.getElementById('videoContainer');
+      if (p.hasVideo) {
+        videoContainer.classList.remove('hidden');
+        document.getElementById('videoThumbnail').src = p.videoThumbnail;
+        document.getElementById('videoDuration').innerText = p.videoDuration;
+        document.getElementById('videoTitle').innerText = p.videoTitle;
+      } else {
+        videoContainer.classList.add('hidden');
+      }
+
+      // 2. Article section (Hiển thị nếu có bài viết, ẩn nếu không có)
+      const articleContainer = document.getElementById('articleContainer');
+      if (p.hasArticle) {
+        articleContainer.classList.remove('hidden');
+        document.getElementById('articleBody').innerHTML = p.articleHtml;
+        document.getElementById('attachmentFileName').innerText = p.attachmentName;
+      } else {
+        articleContainer.classList.add('hidden');
+      }
+
+      // Scroll smoothly on mobile
+      if (window.innerWidth < 1024) {
+        document.getElementById('activePolicyContainer').scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    // ÁP DỤNG BỘ LỌC CỦA CHÍNH SÁCH
+    function applyFilter() {
+      const kw = document.getElementById('keywordInput').value.toLowerCase().trim();
+      const type = document.getElementById('typeSelect').value.toLowerCase().trim();
+      const field = document.getElementById('fieldSelect').value.toLowerCase().trim();
+      const authority = document.getElementById('authoritySelect').value.toLowerCase().trim();
+
+      filteredIndices = [];
+
+      POLICIES.forEach((p, idx) => {
+        let match = true;
+
+        if (kw) {
+          const matchKw = p.number.toLowerCase().includes(kw) || 
+                          p.title.toLowerCase().includes(kw) || 
+                          p.speakerName.toLowerCase().includes(kw) ||
+                          p.agency.toLowerCase().includes(kw);
+          if (!matchKw) match = false;
+        }
+
+        if (type) {
+          if (!p.type.toLowerCase().includes(type) && !p.number.toLowerCase().includes(type)) {
+            match = false;
+          }
+        }
+
+        if (field) {
+          if (p.level !== field) match = false;
+        }
+
+        if (authority) {
+          if (!p.authority.toLowerCase().includes(authority) && !p.agency.toLowerCase().includes(authority)) {
+            match = false;
+          }
+        }
+
+        if (match) {
+          filteredIndices.push(idx);
+        }
+      });
+
+      currentPage = 1;
+
+      if (filteredIndices.length > 0) {
+        if (!filteredIndices.includes(currentSelectedIdx)) {
+          currentSelectedIdx = filteredIndices[0];
+        }
+        selectPolicy(currentSelectedIdx);
+      } else {
+        renderPolicyList();
+      }
+    }
+
+    // ĐẶT LẠI BỘ LỌC
+    function resetFilter() {
+      document.getElementById('keywordInput').value = '';
+      document.getElementById('typeSelect').value = '';
+      document.getElementById('fieldSelect').value = '';
+      document.getElementById('authoritySelect').value = '';
+      filteredIndices = POLICIES.map((_, i) => i);
+      currentSelectedIdx = 0;
+      currentPage = 1;
+      selectPolicy(0);
+    }
+
+    // Khởi tạo
+    selectPolicy(0);
+  </script>
+</body>
+</html>

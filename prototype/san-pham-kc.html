@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chương trình KC: Nghiên cứu Ứng dụng & Phát triển Công nghệ | Cổng Thông Tin KH&CN Quốc Gia</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontSize: {
+            xs: ['0.90625rem', { lineHeight: '1.35rem' }],
+            sm: ['1rem', { lineHeight: '1.45rem' }],
+            base: ['1.125rem', { lineHeight: '1.65rem' }],
+            lg: ['1.25rem', { lineHeight: '1.8rem' }],
+            xl: ['1.375rem', { lineHeight: '1.9rem' }],
+            '2xl': ['1.625rem', { lineHeight: '2.1rem' }],
+            '3xl': ['2rem', { lineHeight: '2.45rem' }]
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .kc-card { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+    .kc-card:hover { transform: translateY(-3px); }
+  
+    .max-w-7xl {
+      max-width: 90rem !important;
+    }
+    header h1 {
+      font-family: 'Inter', sans-serif !important;
+      font-weight: 800 !important;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col">
+
+  <!-- TOP UTILITY BAR -->
+  <div class="bg-[#0b1c33] text-slate-200 text-[13px] py-1.5 px-4 sm:px-8 border-b border-slate-700/60">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-2">
+      <div class="flex items-center gap-3">
+        <span class="text-slate-300"><i class="fa-regular fa-calendar-check mr-1.5 text-amber-400"></i>Thứ Năm, 27/08/2026</span>
+      </div>
+      <div class="flex items-center gap-4 text-[13px]">
+        <div class="flex items-center gap-1.5 font-bold">
+          <span class="text-amber-400">VI</span>
+          <span class="text-slate-500">/</span>
+          <span class="text-slate-400 hover:text-white cursor-pointer">EN</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="bg-white border-b border-slate-200 shadow-sm sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 py-3.5 flex flex-col md:flex-row items-center justify-between gap-4">
+      <a href="index.html" class="flex items-center gap-3.5 group">
+        <img src="quoc-huy.png" alt="Quốc huy Việt Nam" class="w-12 h-12 object-contain drop-shadow">
+        <div>
+          <h1 class="text-[14.5px] sm:text-[16px] md:text-[18px] lg:text-[18px] xl:text-[20px] font-extrabold tracking-normal uppercase text-red-800 leading-normal">
+            <span class="block whitespace-nowrap">NỀN TẢNG TRUYỀN THÔNG SỐ QUỐC GIA VỀ KHOA HỌC, CÔNG NGHỆ,</span>
+            <span class="block mt-1 whitespace-nowrap">ĐỔI MỚI SÁNG TẠO VÀ CHUYỂN ĐỔI SỐ</span>
+          </h1>
+        </div>
+      </a>
+
+      <div class="w-full md:w-80 lg:w-96 relative shrink-0">
+        <input type="text" placeholder="Tìm kiếm tin bài, video, ảnh, sản phẩm..." 
+          class="w-full pl-10 pr-4 py-2 bg-slate-100 focus:bg-white text-[13px] rounded-full border border-slate-300 focus:outline-none focus:ring-2 focus:ring-red-700/30">
+        <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-[13px]"></i>
+      </div>
+    </div>
+
+    <!-- NAVIGATION -->
+        <!-- NAVIGATION -->
+        <!-- NAVIGATION -->
+    <nav class="bg-white border-t border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-8 flex items-center justify-start overflow-visible gap-1.5 text-[14.5px] sm:text-[15px] font-semibold">
+        <a href="index.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Trang chủ
+      </a>
+        
+        <!-- CHÍNH SÁCH VỚI SUBMENU CHỈ ĐẠO ĐIỀU HÀNH & GIẢI THÍCH CHÍNH SÁCH -->
+        <div class="relative group">
+          <a href="chinh-sach.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap flex items-center gap-1 cursor-pointer">
+        <span>Chính sách</span>
+        <i class="fa-solid fa-chevron-down text-[9px] text-slate-400 group-hover:text-red-800 group-hover:rotate-180 transition-transform"></i>
+      </a>
+          <!-- Submenu dropdown -->
+          <div class="hidden group-hover:block absolute left-0 top-full bg-white rounded-xl shadow-2xl border border-slate-200 py-1.5 min-w-[260px] z-50 text-slate-800 font-normal">
+            <a href="chinh-sach.html" class="flex items-center gap-2.5 px-4 py-2.5 hover:bg-slate-50 text-slate-700 hover:text-red-800 text-[14.5px] transition font-semibold">
+              <i class="fa-solid fa-landmark text-slate-400 text-[14.5px]"></i>
+              <span>Chính sách & Thể chế</span>
+            </a>
+            <a href="chinh-sach-tra-cuu.html" class="flex items-center gap-2.5 px-4 py-2.5 hover:bg-slate-50 text-slate-700 hover:text-red-800 text-[14.5px] transition font-semibold">
+              <i class="fa-solid fa-file-signature text-red-700 text-[14.5px]"></i>
+              <span>Chỉ đạo điều hành</span>
+            </a>
+            <a href="giai-thich-chinh-sach.html" class="flex items-center gap-2.5 px-4 py-2.5 hover:bg-slate-50 text-slate-700 hover:text-red-800 font-semibold text-[14.5px] transition">
+              <i class="fa-solid fa-chalkboard-user text-amber-600 text-[14.5px]"></i>
+              <span>Giải thích chính sách</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="san-pham-cong-nghe.html" class="px-5 py-2.5 bg-[#82181a] text-white rounded-t-sm whitespace-nowrap shadow-inner flex items-center gap-1.5 font-bold">
+        <i class="fa-solid fa-microchip text-[11px]"></i> <span>Sản phẩm KH&CN</span>
+      </a>
+        <a href="bao-cao-danh-gia-truyen-thong.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Báo cáo thường niên
+      </a>
+        <a href="tai-lieu-video.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Kho tư liệu
+      </a>
+        
+        <a href="su-kien.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">Sự kiện</a>
+
+        
+        <a href="hoi-dap.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Hỏi đáp
+      </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- BREADCRUMB & CATEGORY HEADER SECTION -->
+  <section class="bg-gradient-to-r from-slate-900 via-blue-950 to-slate-900 text-white py-12 border-b border-blue-900/60 relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- Breadcrumb -->
+      <div class="flex items-center space-x-2 text-xs text-slate-300 mb-3">
+        <a href="index.html" class="hover:underline flex items-center"><i class="fa-solid fa-house mr-1"></i> Trang chủ</a>
+        <span>/</span>
+        <a href="san-pham-cong-nghe.html" class="hover:underline">Sản phẩm KH&CN</a>
+        <span>/</span>
+        <span class="text-blue-400 font-semibold">Chương trình KC (Kỹ thuật & Công nghệ)</span>
+      </div>
+
+      <div>
+        <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 border-blue-400/30 text-xs font-semibold mb-3 border">
+          <i class="fa-solid fa-atom"></i>
+          <span>CHƯƠNG TRÌNH TRỌNG ĐIỂM CẤP NHÀ NƯỚC • BỘ KHOA HỌC VÀ CÔNG NGHỆ</span>
+        </div>
+        <h1 class="text-2xl sm:text-4xl font-extrabold tracking-tight text-white leading-tight">
+          Chương trình KC: Nghiên cứu Ứng dụng & Phát triển Công nghệ
+        </h1>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MAIN BODY -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-8 py-8 w-full flex-1 space-y-8">
+
+    <!-- BỘ LỌC TÌM KIẾM ĐA CHIỀU (ADVANCED FILTER) -->
+    <div class="bg-white p-5 rounded-3xl border border-slate-200 shadow-sm space-y-4 text-xs">
+      <div class="flex items-center justify-between pb-3 border-b border-slate-100">
+        <h3 class="font-extrabold text-sm text-slate-900 flex items-center gap-2">
+          <i class="fa-solid fa-filter text-rose-700"></i> TRA CỨU SẢN PHẨM CÔNG NGHỆ CHƯƠNG TRÌNH KC
+        </h3>
+        <span class="text-slate-500 font-mono text-[13px]" id="resultCountBadge">Hiển thị 8 sản phẩm tiêu biểu</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-3.5">
+        <!-- Từ khóa -->
+        <div>
+          <label class="block font-semibold text-slate-700 mb-1">Nội dung tìm kiếm:</label>
+          <div class="relative">
+            <input type="text" id="kcSearchInput" placeholder="Tên sản phẩm, sáng chế, đơn vị..." 
+              class="w-full pl-8 pr-3 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-rose-700/30 text-xs bg-slate-50 focus:bg-white transition">
+            <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-xs"></i>
+          </div>
+        </div>
+
+        <!-- Phân nhóm KC -->
+        <div>
+          <label class="block font-semibold text-slate-700 mb-1">Phân nhóm chương trình:</label>
+          <select id="kcGroupSelect" class="w-full px-3 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-rose-700/30 text-xs bg-slate-50 focus:bg-white transition cursor-pointer">
+            <option value="">Toàn bộ phân nhóm KC</option>
+            <option value="KC.01">KC.01: CNTT, AI & Tự động hóa</option>
+            <option value="KC.02">KC.02: Vật liệu mới & Vi mạch Bán dẫn</option>
+            <option value="KC.03">KC.03: Cơ khí & Thiết bị y tế công nghệ cao</option>
+            <option value="KC.04">KC.04: Công nghệ sinh học & Dược phẩm</option>
+            <option value="KC.05">KC.05: Năng lượng tái tạo & Lưu trữ pin</option>
+            <option value="KC.06">KC.06: Nông nghiệp công nghệ cao</option>
+            <option value="KC.07">KC.07: Kinh tế biển & Công nghệ hàng hải</option>
+            <option value="KC.08">KC.08: Môi trường & Kinh tế tuần hoàn</option>
+          </select>
+        </div>
+
+        <!-- Cấp độ TRL -->
+        <div>
+          <label class="block font-semibold text-slate-700 mb-1">Mức độ hoàn thiện (TRL):</label>
+          <select id="kcTrlSelect" class="w-full px-3 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-rose-700/30 text-xs bg-slate-50 focus:bg-white transition cursor-pointer">
+            <option value="">Tất cả cấp độ TRL</option>
+            <option value="TRL 9">TRL 9 - Thương mại hóa toàn diện</option>
+            <option value="TRL 8">TRL 8 - Nghiệm thu dây chuyền hoàn chỉnh</option>
+            <option value="TRL 7">TRL 7 - Mẫu thử nghiệm trong môi trường thực</option>
+            <option value="TRL 6">TRL 6 - Mẫu nguyên hợp pilot</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-3.5 items-end pt-1">
+        <!-- Đơn vị chủ trì -->
+        <div>
+          <label class="block font-semibold text-slate-700 mb-1">Đơn vị chủ trì / Viện trường:</label>
+          <select id="kcOrgSelect" class="w-full px-3 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-rose-700/30 text-xs bg-slate-50 focus:bg-white transition cursor-pointer">
+            <option value="">Toàn bộ đơn vị chủ trì</option>
+            <option value="Viện Hàn lâm KH&CN">Viện Hàn lâm KH&CN Việt Nam</option>
+            <option value="ĐHQG Hà Nội">ĐHQG Hà Nội</option>
+            <option value="ĐHQG TP.Hồ Chí Minh">ĐHQG TP.Hồ Chí Minh</option>
+            <option value="ĐH Bách Khoa Hà Nội">ĐH Bách Khoa Hà Nội</option>
+            <option value="Viettel">Tập đoàn Viettel</option>
+            <option value="VNPT">Tập đoàn VNPT</option>
+          </select>
+        </div>
+
+        <!-- Năm nghiệm thu -->
+        <div>
+          <label class="block font-semibold text-slate-700 mb-1">Năm nghiệm thu:</label>
+          <select id="kcYearSelect" class="w-full px-3 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-rose-700/30 text-xs bg-slate-50 focus:bg-white transition cursor-pointer">
+            <option value="">Tất cả các năm</option>
+            <option value="2026">2026</option>
+            <option value="2025">2025</option>
+            <option value="2024">2024</option>
+            <option value="2023">2023</option>
+            <option value="2022">2022</option>
+          </select>
+        </div>
+
+        <!-- Nút tìm kiếm & Đặt lại -->
+        <div class="flex items-center gap-2">
+          <button type="button" onclick="applyKcFilter()" class="flex-1 py-2.5 px-4 rounded-xl bg-[#82181a] hover:bg-rose-900 text-white font-bold text-xs shadow-md transition flex items-center justify-center gap-1.5">
+            <i class="fa-solid fa-magnifying-glass"></i> Lọc dữ liệu
+          </button>
+          <button type="button" onclick="resetKcFilter()" class="py-2.5 px-3.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold text-xs border border-slate-200 transition">
+            <i class="fa-solid fa-rotate-left"></i> Đặt lại
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- DANH SÁCH SẢN PHẨM KC (GRID DẠNG CARDS HIỆN ĐẠI) -->
+    <div id="kcProductContainer" class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+      <!-- Dynamically Rendered by JS -->
+    </div>
+
+  </main>
+
+  <!-- MODAL XEM CHI TIẾT SẢN PHẨM KC -->
+  <div id="kcModal" class="fixed inset-0 z-50 bg-slate-950/70 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-3xl w-full max-h-[90vh] flex flex-col shadow-2xl border border-slate-200 overflow-hidden">
+      <div class="p-5 sm:p-6 text-white bg-gradient-to-r from-[#82181a] to-rose-900 flex items-start justify-between gap-4">
+        <div>
+          <span id="modalKcBadge" class="text-[12px] font-black uppercase tracking-wider px-2.5 py-0.5 rounded bg-white/20 border border-white/30 inline-block mb-1.5">
+            KC.01 • TRÍ TUỆ NHÂN TẠO & TỰ ĐỘNG HÓA
+          </span>
+          <h3 id="modalKcTitle" class="text-base sm:text-lg font-bold leading-snug">
+            Tên sản phẩm công nghệ
+          </h3>
+          <p id="modalKcHost" class="text-xs text-rose-100 mt-1">Đơn vị chủ trì: Viện Hàn lâm KH&CN Việt Nam</p>
+        </div>
+        <button onclick="closeKcModal()" class="w-8 h-8 rounded-full bg-white/20 hover:bg-white/30 flex items-center justify-center text-white shrink-0 transition">
+          <i class="fa-solid fa-xmark text-sm"></i>
+        </button>
+      </div>
+
+      <div class="p-6 overflow-y-auto space-y-4 text-xs text-slate-700 flex-1" id="modalKcBody">
+        <!-- Injected dynamically -->
+      </div>
+
+      <div class="p-4 bg-slate-50 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
+        <span class="text-slate-500 text-[13px] flex items-center gap-1">
+          <i class="fa-solid fa-certificate text-emerald-600"></i> Hồ sơ thẩm định kỹ thuật Bộ Khoa học và Công nghệ
+        </span>
+        <div class="flex items-center gap-2">
+          <button onclick="closeKcModal()" class="px-4 py-2 rounded-xl bg-slate-200 hover:bg-slate-300 text-slate-700 font-semibold transition">
+            Đóng
+          </button>
+          <a href="#" class="px-4 py-2 rounded-xl bg-[#82181a] hover:bg-rose-900 text-white font-semibold transition flex items-center gap-1.5 shadow-sm">
+            <i class="fa-solid fa-download text-[12px]"></i> Tải phiếu nghiệm thu & Đặc tả kỹ thuật
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#0b1e36] text-white mt-12 border-t border-slate-800 text-[14.5px]" style="font-family: 'Inter', sans-serif;">
+    <div class="max-w-[90rem] mx-auto px-4 sm:px-8 py-10">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <!-- Col 1 -->
+        <div class="md:col-span-2 space-y-3.5 min-w-0">
+          <div class="flex items-start sm:items-center gap-3.5 min-w-0">
+            <div class="w-12 h-12 rounded-full flex items-center justify-center p-0.5 filter drop-shadow-lg shrink-0">
+              <img src="quoc-huy.png" alt="Quốc huy Việt Nam" class="w-11 h-11 object-contain drop-shadow">
+            </div>
+            <div class="min-w-0 flex-1">
+              <h5 class="font-extrabold text-[14.5px] sm:text-[15.5px] lg:text-[16.5px] xl:text-[17.5px] tracking-wide uppercase text-amber-400 leading-snug sm:leading-relaxed">NỀN TẢNG TRUYỀN THÔNG SỐ QUỐC GIA VỀ KHOA HỌC, CÔNG NGHỆ, ĐỔI MỚI SÁNG TẠO VÀ CHUYỂN ĐỔI SỐ</h5>
+              <p class="text-[13px] xl:text-[14.5px] text-slate-300 mt-1">Cơ quan chủ quản: Bộ Khoa học và Công nghệ (MST)</p>
+            </div>
+          </div>
+          <div class="text-[13px] xl:text-[14px] text-slate-300 space-y-1.5 pt-1">
+            <p><i class="fa-solid fa-location-dot w-4 mr-1 text-red-400"></i> Địa chỉ: Đang cập nhật</p>
+            <p><i class="fa-solid fa-phone w-4 mr-1 text-emerald-400"></i> Điện thoại: Đang cập nhật • Email: Đang cập nhật</p>
+          </div>
+        </div>
+
+        <!-- Col 2: Liên kết -->
+        <div class="min-w-0">
+          <h5 class="font-bold text-[13px] xl:text-[14.5px] uppercase tracking-wider text-amber-400 mb-3.5 pb-1.5 border-b border-slate-700">Liên kết nhanh</h5>
+          <ul class="space-y-2.5 text-[13px] xl:text-[14px] text-slate-300">
+            <li><a href="chinh-sach-tra-cuu.html" class="hover:text-amber-300 transition">Văn bản chỉ đạo điều hành</a></li>
+            <li><a href="san-pham-cong-nghe.html" class="hover:text-amber-300 transition">10 Nhóm sản phẩm số trọng điểm</a></li>
+            <li><a href="su-kien.html" class="hover:text-amber-300 transition">Lịch trình sự kiện & hội thảo</a></li>
+            <li><a href="hoi-dap.html" class="hover:text-amber-300 transition">Hỏi đáp & hỗ trợ trực tuyến</a></li>
+            <li><a href="chuyen-muc-kinh-te-so.html" class="hover:text-amber-300 transition">Báo cáo dữ liệu & Chỉ số PII</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Đa phương tiện -->
+        <div class="min-w-0">
+          <h5 class="font-bold text-[13px] xl:text-[14.5px] uppercase tracking-wider text-amber-400 mb-3.5 pb-1.5 border-b border-slate-700">Đa phương tiện</h5>
+          <ul class="space-y-2.5 text-[13px] xl:text-[14px] text-slate-300">
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Video phóng sự thời sự</a></li>
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Kho tư liệu ảnh sự kiện</a></li>
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Đồ họa Infographic số hóa</a></li>
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Podcast & Bản tin phát thanh</a></li>
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Sách điện tử & Báo cáo tổng kết</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-8 pt-4 border-t border-slate-800 flex flex-col lg:flex-row items-center justify-between text-[12.5px] xl:text-[13.5px] text-slate-400 gap-3">
+        <p class="text-center lg:text-left">© 2026 Bản quyền thuộc Bộ Khoa học và Công nghệ. Ghi rõ nguồn khi phát hành lại thông tin.</p>
+        <div class="flex flex-wrap items-center justify-center gap-4 shrink-0">
+          <a href="#" class="hover:text-white transition">Điều khoản sử dụng</a>
+          <a href="#" class="hover:text-white transition">Chính sách bảo mật</a>
+          <a href="hoi-dap.html" class="hover:text-white transition">Sơ đồ cổng</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPT DATA & RENDER -->
+  <script>
+    const KC_PRODUCTS = [
+      {
+        id: "KC01-SP01",
+        group: "KC.01",
+        groupName: "CNTT, AI & Tự động hóa",
+        name: "Hệ thống Robot di động tự hành AMR và Cánh tay robot 6 bậc tự do thông minh",
+        host: "Viện Cơ học - Viện Hàn lâm KH&CN Việt Nam",
+        partner: "Công ty Cổ phần Robot Make in Vietnam & Nhà máy Điện tử Thông minh",
+        year: "2026",
+        trl: "TRL 8",
+        patent: "Bằng Độc quyền Sáng chế số 32415/SHTT",
+        desc: "Làm chủ 100% phần mềm điều khiển thời gian thực, thuật toán định vị SLAM quang học và bản đồ số hóa không gian nhà máy 3D. Tự động tránh vật cản với tải trọng nâng 500kg, tích hợp tay robot gắp đặt linh kiện chính xác ±0.05mm.",
+        specs: "Tốc độ di chuyển: 1.5 m/s • Tải trọng: 500 kg • Thời lượng pin: 12h liên tục • Tiêu chuẩn an toàn CE/ISO 3691-4",
+        score: "Xuất sắc (96/100 điểm)"
+      },
+      {
+        id: "KC01-SP02",
+        group: "KC.01",
+        groupName: "CNTT, AI & Tự động hóa",
+        name: "Nền tảng Trí tuệ nhân tạo thị giác máy tính kiểm tra khuyết tật vi mạch bán dẫn",
+        host: "ĐH Bách Khoa Hà Nội",
+        partner: "Tập đoàn Bưu chính Viễn thông Việt Nam (VNPT)",
+        year: "2025",
+        trl: "TRL 8",
+        patent: "Giải pháp hữu ích số 2189/SHTT",
+        desc: "Mô hình Deep Learning quang phổ nano phát hiện các vết nứt, bọt khí và đoản mạch trên bề mặt tấm wafer và chip bán dẫn với tốc độ 120 chip/giây, độ chính xác 99.8%, thay thế hoàn toàn chuyên gia soi kính hiển vi thủ công.",
+        specs: "Độ phân giải phát hiện lỗi: 0.5 micromet • Tốc độ xử lý: 120 chip/giây • Tích hợp hệ thống phân loại tự động",
+        score: "Xuất sắc (95/100 điểm)"
+      },
+      {
+        id: "KC02-SP01",
+        group: "KC.02",
+        groupName: "Vật liệu mới & Vi mạch Bán dẫn",
+        name: "Chip vi mạch thu phát sóng vô tuyến RF-IC đa băng tần cho thiết bị IoT Make in VN",
+        host: "ĐHQG Hà Nội",
+        partner: "Trung tâm Nghiên cứu Vi điện tử & Công ty Công nghệ FPT",
+        year: "2026",
+        trl: "TRL 8",
+        patent: "Đăng ký bảo hộ thiết kế bố trí mạch tích hợp bán dẫn số 08-2025-0012",
+        desc: "Thiết kế hoàn chỉnh chip RF-IC băng tần Sub-GHz và 2.4GHz ứng dụng trong đồng hồ nước thông minh, cảm biến nông nghiệp IoT và thiết bị đo lưới điện thông minh, tiết kiệm năng lượng cực thấp (Ultra-low power).",
+        specs: "Công nghệ chế tạo: CMOS 65nm • Dải tần: 433/868/915 MHz & 2.4 GHz • Công suất tiêu thụ chế độ ngủ: 0.8 uA",
+        score: "Xuất sắc (98/100 điểm)"
+      },
+      {
+        id: "KC02-SP02",
+        group: "KC.02",
+        groupName: "Vật liệu mới & Vi mạch Bán dẫn",
+        name: "Vật liệu màng mỏng Graphene tản nhiệt công suất cao cho thiết bị trạm phát sóng 5G",
+        host: "Viện Hàn lâm KH&CN Việt Nam",
+        partner: "Tổng công ty Công nghiệp Công nghệ cao Viettel (Viettel High Tech)",
+        year: "2025",
+        trl: "TRL 7",
+        patent: "Bằng Sáng chế độc quyền số 29871/SHTT",
+        desc: "Quy trình tổng hợp màng composite graphene - đồng có độ dẫn nhiệt vượt trội 1.500 W/mK, giúp hạ nhiệt độ khối công suất trạm phát sóng 5G Massive MIMO xuống 14°C, tăng tuổi thọ và độ ổn định thiết bị truyền dẫn mạng số.",
+        specs: "Hệ số dẫn nhiệt ngang: 1.550 W/m.K • Độ dày: 25 - 50 micromet • Nhiệt độ làm việc ổn định: -40°C đến 150°C",
+        score: "Xuất sắc (94/100 điểm)"
+      },
+      {
+        id: "KC03-SP01",
+        group: "KC.03",
+        groupName: "Cơ khí & Thiết bị y tế cao",
+        name: "Hệ thống chụp cắt lớp vi tính hình nón CBCT và phần mềm tái tạo ảnh 3D y tế",
+        host: "Viện Trang thiết bị & Công trình Y tế",
+        partner: "Bệnh viện Đại học Y Hà Nội & Công ty Thiết bị Y tế Quốc gia",
+        year: "2025",
+        trl: "TRL 8",
+        patent: "Bằng Độc quyền Sáng chế số 31054/SHTT",
+        desc: "Hệ thống máy chụp CBCT chuyên dụng cho phẫu thuật răng hàm mặt và tai mũi họng với liều chiếu xạ tia X giảm 60% so với CT đa dãy thông thường; dựng hình ảnh 3D hỗ trợ định vị giải phẫu chính xác trong cấy ghép y khoa.",
+        specs: "Kích thước FOV: 16x10 cm • Kích thước voxel: 75 micromet • Thời gian quét: 14 giây • Đạt chuẩn an toàn thiết bị y tế loại B",
+        score: "Xuất sắc (96/100 điểm)"
+      },
+      {
+        id: "KC04-SP01",
+        group: "KC.04",
+        groupName: "Công nghệ sinh học & Dược",
+        name: "Quy trình công nghệ sản xuất sinh phẩm kháng thể đơn dòng tái tổ hợp điều trị ung thư",
+        host: "Viện Hàn lâm KH&CN Việt Nam",
+        partner: "Công ty Cổ phần Dược phẩm Quốc tế Make in Viet Nam",
+        year: "2026",
+        trl: "TRL 7",
+        patent: "Bằng Độc quyền Sáng chế số 34102/SHTT",
+        desc: "Làm chủ quy trình biểu hiện gen trong tế bào động vật có vú CHO, tinh sạch ái lực protein A và kiểm định hoạt tính sinh học của kháng thể đơn dòng kháng thụ thể HER2/neu, mở ra khả năng tự chủ nguồn thuốc sinh học giá cả hợp lý tại VN.",
+        specs: "Hiệu suất tinh sạch: > 98% • Hoạt tính trung hòa tế bào u: tương đương biệt dược gốc • Dây chuyền pilot bioreactor 200L",
+        score: "Xuất sắc (97/100 điểm)"
+      },
+      {
+        id: "KC05-SP01",
+        group: "KC.05",
+        groupName: "Năng lượng tái tạo & Lưu trữ pin",
+        name: "Hệ thống pin lưu trữ năng lượng thể rắn (Solid-state Battery) mật độ năng lượng cao",
+        host: "ĐHQG TP.Hồ Chí Minh",
+        partner: "Tập đoàn Điện lực Việt Nam (EVN) & Doanh nghiệp Xe điện",
+        year: "2026",
+        trl: "TRL 7",
+        patent: "Bằng Sáng chế số 33509/SHTT",
+        desc: "Nghiên cứu chất điện phân rắn polymer-gốm sulfide an toàn tuyệt đối chống cháy nổ, đạt mật độ năng lượng 380 Wh/kg, chu kỳ sạc xả trên 2.500 chu kỳ, ứng dụng cho các trạm biến áp vi lưới hải đảo và phương tiện giao thông xanh.",
+        specs: "Mật độ năng lượng tế bào: 385 Wh/kg • Tuổi thọ chu kỳ: > 2.500 chu kỳ (dung lượng > 80%) • Dải nhiệt độ: -20°C đến 65°C",
+        score: "Xuất sắc (95/100 điểm)"
+      },
+      {
+        id: "KC07-SP01",
+        group: "KC.07",
+        groupName: "Kinh tế biển & Công nghệ hàng hải",
+        name: "Phương tiện lặn ngầm không người lái (AUV) khảo sát đáy biển sâu tích hợp sonar quét sườn",
+        host: "Viện Hàn lâm KH&CN Việt Nam",
+        partner: "Bộ Tư lệnh Vùng Hải quân & Viện Hải dương học",
+        year: "2025",
+        trl: "TRL 8",
+        patent: "Bằng Độc quyền Sáng chế số 30890/SHTT",
+        desc: "Thiết bị lặn tự hành hoạt động ở độ sâu tới 1.000m dưới mặt nước biển, trang bị hệ thống định vị thủy âm USBL, cảm biến quét sườn sonar đa tia độ phân giải cao phục vụ khảo sát địa vật lý đáy biển, luồng hàng hải và cứu nạn cứu hộ.",
+        specs: "Độ sâu lặn tối đa: 1.000m • Tầm hoạt động: 45 hải lý • Thời gian lặn: 18h • Tốc độ quét khảo sát: 3-5 hải lý/h",
+        score: "Xuất sắc (96/100 điểm)"
+      }
+    ];
+
+    let currentKcList = [...KC_PRODUCTS];
+
+    function renderKcList(items) {
+      const container = document.getElementById('kcProductContainer');
+      const badge = document.getElementById('resultCountBadge');
+      container.innerHTML = '';
+      badge.innerText = 'Hiển thị ' + items.length + ' sản phẩm phù hợp';
+
+      if (items.length === 0) {
+        container.innerHTML = '<div class="col-span-full py-12 text-center text-slate-400 text-xs bg-white rounded-3xl border border-slate-200"><i class="fa-solid fa-box-open text-3xl mb-2 block text-slate-300"></i>Không tìm thấy sản phẩm công nghệ nào phù hợp với điều kiện tìm kiếm.</div>';
+        return;
+      }
+
+      items.forEach(p => {
+        const card = document.createElement('div');
+        card.className = "kc-card bg-white rounded-3xl border border-slate-200 p-5 sm:p-6 shadow-sm hover:shadow-xl hover:border-rose-400 transition flex flex-col justify-between space-y-4 group";
+        
+        card.innerHTML = `
+          <div class="space-y-3">
+            <div class="flex items-center justify-between gap-2 text-[12px]">
+              <span class="font-mono font-bold px-2.5 py-0.5 rounded-full bg-rose-50 text-rose-800 border border-rose-200">
+                ${p.group} • ${p.groupName}
+              </span>
+              <span class="font-bold px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-200 flex items-center gap-1">
+                <i class="fa-solid fa-circle-check text-[11px] text-emerald-600"></i> ${p.trl}
+              </span>
+            </div>
+
+            <h4 class="text-sm sm:text-base font-extrabold text-slate-900 group-hover:text-rose-800 transition line-clamp-2 leading-snug">
+              ${p.name}
+            </h4>
+
+            <p class="text-xs text-slate-600 line-clamp-3 leading-relaxed">
+              ${p.desc}
+            </p>
+
+            <div class="space-y-1.5 pt-2 border-t border-slate-100 text-[13px]">
+              <div class="flex items-start gap-1.5 text-slate-700">
+                <i class="fa-solid fa-building-columns text-rose-700 mt-0.5 text-[12px] shrink-0"></i>
+                <span class="line-clamp-1"><strong>Chủ trì:</strong> ${p.host}</span>
+              </div>
+              <div class="flex items-start gap-1.5 text-slate-600">
+                <i class="fa-solid fa-handshake text-emerald-600 mt-0.5 text-[12px] shrink-0"></i>
+                <span class="line-clamp-1"><strong>Chuyển giao:</strong> ${p.partner}</span>
+              </div>
+              <div class="flex items-center gap-1.5 text-rose-800 font-semibold text-[12px]">
+                <i class="fa-solid fa-award text-amber-500"></i>
+                <span class="truncate">${p.patent}</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between gap-2">
+            <span class="text-[13px] text-slate-400 font-mono">Năm: ${p.year}</span>
+            <button onclick="viewKcDetail('${p.id}')" class="px-3.5 py-1.5 rounded-xl bg-slate-100 hover:bg-[#82181a] text-slate-700 hover:text-white font-semibold text-xs transition flex items-center gap-1.5 shadow-sm">
+              <span>Xem hồ sơ kỹ thuật</span>
+              <i class="fa-solid fa-arrow-right text-[12px]"></i>
+            </button>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    function applyKcFilter() {
+      const q = document.getElementById('kcSearchInput').value.toLowerCase().trim();
+      const group = document.getElementById('kcGroupSelect').value;
+      const trl = document.getElementById('kcTrlSelect').value;
+      const org = document.getElementById('kcOrgSelect').value;
+      const year = document.getElementById('kcYearSelect').value;
+
+      currentKcList = KC_PRODUCTS.filter(p => {
+        if (q && !p.name.toLowerCase().includes(q) && !p.desc.toLowerCase().includes(q) && !p.host.toLowerCase().includes(q) && !p.patent.toLowerCase().includes(q)) return false;
+        if (group && p.group !== group) return false;
+        if (trl && p.trl !== trl) return false;
+        if (org && !p.host.includes(org)) return false;
+        if (year && p.year !== year) return false;
+        return true;
+      });
+
+      
+    // Check URL param for group filtering on page load
+    const urlParams = new URLSearchParams(window.location.search);
+    const groupParam = urlParams.get('group');
+    if (groupParam) {
+      const select = document.getElementById('kcGroupSelect');
+      if (select) {
+        select.value = groupParam;
+      }
+    }
+    applyKcFilter();
+  
+    }
+
+    function resetKcFilter() {
+      document.getElementById('kcSearchInput').value = '';
+      document.getElementById('kcGroupSelect').value = '';
+      document.getElementById('kcTrlSelect').value = '';
+      document.getElementById('kcOrgSelect').value = '';
+      document.getElementById('kcYearSelect').value = '';
+      currentKcList = [...KC_PRODUCTS];
+      renderKcList(currentKcList);
+    }
+
+    function viewKcDetail(id) {
+      const p = KC_PRODUCTS.find(item => item.id === id);
+      if (!p) return;
+
+      document.getElementById('modalKcBadge').innerText = p.group + ' • ' + p.groupName + ' • ' + p.trl;
+      document.getElementById('modalKcTitle').innerText = p.name;
+      document.getElementById('modalKcHost').innerText = 'Đơn vị chủ trì: ' + p.host;
+
+      document.getElementById('modalKcBody').innerHTML = `
+        <div class="space-y-3">
+          <div class="bg-rose-50 p-3.5 rounded-2xl border border-rose-100 space-y-1.5">
+            <div class="font-bold text-rose-900 text-xs flex items-center gap-1.5">
+              <i class="fa-solid fa-circle-info"></i> THÔNG TIN KHOA HỌC & SỞ HỮU TRÍ TUỆ
+            </div>
+            <p class="text-rose-800"><strong>Mã sản phẩm:</strong> ${p.id} • <strong>Năm nghiệm thu:</strong> ${p.year} • <strong>Đánh giá hội đồng:</strong> ${p.score}</p>
+            <p class="text-rose-800"><strong>Quyền SHTT:</strong> ${p.patent}</p>
+          </div>
+
+          <div>
+            <h5 class="font-bold text-slate-900 mb-1">Mô tả tóm tắt giải pháp công nghệ:</h5>
+            <p class="leading-relaxed text-slate-600">${p.desc}</p>
+          </div>
+
+          <div>
+            <h5 class="font-bold text-slate-900 mb-1">Thông số kỹ thuật chủ yếu đã kiểm định:</h5>
+            <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 font-mono text-[13px] text-slate-700">
+              ${p.specs}
+            </div>
+          </div>
+
+          <div>
+            <h5 class="font-bold text-slate-900 mb-1">Doanh nghiệp tiếp nhận chuyển giao & ứng dụng:</h5>
+            <p class="text-slate-600 flex items-center gap-1.5">
+              <i class="fa-solid fa-handshake text-emerald-600"></i> ${p.partner}
+            </p>
+          </div>
+        </div>
+      `;
+
+      document.getElementById('kcModal').classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeKcModal() {
+      document.getElementById('kcModal').classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    // Init render
+    renderKcList(currentKcList);
+
+    // Escape listener
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeKcModal();
+    });
+  </script>
+  <script src="prototype-nav.js"></script>
+</body>
+</html>

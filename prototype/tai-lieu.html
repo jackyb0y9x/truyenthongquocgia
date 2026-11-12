@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video tư liệu & Phóng sự | Kho Tư liệu Quốc Gia - Bộ KH&CN</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontSize: {
+            xs: ['0.90625rem', { lineHeight: '1.35rem' }],
+            sm: ['1rem', { lineHeight: '1.45rem' }],
+            base: ['1.125rem', { lineHeight: '1.65rem' }],
+            lg: ['1.25rem', { lineHeight: '1.8rem' }],
+            xl: ['1.375rem', { lineHeight: '1.9rem' }],
+            '2xl': ['1.625rem', { lineHeight: '2.1rem' }],
+            '3xl': ['2rem', { lineHeight: '2.45rem' }]
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <style> body { font-family: 'Inter', sans-serif; } 
+    .max-w-7xl {
+      max-width: 90rem !important;
+    }
+    header h1 {
+      font-family: 'Inter', sans-serif !important;
+      font-weight: 800 !important;
+    }
+  </style>
+</head>
+<body class="bg-[#f8fafc] text-slate-800 antialiased min-h-screen flex flex-col">
+
+  <!-- TOP UTILITY BAR -->
+  <div class="bg-[#0b1c33] text-slate-200 text-[13px] py-1.5 px-4 sm:px-8 border-b border-slate-700/60">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-2">
+      <div class="flex items-center gap-3">
+        <span class="text-slate-300"><i class="fa-regular fa-calendar-check mr-1.5 text-amber-400"></i>Thứ Năm, 27/08/2026</span>
+      </div>
+      <div class="flex items-center gap-4 text-[13px]">
+        <div class="flex items-center gap-1.5 font-bold">
+          <span class="text-amber-400">VI</span>
+          <span class="text-slate-500">/</span>
+          <span class="text-slate-400 hover:text-white cursor-pointer">EN</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="bg-white border-b border-slate-200 shadow-sm sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 py-3.5 flex flex-col md:flex-row items-center justify-between gap-4">
+      <a href="index.html" class="flex items-center gap-3.5 group">
+        <img src="quoc-huy.png" alt="Quốc huy Việt Nam" class="w-12 h-12 object-contain drop-shadow">
+        <div>
+          <h1 class="text-[14.5px] sm:text-[16px] md:text-[18px] lg:text-[18px] xl:text-[20px] font-extrabold tracking-normal uppercase text-red-800 leading-normal">
+            <span class="block whitespace-nowrap">NỀN TẢNG TRUYỀN THÔNG SỐ QUỐC GIA VỀ KHOA HỌC, CÔNG NGHỆ,</span>
+            <span class="block mt-1 whitespace-nowrap">ĐỔI MỚI SÁNG TẠO VÀ CHUYỂN ĐỔI SỐ</span>
+          </h1>
+        </div>
+      </a>
+
+      <div class="w-full md:w-80 lg:w-96 relative shrink-0">
+        <input type="text" id="headerSearch" placeholder="Tìm kiếm tin bài, video, ảnh, văn bản..." 
+          class="w-full pl-10 pr-4 py-2 bg-slate-100 focus:bg-white text-[13px] rounded-full border border-slate-300 focus:outline-none focus:ring-2 focus:ring-red-700/30">
+        <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-[13px]"></i>
+      </div>
+    </div>
+
+    <!-- NAVIGATION -->
+        <!-- NAVIGATION -->
+        <!-- NAVIGATION -->
+    <nav class="bg-white border-t border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-8 flex items-center justify-start overflow-visible gap-1.5 text-[14.5px] sm:text-[15px] font-semibold">
+        <a href="index.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Trang chủ
+      </a>
+        
+        <!-- CHÍNH SÁCH VỚI SUBMENU CHỈ ĐẠO ĐIỀU HÀNH & GIẢI THÍCH CHÍNH SÁCH -->
+        <div class="relative group">
+          <a href="chinh-sach.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap flex items-center gap-1 cursor-pointer">
+        <span>Chính sách</span>
+        <i class="fa-solid fa-chevron-down text-[9px] text-slate-400 group-hover:text-red-800 group-hover:rotate-180 transition-transform"></i>
+      </a>
+          <!-- Submenu dropdown -->
+          <div class="hidden group-hover:block absolute left-0 top-full bg-white rounded-xl shadow-2xl border border-slate-200 py-1.5 min-w-[260px] z-50 text-slate-800 font-normal">
+            <a href="chinh-sach.html" class="flex items-center gap-2.5 px-4 py-2.5 hover:bg-slate-50 text-slate-700 hover:text-red-800 text-[14.5px] transition font-semibold">
+              <i class="fa-solid fa-landmark text-slate-400 text-[14.5px]"></i>
+              <span>Chính sách & Thể chế</span>
+            </a>
+            <a href="chinh-sach-tra-cuu.html" class="flex items-center gap-2.5 px-4 py-2.5 hover:bg-slate-50 text-slate-700 hover:text-red-800 text-[14.5px] transition font-semibold">
+              <i class="fa-solid fa-file-signature text-red-700 text-[14.5px]"></i>
+              <span>Chỉ đạo điều hành</span>
+            </a>
+            <a href="giai-thich-chinh-sach.html" class="flex items-center gap-2.5 px-4 py-2.5 hover:bg-slate-50 text-slate-700 hover:text-red-800 font-semibold text-[14.5px] transition">
+              <i class="fa-solid fa-chalkboard-user text-amber-600 text-[14.5px]"></i>
+              <span>Giải thích chính sách</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="san-pham-cong-nghe.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Sản phẩm KH&CN
+      </a>
+        <a href="bao-cao-danh-gia-truyen-thong.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Báo cáo thường niên
+      </a>
+        <a href="tai-lieu-video.html" class="px-5 py-2.5 bg-[#82181a] text-white rounded-t-sm whitespace-nowrap shadow-inner flex items-center gap-1.5 font-bold">
+        <i class="fa-solid fa-folder-open text-[11px]"></i> <span>Kho tư liệu</span>
+      </a>
+        
+        <a href="su-kien.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">Sự kiện</a>
+
+        
+        <a href="hoi-dap.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Hỏi đáp
+      </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- BREADCRUMB -->
+  <div class="bg-white border-b border-slate-200 py-3 px-4 sm:px-8 text-xs">
+    <div class="max-w-7xl mx-auto flex items-center gap-2 text-slate-500">
+      <a href="index.html" class="hover:text-red-800">Trang chủ</a>
+      <i class="fa-solid fa-chevron-right text-[12px] text-slate-400"></i>
+      <a href="tai-lieu.html" class="hover:text-red-800">Kho Tư liệu & Dữ liệu</a>
+      <i class="fa-solid fa-chevron-right text-[12px] text-slate-400"></i>
+      <span class="text-slate-800 font-semibold">Video tư liệu & Phóng sự</span>
+    </div>
+  </div>
+
+  <!-- MAIN TWO-COLUMN LAYOUT: 2 PHẦN TREE MENU BÊN TRÁI - 8 PHẦN CONTENT BÊN PHẢI -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-8 py-8 w-full flex-1">
+    <div class="grid grid-cols-1 lg:grid-cols-10 gap-8 items-start">
+
+      <!-- BÊN TRÁI: TREE MENU CHIẾM 2/10 VỀ 5 NHÓM THỂ LOẠI TƯ LIỆU -->
+      <aside class="lg:col-span-3 xl:col-span-3 bg-white rounded-2xl border border-slate-200 shadow-sm p-4 sticky top-24">
+        <div class="flex items-center justify-between pb-3 mb-3 border-b border-slate-100">
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-folder-tree text-red-700 text-sm"></i>
+            <h3 class="text-xs font-black uppercase tracking-wider text-slate-900">Cây Thể loại Tư liệu</h3>
+          </div>
+          <a href="tai-lieu.html" class="text-[13px] text-red-700 hover:underline font-semibold" title="Quay lại tổng quan">Tổng quan</a>
+        </div>
+
+        <!-- Tree Menu Items -->
+        <div class="space-y-1">
+          
+      <div class="mb-1">
+        <a href="tai-lieu-video.html" class="flex items-center justify-between p-2.5 rounded-xl transition bg-red-50 text-red-700 font-bold border-l-4 border-red-700 shadow-sm">
+          <div class="flex items-center gap-2.5 min-w-0 flex-1">
+            <i class="fa-solid fa-play text-sm text-red-700"></i>
+            <span class="text-xs leading-snug">Video tư liệu & Phóng sự</span>
+          </div>
+          <span class="shrink-0 ml-2 text-[12px] px-2 py-0.5 rounded-full bg-red-200/80 text-red-800 font-bold">1.450+</span>
+        </a>
+        
+        <div class="ml-6 mt-1.5 space-y-1 pl-3 border-l-2 border-slate-200 text-xs">
+          
+            <a href="#" class="block py-1 px-2 rounded-lg transition text-red-700 font-bold bg-red-100/60">
+              <div class="flex items-center justify-between gap-2">
+                <span class="leading-snug">Phóng sự Thời sự KH&CN</span>
+                <span class="text-[12px] text-slate-400 font-normal shrink-0">480</span>
+              </div>
+            </a>
+          
+            <a href="#" class="block py-1 px-2 rounded-lg transition text-slate-600 hover:text-red-700 hover:bg-slate-50">
+              <div class="flex items-center justify-between gap-2">
+                <span class="leading-snug">Thước phim Lịch sử ngành</span>
+                <span class="text-[12px] text-slate-400 font-normal shrink-0">320</span>
+              </div>
+            </a>
+          
+            <a href="#" class="block py-1 px-2 rounded-lg transition text-slate-600 hover:text-red-700 hover:bg-slate-50">
+              <div class="flex items-center justify-between gap-2">
+                <span class="leading-snug">Tọa đàm & Diễn đàn số</span>
+                <span class="text-[12px] text-slate-400 font-normal shrink-0">290</span>
+              </div>
+            </a>
+          
+            <a href="#" class="block py-1 px-2 rounded-lg transition text-slate-600 hover:text-red-700 hover:bg-slate-50">
+              <div class="flex items-center justify-between gap-2">
+                <span class="leading-snug">Video Giới thiệu Sáng chế & Tech</span>
+                <span class="text-[12px] text-slate-400 font-normal shrink-0">210</span>
+              </div>
+            </a>
+          
+            <a href="#" class="block py-1 px-2 rounded-lg transition text-slate-600 hover:text-red-700 hover:bg-slate-50">
+              <div class="flex items-center justify-between gap-2">
+                <span class="leading-snug">Trailer & Thông điệp Truyền thông</span>
+                <span class="text-[12px] text-slate-400 font-normal shrink-0">150</span>
+              </div>
+            </a>
+          
+        </div>
+      
+      </div>
+    
+      <div class="mb-1">
+        <a href="tai-lieu-hinh-anh.html" class="flex items-center justify-between p-2.5 rounded-xl transition text-slate-700 hover:bg-slate-100 font-semibold">
+          <div class="flex items-center gap-2.5 min-w-0 flex-1">
+            <i class="fa-regular fa-image text-sm text-slate-400"></i>
+            <span class="text-xs leading-snug">Kho hình ảnh & Tư liệu lịch sử</span>
+          </div>
+          <span class="shrink-0 ml-2 text-[12px] px-2 py-0.5 rounded-full bg-slate-100 text-slate-500">4.800+</span>
+        </a>
+        
+      </div>
+    
+      <div class="mb-1">
+        <a href="tai-lieu-infographic.html" class="flex items-center justify-between p-2.5 rounded-xl transition text-slate-700 hover:bg-slate-100 font-semibold">
+          <div class="flex items-center gap-2.5 min-w-0 flex-1">
+            <i class="fa-solid fa-chart-simple text-sm text-slate-400"></i>
+            <span class="text-xs leading-snug">Infographic & Dữ liệu đồ họa số</span>
+          </div>
+          <span class="shrink-0 ml-2 text-[12px] px-2 py-0.5 rounded-full bg-slate-100 text-slate-500">2.150+</span>
+        </a>
+        
+      </div>
+    
+      <div class="mb-1">
+        <a href="tai-lieu-an-pham.html" class="flex items-center justify-between p-2.5 rounded-xl transition text-slate-700 hover:bg-slate-100 font-semibold">
+          <div class="flex items-center gap-2.5 min-w-0 flex-1">
+            <i class="fa-solid fa-book-open text-sm text-slate-400"></i>
+            <span class="text-xs leading-snug">Books & Ấn phẩm điện tử</span>
+          </div>
+          <span class="shrink-0 ml-2 text-[12px] px-2 py-0.5 rounded-full bg-slate-100 text-slate-500">3.200+</span>
+        </a>
+        
+      </div>
+    
+      <div class="mb-1">
+        <a href="tai-lieu-podcast.html" class="flex items-center justify-between p-2.5 rounded-xl transition text-slate-700 hover:bg-slate-100 font-semibold">
+          <div class="flex items-center gap-2.5 min-w-0 flex-1">
+            <i class="fa-solid fa-podcast text-sm text-slate-400"></i>
+            <span class="text-xs leading-snug">Voice Podcasts & Bản tin âm thanh</span>
+          </div>
+          <span class="shrink-0 ml-2 text-[12px] px-2 py-0.5 rounded-full bg-slate-100 text-slate-500">880+</span>
+        </a>
+        
+      </div>
+    
+        </div>
+
+        <!-- Filter Box in Sidebar -->
+        <div class="mt-6 pt-4 border-t border-slate-100 space-y-3">
+          <span class="block text-[13px] font-bold text-slate-500 uppercase tracking-wider">Lọc theo năm ban hành</span>
+          <div class="flex flex-wrap gap-1.5 text-xs">
+            <button class="px-2.5 py-1 rounded-md bg-[#0b1c33] text-white font-semibold text-[13px]">Tất cả</button>
+            <button class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 hover:bg-slate-200 text-[13px]">2026</button>
+            <button class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 hover:bg-slate-200 text-[13px]">2025</button>
+            <button class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 hover:bg-slate-200 text-[13px]">2024</button>
+          </div>
+        </div>
+
+        <!-- Hotline Card -->
+        <div class="mt-6 p-3 rounded-xl bg-slate-50 border border-slate-200 text-center space-y-1.5 text-xs">
+          <i class="fa-solid fa-headset text-red-700 text-base"></i>
+          <p class="font-bold text-slate-800 text-[13px]">Hỗ trợ tra cứu tư liệu số</p>
+          <p class="text-[12px] text-slate-500">Tổng đài thư viện: Đang cập nhật</p>
+        </div>
+      </aside>
+
+      <!-- BÊN PHẢI: CONTENT NỘI DUNG TÀI LIỆU CHI TIẾT THEO THỂ LOẠI ĐƯỢC CHỌN -->
+      <section class="lg:col-span-7 xl:col-span-7 space-y-6">
+
+        <!-- Category Banner Header -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <div class="flex items-center gap-4">
+            <div class="w-14 h-14 rounded-2xl bg-red-50 text-red-600 flex items-center justify-center text-2xl shadow-sm shrink-0">
+              <i class="fa-solid fa-play"></i>
+            </div>
+            <div>
+              <div class="flex items-center gap-2 mb-1">
+                <span class="text-[12px] font-bold px-2 py-0.5 rounded-full bg-red-100 text-red-800 uppercase tracking-wide">
+                  1.450+ Video
+                </span>
+                <span class="text-xs text-slate-400">• Mã danh mục: MST-DOC-DEO</span>
+              </div>
+              <h2 class="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">Video tư liệu & Phóng sự</h2>
+              <p class="text-xs text-slate-500 mt-1 max-w-xl leading-relaxed">Kho lưu trữ tư liệu hình ảnh chuyển động, phóng sự chuyên đề, thước phim tư liệu lịch sử và bản tin thời sự KH&CN chuẩn 4K HDR.</p>
+            </div>
+          </div>
+
+          <!-- Quick Actions -->
+          <div class="flex sm:flex-col items-center sm:items-end gap-2 shrink-0 w-full sm:w-auto justify-between">
+            <button class="px-4 py-2 bg-red-700 hover:bg-red-800 text-white rounded-xl text-xs font-bold transition flex items-center gap-1.5 shadow-sm">
+              <i class="fa-solid fa-download text-xs"></i>
+              <span>Tải danh mục (Excel)</span>
+            </button>
+            <span class="text-[13px] text-slate-400 font-medium">1.450+ tư liệu</span>
+          </div>
+        </div>
+
+        <!-- Filter & Search Bar in Content -->
+        <div class="bg-white rounded-xl p-3 border border-slate-200 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
+          <div class="relative w-full sm:w-72">
+            <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2 text-slate-400"></i>
+            <input type="text" placeholder="Lọc theo tiêu đề tài liệu..." class="w-full pl-8 pr-3 py-1.5 rounded-lg bg-slate-50 border border-slate-200 focus:bg-white focus:outline-none focus:ring-1 focus:ring-red-700">
+          </div>
+
+          <div class="flex items-center gap-2 w-full sm:w-auto justify-end">
+            <span class="text-slate-400 text-[13px]">Sắp xếp:</span>
+            <select class="bg-slate-50 border border-slate-200 rounded-lg px-2.5 py-1.5 text-xs text-slate-700 focus:outline-none font-medium">
+              <option>Mới nhất cập nhật</option>
+              <option>Được xem nhiều nhất</option>
+              <option>Tải về nhiều nhất</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Content Grid of Items -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+          
+            <div onclick="openVideoPlayerModal(0)" class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md hover:border-red-400 transition-all group flex flex-col justify-between cursor-pointer">
+              <div>
+                <!-- Image Thumbnail with Aspect Ratio -->
+                <div class="h-44 bg-slate-900 relative overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=600&q=80" alt="Phóng sự: Hành trình thực hiện hóa Nghị quyết 57/NQ-CP về phát triển KHCN" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                  
+                  
+                  <!-- Red Play Video Icon in Center -->
+                  <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="w-12 h-12 rounded-full bg-red-600 text-white flex items-center justify-center shadow-lg transform group-hover:scale-110 group-hover:bg-red-700 transition duration-300">
+                      <i class="fa-solid fa-play text-base ml-0.5"></i>
+                    </div>
+                  </div>
+                  <div class="absolute bottom-2.5 left-3 right-3 flex items-center justify-between text-white text-[13px]">
+                    <span class="flex items-center gap-1 font-semibold text-amber-300"><i class="fa-regular fa-clock text-[12px]"></i> 14:20</span>
+                    <span class="flex items-center gap-1 text-slate-300"><i class="fa-regular fa-eye text-[12px]"></i> 4.850 lượt</span>
+                  </div>
+                </div>
+
+                <!-- Text Info -->
+                <div class="p-4 space-y-2">
+                  <div class="flex items-center gap-2 text-[13px] text-slate-400">
+                    <span class="font-semibold text-red-700 bg-red-50 px-2 py-0.5 rounded">Video 4K</span>
+                    <span>•</span>
+                    <span>Ngày phát hành: 27/08/2026</span>
+                  </div>
+                  <h4 class="font-extrabold text-sm text-slate-900 group-hover:text-red-700 transition line-clamp-2 leading-snug">
+                    Phóng sự: Hành trình thực hiện hóa Nghị quyết 57/NQ-CP về phát triển KHCN
+                  </h4>
+                </div>
+              </div>
+
+              </div>
+          
+            <div onclick="openVideoPlayerModal(1)" class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md hover:border-red-400 transition-all group flex flex-col justify-between cursor-pointer">
+              <div>
+                <!-- Image Thumbnail with Aspect Ratio -->
+                <div class="h-44 bg-slate-900 relative overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80" alt="Tọa đàm chuyên đề: Định vị Việt Nam trên bản đồ Bán dẫn và Trí tuệ nhân tạo toàn cầu" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                  
+                  
+                  <!-- Red Play Video Icon in Center -->
+                  <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="w-12 h-12 rounded-full bg-red-600 text-white flex items-center justify-center shadow-lg transform group-hover:scale-110 group-hover:bg-red-700 transition duration-300">
+                      <i class="fa-solid fa-play text-base ml-0.5"></i>
+                    </div>
+                  </div>
+                  <div class="absolute bottom-2.5 left-3 right-3 flex items-center justify-between text-white text-[13px]">
+                    <span class="flex items-center gap-1 font-semibold text-amber-300"><i class="fa-regular fa-clock text-[12px]"></i> 28:15</span>
+                    <span class="flex items-center gap-1 text-slate-300"><i class="fa-regular fa-eye text-[12px]"></i> 3.120 lượt</span>
+                  </div>
+                </div>
+
+                <!-- Text Info -->
+                <div class="p-4 space-y-2">
+                  <div class="flex items-center gap-2 text-[13px] text-slate-400">
+                    <span class="font-semibold text-red-700 bg-red-50 px-2 py-0.5 rounded">Tọa đàm</span>
+                    <span>•</span>
+                    <span>Ngày phát hành: 24/08/2026</span>
+                  </div>
+                  <h4 class="font-extrabold text-sm text-slate-900 group-hover:text-red-700 transition line-clamp-2 leading-snug">
+                    Tọa đàm chuyên đề: Định vị Việt Nam trên bản đồ Bán dẫn và Trí tuệ nhân tạo toàn cầu
+                  </h4>
+                </div>
+              </div>
+
+              </div>
+          
+            <div onclick="openVideoPlayerModal(2)" class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md hover:border-red-400 transition-all group flex flex-col justify-between cursor-pointer">
+              <div>
+                <!-- Image Thumbnail with Aspect Ratio -->
+                <div class="h-44 bg-slate-900 relative overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&fit=crop&w=600&q=80" alt="Phim tư liệu: 65 năm dấu ấn ngành Khoa học và Công nghệ Việt Nam kiến tạo tương lai" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                  
+                  
+                  <!-- Red Play Video Icon in Center -->
+                  <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="w-12 h-12 rounded-full bg-red-600 text-white flex items-center justify-center shadow-lg transform group-hover:scale-110 group-hover:bg-red-700 transition duration-300">
+                      <i class="fa-solid fa-play text-base ml-0.5"></i>
+                    </div>
+                  </div>
+                  <div class="absolute bottom-2.5 left-3 right-3 flex items-center justify-between text-white text-[13px]">
+                    <span class="flex items-center gap-1 font-semibold text-amber-300"><i class="fa-regular fa-clock text-[12px]"></i> 45:00</span>
+                    <span class="flex items-center gap-1 text-slate-300"><i class="fa-regular fa-eye text-[12px]"></i> 6.420 lượt</span>
+                  </div>
+                </div>
+
+                <!-- Text Info -->
+                <div class="p-4 space-y-2">
+                  <div class="flex items-center gap-2 text-[13px] text-slate-400">
+                    <span class="font-semibold text-red-700 bg-red-50 px-2 py-0.5 rounded">Lịch sử</span>
+                    <span>•</span>
+                    <span>Ngày phát hành: 18/08/2026</span>
+                  </div>
+                  <h4 class="font-extrabold text-sm text-slate-900 group-hover:text-red-700 transition line-clamp-2 leading-snug">
+                    Phim tư liệu: 65 năm dấu ấn ngành Khoa học và Công nghệ Việt Nam kiến tạo tương lai
+                  </h4>
+                </div>
+              </div>
+
+              </div>
+          
+            <div onclick="openVideoPlayerModal(3)" class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md hover:border-red-400 transition-all group flex flex-col justify-between cursor-pointer">
+              <div>
+                <!-- Image Thumbnail with Aspect Ratio -->
+                <div class="h-44 bg-slate-900 relative overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=600&q=80" alt="Lễ tôn vinh và trao giải thưởng Khoa học Công nghệ VIFOTEC & Sáng tạo số 2026" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                  
+                  
+                  <!-- Red Play Video Icon in Center -->
+                  <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="w-12 h-12 rounded-full bg-red-600 text-white flex items-center justify-center shadow-lg transform group-hover:scale-110 group-hover:bg-red-700 transition duration-300">
+                      <i class="fa-solid fa-play text-base ml-0.5"></i>
+                    </div>
+                  </div>
+                  <div class="absolute bottom-2.5 left-3 right-3 flex items-center justify-between text-white text-[13px]">
+                    <span class="flex items-center gap-1 font-semibold text-amber-300"><i class="fa-regular fa-clock text-[12px]"></i> 18:40</span>
+                    <span class="flex items-center gap-1 text-slate-300"><i class="fa-regular fa-eye text-[12px]"></i> 2.780 lượt</span>
+                  </div>
+                </div>
+
+                <!-- Text Info -->
+                <div class="p-4 space-y-2">
+                  <div class="flex items-center gap-2 text-[13px] text-slate-400">
+                    <span class="font-semibold text-red-700 bg-red-50 px-2 py-0.5 rounded">Sự kiện</span>
+                    <span>•</span>
+                    <span>Ngày phát hành: 12/08/2026</span>
+                  </div>
+                  <h4 class="font-extrabold text-sm text-slate-900 group-hover:text-red-700 transition line-clamp-2 leading-snug">
+                    Lễ tôn vinh và trao giải thưởng Khoa học Công nghệ VIFOTEC & Sáng tạo số 2026
+                  </h4>
+                </div>
+              </div>
+
+              </div>
+          
+            <div onclick="openVideoPlayerModal(4)" class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md hover:border-red-400 transition-all group flex flex-col justify-between cursor-pointer">
+              <div>
+                <!-- Image Thumbnail with Aspect Ratio -->
+                <div class="h-44 bg-slate-900 relative overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80" alt="Khởi động mạng lưới trung tâm Đổi mới sáng tạo Quốc gia NIC Hòa Lạc" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                  
+                  
+                  <!-- Red Play Video Icon in Center -->
+                  <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="w-12 h-12 rounded-full bg-red-600 text-white flex items-center justify-center shadow-lg transform group-hover:scale-110 group-hover:bg-red-700 transition duration-300">
+                      <i class="fa-solid fa-play text-base ml-0.5"></i>
+                    </div>
+                  </div>
+                  <div class="absolute bottom-2.5 left-3 right-3 flex items-center justify-between text-white text-[13px]">
+                    <span class="flex items-center gap-1 font-semibold text-amber-300"><i class="fa-regular fa-clock text-[12px]"></i> 08:30</span>
+                    <span class="flex items-center gap-1 text-slate-300"><i class="fa-regular fa-eye text-[12px]"></i> 1.950 lượt</span>
+                  </div>
+                </div>
+
+                <!-- Text Info -->
+                <div class="p-4 space-y-2">
+                  <div class="flex items-center gap-2 text-[13px] text-slate-400">
+                    <span class="font-semibold text-red-700 bg-red-50 px-2 py-0.5 rounded">Tin tức</span>
+                    <span>•</span>
+                    <span>Ngày phát hành: 08/08/2026</span>
+                  </div>
+                  <h4 class="font-extrabold text-sm text-slate-900 group-hover:text-red-700 transition line-clamp-2 leading-snug">
+                    Khởi động mạng lưới trung tâm Đổi mới sáng tạo Quốc gia NIC Hòa Lạc
+                  </h4>
+                </div>
+              </div>
+
+              </div>
+          
+            <div onclick="openVideoPlayerModal(5)" class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md hover:border-red-400 transition-all group flex flex-col justify-between cursor-pointer">
+              <div>
+                <!-- Image Thumbnail with Aspect Ratio -->
+                <div class="h-44 bg-slate-900 relative overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=600&q=80" alt="Thử nghiệm hệ thống mạng viễn thông 6G và vệ tinh viễn thám phục vụ nông nghiệp thông minh" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                  
+                  
+                  <!-- Red Play Video Icon in Center -->
+                  <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="w-12 h-12 rounded-full bg-red-600 text-white flex items-center justify-center shadow-lg transform group-hover:scale-110 group-hover:bg-red-700 transition duration-300">
+                      <i class="fa-solid fa-play text-base ml-0.5"></i>
+                    </div>
+                  </div>
+                  <div class="absolute bottom-2.5 left-3 right-3 flex items-center justify-between text-white text-[13px]">
+                    <span class="flex items-center gap-1 font-semibold text-amber-300"><i class="fa-regular fa-clock text-[12px]"></i> 11:15</span>
+                    <span class="flex items-center gap-1 text-slate-300"><i class="fa-regular fa-eye text-[12px]"></i> 2.340 lượt</span>
+                  </div>
+                </div>
+
+                <!-- Text Info -->
+                <div class="p-4 space-y-2">
+                  <div class="flex items-center gap-2 text-[13px] text-slate-400">
+                    <span class="font-semibold text-red-700 bg-red-50 px-2 py-0.5 rounded">Công nghệ</span>
+                    <span>•</span>
+                    <span>Ngày phát hành: 01/08/2026</span>
+                  </div>
+                  <h4 class="font-extrabold text-sm text-slate-900 group-hover:text-red-700 transition line-clamp-2 leading-snug">
+                    Thử nghiệm hệ thống mạng viễn thông 6G và vệ tinh viễn thám phục vụ nông nghiệp thông minh
+                  </h4>
+                </div>
+              </div>
+
+              </div>
+          
+        </div>
+
+        <!-- Pagination -->
+        <div class="flex items-center justify-between pt-4 border-t border-slate-200 text-xs">
+          <span class="text-slate-500">Hiển thị 1 - 6 trên 1.450+ tư liệu</span>
+          <div class="flex items-center gap-1">
+            <button class="px-3 py-1.5 rounded-lg border border-slate-200 bg-white text-slate-400 cursor-not-allowed" disabled>Trước</button>
+            <button class="px-3 py-1.5 rounded-lg bg-red-700 text-white font-bold">1</button>
+            <button class="px-3 py-1.5 rounded-lg border border-slate-200 bg-white text-slate-700 hover:bg-slate-50">2</button>
+            <button class="px-3 py-1.5 rounded-lg border border-slate-200 bg-white text-slate-700 hover:bg-slate-50">3</button>
+            <span class="px-2 text-slate-400">...</span>
+            <button class="px-3 py-1.5 rounded-lg border border-slate-200 bg-white text-slate-700 hover:bg-slate-50">Tiếp theo</button>
+          </div>
+        </div>
+
+      </section>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#0b1e36] text-white mt-12 border-t border-slate-800 text-[14.5px]" style="font-family: 'Inter', sans-serif;">
+    <div class="max-w-[90rem] mx-auto px-4 sm:px-8 py-10">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <!-- Col 1 -->
+        <div class="md:col-span-2 space-y-3.5 min-w-0">
+          <div class="flex items-start sm:items-center gap-3.5 min-w-0">
+            <div class="w-12 h-12 rounded-full flex items-center justify-center p-0.5 filter drop-shadow-lg shrink-0">
+              <img src="quoc-huy.png" alt="Quốc huy Việt Nam" class="w-11 h-11 object-contain drop-shadow">
+            </div>
+            <div class="min-w-0 flex-1">
+              <h5 class="font-extrabold text-[14.5px] sm:text-[15.5px] lg:text-[16.5px] xl:text-[17.5px] tracking-wide uppercase text-amber-400 leading-snug sm:leading-relaxed">NỀN TẢNG TRUYỀN THÔNG SỐ QUỐC GIA VỀ KHOA HỌC, CÔNG NGHỆ, ĐỔI MỚI SÁNG TẠO VÀ CHUYỂN ĐỔI SỐ</h5>
+              <p class="text-[13px] xl:text-[14.5px] text-slate-300 mt-1">Cơ quan chủ quản: Bộ Khoa học và Công nghệ (MST)</p>
+            </div>
+          </div>
+          <div class="text-[13px] xl:text-[14px] text-slate-300 space-y-1.5 pt-1">
+            <p><i class="fa-solid fa-location-dot w-4 mr-1 text-red-400"></i> Địa chỉ: Đang cập nhật</p>
+            <p><i class="fa-solid fa-phone w-4 mr-1 text-emerald-400"></i> Điện thoại: Đang cập nhật • Email: Đang cập nhật</p>
+          </div>
+        </div>
+
+        <!-- Col 2: Liên kết -->
+        <div class="min-w-0">
+          <h5 class="font-bold text-[13px] xl:text-[14.5px] uppercase tracking-wider text-amber-400 mb-3.5 pb-1.5 border-b border-slate-700">Liên kết nhanh</h5>
+          <ul class="space-y-2.5 text-[13px] xl:text-[14px] text-slate-300">
+            <li><a href="chinh-sach-tra-cuu.html" class="hover:text-amber-300 transition">Văn bản chỉ đạo điều hành</a></li>
+            <li><a href="san-pham-cong-nghe.html" class="hover:text-amber-300 transition">10 Nhóm sản phẩm số trọng điểm</a></li>
+            <li><a href="su-kien.html" class="hover:text-amber-300 transition">Lịch trình sự kiện & hội thảo</a></li>
+            <li><a href="hoi-dap.html" class="hover:text-amber-300 transition">Hỏi đáp & hỗ trợ trực tuyến</a></li>
+            <li><a href="chuyen-muc-kinh-te-so.html" class="hover:text-amber-300 transition">Báo cáo dữ liệu & Chỉ số PII</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Đa phương tiện -->
+        <div class="min-w-0">
+          <h5 class="font-bold text-[13px] xl:text-[14.5px] uppercase tracking-wider text-amber-400 mb-3.5 pb-1.5 border-b border-slate-700">Đa phương tiện</h5>
+          <ul class="space-y-2.5 text-[13px] xl:text-[14px] text-slate-300">
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Video phóng sự thời sự</a></li>
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Kho tư liệu ảnh sự kiện</a></li>
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Đồ họa Infographic số hóa</a></li>
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Podcast & Bản tin phát thanh</a></li>
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Sách điện tử & Báo cáo tổng kết</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-8 pt-4 border-t border-slate-800 flex flex-col lg:flex-row items-center justify-between text-[12.5px] xl:text-[13.5px] text-slate-400 gap-3">
+        <p class="text-center lg:text-left">© 2026 Bản quyền thuộc Bộ Khoa học và Công nghệ. Ghi rõ nguồn khi phát hành lại thông tin.</p>
+        <div class="flex flex-wrap items-center justify-center gap-4 shrink-0">
+          <a href="#" class="hover:text-white transition">Điều khoản sử dụng</a>
+          <a href="#" class="hover:text-white transition">Chính sách bảo mật</a>
+          <a href="hoi-dap.html" class="hover:text-white transition">Sơ đồ cổng</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- PROTOTYPE HUD NAVIGATION -->
+  <script src="prototype-nav.js"></script>
+
+  <!-- MODAL XEM VIDEO TƯ LIỆU -->
+  <div id="videoPlayerModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-xs transition-opacity duration-300">
+    <div class="bg-slate-900 text-white rounded-3xl border border-slate-700 shadow-2xl max-w-4xl w-full overflow-hidden flex flex-col max-h-[90vh] animate-in fade-in zoom-in-95 duration-200">
+      
+      <!-- Modal Header -->
+      <div class="px-6 py-4 bg-slate-900 border-b border-slate-800 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <span class="w-8 h-8 rounded-full bg-red-600 flex items-center justify-center text-white shrink-0">
+            <i class="fa-solid fa-play text-xs ml-0.5"></i>
+          </span>
+          <div>
+            <span class="text-[12px] uppercase font-bold tracking-wider text-red-400 block">KHO TƯ LIỆU VIDEO QUỐC GIA</span>
+            <h3 id="modalVideoTitle" class="text-base sm:text-lg font-bold text-white line-clamp-1">Phóng sự: Hành trình thực hiện hóa Nghị quyết 57/NQ-CP về phát triển KHCN</h3>
+          </div>
+        </div>
+        <button onclick="closeVideoPlayerModal()" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white flex items-center justify-center transition shrink-0 cursor-pointer">
+          <i class="fa-solid fa-xmark text-sm"></i>
+        </button>
+      </div>
+
+      <!-- Video Player Viewport -->
+      <div class="relative bg-black aspect-video flex items-center justify-center group overflow-hidden">
+        <img id="modalVideoThumb" src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1200&q=80" alt="Video thumbnail" class="w-full h-full object-cover opacity-80">
+        <div class="absolute inset-0 bg-black/40"></div>
+        
+        <!-- Big Play Button in center -->
+        <button onclick="playMockVideo()" id="modalPlayBtn" class="w-16 h-16 rounded-full bg-red-600 hover:bg-red-700 text-white flex items-center justify-center text-2xl shadow-2xl transform hover:scale-110 transition z-10 cursor-pointer">
+          <i class="fa-solid fa-play ml-1"></i>
+        </button>
+
+        <!-- Simulated Player Controls Bar -->
+        <div class="absolute bottom-0 inset-x-0 p-4 bg-gradient-to-t from-black/90 to-transparent flex flex-col gap-2 z-10 text-xs">
+          <!-- Progress bar -->
+          <div class="w-full bg-slate-700/80 h-1.5 rounded-full overflow-hidden cursor-pointer">
+            <div id="modalProgressBar" class="bg-red-600 h-full w-[28%] rounded-full"></div>
+          </div>
+          <div class="flex items-center justify-between text-slate-300 text-xs">
+            <div class="flex items-center gap-3">
+              <button onclick="playMockVideo()" class="hover:text-white"><i class="fa-solid fa-play"></i></button>
+              <span id="modalVideoTime">04:12 / 14:20</span>
+              <span class="text-[12px] bg-red-600/80 text-white font-bold px-1.5 py-0.5 rounded">4K HDR</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span id="modalVideoViews"><i class="fa-regular fa-eye mr-1"></i> 4.850 lượt xem</span>
+              <button class="hover:text-white"><i class="fa-solid fa-volume-high"></i></button>
+              <button class="hover:text-white"><i class="fa-solid fa-expand"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Footer Info -->
+      <div class="p-6 bg-slate-900/90 text-xs text-slate-300 space-y-3">
+        <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-slate-800">
+          <div class="flex items-center gap-2">
+            <span class="px-2.5 py-1 rounded-lg bg-slate-800 text-slate-300 font-semibold">Cơ quan phát hành: Bộ Khoa học và Công nghệ</span>
+            <span class="px-2.5 py-1 rounded-lg bg-slate-800 text-slate-300 font-semibold">Bản quyền: Quốc gia</span>
+          </div>
+          <button onclick="closeVideoPlayerModal()" class="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold transition">
+            Đóng
+          </button>
+        </div>
+        <p id="modalVideoDesc" class="text-slate-400 leading-relaxed">
+          Tư liệu video độ phân giải cao phục vụ công tác truyền thông chính sách, nghiên cứu khoa học và phổ biến tri thức công nghệ quốc gia.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    const videoData = [
+      {
+        title: "Phóng sự: Hành trình thực hiện hóa Nghị quyết 57/NQ-CP về phát triển KHCN",
+        time: "14:20",
+        views: "4.850 lượt xem",
+        thumb: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1200&q=80",
+        desc: "Phóng sự chuyên sâu điểm lại các dấu mốc triển khai Nghị quyết 57 trên toàn quốc, chuyển biến trong hành động của doanh nghiệp, viện trường và các cơ chế tài chính tháo gỡ điểm nghẽn."
+      },
+      {
+        title: "Tọa đàm chuyên đề: Định vị Việt Nam trên bản đồ Bán dẫn và Trí tuệ nhân tạo toàn cầu",
+        time: "28:45",
+        views: "6.120 lượt xem",
+        thumb: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1200&q=80",
+        desc: "Các chuyên gia đầu ngành trong và ngoài nước thảo luận về chiến lược phát triển nguồn nhân lực vi mạch bán dẫn, thu hút các tập đoàn công nghệ toàn cầu đến Việt Nam."
+      },
+      {
+        title: "Phim tư liệu: 65 năm dấu ấn ngành Khoa học và Công nghệ Việt Nam kiến tạo tương lai",
+        time: "42:10",
+        views: "9.340 lượt xem",
+        thumb: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80",
+        desc: "Bộ phim tư liệu lịch sử tái hiện chặng đường 65 năm xây dựng và trưởng thành của ngành KH&CN Việt Nam từ kháng chiến kiến quốc đến kỷ nguyên công nghiệp 4.0."
+      },
+      {
+        title: "Lễ tôn vinh và trao giải thưởng Khoa học Công nghệ VIFOTEC & Sáng tạo số 2026",
+        time: "18:15",
+        views: "3.720 lượt xem",
+        thumb: "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1200&q=80",
+        desc: "Toàn cảnh Lễ trao giải thưởng Sáng tạo Khoa học Công nghệ Việt Nam (VIFOTEC) 2026 vinh danh các công trình xuất sắc có tính ứng dụng thực tiễn cao."
+      },
+      {
+        title: "Khởi động mạng lưới trung tâm Đổi mới sáng tạo Quốc gia NIC Hòa Lạc",
+        time: "11:50",
+        views: "2.890 lượt xem",
+        thumb: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
+        desc: "Sự kiện kích hoạt các phòng thí nghiệm dùng chung, không gian làm việc mở và các gói tài trợ ươm tạo startup công nghệ cao tại NIC Hòa Lạc."
+      },
+      {
+        title: "Thử nghiệm hệ thống mạng viễn thông 6G và vệ tinh viễn thám phục vụ nông nghiệp thông minh",
+        time: "16:30",
+        views: "4.150 lượt xem",
+        thumb: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80",
+        desc: "Ghi nhận thực tế các đợt thử nghiệm phát sóng trạm 6G di động và ứng dụng ảnh vệ tinh viễn thám độ phân giải cao trong giám sát mùa màng, cảnh báo thiên tai."
+      }
+    ];
+
+    function openVideoPlayerModal(index) {
+      const v = videoData[index];
+      if (!v) return;
+
+      document.getElementById('modalVideoTitle').textContent = v.title;
+      document.getElementById('modalVideoTime').textContent = '00:00 / ' + v.time;
+      document.getElementById('modalVideoViews').innerHTML = '<i class="fa-regular fa-eye mr-1"></i> ' + v.views;
+      document.getElementById('modalVideoThumb').src = v.thumb;
+      document.getElementById('modalVideoDesc').textContent = v.desc;
+
+      const modal = document.getElementById('videoPlayerModal');
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeVideoPlayerModal() {
+      const modal = document.getElementById('videoPlayerModal');
+      modal.classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    function playMockVideo() {
+      const btn = document.getElementById('modalPlayBtn');
+      const time = document.getElementById('modalVideoTime');
+      const bar = document.getElementById('modalProgressBar');
+      if (btn.classList.contains('opacity-0')) {
+        btn.classList.remove('opacity-0');
+      } else {
+        btn.classList.add('opacity-0');
+        bar.style.width = '65%';
+        time.textContent = '08:45 / 14:20';
+      }
+    }
+
+    // Close on backdrop click
+    document.getElementById('videoPlayerModal')?.addEventListener('click', function(e) {
+      if (e.target === this) closeVideoPlayerModal();
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeVideoPlayerModal();
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Danh sách sản phẩm công nghệ chiến lược | Nền tảng Truyền thông Quốc Gia</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontSize: {
+            xs: ['0.90625rem', { lineHeight: '1.35rem' }],
+            sm: ['1rem', { lineHeight: '1.45rem' }],
+            base: ['1.125rem', { lineHeight: '1.65rem' }],
+            lg: ['1.25rem', { lineHeight: '1.8rem' }],
+            xl: ['1.375rem', { lineHeight: '1.9rem' }],
+            '2xl': ['1.625rem', { lineHeight: '2.1rem' }],
+            '3xl': ['2rem', { lineHeight: '2.45rem' }]
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <style> 
+    body { font-family: 'Inter', sans-serif; } 
+    .custom-scrollbar::-webkit-scrollbar { width: 5px; }
+    .custom-scrollbar::-webkit-scrollbar-track { background: #f1f5f9; }
+    .custom-scrollbar::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+  
+    .max-w-7xl {
+      max-width: 90rem !important;
+    }
+    header h1 {
+      font-family: 'Inter', sans-serif !important;
+      font-weight: 800 !important;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col">
+
+  <!-- TOP UTILITY BAR -->
+  <div class="bg-[#0b1c33] text-slate-200 text-[13px] py-1.5 px-4 sm:px-8 border-b border-slate-700/60">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-2">
+      <div class="flex items-center gap-3">
+        <span class="text-slate-300"><i class="fa-regular fa-calendar-check mr-1.5 text-amber-400"></i>Thứ Năm, 27/08/2026</span>
+      </div>
+      <div class="flex items-center gap-4 text-[13px]">
+        <div class="flex items-center gap-1.5 font-bold">
+          <span class="text-amber-400">VI</span>
+          <span class="text-slate-500">/</span>
+          <span class="text-slate-400 hover:text-white cursor-pointer">EN</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="bg-white border-b border-slate-200 shadow-sm sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 py-3.5 flex flex-col md:flex-row items-center justify-between gap-4">
+      <a href="index.html" class="flex items-center gap-3.5 group">
+        <img src="quoc-huy.png" alt="Quốc huy Việt Nam" class="w-12 h-12 object-contain drop-shadow">
+        <div>
+          <h1 class="text-[14.5px] sm:text-[16px] md:text-[18px] lg:text-[18px] xl:text-[20px] font-extrabold tracking-normal uppercase text-red-800 leading-normal">
+            <span class="block whitespace-nowrap">NỀN TẢNG TRUYỀN THÔNG SỐ QUỐC GIA VỀ KHOA HỌC, CÔNG NGHỆ,</span>
+            <span class="block mt-1 whitespace-nowrap">ĐỔI MỚI SÁNG TẠO VÀ CHUYỂN ĐỔI SỐ</span>
+          </h1>
+        </div>
+      </a>
+
+      <div class="w-full md:w-80 lg:w-96 relative shrink-0">
+        <input type="text" id="searchInput" placeholder="Tìm kiếm sản phẩm, giải pháp số..." 
+          class="w-full pl-10 pr-4 py-2 bg-slate-100 focus:bg-white text-[13px] rounded-full border border-slate-300 focus:outline-none focus:ring-2 focus:ring-red-700/30">
+        <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-[13px]"></i>
+      </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="bg-white border-t border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-8 flex items-center justify-start overflow-visible gap-1.5 text-[14.5px] sm:text-[15px] font-semibold">
+        <a href="index.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Trang chủ
+      </a>
+        
+        <!-- CHÍNH SÁCH VỚI SUBMENU CHỈ ĐẠO ĐIỀU HÀNH & GIẢI THÍCH CHÍNH SÁCH -->
+        <div class="relative group">
+          <a href="chinh-sach.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap flex items-center gap-1 cursor-pointer">
+        <span>Chính sách</span>
+        <i class="fa-solid fa-chevron-down text-[9px] text-slate-400 group-hover:text-red-800 group-hover:rotate-180 transition-transform"></i>
+      </a>
+          <!-- Submenu dropdown -->
+          <div class="hidden group-hover:block absolute left-0 top-full bg-white rounded-xl shadow-2xl border border-slate-200 py-1.5 min-w-[260px] z-50 text-slate-800 font-normal">
+            <a href="chinh-sach.html" class="flex items-center gap-2.5 px-4 py-2.5 hover:bg-slate-50 text-slate-700 hover:text-red-800 text-[14.5px] transition font-semibold">
+              <i class="fa-solid fa-landmark text-slate-400 text-[14.5px]"></i>
+              <span>Chính sách & Thể chế</span>
+            </a>
+            <a href="chinh-sach-tra-cuu.html" class="flex items-center gap-2.5 px-4 py-2.5 hover:bg-slate-50 text-slate-700 hover:text-red-800 text-[14.5px] transition font-semibold">
+              <i class="fa-solid fa-file-signature text-red-700 text-[14.5px]"></i>
+              <span>Chỉ đạo điều hành</span>
+            </a>
+            <a href="giai-thich-chinh-sach.html" class="flex items-center gap-2.5 px-4 py-2.5 hover:bg-slate-50 text-slate-700 hover:text-red-800 font-semibold text-[14.5px] transition">
+              <i class="fa-solid fa-chalkboard-user text-amber-600 text-[14.5px]"></i>
+              <span>Giải thích chính sách</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="san-pham-cong-nghe.html" class="px-5 py-2.5 bg-[#82181a] text-white rounded-t-sm whitespace-nowrap shadow-inner flex items-center gap-1.5 font-bold">
+        <i class="fa-solid fa-microchip text-[11px]"></i> <span>Sản phẩm KH&CN</span>
+      </a>
+        <a href="bao-cao-danh-gia-truyen-thong.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Báo cáo thường niên
+      </a>
+        <a href="tai-lieu-video.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Kho tư liệu
+      </a>
+        
+        <a href="su-kien.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">Sự kiện</a>
+
+        
+        <a href="hoi-dap.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Hỏi đáp
+      </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- BREADCRUMB & CATEGORY BANNER -->
+  <section id="bannerContainer" class="bg-gradient-to-r from-slate-900 via-blue-950 to-slate-900 text-white py-10 border-b border-blue-900/60 relative overflow-hidden transition-colors duration-500">
+    <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- Breadcrumb -->
+      <div class="flex items-center space-x-2 text-xs text-slate-300 mb-3">
+        <a href="index.html" class="hover:underline flex items-center"><i class="fa-solid fa-house mr-1"></i> Trang chủ</a>
+        <span>/</span>
+        <a href="san-pham-cong-nghe.html" class="hover:underline">Sản phẩm công nghệ</a>
+        <span>/</span>
+        <span id="breadcrumbCategory" class="text-blue-400 font-semibold">Sản phẩm công nghệ chiến lược</span>
+      </div>
+
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div>
+          <div id="groupBadge" class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 border-blue-400/30 text-xs font-semibold mb-3 border">
+            <i class="fa-solid fa-layer-group"></i>
+            <span id="groupBadgeText">ĐÃ CÓ THỊ TRƯỜNG & TẠO TÁC ĐỘNG LỚN</span>
+          </div>
+          <h1 id="categoryTitle" class="text-2xl sm:text-3xl font-extrabold tracking-tight text-white leading-tight">
+            1. Mô hình ngôn ngữ lớn tiếng Việt, trợ lý ảo và trí tuệ nhân tạo (AI) chuyên ngành
+          </h1>
+          <p id="categoryDesc" class="text-xs text-slate-300 mt-2 max-w-2xl leading-relaxed">
+            Danh mục sản phẩm, giải pháp Make in Viet Nam tiêu biểu được thẩm định kỹ thuật và hỗ trợ mở rộng thị trường theo Quyết định của Thủ tướng Chính phủ.
+          </p>
+        </div>
+
+        <div class="flex items-center space-x-3 self-start md:self-auto shrink-0">
+          <span class="text-xs text-slate-200 bg-white/10 px-3 py-1.5 rounded-lg border border-white/20">
+            <i class="fa-solid fa-box-open mr-1"></i> <strong id="productCount">3</strong> Sản phẩm tiêu biểu
+          </span>
+          <a href="san-pham-cong-nghe.html" class="px-3.5 py-1.5 bg-white/10 hover:bg-white/20 rounded-lg text-xs font-semibold border border-white/30 text-white transition flex items-center gap-1.5">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span>Về Danh mục chiến lược</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MAIN BODY -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-8 py-8 w-full flex-1">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+
+      <!-- CỘT TRÁI: CÂY THƯ MỤC TREE CHỌN CÔNG NGHỆ CHIẾN LƯỢC (4 COLS) -->
+      <aside class="lg:col-span-4 sticky top-24 space-y-4">
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col">
+
+          <!-- Tree Header -->
+          <div class="p-4 bg-gradient-to-r from-slate-900 via-slate-800 to-blue-950 text-white">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-2.5">
+                <div class="w-8 h-8 rounded-lg bg-blue-500/20 border border-blue-400/30 flex items-center justify-center text-blue-400 shadow-sm">
+                  <i class="fa-solid fa-folder-tree text-sm"></i>
+                </div>
+                <div>
+                  <h3 class="font-bold text-xs uppercase tracking-wider text-white">Nhóm Sản phẩm chiến lược</h3>
+                </div>
+              </div>
+              <span class="px-2 py-0.5 rounded text-[12px] font-bold bg-white/10 text-slate-200 border border-white/20">
+                30 nhóm
+              </span>
+            </div>
+
+            <!-- Ô tìm kiếm trong cây thư mục -->
+            <div class="relative">
+              <input type="text" id="treeSearchInput" oninput="filterTree(this.value)" 
+                placeholder="Tìm kiếm công nghệ chiến lược..." 
+                class="w-full bg-slate-800/90 text-white placeholder-slate-400 text-xs pl-8 pr-8 py-2 rounded-xl border border-slate-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-slate-800 transition">
+              <i class="fa-solid fa-magnifying-glass absolute left-2.5 top-1/2 -translate-y-1/2 text-slate-400 text-xs"></i>
+              <button id="clearTreeSearch" onclick="clearTreeSearchInput()" class="hidden absolute right-2.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-white text-xs">
+                <i class="fa-solid fa-circle-xmark"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Tree Action Bar: Thống kê & Mở rộng/Thu gọn -->
+          <div class="px-4 py-2 bg-slate-50 border-b border-slate-200 flex items-center justify-between text-[13px] text-slate-500">
+            <span id="treeStats">Hiển thị 30/30 công nghệ</span>
+            <div class="flex items-center gap-2">
+              <button onclick="toggleAllGroups(true)" class="hover:text-blue-700 font-medium transition flex items-center gap-1">
+                <i class="fa-solid fa-angles-down text-[12px]"></i> Mở rộng
+              </button>
+              <span class="text-slate-300">|</span>
+              <button onclick="toggleAllGroups(false)" class="hover:text-blue-700 font-medium transition flex items-center gap-1">
+                <i class="fa-solid fa-angles-up text-[12px]"></i> Thu gọn
+              </button>
+            </div>
+          </div>
+
+          <!-- Tree View Items (Scrollable) -->
+          <div id="treeContainer" class="p-3 max-h-[calc(100vh-270px)] overflow-y-auto space-y-2.5 custom-scrollbar text-xs">
+            <!-- Dynamically generated tree folders & nodes -->
+          </div>
+
+          <!-- Quick Tip Footer -->
+          <div class="p-3 bg-slate-50/80 border-t border-slate-100 text-[13px] text-slate-500 flex items-center gap-2">
+            <i class="fa-solid fa-circle-info text-blue-500 shrink-0"></i>
+            <span>Nhấp vào từng công nghệ trong cây thư mục để xem chi tiết sản phẩm.</span>
+          </div>
+
+        </div>
+      </aside>
+
+      <!-- CỘT PHẢI: DANH SÁCH SẢN PHẨM TIÊU BIỂU (8 COLS) -->
+      <div class="lg:col-span-8 space-y-6">
+
+        <!-- THANH TÌM KIẾM THEO TÊN SẢN PHẨM -->
+        <div class="bg-white p-3.5 rounded-2xl border border-slate-200 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
+          <div class="relative w-full sm:flex-1">
+            <input type="text" id="productSearchInput" oninput="filterProductCards(this.value)"
+              placeholder="Tìm kiếm theo tên sản phẩm, mã, giải pháp hoặc doanh nghiệp..."
+              class="w-full pl-9 pr-8 py-2 bg-slate-50 focus:bg-white text-xs rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-600 transition">
+            <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-xs"></i>
+            <button id="clearProductSearch" onclick="clearProductSearchInput()" class="hidden absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 text-xs">
+              <i class="fa-solid fa-circle-xmark"></i>
+            </button>
+          </div>
+          <span id="productFilterCount" class="text-slate-500 text-[13px] font-medium shrink-0 whitespace-nowrap"></span>
+        </div>
+
+        <!-- DANH SÁCH SẢN PHẨM CỤ THỂ -->
+        <div id="productListGrid" class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <!-- Injected by JavaScript -->
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#0b1e36] text-white mt-12 border-t border-slate-800 text-[14.5px]" style="font-family: 'Inter', sans-serif;">
+    <div class="max-w-[90rem] mx-auto px-4 sm:px-8 py-10">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <!-- Col 1 -->
+        <div class="md:col-span-2 space-y-3.5 min-w-0">
+          <div class="flex items-start sm:items-center gap-3.5 min-w-0">
+            <div class="w-12 h-12 rounded-full flex items-center justify-center p-0.5 filter drop-shadow-lg shrink-0">
+              <img src="quoc-huy.png" alt="Quốc huy Việt Nam" class="w-11 h-11 object-contain drop-shadow">
+            </div>
+            <div class="min-w-0 flex-1">
+              <h5 class="font-extrabold text-[14.5px] sm:text-[15.5px] lg:text-[16.5px] xl:text-[17.5px] tracking-wide uppercase text-amber-400 leading-snug sm:leading-relaxed">NỀN TẢNG TRUYỀN THÔNG SỐ QUỐC GIA VỀ KHOA HỌC, CÔNG NGHỆ, ĐỔI MỚI SÁNG TẠO VÀ CHUYỂN ĐỔI SỐ</h5>
+              <p class="text-[13px] xl:text-[14.5px] text-slate-300 mt-1">Cơ quan chủ quản: Bộ Khoa học và Công nghệ (MST)</p>
+            </div>
+          </div>
+          <div class="text-[13px] xl:text-[14px] text-slate-300 space-y-1.5 pt-1">
+            <p><i class="fa-solid fa-location-dot w-4 mr-1 text-red-400"></i> Địa chỉ: Đang cập nhật</p>
+            <p><i class="fa-solid fa-phone w-4 mr-1 text-emerald-400"></i> Điện thoại: Đang cập nhật • Email: Đang cập nhật</p>
+          </div>
+        </div>
+
+        <!-- Col 2: Liên kết -->
+        <div class="min-w-0">
+          <h5 class="font-bold text-[13px] xl:text-[14.5px] uppercase tracking-wider text-amber-400 mb-3.5 pb-1.5 border-b border-slate-700">Liên kết nhanh</h5>
+          <ul class="space-y-2.5 text-[13px] xl:text-[14px] text-slate-300">
+            <li><a href="chinh-sach-tra-cuu.html" class="hover:text-amber-300 transition">Văn bản chỉ đạo điều hành</a></li>
+            <li><a href="san-pham-cong-nghe.html" class="hover:text-amber-300 transition">10 Nhóm sản phẩm số trọng điểm</a></li>
+            <li><a href="su-kien.html" class="hover:text-amber-300 transition">Lịch trình sự kiện & hội thảo</a></li>
+            <li><a href="hoi-dap.html" class="hover:text-amber-300 transition">Hỏi đáp & hỗ trợ trực tuyến</a></li>
+            <li><a href="chuyen-muc-kinh-te-so.html" class="hover:text-amber-300 transition">Báo cáo dữ liệu & Chỉ số PII</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Đa phương tiện -->
+        <div class="min-w-0">
+          <h5 class="font-bold text-[13px] xl:text-[14.5px] uppercase tracking-wider text-amber-400 mb-3.5 pb-1.5 border-b border-slate-700">Đa phương tiện</h5>
+          <ul class="space-y-2.5 text-[13px] xl:text-[14px] text-slate-300">
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Video phóng sự thời sự</a></li>
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Kho tư liệu ảnh sự kiện</a></li>
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Đồ họa Infographic số hóa</a></li>
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Podcast & Bản tin phát thanh</a></li>
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Sách điện tử & Báo cáo tổng kết</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-8 pt-4 border-t border-slate-800 flex flex-col lg:flex-row items-center justify-between text-[12.5px] xl:text-[13.5px] text-slate-400 gap-3">
+        <p class="text-center lg:text-left">© 2026 Bản quyền thuộc Bộ Khoa học và Công nghệ. Ghi rõ nguồn khi phát hành lại thông tin.</p>
+        <div class="flex flex-wrap items-center justify-center gap-4 shrink-0">
+          <a href="#" class="hover:text-white transition">Điều khoản sử dụng</a>
+          <a href="#" class="hover:text-white transition">Chính sách bảo mật</a>
+          <a href="hoi-dap.html" class="hover:text-white transition">Sơ đồ cổng</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPT DATA & LOGIC -->
+  <script src="san-pham-chien-luoc-data.js"></script>
+  <script>
+    // URL Params
+    const urlParams = new URLSearchParams(window.location.search);
+    let currentId = parseInt(urlParams.get('id')) || 1;
+    let groupOpenState = { 1: true, 2: true };
+
+    // Function to render Tree Structure
+    function renderTree() {
+      const container = document.getElementById('treeContainer');
+      container.innerHTML = '';
+
+      const groups = [
+        {
+          id: 1,
+          name: "Nhóm 1: Đã có thị trường & Tác động kinh tế",
+          shortName: "Nhóm 1",
+          count: 22,
+          iconColor: "text-blue-500",
+          badgeColor: "bg-blue-100 text-blue-800",
+          items: STRATEGIC_PRODUCTS.filter(p => p.group === 1)
+        },
+        {
+          id: 2,
+          name: "Nhóm 2: Động lực tương lai & Tự chủ an ninh",
+          shortName: "Nhóm 2",
+          count: 8,
+          iconColor: "text-emerald-500",
+          badgeColor: "bg-emerald-100 text-emerald-800",
+          items: STRATEGIC_PRODUCTS.filter(p => p.group === 2)
+        }
+      ];
+
+      groups.forEach(g => {
+        const isOpen = groupOpenState[g.id];
+        const groupEl = document.createElement('div');
+        groupEl.id = `tree-group-box-${g.id}`;
+        groupEl.className = "border border-slate-200/80 rounded-xl overflow-hidden bg-white shadow-2xs";
+
+        // Group Header (Folder Level)
+        const header = document.createElement('div');
+        header.className = "p-2.5 bg-slate-50 hover:bg-slate-100/80 cursor-pointer flex items-center justify-between select-none transition border-b border-slate-100";
+        header.onclick = () => toggleGroupFolder(g.id);
+        header.innerHTML = `
+          <div class="flex items-center gap-2">
+            <i id="chevron-group-${g.id}" class="fa-solid fa-chevron-down text-slate-400 text-[12px] transition-transform duration-200 ${isOpen ? '' : '-rotate-90'}"></i>
+            <i id="folder-icon-group-${g.id}" class="fa-solid ${isOpen ? 'fa-folder-open' : 'fa-folder'} ${g.iconColor} text-sm"></i>
+            <span class="font-bold text-slate-800 text-xs">${g.name}</span>
+          </div>
+          <span class="px-1.5 py-0.5 rounded-full text-[12px] font-bold ${g.badgeColor}">
+            ${g.items.length}
+          </span>
+        `;
+
+        // Children Container
+        const children = document.createElement('div');
+        children.id = `children-group-${g.id}`;
+        children.className = `p-1.5 space-y-1 ${isOpen ? '' : 'hidden'}`;
+
+        g.items.forEach(sp => {
+          const isActive = sp.id === currentId;
+          const isGroup1 = sp.group === 1;
+
+          const itemNode = document.createElement('div');
+          itemNode.id = `tree-item-${sp.id}`;
+          itemNode.setAttribute('data-id', sp.id);
+          itemNode.setAttribute('data-title', sp.title.toLowerCase());
+          itemNode.setAttribute('data-desc', (sp.description || '').toLowerCase());
+          
+          // Searchable keywords inside products
+          const prodKeywords = sp.products.map(p => `${p.name} ${p.enterprise}`).join(' ').toLowerCase();
+          itemNode.setAttribute('data-keywords', prodKeywords);
+
+          let activeStyle = "";
+          if (isActive) {
+            activeStyle = isGroup1 
+              ? "bg-blue-50 text-blue-900 font-bold border-l-4 border-blue-600 pl-2 shadow-xs" 
+              : "bg-emerald-50 text-emerald-900 font-bold border-l-4 border-emerald-600 pl-2 shadow-xs";
+          } else {
+            activeStyle = "hover:bg-slate-100 text-slate-700 font-medium hover:text-blue-700";
+          }
+
+          itemNode.className = `tree-node p-2 rounded-lg cursor-pointer transition flex items-start justify-between gap-2 text-xs ${activeStyle}`;
+          itemNode.onclick = () => switchStrategicProduct(sp.id);
+
+          itemNode.innerHTML = `
+            <div class="flex items-start gap-1.5 leading-snug">
+              <i class="fa-solid fa-microchip text-[13px] mt-0.5 ${isActive ? (isGroup1 ? 'text-blue-600' : 'text-emerald-600') : 'text-slate-400'}"></i>
+              <span class="tree-node-text"><strong class="font-bold">${sp.id}.</strong> ${sp.title}</span>
+            </div>
+            <span class="shrink-0 text-[12px] px-1.5 py-0.5 rounded ${isActive ? (isGroup1 ? 'bg-blue-200/80 text-blue-900 font-bold' : 'bg-emerald-200/80 text-emerald-900 font-bold') : 'bg-slate-100 text-slate-500 font-medium'}">
+              ${sp.products.length} SP
+            </span>
+          `;
+
+          children.appendChild(itemNode);
+        });
+
+        groupEl.appendChild(header);
+        groupEl.appendChild(children);
+        container.appendChild(groupEl);
+      });
+    }
+
+    // Toggle Group Folder
+    function toggleGroupFolder(groupId) {
+      groupOpenState[groupId] = !groupOpenState[groupId];
+      const children = document.getElementById(`children-group-${groupId}`);
+      const chevron = document.getElementById(`chevron-group-${groupId}`);
+      const folderIcon = document.getElementById(`folder-icon-group-${groupId}`);
+
+      if (groupOpenState[groupId]) {
+        children.classList.remove('hidden');
+        chevron.classList.remove('-rotate-90');
+        folderIcon.classList.remove('fa-folder');
+        folderIcon.classList.add('fa-folder-open');
+      } else {
+        children.classList.add('hidden');
+        chevron.classList.add('-rotate-90');
+        folderIcon.classList.remove('fa-folder-open');
+        folderIcon.classList.add('fa-folder');
+      }
+    }
+
+    // Toggle All Groups
+    function toggleAllGroups(open) {
+      [1, 2].forEach(gid => {
+        groupOpenState[gid] = open;
+        const children = document.getElementById(`children-group-${gid}`);
+        const chevron = document.getElementById(`chevron-group-${gid}`);
+        const folderIcon = document.getElementById(`folder-icon-group-${gid}`);
+        if (children) {
+          if (open) {
+            children.classList.remove('hidden');
+            chevron.classList.remove('-rotate-90');
+            folderIcon.classList.remove('fa-folder');
+            folderIcon.classList.add('fa-folder-open');
+          } else {
+            children.classList.add('hidden');
+            chevron.classList.add('-rotate-90');
+            folderIcon.classList.remove('fa-folder-open');
+            folderIcon.classList.add('fa-folder');
+          }
+        }
+      });
+    }
+
+    // Search & Filter Tree Nodes
+    function filterTree(keyword) {
+      const q = keyword.trim().toLowerCase();
+      const clearBtn = document.getElementById('clearTreeSearch');
+      if (q.length > 0) {
+        clearBtn.classList.remove('hidden');
+      } else {
+        clearBtn.classList.add('hidden');
+      }
+
+      let matchCount = 0;
+      const allNodes = document.querySelectorAll('.tree-node');
+
+      if (!q) {
+        // Show all
+        allNodes.forEach(node => {
+          node.style.display = '';
+        });
+        document.getElementById('tree-group-box-1').style.display = '';
+        document.getElementById('tree-group-box-2').style.display = '';
+        document.getElementById('treeStats').textContent = `Hiển thị 30/30 công nghệ`;
+        return;
+      }
+
+      // Check each group
+      [1, 2].forEach(gid => {
+        const groupEl = document.getElementById(`tree-group-box-${gid}`);
+        const children = document.getElementById(`children-group-${gid}`);
+        const nodes = children.querySelectorAll('.tree-node');
+        let groupMatchCount = 0;
+
+        nodes.forEach(node => {
+          const title = node.getAttribute('data-title') || '';
+          const desc = node.getAttribute('data-desc') || '';
+          const kw = node.getAttribute('data-keywords') || '';
+          const id = node.getAttribute('data-id') || '';
+
+          if (title.includes(q) || desc.includes(q) || kw.includes(q) || id === q) {
+            node.style.display = '';
+            groupMatchCount++;
+            matchCount++;
+          } else {
+            node.style.display = 'none';
+          }
+        });
+
+        if (groupMatchCount > 0) {
+          groupEl.style.display = '';
+          // Auto expand group with matches
+          children.classList.remove('hidden');
+          const chevron = document.getElementById(`chevron-group-${gid}`);
+          const folderIcon = document.getElementById(`folder-icon-group-${gid}`);
+          if (chevron) chevron.classList.remove('-rotate-90');
+          if (folderIcon) {
+            folderIcon.classList.remove('fa-folder');
+            folderIcon.classList.add('fa-folder-open');
+          }
+          groupOpenState[gid] = true;
+        } else {
+          groupEl.style.display = 'none';
+        }
+      });
+
+      document.getElementById('treeStats').textContent = `Tìm thấy ${matchCount}/30 công nghệ`;
+    }
+
+    function clearTreeSearchInput() {
+      const input = document.getElementById('treeSearchInput');
+      input.value = '';
+      filterTree('');
+      input.focus();
+    }
+
+    function switchStrategicProduct(id) {
+      currentId = parseInt(id);
+      renderTree();
+      renderProductView();
+
+      // Smooth scroll active item into view
+      setTimeout(() => {
+        const activeItem = document.getElementById(`tree-item-${currentId}`);
+        if (activeItem) {
+          activeItem.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+      }, 50);
+
+      // Update URL query string without page reload
+      const newUrl = `${window.location.pathname}?id=${currentId}`;
+      window.history.replaceState({ id: currentId }, '', newUrl);
+    }
+
+    function renderProductView() {
+      const sp = STRATEGIC_PRODUCTS.find(p => p.id === currentId) || STRATEGIC_PRODUCTS[0];
+      
+      // Update Banner
+      const isGroup1 = sp.group === 1;
+      const bannerContainer = document.getElementById('bannerContainer');
+      const groupBadge = document.getElementById('groupBadge');
+      const groupBadgeText = document.getElementById('groupBadgeText');
+      const categoryTitle = document.getElementById('categoryTitle');
+      const categoryDesc = document.getElementById('categoryDesc');
+      const productCount = document.getElementById('productCount');
+      const breadcrumbCategory = document.getElementById('breadcrumbCategory');
+
+      if (isGroup1) {
+        bannerContainer.className = "bg-gradient-to-r from-slate-900 via-blue-950 to-slate-900 text-white py-10 border-b border-blue-900/60 relative overflow-hidden transition-colors duration-500";
+        groupBadge.className = "inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 border-blue-400/30 text-xs font-semibold mb-3 border";
+        groupBadgeText.textContent = "ĐÃ CÓ THỊ TRƯỜNG & TÁC ĐỘNG KINH TẾ TRỰC TIẾP";
+        breadcrumbCategory.className = "text-blue-400 font-semibold";
+      } else {
+        bannerContainer.className = "bg-gradient-to-r from-slate-900 via-emerald-950 to-slate-900 text-white py-10 border-b border-emerald-900/60 relative overflow-hidden transition-colors duration-500";
+        groupBadge.className = "inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 border-emerald-400/30 text-xs font-semibold mb-3 border";
+        groupBadgeText.textContent = "NHÓM 2 • ĐỘNG LỰC TƯƠNG LAI & BẢO ĐẢM TỰ CHỦ AN NINH, QUỐC PHÒNG";
+        breadcrumbCategory.className = "text-emerald-400 font-semibold";
+      }
+
+      categoryTitle.textContent = `${sp.id}. ${sp.title}`;
+      categoryDesc.textContent = sp.description || `Danh mục sản phẩm, giải pháp công nghệ chiến lược Make in Viet Nam tiêu biểu được thẩm định kỹ thuật và hỗ trợ mở rộng thị trường.`;
+      productCount.textContent = sp.products.length;
+
+      // Reset product search and render cards
+      const searchInput = document.getElementById('productSearchInput');
+      if (searchInput) searchInput.value = '';
+      const clearBtn = document.getElementById('clearProductSearch');
+      if (clearBtn) clearBtn.classList.add('hidden');
+      filterProductCards('');
+    }
+
+    // Filter Product Cards by Name / Code / Enterprise / Summary
+    function filterProductCards(keyword) {
+      const q = (keyword || '').trim().toLowerCase();
+      const clearBtn = document.getElementById('clearProductSearch');
+      if (clearBtn) {
+        if (q) clearBtn.classList.remove('hidden');
+        else clearBtn.classList.add('hidden');
+      }
+
+      const sp = STRATEGIC_PRODUCTS.find(p => p.id === currentId) || STRATEGIC_PRODUCTS[0];
+      const grid = document.getElementById('productListGrid');
+      const countEl = document.getElementById('productFilterCount');
+
+      const filtered = sp.products.filter(prod => {
+        if (!q) return true;
+        return (prod.name && prod.name.toLowerCase().includes(q)) ||
+               (prod.code && prod.code.toLowerCase().includes(q)) ||
+               (prod.enterprise && prod.enterprise.toLowerCase().includes(q)) ||
+               (prod.summary && prod.summary.toLowerCase().includes(q));
+      });
+
+      if (countEl) {
+        if (q) {
+          countEl.innerHTML = 'Tìm thấy <strong class="text-blue-600 font-bold">' + filtered.length + '</strong> / ' + sp.products.length + ' sản phẩm';
+        } else {
+          countEl.innerHTML = 'Tổng số: <strong class="text-slate-800 font-bold">' + sp.products.length + '</strong> sản phẩm';
+        }
+      }
+
+      grid.innerHTML = '';
+      if (filtered.length === 0) {
+        grid.innerHTML = `
+          <div class="col-span-full py-12 text-center bg-white rounded-2xl border border-dashed border-slate-300">
+            <i class="fa-solid fa-box-open text-4xl text-slate-300 mb-3 block"></i>
+            <p class="text-sm font-semibold text-slate-700">Không tìm thấy sản phẩm nào phù hợp với từ khóa "${keyword}"</p>
+            <p class="text-xs text-slate-400 mt-1">Vui lòng thử tìm với từ khóa khác hoặc xóa bộ lọc.</p>
+            <button onclick="clearProductSearchInput()" class="mt-4 px-4 py-1.5 bg-blue-50 text-blue-700 rounded-lg text-xs font-semibold hover:bg-blue-100 transition">
+              Xóa tìm kiếm
+            </button>
+          </div>
+        `;
+        return;
+      }
+
+      filtered.forEach(prod => {
+        const card = document.createElement('div');
+        card.className = "bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl hover:border-red-500/40 hover:-translate-y-1 transition duration-300 group flex flex-col justify-between";
+        card.innerHTML = `
+          <div>
+            <div class="relative overflow-hidden h-44 bg-slate-900">
+              <img src="${prod.image}" alt="${prod.name}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-90 group-hover:opacity-100">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+              <div class="absolute top-3 left-3 flex items-center gap-1.5">
+                <span class="bg-black/60 backdrop-blur-md text-white text-[12px] font-bold px-2.5 py-1 rounded-md uppercase font-mono shadow-sm">
+                  ${prod.code}
+                </span>
+              </div>
+            </div>
+
+            <div class="p-5 space-y-2.5">
+              <div class="flex items-center justify-between text-[13px] text-slate-500 pb-2 border-b border-slate-100">
+                <span class="font-medium text-slate-700 flex items-center gap-1 truncate max-w-[180px]">
+                  <i class="fa-solid fa-building text-slate-400"></i> ${prod.enterprise}
+                </span>
+                <span class="text-slate-400 shrink-0">2026</span>
+              </div>
+
+              <h4 class="text-base font-bold text-slate-900 group-hover:text-red-700 transition leading-snug line-clamp-2">
+                <a href="san-pham-chi-tiet.html?id=${prod.code}&name=${encodeURIComponent(prod.name)}">${prod.name}</a>
+              </h4>
+
+              <p class="text-xs text-slate-600 leading-relaxed line-clamp-3">
+                ${prod.summary}
+              </p>
+            </div>
+          </div>
+
+          <div class="px-5 pb-5 pt-3 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-[13px] ${prod.status === 'commercial' ? 'text-emerald-600' : 'text-amber-600'} font-semibold flex items-center gap-1">
+              <i class="fa-solid fa-circle-check text-[12px]"></i> ${prod.statusText}
+            </span>
+            <a href="san-pham-chi-tiet.html?id=${prod.code}&name=${encodeURIComponent(prod.name)}" class="text-xs font-bold text-red-700 hover:text-red-800 flex items-center gap-1 group/btn">
+              <span>Xem chi tiết</span>
+              <i class="fa-solid fa-arrow-right text-[12px] group-hover/btn:translate-x-1 transition"></i>
+            </a>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    function clearProductSearchInput() {
+      const input = document.getElementById('productSearchInput');
+      if (input) {
+        input.value = '';
+        filterProductCards('');
+      }
+    }
+
+    // Initialize
+    renderTree();
+    renderProductView();
+  </script>
+
+  <script src="prototype-nav.js"></script>
+</body>
+</html>

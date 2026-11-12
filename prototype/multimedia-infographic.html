@@ -1,0 +1,1588 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chuyên trang Infographic & Dữ liệu KH&CN | Nền tảng Truyền thông Quốc Gia</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontSize: {
+            xs: ['0.90625rem', { lineHeight: '1.35rem' }],
+            sm: ['1rem', { lineHeight: '1.45rem' }],
+            base: ['1.125rem', { lineHeight: '1.65rem' }],
+            lg: ['1.25rem', { lineHeight: '1.8rem' }],
+            xl: ['1.375rem', { lineHeight: '1.9rem' }],
+            '2xl': ['1.625rem', { lineHeight: '2.1rem' }],
+            '3xl': ['2rem', { lineHeight: '2.45rem' }]
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <style> body { font-family: 'Inter', sans-serif; } 
+    .max-w-7xl {
+      max-width: 90rem !important;
+    }
+    header h1 {
+      font-family: 'Inter', sans-serif !important;
+      font-weight: 800 !important;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col">
+
+  
+  <!-- TOP UTILITY BAR -->
+  <div class="bg-[#0b1c33] text-slate-200 text-[13px] py-1.5 px-4 sm:px-8 border-b border-slate-700/60">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-2">
+      <div class="flex items-center gap-3">
+        <span class="text-slate-300"><i class="fa-regular fa-calendar-check mr-1.5 text-amber-400"></i>Thứ Năm, 27/08/2026</span>
+      </div>
+      <div class="flex items-center gap-4 text-[13px]">
+        <div class="flex items-center gap-1.5 font-bold">
+          <span class="text-amber-400">VI</span>
+          <span class="text-slate-500">/</span>
+          <span class="text-slate-400 hover:text-white cursor-pointer">EN</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="bg-white border-b border-slate-200 shadow-sm sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 py-3.5 flex flex-col md:flex-row items-center justify-between gap-4">
+      <a href="index.html" class="flex items-center gap-3.5 group">
+        <img src="quoc-huy.png" alt="Quốc huy Việt Nam" class="w-12 h-12 object-contain drop-shadow">
+        <div>
+          <h1 class="text-[14.5px] sm:text-[16px] md:text-[18px] lg:text-[18px] xl:text-[20px] font-extrabold tracking-normal uppercase text-red-800 leading-normal">
+            <span class="block whitespace-nowrap">NỀN TẢNG TRUYỀN THÔNG SỐ QUỐC GIA VỀ KHOA HỌC, CÔNG NGHỆ,</span>
+            <span class="block mt-1 whitespace-nowrap">ĐỔI MỚI SÁNG TẠO VÀ CHUYỂN ĐỔI SỐ</span>
+          </h1>
+        </div>
+      </a>
+
+      <div class="w-full md:w-80 lg:w-96 relative shrink-0">
+        <input type="text" placeholder="Tìm kiếm tin bài, video, ảnh..." 
+          class="w-full pl-10 pr-4 py-2 bg-slate-100 focus:bg-white text-[13px] rounded-full border border-slate-300 focus:outline-none focus:ring-2 focus:ring-red-700/30">
+        <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-[13px]"></i>
+      </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="bg-white border-t border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-8 flex items-center justify-start overflow-visible gap-1.5 text-[14.5px] sm:text-[15px] font-semibold">
+        <a href="index.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Trang chủ
+      </a>
+        
+        <!-- CHÍNH SÁCH VỚI SUBMENU CHỈ ĐẠO ĐIỀU HÀNH & GIẢI THÍCH CHÍNH SÁCH -->
+        <div class="relative group">
+          <a href="chinh-sach.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap flex items-center gap-1 cursor-pointer">
+        <span>Chính sách</span>
+        <i class="fa-solid fa-chevron-down text-[9px] text-slate-400 group-hover:text-red-800 group-hover:rotate-180 transition-transform"></i>
+      </a>
+          <!-- Submenu dropdown -->
+          <div class="hidden group-hover:block absolute left-0 top-full bg-white rounded-xl shadow-2xl border border-slate-200 py-1.5 min-w-[260px] z-50 text-slate-800 font-normal">
+            <a href="chinh-sach.html" class="flex items-center gap-2.5 px-4 py-2.5 hover:bg-slate-50 text-slate-700 hover:text-red-800 text-[14.5px] transition font-semibold">
+              <i class="fa-solid fa-landmark text-slate-400 text-[14.5px]"></i>
+              <span>Chính sách & Thể chế</span>
+            </a>
+            <a href="chinh-sach-tra-cuu.html" class="flex items-center gap-2.5 px-4 py-2.5 hover:bg-slate-50 text-slate-700 hover:text-red-800 text-[14.5px] transition font-semibold">
+              <i class="fa-solid fa-file-signature text-red-700 text-[14.5px]"></i>
+              <span>Chỉ đạo điều hành</span>
+            </a>
+            <a href="giai-thich-chinh-sach.html" class="flex items-center gap-2.5 px-4 py-2.5 hover:bg-slate-50 text-slate-700 hover:text-red-800 font-semibold text-[14.5px] transition">
+              <i class="fa-solid fa-chalkboard-user text-amber-600 text-[14.5px]"></i>
+              <span>Giải thích chính sách</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="san-pham-cong-nghe.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Sản phẩm KH&CN
+      </a>
+        <a href="bao-cao-danh-gia-truyen-thong.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Báo cáo thường niên
+      </a>
+        <a href="tai-lieu-video.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Kho tư liệu
+      </a>
+        
+        <a href="su-kien.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">Sự kiện</a>
+
+        
+        <a href="hoi-dap.html" class="px-4 py-2.5 text-slate-700 hover:text-red-800 hover:bg-slate-50 transition whitespace-nowrap">
+        Hỏi đáp
+      </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- BREADCRUMB -->
+  <div class="bg-slate-100 border-b border-slate-200 py-3 px-4 sm:px-8 text-xs">
+    <div class="max-w-7xl mx-auto flex items-center gap-2 text-slate-500">
+      <a href="index.html" class="hover:text-red-800"><i class="fa-solid fa-house"></i> Trang chủ</a>
+      <span>/</span>
+      <a href="multimedia.html" class="hover:text-red-800">Tin tức & Media</a>
+      <span>/</span>
+      <span class="text-red-800 font-semibold">Chuyên trang Infographic & Dữ liệu KH&CN</span>
+    </div>
+  </div>
+
+  <!-- FORMAT PILLS BAR -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-8 pt-8 pb-4 w-full">
+    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-4 border-b border-slate-200">
+      <div>
+        <h2 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight flex items-center gap-3">
+          Chuyên trang Infographic & Dữ liệu KH&CN
+        </h2>
+        <p class="text-xs text-slate-500 mt-1">Cổng thông tin chuyên sâu tích hợp bộ lọc 9 chuyên mục trọng điểm Quốc gia</p>
+      </div>
+
+      <div class="flex flex-wrap items-center gap-1.5 text-xs font-semibold">
+        
+      <a href="multimedia.html" class="px-4 py-1.5 rounded-full bg-white border border-slate-300 text-slate-700 hover:bg-slate-100 transition flex items-center gap-1.5">
+        <i class="fa-regular fa-newspaper text-[12px] text-amber-400"></i> Tin tổng hợp
+      </a>
+    
+
+      <a href="multimedia-video.html" class="px-4 py-1.5 rounded-full bg-white border border-slate-300 text-slate-700 hover:bg-slate-100 transition flex items-center gap-1.5">
+        <i class="fa-solid fa-play text-[12px] text-red-600"></i> Video
+      </a>
+    
+
+      <a href="multimedia-photo.html" class="px-4 py-1.5 rounded-full bg-white border border-slate-300 text-slate-700 hover:bg-slate-100 transition flex items-center gap-1.5">
+        <i class="fa-regular fa-image text-[12px] text-blue-600"></i> Ảnh
+      </a>
+    
+
+      <a href="multimedia-infographic.html" class="px-4 py-1.5 rounded-full bg-[#0e2646] text-white font-bold shadow-md transition flex items-center gap-1.5">
+        <i class="fa-solid fa-chart-pie text-[12px] text-amber-400"></i> Infographic
+      </a>
+    
+
+      <a href="multimedia-books.html" class="px-4 py-1.5 rounded-full bg-white border border-slate-300 text-slate-700 hover:bg-slate-100 transition flex items-center gap-1.5">
+        <i class="fa-solid fa-book text-[12px] text-amber-700"></i> Books
+      </a>
+    
+
+      <a href="multimedia-voice.html" class="px-4 py-1.5 rounded-full bg-white border border-slate-300 text-slate-700 hover:bg-slate-100 transition flex items-center gap-1.5">
+        <i class="fa-solid fa-podcast text-[12px] text-purple-600"></i> Voice
+      </a>
+    
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- MAIN 2-COLUMN LAYOUT -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-8 py-4 w-full flex-1">
+    
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      
+      
+    <!-- CÂY PHÂN LOẠI 9 CHUYÊN MỤC TRỌNG ĐIỂM (LEFT SIDEBAR) -->
+    <aside class="lg:col-span-4 xl:col-span-3.5 space-y-4">
+      <div class="bg-white rounded-2xl border border-slate-200 p-4 sm:p-5 shadow-sm space-y-4 sticky top-24">
+        
+        <!-- Header -->
+        <div class="flex items-center justify-between pb-3 border-b border-slate-100">
+          <div class="flex items-center gap-2.5">
+            <div class="w-8 h-8 rounded-xl bg-red-100 text-red-800 flex items-center justify-center text-sm font-bold shadow-xs">
+              <i class="fa-solid fa-layer-group"></i>
+            </div>
+            <div>
+              <h3 class="font-black text-xs sm:text-sm text-slate-900 tracking-tight uppercase">Chuyên mục trọng điểm</h3>
+              <p class="text-[12px] text-slate-500 font-medium">Phân loại dữ liệu theo chuyên mục</p>
+            </div>
+          </div>
+          <span class="text-[12px] bg-red-50 text-red-700 font-bold px-2 py-0.5 rounded-full border border-red-200">9 Mục</span>
+        </div>
+
+        <!-- Quick Search inside category list -->
+        <div class="relative">
+          <input type="text" id="treeSearchInput" onkeyup="handleTreeSearch(this.value)" placeholder="Tìm kiếm chuyên mục..." 
+            class="w-full pl-8 pr-3 py-1.5 bg-slate-50 focus:bg-white text-xs rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-red-700/20">
+          <i class="fa-solid fa-magnifying-glass absolute left-2.5 top-1/2 -translate-y-1/2 text-slate-400 text-[12px]"></i>
+        </div>
+
+        <!-- Root Node: Tất cả chuyên mục -->
+        <button onclick="filterByTopic('all', this)" 
+                class="category-btn active-category-btn w-full flex items-center justify-between p-2.5 rounded-xl text-xs font-bold transition-all text-left bg-[#0e2646] text-white shadow-sm border border-transparent" 
+                data-topic-target="all"
+                data-topic-name="Tất cả chuyên mục">
+          <div class="flex items-center gap-2.5 min-w-0">
+            <div class="category-icon-box w-7 h-7 rounded-lg bg-white/20 text-white flex items-center justify-center text-xs shrink-0 transition"
+                 data-orig-bg="bg-white/20" data-orig-text="text-white">
+              <i class="fa-solid fa-border-all"></i>
+            </div>
+            <span class="category-name text-xs font-bold text-white truncate transition block">Tất cả chuyên mục</span>
+          </div>
+          <span class="category-count text-[13px] font-mono font-bold px-2 py-0.5 rounded-full bg-white/20 text-white shrink-0 transition"
+                data-orig-bg="bg-white/20" data-orig-text="text-white">
+            134 bài
+          </span>
+        </button>
+
+        <!-- Category List -->
+        <div id="treeContainer" class="space-y-1.5 max-h-[calc(100vh-320px)] overflow-y-auto pr-1">
+          
+      <button onclick="filterByTopic('khcn', this)" 
+              class="category-btn w-full flex items-center justify-between p-2.5 rounded-xl text-xs font-bold transition-all text-left bg-white text-slate-700 hover:bg-slate-100 hover:text-slate-900 border border-slate-200/80 shadow-xs group" 
+              data-topic-target="khcn"
+              data-topic-name="Khoa học & Công nghệ">
+        <div class="flex items-center gap-2.5 min-w-0">
+          <div class="category-icon-box w-7 h-7 rounded-lg bg-indigo-50 text-indigo-700 flex items-center justify-center text-xs shrink-0 shadow-xs transition"
+               data-orig-bg="bg-indigo-50" data-orig-text="text-indigo-700">
+            <i class="fa-solid fa-flask-vial"></i>
+          </div>
+          <span class="category-name text-xs font-bold text-slate-800 truncate transition block">
+            Khoa học & Công nghệ
+          </span>
+        </div>
+        
+        <span class="category-count text-[13px] font-mono font-bold px-2 py-0.5 rounded-full bg-indigo-50 text-indigo-700 shrink-0 transition"
+              data-orig-bg="bg-indigo-50" data-orig-text="text-indigo-700">
+          18 bài
+        </span>
+      </button>
+    
+
+      <button onclick="filterByTopic('dmst', this)" 
+              class="category-btn w-full flex items-center justify-between p-2.5 rounded-xl text-xs font-bold transition-all text-left bg-white text-slate-700 hover:bg-slate-100 hover:text-slate-900 border border-slate-200/80 shadow-xs group" 
+              data-topic-target="dmst"
+              data-topic-name="Đổi mới sáng tạo">
+        <div class="flex items-center gap-2.5 min-w-0">
+          <div class="category-icon-box w-7 h-7 rounded-lg bg-amber-50 text-amber-700 flex items-center justify-center text-xs shrink-0 shadow-xs transition"
+               data-orig-bg="bg-amber-50" data-orig-text="text-amber-700">
+            <i class="fa-solid fa-lightbulb"></i>
+          </div>
+          <span class="category-name text-xs font-bold text-slate-800 truncate transition block">
+            Đổi mới sáng tạo
+          </span>
+        </div>
+        
+        <span class="category-count text-[13px] font-mono font-bold px-2 py-0.5 rounded-full bg-amber-50 text-amber-700 shrink-0 transition"
+              data-orig-bg="bg-amber-50" data-orig-text="text-amber-700">
+          16 bài
+        </span>
+      </button>
+    
+
+      <button onclick="filterByTopic('shtt', this)" 
+              class="category-btn w-full flex items-center justify-between p-2.5 rounded-xl text-xs font-bold transition-all text-left bg-white text-slate-700 hover:bg-slate-100 hover:text-slate-900 border border-slate-200/80 shadow-xs group" 
+              data-topic-target="shtt"
+              data-topic-name="Sở hữu trí tuệ">
+        <div class="flex items-center gap-2.5 min-w-0">
+          <div class="category-icon-box w-7 h-7 rounded-lg bg-rose-50 text-rose-700 flex items-center justify-center text-xs shrink-0 shadow-xs transition"
+               data-orig-bg="bg-rose-50" data-orig-text="text-rose-700">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <span class="category-name text-xs font-bold text-slate-800 truncate transition block">
+            Sở hữu trí tuệ
+          </span>
+        </div>
+        
+        <span class="category-count text-[13px] font-mono font-bold px-2 py-0.5 rounded-full bg-rose-50 text-rose-700 shrink-0 transition"
+              data-orig-bg="bg-rose-50" data-orig-text="text-rose-700">
+          12 bài
+        </span>
+      </button>
+    
+
+      <button onclick="filterByTopic('tcdl', this)" 
+              class="category-btn w-full flex items-center justify-between p-2.5 rounded-xl text-xs font-bold transition-all text-left bg-white text-slate-700 hover:bg-slate-100 hover:text-slate-900 border border-slate-200/80 shadow-xs group" 
+              data-topic-target="tcdl"
+              data-topic-name="Tiêu chuẩn, Đo lường, CL">
+        <div class="flex items-center gap-2.5 min-w-0">
+          <div class="category-icon-box w-7 h-7 rounded-lg bg-emerald-50 text-emerald-700 flex items-center justify-center text-xs shrink-0 shadow-xs transition"
+               data-orig-bg="bg-emerald-50" data-orig-text="text-emerald-700">
+            <i class="fa-solid fa-ruler-combined"></i>
+          </div>
+          <span class="category-name text-xs font-bold text-slate-800 truncate transition block">
+            Tiêu chuẩn, Đo lường, CL
+          </span>
+        </div>
+        
+        <span class="category-count text-[13px] font-mono font-bold px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 shrink-0 transition"
+              data-orig-bg="bg-emerald-50" data-orig-text="text-emerald-700">
+          13 bài
+        </span>
+      </button>
+    
+
+      <button onclick="filterByTopic('nlnt', this)" 
+              class="category-btn w-full flex items-center justify-between p-2.5 rounded-xl text-xs font-bold transition-all text-left bg-white text-slate-700 hover:bg-slate-100 hover:text-slate-900 border border-slate-200/80 shadow-xs group" 
+              data-topic-target="nlnt"
+              data-topic-name="Năng lượng nguyên tử">
+        <div class="flex items-center gap-2.5 min-w-0">
+          <div class="category-icon-box w-7 h-7 rounded-lg bg-purple-50 text-purple-700 flex items-center justify-center text-xs shrink-0 shadow-xs transition"
+               data-orig-bg="bg-purple-50" data-orig-text="text-purple-700">
+            <i class="fa-solid fa-atom"></i>
+          </div>
+          <span class="category-name text-xs font-bold text-slate-800 truncate transition block">
+            Năng lượng nguyên tử
+          </span>
+        </div>
+        
+        <span class="category-count text-[13px] font-mono font-bold px-2 py-0.5 rounded-full bg-purple-50 text-purple-700 shrink-0 transition"
+              data-orig-bg="bg-purple-50" data-orig-text="text-purple-700">
+          11 bài
+        </span>
+      </button>
+    
+
+      <button onclick="filterByTopic('bcvt', this)" 
+              class="category-btn w-full flex items-center justify-between p-2.5 rounded-xl text-xs font-bold transition-all text-left bg-white text-slate-700 hover:bg-slate-100 hover:text-slate-900 border border-slate-200/80 shadow-xs group" 
+              data-topic-target="bcvt"
+              data-topic-name="Bưu chính - Viễn thông">
+        <div class="flex items-center gap-2.5 min-w-0">
+          <div class="category-icon-box w-7 h-7 rounded-lg bg-teal-50 text-teal-700 flex items-center justify-center text-xs shrink-0 shadow-xs transition"
+               data-orig-bg="bg-teal-50" data-orig-text="text-teal-700">
+            <i class="fa-solid fa-tower-broadcast"></i>
+          </div>
+          <span class="category-name text-xs font-bold text-slate-800 truncate transition block">
+            Bưu chính - Viễn thông
+          </span>
+        </div>
+        
+        <span class="category-count text-[13px] font-mono font-bold px-2 py-0.5 rounded-full bg-teal-50 text-teal-700 shrink-0 transition"
+              data-orig-bg="bg-teal-50" data-orig-text="text-teal-700">
+          13 bài
+        </span>
+      </button>
+    
+
+      <button onclick="filterByTopic('cds', this)" 
+              class="category-btn w-full flex items-center justify-between p-2.5 rounded-xl text-xs font-bold transition-all text-left bg-white text-slate-700 hover:bg-slate-100 hover:text-slate-900 border border-slate-200/80 shadow-xs group" 
+              data-topic-target="cds"
+              data-topic-name="Chuyển đổi số & KNS">
+        <div class="flex items-center gap-2.5 min-w-0">
+          <div class="category-icon-box w-7 h-7 rounded-lg bg-blue-50 text-blue-700 flex items-center justify-center text-xs shrink-0 shadow-xs transition"
+               data-orig-bg="bg-blue-50" data-orig-text="text-blue-700">
+            <i class="fa-solid fa-network-wired"></i>
+          </div>
+          <span class="category-name text-xs font-bold text-slate-800 truncate transition block">
+            Chuyển đổi số & KNS
+          </span>
+        </div>
+        
+        <span class="category-count text-[13px] font-mono font-bold px-2 py-0.5 rounded-full bg-blue-50 text-blue-700 shrink-0 transition"
+              data-orig-bg="bg-blue-50" data-orig-text="text-blue-700">
+          17 bài
+        </span>
+      </button>
+    
+
+      <button onclick="filterByTopic('cns-ai', this)" 
+              class="category-btn w-full flex items-center justify-between p-2.5 rounded-xl text-xs font-bold transition-all text-left bg-white text-slate-700 hover:bg-slate-100 hover:text-slate-900 border border-slate-200/80 shadow-xs group" 
+              data-topic-target="cns-ai"
+              data-topic-name="Công nghiệp số & AI">
+        <div class="flex items-center gap-2.5 min-w-0">
+          <div class="category-icon-box w-7 h-7 rounded-lg bg-sky-50 text-sky-700 flex items-center justify-center text-xs shrink-0 shadow-xs transition"
+               data-orig-bg="bg-sky-50" data-orig-text="text-sky-700">
+            <i class="fa-solid fa-microchip"></i>
+          </div>
+          <span class="category-name text-xs font-bold text-slate-800 truncate transition block">
+            Công nghiệp số & AI
+          </span>
+        </div>
+        
+        <span class="category-count text-[13px] font-mono font-bold px-2 py-0.5 rounded-full bg-sky-50 text-sky-700 shrink-0 transition"
+              data-orig-bg="bg-sky-50" data-orig-text="text-sky-700">
+          19 bài
+        </span>
+      </button>
+    
+
+      <button onclick="filterByTopic('kts', this)" 
+              class="category-btn w-full flex items-center justify-between p-2.5 rounded-xl text-xs font-bold transition-all text-left bg-white text-slate-700 hover:bg-slate-100 hover:text-slate-900 border border-slate-200/80 shadow-xs group" 
+              data-topic-target="kts"
+              data-topic-name="Kinh tế số - Xã hội số">
+        <div class="flex items-center gap-2.5 min-w-0">
+          <div class="category-icon-box w-7 h-7 rounded-lg bg-cyan-50 text-cyan-700 flex items-center justify-center text-xs shrink-0 shadow-xs transition"
+               data-orig-bg="bg-cyan-50" data-orig-text="text-cyan-700">
+            <i class="fa-solid fa-chart-line"></i>
+          </div>
+          <span class="category-name text-xs font-bold text-slate-800 truncate transition block">
+            Kinh tế số - Xã hội số
+          </span>
+        </div>
+        
+        <span class="category-count text-[13px] font-mono font-bold px-2 py-0.5 rounded-full bg-cyan-50 text-cyan-700 shrink-0 transition"
+              data-orig-bg="bg-cyan-50" data-orig-text="text-cyan-700">
+          15 bài
+        </span>
+      </button>
+    
+        </div>
+
+        <!-- Footer Shortcut -->
+        <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-[13px] text-slate-500">
+          <span class="text-[12px]">Cổng chuyên mục gốc:</span>
+          <a href="index.html#chuyen-de-sec" class="text-red-700 hover:text-red-800 font-bold flex items-center gap-1 text-[13px]">
+            Xem chi tiết 9 mục <i class="fa-solid fa-arrow-right text-[11px]"></i>
+          </a>
+        </div>
+
+      </div>
+    </aside>
+  
+
+      <!-- NỘI DUNG CHUYÊN TRANG INFOGRAPHIC (RIGHT AREA) -->
+      <section class="lg:col-span-8 xl:col-span-8.5 space-y-6">
+
+        <!-- FILTER & ACTIVE TOPIC BAR -->
+        <div class="bg-white rounded-xl border border-slate-200 p-4 shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+          <div class="flex items-center gap-2.5">
+            <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">Đang xem:</span>
+            <span id="activeTopicLabel" class="text-xs sm:text-sm font-black text-red-800 bg-red-50 px-3 py-1 rounded-lg border border-red-200">
+              Tất cả chuyên mục
+            </span>
+            <span id="filteredCount" class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded font-bold">
+              12 infographic
+            </span>
+          </div>
+
+          <div class="flex items-center gap-2">
+            <button onclick="resetFilter()" class="text-[13px] text-slate-500 hover:text-red-700 font-medium px-2 py-1 rounded hover:bg-slate-100 transition flex items-center gap-1">
+              <i class="fa-solid fa-rotate-left"></i> Đặt lại
+            </button>
+            <div class="h-4 w-[1px] bg-slate-200"></div>
+            <select class="text-xs bg-slate-50 border border-slate-200 rounded-lg px-2.5 py-1 text-slate-700 focus:outline-none focus:ring-1 focus:ring-red-700">
+              <option>Mới nhất</option>
+              <option>Phổ biến nhất</option>
+              <option>Chỉ số chiến lược</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- EMPTY STATE NOTICE -->
+        <div id="emptyStateNotice" class="hidden p-12 bg-white rounded-2xl border border-dashed border-slate-300 text-center space-y-3">
+          <div class="w-14 h-14 bg-emerald-50 text-emerald-700 rounded-full flex items-center justify-center mx-auto text-xl">
+            <i class="fa-solid fa-chart-pie"></i>
+          </div>
+          <h4 class="font-bold text-slate-800 text-sm">Chưa có infographic cho chuyên mục này</h4>
+          <p class="text-xs text-slate-500 max-w-sm mx-auto">Vui lòng chọn chuyên mục khác hoặc nhấn "Đặt lại" để xem toàn bộ đồ họa số liệu.</p>
+          <button onclick="resetFilter()" class="px-4 py-1.5 bg-emerald-700 text-white text-xs font-bold rounded-lg hover:bg-emerald-800 transition">
+            Xem tất cả chuyên mục
+          </button>
+        </div>
+
+        <!-- INFOGRAPHICS GRID -->
+        <div id="cardsGrid" class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5">
+          
+    <div class="content-card-item bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition duration-300 group flex flex-col justify-between" 
+         data-topic="cns-ai" data-subtopic="cns-bandan">
+      <div>
+        <!-- Infographic Preview Box -->
+        <div class="relative h-60 bg-slate-900 overflow-hidden cursor-pointer" onclick="openInfoModal('info1')">
+          <img src="https://mic.mediacdn.vn/zoom/560_350/639352410187198464/2026/7/22/infonhiem-vu-trong-tam-theo-nq57-17847170026701073134971-0-0-960-1536-crop-178471703575979911915.png" alt="Nhiệm vụ trọng tâm lĩnh vực Công nghiệp công nghệ số theo Nghị quyết 57/NQ-TW" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          
+          <div class="absolute inset-0 bg-slate-950/25 group-hover:bg-slate-950/50 transition flex items-center justify-center">
+            <div class="w-12 h-12 rounded-full bg-emerald-600/90 text-white flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:bg-emerald-500 transition">
+              <i class="fa-solid fa-magnifying-glass-plus text-base"></i>
+            </div>
+          </div>
+
+          <!-- Format Tag -->
+          <span class="absolute bottom-2.5 right-2.5 bg-black/80 backdrop-blur-xs text-white text-[12px] font-mono px-2 py-0.5 rounded font-bold shadow-xs">
+            <i class="fa-solid fa-vector-square mr-1 text-emerald-400"></i> Vector PDF & PNG 4K
+          </span>
+
+          <!-- Topic Badge -->
+          <span class="absolute top-2.5 left-2.5 text-[12px] font-bold px-2 py-0.5 rounded-full border shadow-xs bg-sky-50 text-sky-700 border-sky-200">
+            Công nghiệp số & AI
+          </span>
+        </div>
+
+        <!-- Content -->
+        <div class="p-4 space-y-2.5">
+          <h4 class="font-bold text-xs sm:text-sm text-slate-900 group-hover:text-emerald-700 transition line-clamp-2 leading-snug cursor-pointer" onclick="openInfoModal('info1')">
+            Nhiệm vụ trọng tâm lĩnh vực Công nghiệp công nghệ số theo Nghị quyết 57/NQ-TW
+          </h4>
+
+          <!-- Key Metrics Pills -->
+          <div class="flex flex-wrap gap-1.5 pt-1">
+            
+              <span class="bg-emerald-50 text-emerald-800 border border-emerald-200/60 text-[12px] font-bold px-2 py-0.5 rounded-md">
+                35% GDP số
+              </span>
+            
+              <span class="bg-emerald-50 text-emerald-800 border border-emerald-200/60 text-[12px] font-bold px-2 py-0.5 rounded-md">
+                50.000 Kỹ sư bán dẫn
+              </span>
+            
+              <span class="bg-emerald-50 text-emerald-800 border border-emerald-200/60 text-[12px] font-bold px-2 py-0.5 rounded-md">
+                Top 3 ASEAN
+              </span>
+            
+          </div>
+
+          <p class="text-[13px] text-slate-500 line-clamp-2 leading-relaxed pt-0.5">
+            Đồ họa tổng hợp hệ thống chỉ tiêu chiến lược và các giải pháp ưu tiên phát triển công nghệ cao quốc gia.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card Action & Meta -->
+      <div class="px-4 py-2.5 bg-slate-50 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+        <span class="text-[13px] text-slate-400"><i class="fa-regular fa-calendar"></i> 22/07/2026</span>
+        <div class="flex items-center gap-2">
+          <button onclick="openInfoModal('info1')" class="text-emerald-700 hover:text-emerald-800 font-bold text-[13px] flex items-center gap-1">
+            Xem ảnh <i class="fa-solid fa-arrow-up-right-from-square text-[11px]"></i>
+          </button>
+          <button onclick="alert('Đang tải file vector PDF chất lượng cao...');" class="p-1 text-slate-400 hover:text-emerald-700 transition" title="Tải PDF">
+            <i class="fa-solid fa-download text-xs"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  
+
+    <div class="content-card-item bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition duration-300 group flex flex-col justify-between" 
+         data-topic="dmst" data-subtopic="dmst-gii">
+      <div>
+        <!-- Infographic Preview Box -->
+        <div class="relative h-60 bg-slate-900 overflow-hidden cursor-pointer" onclick="openInfoModal('info2')">
+          <img src="https://mic.mediacdn.vn/zoom/560_350/639352410187198464/2026/10/14/-ra-co-hoi-lon-de-viet-nam-but-pha-vuon-len-nho-khoa-hoc-cong-nghe-doi-moi-sang-tao-va-chuyen-doi-so-17640627816141183624283-0-12-555-900-crop-17919600076031954114266.jpg" alt="Khung tiêu chí và 52 chỉ số Đổi mới sáng tạo cấp địa phương (PII 2026)" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          
+          <div class="absolute inset-0 bg-slate-950/25 group-hover:bg-slate-950/50 transition flex items-center justify-center">
+            <div class="w-12 h-12 rounded-full bg-emerald-600/90 text-white flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:bg-emerald-500 transition">
+              <i class="fa-solid fa-magnifying-glass-plus text-base"></i>
+            </div>
+          </div>
+
+          <!-- Format Tag -->
+          <span class="absolute bottom-2.5 right-2.5 bg-black/80 backdrop-blur-xs text-white text-[12px] font-mono px-2 py-0.5 rounded font-bold shadow-xs">
+            <i class="fa-solid fa-vector-square mr-1 text-emerald-400"></i> Infographic Bản đồ số
+          </span>
+
+          <!-- Topic Badge -->
+          <span class="absolute top-2.5 left-2.5 text-[12px] font-bold px-2 py-0.5 rounded-full border shadow-xs bg-amber-50 text-amber-700 border-amber-200">
+            Đổi mới sáng tạo
+          </span>
+        </div>
+
+        <!-- Content -->
+        <div class="p-4 space-y-2.5">
+          <h4 class="font-bold text-xs sm:text-sm text-slate-900 group-hover:text-emerald-700 transition line-clamp-2 leading-snug cursor-pointer" onclick="openInfoModal('info2')">
+            Khung tiêu chí và 52 chỉ số Đổi mới sáng tạo cấp địa phương (PII 2026)
+          </h4>
+
+          <!-- Key Metrics Pills -->
+          <div class="flex flex-wrap gap-1.5 pt-1">
+            
+              <span class="bg-emerald-50 text-emerald-800 border border-emerald-200/60 text-[12px] font-bold px-2 py-0.5 rounded-md">
+                63 Tỉnh thành
+              </span>
+            
+              <span class="bg-emerald-50 text-emerald-800 border border-emerald-200/60 text-[12px] font-bold px-2 py-0.5 rounded-md">
+                7 Trụ cột PII
+              </span>
+            
+              <span class="bg-emerald-50 text-emerald-800 border border-emerald-200/60 text-[12px] font-bold px-2 py-0.5 rounded-md">
+                Chuẩn WIPO
+              </span>
+            
+          </div>
+
+          <p class="text-[13px] text-slate-500 line-clamp-2 leading-relaxed pt-0.5">
+            Bản đồ nhiệt phân hạng năng lực đổi mới sáng tạo và hiệu quả chuyển giao công nghệ 63 tỉnh thành.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card Action & Meta -->
+      <div class="px-4 py-2.5 bg-slate-50 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+        <span class="text-[13px] text-slate-400"><i class="fa-regular fa-calendar"></i> 14/10/2026</span>
+        <div class="flex items-center gap-2">
+          <button onclick="openInfoModal('info2')" class="text-emerald-700 hover:text-emerald-800 font-bold text-[13px] flex items-center gap-1">
+            Xem ảnh <i class="fa-solid fa-arrow-up-right-from-square text-[11px]"></i>
+          </button>
+          <button onclick="alert('Đang tải file vector PDF chất lượng cao...');" class="p-1 text-slate-400 hover:text-emerald-700 transition" title="Tải PDF">
+            <i class="fa-solid fa-download text-xs"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  
+
+    <div class="content-card-item bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition duration-300 group flex flex-col justify-between" 
+         data-topic="khcn" data-subtopic="khcn-quy">
+      <div>
+        <!-- Infographic Preview Box -->
+        <div class="relative h-60 bg-slate-900 overflow-hidden cursor-pointer" onclick="openInfoModal('info3')">
+          <img src="https://mic.mediacdn.vn/zoom/560_350/639352410187198464/2026/7/15/17841043433002202274505589963961g5081826906783871663963b1b54d59fcf7da010eddec1a1e716-17841200796081718906185-0-0-1600-2560-crop-1784120358326590592508.jpg" alt="Chính sách tài chính đặc thù: Hỗ trợ tới 100% kinh phí cho 10 nhóm công nghệ chiến lược" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          
+          <div class="absolute inset-0 bg-slate-950/25 group-hover:bg-slate-950/50 transition flex items-center justify-center">
+            <div class="w-12 h-12 rounded-full bg-emerald-600/90 text-white flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:bg-emerald-500 transition">
+              <i class="fa-solid fa-magnifying-glass-plus text-base"></i>
+            </div>
+          </div>
+
+          <!-- Format Tag -->
+          <span class="absolute bottom-2.5 right-2.5 bg-black/80 backdrop-blur-xs text-white text-[12px] font-mono px-2 py-0.5 rounded font-bold shadow-xs">
+            <i class="fa-solid fa-vector-square mr-1 text-emerald-400"></i> Biểu đồ quy trình
+          </span>
+
+          <!-- Topic Badge -->
+          <span class="absolute top-2.5 left-2.5 text-[12px] font-bold px-2 py-0.5 rounded-full border shadow-xs bg-indigo-50 text-indigo-700 border-indigo-200">
+            Khoa học & Công nghệ
+          </span>
+        </div>
+
+        <!-- Content -->
+        <div class="p-4 space-y-2.5">
+          <h4 class="font-bold text-xs sm:text-sm text-slate-900 group-hover:text-emerald-700 transition line-clamp-2 leading-snug cursor-pointer" onclick="openInfoModal('info3')">
+            Chính sách tài chính đặc thù: Hỗ trợ tới 100% kinh phí cho 10 nhóm công nghệ chiến lược
+          </h4>
+
+          <!-- Key Metrics Pills -->
+          <div class="flex flex-wrap gap-1.5 pt-1">
+            
+              <span class="bg-emerald-50 text-emerald-800 border border-emerald-200/60 text-[12px] font-bold px-2 py-0.5 rounded-md">
+                100% Kinh phí Lab
+              </span>
+            
+              <span class="bg-emerald-50 text-emerald-800 border border-emerald-200/60 text-[12px] font-bold px-2 py-0.5 rounded-md">
+                Miễn thuế 4 năm
+              </span>
+            
+              <span class="bg-emerald-50 text-emerald-800 border border-emerald-200/60 text-[12px] font-bold px-2 py-0.5 rounded-md">
+                Quỹ 5.000 tỷ
+              </span>
+            
+          </div>
+
+          <p class="text-[13px] text-slate-500 line-clamp-2 leading-relaxed pt-0.5">
+            Cơ chế cấp kinh phí khoán chi đến sản phẩm cuối cùng và bảo lãnh rủi ro khoa học mạo hiểm.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card Action & Meta -->
+      <div class="px-4 py-2.5 bg-slate-50 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+        <span class="text-[13px] text-slate-400"><i class="fa-regular fa-calendar"></i> 15/07/2026</span>
+        <div class="flex items-center gap-2">
+          <button onclick="openInfoModal('info3')" class="text-emerald-700 hover:text-emerald-800 font-bold text-[13px] flex items-center gap-1">
+            Xem ảnh <i class="fa-solid fa-arrow-up-right-from-square text-[11px]"></i>
+          </button>
+          <button onclick="alert('Đang tải file vector PDF chất lượng cao...');" class="p-1 text-slate-400 hover:text-emerald-700 transition" title="Tải PDF">
+            <i class="fa-solid fa-download text-xs"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  
+
+    <div class="content-card-item bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition duration-300 group flex flex-col justify-between" 
+         data-topic="shtt" data-subtopic="shtt-sangche">
+      <div>
+        <!-- Infographic Preview Box -->
+        <div class="relative h-60 bg-slate-900 overflow-hidden cursor-pointer" onclick="openInfoModal('info4')">
+          <img src="https://mic.mediacdn.vn/zoom/560_350/639352410187198464/2026/8/4/trien-khai-nghi-quyet-57-quan-tri-ket-qua-de-tao-chuyen-bien-thuc-chat-00-00-05-20-still001-17858601249781615368464-0-85-1080-1813-crop-1785860154238822347715.png" alt="Quy trình 5 bước nộp đơn và cấp Bằng sáng chế nhanh qua Trợ lý số SHTT" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          
+          <div class="absolute inset-0 bg-slate-950/25 group-hover:bg-slate-950/50 transition flex items-center justify-center">
+            <div class="w-12 h-12 rounded-full bg-emerald-600/90 text-white flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:bg-emerald-500 transition">
+              <i class="fa-solid fa-magnifying-glass-plus text-base"></i>
+            </div>
+          </div>
+
+          <!-- Format Tag -->
+          <span class="absolute bottom-2.5 right-2.5 bg-black/80 backdrop-blur-xs text-white text-[12px] font-mono px-2 py-0.5 rounded font-bold shadow-xs">
+            <i class="fa-solid fa-vector-square mr-1 text-emerald-400"></i> Sơ đồ luồng (Flowchart)
+          </span>
+
+          <!-- Topic Badge -->
+          <span class="absolute top-2.5 left-2.5 text-[12px] font-bold px-2 py-0.5 rounded-full border shadow-xs bg-rose-50 text-rose-700 border-rose-200">
+            Sở hữu trí tuệ
+          </span>
+        </div>
+
+        <!-- Content -->
+        <div class="p-4 space-y-2.5">
+          <h4 class="font-bold text-xs sm:text-sm text-slate-900 group-hover:text-emerald-700 transition line-clamp-2 leading-snug cursor-pointer" onclick="openInfoModal('info4')">
+            Quy trình 5 bước nộp đơn và cấp Bằng sáng chế nhanh qua Trợ lý số SHTT
+          </h4>
+
+          <!-- Key Metrics Pills -->
+          <div class="flex flex-wrap gap-1.5 pt-1">
+            
+              <span class="bg-emerald-50 text-emerald-800 border border-emerald-200/60 text-[12px] font-bold px-2 py-0.5 rounded-md">
+                Dưới 9 tháng
+              </span>
+            
+              <span class="bg-emerald-50 text-emerald-800 border border-emerald-200/60 text-[12px] font-bold px-2 py-0.5 rounded-md">
+                100% Nộp online
+              </span>
+            
+              <span class="bg-emerald-50 text-emerald-800 border border-emerald-200/60 text-[12px] font-bold px-2 py-0.5 rounded-md">
+                Giảm 50% phí
+              </span>
+            
+          </div>
+
+          <p class="text-[13px] text-slate-500 line-clamp-2 leading-relaxed pt-0.5">
+            Hướng dẫn trực quan hóa thủ tục thẩm định hình thức, tra cứu đối chứng và công bố đơn SHTT.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card Action & Meta -->
+      <div class="px-4 py-2.5 bg-slate-50 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+        <span class="text-[13px] text-slate-400"><i class="fa-regular fa-calendar"></i> 04/08/2026</span>
+        <div class="flex items-center gap-2">
+          <button onclick="openInfoModal('info4')" class="text-emerald-700 hover:text-emerald-800 font-bold text-[13px] flex items-center gap-1">
+            Xem ảnh <i class="fa-solid fa-arrow-up-right-from-square text-[11px]"></i>
+          </button>
+          <button onclick="alert('Đang tải file vector PDF chất lượng cao...');" class="p-1 text-slate-400 hover:text-emerald-700 transition" title="Tải PDF">
+            <i class="fa-solid fa-download text-xs"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  
+
+    <div class="content-card-item bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition duration-300 group flex flex-col justify-between" 
+         data-topic="tcdl" data-subtopic="tcdl-tcvn">
+      <div>
+        <!-- Infographic Preview Box -->
+        <div class="relative h-60 bg-slate-900 overflow-hidden cursor-pointer" onclick="openInfoModal('info5')">
+          <img src="https://mic.mediacdn.vn/zoom/560_350/639352410187198464/2026/6/10/11f747-17810778474411408485072-0-0-1281-2049-crop-1781077881745336430234.jpg" alt="Bộ tiêu chuẩn Quốc gia TCVN cho Hộ chiếu số và Truy xuất nguồn gốc sản phẩm" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          
+          <div class="absolute inset-0 bg-slate-950/25 group-hover:bg-slate-950/50 transition flex items-center justify-center">
+            <div class="w-12 h-12 rounded-full bg-emerald-600/90 text-white flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:bg-emerald-500 transition">
+              <i class="fa-solid fa-magnifying-glass-plus text-base"></i>
+            </div>
+          </div>
+
+          <!-- Format Tag -->
+          <span class="absolute bottom-2.5 right-2.5 bg-black/80 backdrop-blur-xs text-white text-[12px] font-mono px-2 py-0.5 rounded font-bold shadow-xs">
+            <i class="fa-solid fa-vector-square mr-1 text-emerald-400"></i> Đồ họa kỹ thuật
+          </span>
+
+          <!-- Topic Badge -->
+          <span class="absolute top-2.5 left-2.5 text-[12px] font-bold px-2 py-0.5 rounded-full border shadow-xs bg-emerald-50 text-emerald-700 border-emerald-200">
+            Tiêu chuẩn, Đo lường, CL
+          </span>
+        </div>
+
+        <!-- Content -->
+        <div class="p-4 space-y-2.5">
+          <h4 class="font-bold text-xs sm:text-sm text-slate-900 group-hover:text-emerald-700 transition line-clamp-2 leading-snug cursor-pointer" onclick="openInfoModal('info5')">
+            Bộ tiêu chuẩn Quốc gia TCVN cho Hộ chiếu số và Truy xuất nguồn gốc sản phẩm
+          </h4>
+
+          <!-- Key Metrics Pills -->
+          <div class="flex flex-wrap gap-1.5 pt-1">
+            
+              <span class="bg-emerald-50 text-emerald-800 border border-emerald-200/60 text-[12px] font-bold px-2 py-0.5 rounded-md">
+                Chuẩn GS1 quốc tế
+              </span>
+            
+              <span class="bg-emerald-50 text-emerald-800 border border-emerald-200/60 text-[12px] font-bold px-2 py-0.5 rounded-md">
+                Mã QR động
+              </span>
+            
+              <span class="bg-emerald-50 text-emerald-800 border border-emerald-200/60 text-[12px] font-bold px-2 py-0.5 rounded-md">
+                Liên thông EU
+              </span>
+            
+          </div>
+
+          <p class="text-[13px] text-slate-500 line-clamp-2 leading-relaxed pt-0.5">
+            Quy chuẩn kỹ thuật cấu trúc dữ liệu chuỗi cung ứng chống gian lận thương mại điện tử.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card Action & Meta -->
+      <div class="px-4 py-2.5 bg-slate-50 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+        <span class="text-[13px] text-slate-400"><i class="fa-regular fa-calendar"></i> 10/06/2026</span>
+        <div class="flex items-center gap-2">
+          <button onclick="openInfoModal('info5')" class="text-emerald-700 hover:text-emerald-800 font-bold text-[13px] flex items-center gap-1">
+            Xem ảnh <i class="fa-solid fa-arrow-up-right-from-square text-[11px]"></i>
+          </button>
+          <button onclick="alert('Đang tải file vector PDF chất lượng cao...');" class="p-1 text-slate-400 hover:text-emerald-700 transition" title="Tải PDF">
+            <i class="fa-solid fa-download text-xs"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  
+
+    <div class="content-card-item bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition duration-300 group flex flex-col justify-between" 
+         data-topic="bcvt" data-subtopic="bcvt-5g">
+      <div>
+        <!-- Infographic Preview Box -->
+        <div class="relative h-60 bg-slate-900 overflow-hidden cursor-pointer" onclick="openInfoModal('info6')">
+          <img src="https://mic.mediacdn.vn/zoom/560_350/639352410187198464/2026/6/30/1-485985-17828039681562016587819-0-0-677-1083-crop-1782804203350692812851.jpg" alt="Bản đồ phủ sóng mạng băng rộng di động 5G thương mại toàn quốc 2026" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          
+          <div class="absolute inset-0 bg-slate-950/25 group-hover:bg-slate-950/50 transition flex items-center justify-center">
+            <div class="w-12 h-12 rounded-full bg-emerald-600/90 text-white flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:bg-emerald-500 transition">
+              <i class="fa-solid fa-magnifying-glass-plus text-base"></i>
+            </div>
+          </div>
+
+          <!-- Format Tag -->
+          <span class="absolute bottom-2.5 right-2.5 bg-black/80 backdrop-blur-xs text-white text-[12px] font-mono px-2 py-0.5 rounded font-bold shadow-xs">
+            <i class="fa-solid fa-vector-square mr-1 text-emerald-400"></i> Bản đồ tương tác
+          </span>
+
+          <!-- Topic Badge -->
+          <span class="absolute top-2.5 left-2.5 text-[12px] font-bold px-2 py-0.5 rounded-full border shadow-xs bg-teal-50 text-teal-700 border-teal-200">
+            Bưu chính - Viễn thông
+          </span>
+        </div>
+
+        <!-- Content -->
+        <div class="p-4 space-y-2.5">
+          <h4 class="font-bold text-xs sm:text-sm text-slate-900 group-hover:text-emerald-700 transition line-clamp-2 leading-snug cursor-pointer" onclick="openInfoModal('info6')">
+            Bản đồ phủ sóng mạng băng rộng di động 5G thương mại toàn quốc 2026
+          </h4>
+
+          <!-- Key Metrics Pills -->
+          <div class="flex flex-wrap gap-1.5 pt-1">
+            
+              <span class="bg-emerald-50 text-emerald-800 border border-emerald-200/60 text-[12px] font-bold px-2 py-0.5 rounded-md">
+                99% KCN phủ sóng
+              </span>
+            
+              <span class="bg-emerald-50 text-emerald-800 border border-emerald-200/60 text-[12px] font-bold px-2 py-0.5 rounded-md">
+                Trạm Open RAN
+              </span>
+            
+              <span class="bg-emerald-50 text-emerald-800 border border-emerald-200/60 text-[12px] font-bold px-2 py-0.5 rounded-md">
+                Băng thông >1Gbps
+              </span>
+            
+          </div>
+
+          <p class="text-[13px] text-slate-500 line-clamp-2 leading-relaxed pt-0.5">
+            Quy hoạch phân bổ tần số và tiến độ triển khai các trạm phát sóng công nghệ cao Make in Viet Nam.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card Action & Meta -->
+      <div class="px-4 py-2.5 bg-slate-50 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+        <span class="text-[13px] text-slate-400"><i class="fa-regular fa-calendar"></i> 30/06/2026</span>
+        <div class="flex items-center gap-2">
+          <button onclick="openInfoModal('info6')" class="text-emerald-700 hover:text-emerald-800 font-bold text-[13px] flex items-center gap-1">
+            Xem ảnh <i class="fa-solid fa-arrow-up-right-from-square text-[11px]"></i>
+          </button>
+          <button onclick="alert('Đang tải file vector PDF chất lượng cao...');" class="p-1 text-slate-400 hover:text-emerald-700 transition" title="Tải PDF">
+            <i class="fa-solid fa-download text-xs"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  
+
+    <div class="content-card-item bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition duration-300 group flex flex-col justify-between" 
+         data-topic="cds" data-subtopic="cds-chinhphuso">
+      <div>
+        <!-- Infographic Preview Box -->
+        <div class="relative h-60 bg-slate-900 overflow-hidden cursor-pointer" onclick="openInfoModal('info7')">
+          <img src="https://mic.mediacdn.vn/zoom/560_350/639352410187198464/2026/7/5/010720260217-z7995724204418-508c2e1e10b4f7a6202bcc181fe889bb-17832367327091491676511-84-0-1334-2000-crop-1783236737333193343026.jpg" alt="Kiến trúc Chính phủ điện tử 3.0 và Trục kết nối dữ liệu số Quốc gia (LGSP/NDXP)" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          
+          <div class="absolute inset-0 bg-slate-950/25 group-hover:bg-slate-950/50 transition flex items-center justify-center">
+            <div class="w-12 h-12 rounded-full bg-emerald-600/90 text-white flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:bg-emerald-500 transition">
+              <i class="fa-solid fa-magnifying-glass-plus text-base"></i>
+            </div>
+          </div>
+
+          <!-- Format Tag -->
+          <span class="absolute bottom-2.5 right-2.5 bg-black/80 backdrop-blur-xs text-white text-[12px] font-mono px-2 py-0.5 rounded font-bold shadow-xs">
+            <i class="fa-solid fa-vector-square mr-1 text-emerald-400"></i> Sơ đồ kiến trúc
+          </span>
+
+          <!-- Topic Badge -->
+          <span class="absolute top-2.5 left-2.5 text-[12px] font-bold px-2 py-0.5 rounded-full border shadow-xs bg-blue-50 text-blue-700 border-blue-200">
+            Chuyển đổi số & KNS
+          </span>
+        </div>
+
+        <!-- Content -->
+        <div class="p-4 space-y-2.5">
+          <h4 class="font-bold text-xs sm:text-sm text-slate-900 group-hover:text-emerald-700 transition line-clamp-2 leading-snug cursor-pointer" onclick="openInfoModal('info7')">
+            Kiến trúc Chính phủ điện tử 3.0 và Trục kết nối dữ liệu số Quốc gia (LGSP/NDXP)
+          </h4>
+
+          <!-- Key Metrics Pills -->
+          <div class="flex flex-wrap gap-1.5 pt-1">
+            
+              <span class="bg-emerald-50 text-emerald-800 border border-emerald-200/60 text-[12px] font-bold px-2 py-0.5 rounded-md">
+                100% CSDL liên thông
+              </span>
+            
+              <span class="bg-emerald-50 text-emerald-800 border border-emerald-200/60 text-[12px] font-bold px-2 py-0.5 rounded-md">
+                Kho dữ liệu mở
+              </span>
+            
+              <span class="bg-emerald-50 text-emerald-800 border border-emerald-200/60 text-[12px] font-bold px-2 py-0.5 rounded-md">
+                API dùng chung
+              </span>
+            
+          </div>
+
+          <p class="text-[13px] text-slate-500 line-clamp-2 leading-relaxed pt-0.5">
+            Mô hình kết nối đa tầng giữa các bộ ngành trung ương và 63 hệ thống thông tin địa phương.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card Action & Meta -->
+      <div class="px-4 py-2.5 bg-slate-50 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+        <span class="text-[13px] text-slate-400"><i class="fa-regular fa-calendar"></i> 05/07/2026</span>
+        <div class="flex items-center gap-2">
+          <button onclick="openInfoModal('info7')" class="text-emerald-700 hover:text-emerald-800 font-bold text-[13px] flex items-center gap-1">
+            Xem ảnh <i class="fa-solid fa-arrow-up-right-from-square text-[11px]"></i>
+          </button>
+          <button onclick="alert('Đang tải file vector PDF chất lượng cao...');" class="p-1 text-slate-400 hover:text-emerald-700 transition" title="Tải PDF">
+            <i class="fa-solid fa-download text-xs"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  
+
+    <div class="content-card-item bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition duration-300 group flex flex-col justify-between" 
+         data-topic="nlnt" data-subtopic="nlnt-buxa">
+      <div>
+        <!-- Infographic Preview Box -->
+        <div class="relative h-60 bg-slate-900 overflow-hidden cursor-pointer" onclick="openInfoModal('info8')">
+          <img src="https://mic.mediacdn.vn/zoom/560_350/639352410187198464/2026/10/1/photo-1790847167008-17908471698471336286555-0-74-805-1362-crop-17908474063331642582332.jpeg" alt="Chuỗi ứng dụng Bức xạ nguyên tử và Đồng vị phóng xạ vì mục đích hòa bình" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          
+          <div class="absolute inset-0 bg-slate-950/25 group-hover:bg-slate-950/50 transition flex items-center justify-center">
+            <div class="w-12 h-12 rounded-full bg-emerald-600/90 text-white flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:bg-emerald-500 transition">
+              <i class="fa-solid fa-magnifying-glass-plus text-base"></i>
+            </div>
+          </div>
+
+          <!-- Format Tag -->
+          <span class="absolute bottom-2.5 right-2.5 bg-black/80 backdrop-blur-xs text-white text-[12px] font-mono px-2 py-0.5 rounded font-bold shadow-xs">
+            <i class="fa-solid fa-vector-square mr-1 text-emerald-400"></i> Infographic Khoa học
+          </span>
+
+          <!-- Topic Badge -->
+          <span class="absolute top-2.5 left-2.5 text-[12px] font-bold px-2 py-0.5 rounded-full border shadow-xs bg-purple-50 text-purple-700 border-purple-200">
+            Năng lượng nguyên tử
+          </span>
+        </div>
+
+        <!-- Content -->
+        <div class="p-4 space-y-2.5">
+          <h4 class="font-bold text-xs sm:text-sm text-slate-900 group-hover:text-emerald-700 transition line-clamp-2 leading-snug cursor-pointer" onclick="openInfoModal('info8')">
+            Chuỗi ứng dụng Bức xạ nguyên tử và Đồng vị phóng xạ vì mục đích hòa bình
+          </h4>
+
+          <!-- Key Metrics Pills -->
+          <div class="flex flex-wrap gap-1.5 pt-1">
+            
+              <span class="bg-emerald-50 text-emerald-800 border border-emerald-200/60 text-[12px] font-bold px-2 py-0.5 rounded-md">
+                Y học hạt nhân
+              </span>
+            
+              <span class="bg-emerald-50 text-emerald-800 border border-emerald-200/60 text-[12px] font-bold px-2 py-0.5 rounded-md">
+                Chiếu xạ nông sản
+              </span>
+            
+              <span class="bg-emerald-50 text-emerald-800 border border-emerald-200/60 text-[12px] font-bold px-2 py-0.5 rounded-md">
+                Quan trắc an toàn
+              </span>
+            
+          </div>
+
+          <p class="text-[13px] text-slate-500 line-clamp-2 leading-relaxed pt-0.5">
+            Tổng hợp các thành tựu ứng dụng công nghệ hạt nhân trong điều trị ung thư và bảo quản thực phẩm.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card Action & Meta -->
+      <div class="px-4 py-2.5 bg-slate-50 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+        <span class="text-[13px] text-slate-400"><i class="fa-regular fa-calendar"></i> 01/10/2026</span>
+        <div class="flex items-center gap-2">
+          <button onclick="openInfoModal('info8')" class="text-emerald-700 hover:text-emerald-800 font-bold text-[13px] flex items-center gap-1">
+            Xem ảnh <i class="fa-solid fa-arrow-up-right-from-square text-[11px]"></i>
+          </button>
+          <button onclick="alert('Đang tải file vector PDF chất lượng cao...');" class="p-1 text-slate-400 hover:text-emerald-700 transition" title="Tải PDF">
+            <i class="fa-solid fa-download text-xs"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  
+
+    <div class="content-card-item bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition duration-300 group flex flex-col justify-between" 
+         data-topic="kts" data-subtopic="kts-doanhnghiep">
+      <div>
+        <!-- Infographic Preview Box -->
+        <div class="relative h-60 bg-slate-900 overflow-hidden cursor-pointer" onclick="openInfoModal('info9')">
+          <img src="https://mic.mediacdn.vn/zoom/560_350/639352410187198464/2026/9/5/hinh-anh-3-1788612734007824862819-0-28-320-540-crop-17886128305461553852089.jpeg" alt="Cơ cấu và Tỷ trọng đóng góp của Kinh tế số trong GDP Quốc gia giai đoạn 2021 - 2026" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          
+          <div class="absolute inset-0 bg-slate-950/25 group-hover:bg-slate-950/50 transition flex items-center justify-center">
+            <div class="w-12 h-12 rounded-full bg-emerald-600/90 text-white flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:bg-emerald-500 transition">
+              <i class="fa-solid fa-magnifying-glass-plus text-base"></i>
+            </div>
+          </div>
+
+          <!-- Format Tag -->
+          <span class="absolute bottom-2.5 right-2.5 bg-black/80 backdrop-blur-xs text-white text-[12px] font-mono px-2 py-0.5 rounded font-bold shadow-xs">
+            <i class="fa-solid fa-vector-square mr-1 text-emerald-400"></i> Biểu đồ kinh tế
+          </span>
+
+          <!-- Topic Badge -->
+          <span class="absolute top-2.5 left-2.5 text-[12px] font-bold px-2 py-0.5 rounded-full border shadow-xs bg-cyan-50 text-cyan-700 border-cyan-200">
+            Kinh tế số - Xã hội số
+          </span>
+        </div>
+
+        <!-- Content -->
+        <div class="p-4 space-y-2.5">
+          <h4 class="font-bold text-xs sm:text-sm text-slate-900 group-hover:text-emerald-700 transition line-clamp-2 leading-snug cursor-pointer" onclick="openInfoModal('info9')">
+            Cơ cấu và Tỷ trọng đóng góp của Kinh tế số trong GDP Quốc gia giai đoạn 2021 - 2026
+          </h4>
+
+          <!-- Key Metrics Pills -->
+          <div class="flex flex-wrap gap-1.5 pt-1">
+            
+              <span class="bg-emerald-50 text-emerald-800 border border-emerald-200/60 text-[12px] font-bold px-2 py-0.5 rounded-md">
+                Đạt 22.5% GDP
+              </span>
+            
+              <span class="bg-emerald-50 text-emerald-800 border border-emerald-200/60 text-[12px] font-bold px-2 py-0.5 rounded-md">
+                80.000 DN công nghệ
+              </span>
+            
+              <span class="bg-emerald-50 text-emerald-800 border border-emerald-200/60 text-[12px] font-bold px-2 py-0.5 rounded-md">
+                Tăng trưởng 25%/năm
+              </span>
+            
+          </div>
+
+          <p class="text-[13px] text-slate-500 line-clamp-2 leading-relaxed pt-0.5">
+            Số liệu thống kê chính thức từ Bộ Thông tin và Truyền thông và Tổng cục Thống kê.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card Action & Meta -->
+      <div class="px-4 py-2.5 bg-slate-50 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+        <span class="text-[13px] text-slate-400"><i class="fa-regular fa-calendar"></i> 05/09/2026</span>
+        <div class="flex items-center gap-2">
+          <button onclick="openInfoModal('info9')" class="text-emerald-700 hover:text-emerald-800 font-bold text-[13px] flex items-center gap-1">
+            Xem ảnh <i class="fa-solid fa-arrow-up-right-from-square text-[11px]"></i>
+          </button>
+          <button onclick="alert('Đang tải file vector PDF chất lượng cao...');" class="p-1 text-slate-400 hover:text-emerald-700 transition" title="Tải PDF">
+            <i class="fa-solid fa-download text-xs"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  
+
+    <div class="content-card-item bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition duration-300 group flex flex-col justify-between" 
+         data-topic="cns-ai" data-subtopic="cns-ai-sub">
+      <div>
+        <!-- Infographic Preview Box -->
+        <div class="relative h-60 bg-slate-900 overflow-hidden cursor-pointer" onclick="openInfoModal('info10')">
+          <img src="https://mic.mediacdn.vn/zoom/560_350/639352410187198464/2026/8/19/1-312818-1787108290347-1787108291436142272388-34-0-747-1140-crop-1787108965852827414626.jpg" alt="Mô hình Ngôn ngữ lớn (LLM) Tiếng Việt: Kiến trúc dữ liệu và Hạ tầng huấn luyện" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          
+          <div class="absolute inset-0 bg-slate-950/25 group-hover:bg-slate-950/50 transition flex items-center justify-center">
+            <div class="w-12 h-12 rounded-full bg-emerald-600/90 text-white flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:bg-emerald-500 transition">
+              <i class="fa-solid fa-magnifying-glass-plus text-base"></i>
+            </div>
+          </div>
+
+          <!-- Format Tag -->
+          <span class="absolute bottom-2.5 right-2.5 bg-black/80 backdrop-blur-xs text-white text-[12px] font-mono px-2 py-0.5 rounded font-bold shadow-xs">
+            <i class="fa-solid fa-vector-square mr-1 text-emerald-400"></i> Sơ đồ công nghệ AI
+          </span>
+
+          <!-- Topic Badge -->
+          <span class="absolute top-2.5 left-2.5 text-[12px] font-bold px-2 py-0.5 rounded-full border shadow-xs bg-sky-50 text-sky-700 border-sky-200">
+            Công nghiệp số & AI
+          </span>
+        </div>
+
+        <!-- Content -->
+        <div class="p-4 space-y-2.5">
+          <h4 class="font-bold text-xs sm:text-sm text-slate-900 group-hover:text-emerald-700 transition line-clamp-2 leading-snug cursor-pointer" onclick="openInfoModal('info10')">
+            Mô hình Ngôn ngữ lớn (LLM) Tiếng Việt: Kiến trúc dữ liệu và Hạ tầng huấn luyện
+          </h4>
+
+          <!-- Key Metrics Pills -->
+          <div class="flex flex-wrap gap-1.5 pt-1">
+            
+              <span class="bg-emerald-50 text-emerald-800 border border-emerald-200/60 text-[12px] font-bold px-2 py-0.5 rounded-md">
+                100 tỷ Tham số
+              </span>
+            
+              <span class="bg-emerald-50 text-emerald-800 border border-emerald-200/60 text-[12px] font-bold px-2 py-0.5 rounded-md">
+                Dữ liệu tiếng Việt sạch
+              </span>
+            
+              <span class="bg-emerald-50 text-emerald-800 border border-emerald-200/60 text-[12px] font-bold px-2 py-0.5 rounded-md">
+                Bảo vệ chủ quyền số
+              </span>
+            
+          </div>
+
+          <p class="text-[13px] text-slate-500 line-clamp-2 leading-relaxed pt-0.5">
+            Mô hình đào tạo kết hợp giữa tri thức văn hóa, pháp lý Việt Nam và siêu tính toán đám mây.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card Action & Meta -->
+      <div class="px-4 py-2.5 bg-slate-50 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+        <span class="text-[13px] text-slate-400"><i class="fa-regular fa-calendar"></i> 19/08/2026</span>
+        <div class="flex items-center gap-2">
+          <button onclick="openInfoModal('info10')" class="text-emerald-700 hover:text-emerald-800 font-bold text-[13px] flex items-center gap-1">
+            Xem ảnh <i class="fa-solid fa-arrow-up-right-from-square text-[11px]"></i>
+          </button>
+          <button onclick="alert('Đang tải file vector PDF chất lượng cao...');" class="p-1 text-slate-400 hover:text-emerald-700 transition" title="Tải PDF">
+            <i class="fa-solid fa-download text-xs"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  
+
+    <div class="content-card-item bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition duration-300 group flex flex-col justify-between" 
+         data-topic="dmst" data-subtopic="dmst-vuonuom">
+      <div>
+        <!-- Infographic Preview Box -->
+        <div class="relative h-60 bg-slate-900 overflow-hidden cursor-pointer" onclick="openInfoModal('info11')">
+          <img src="https://mic.mediacdn.vn/zoom/560_350/639352410187198464/2026/6/4/193a1dc3b882c5d4824935e681108196-17805569889081545410304-0-0-754-1206-crop-17805570812211936123531.jpg" alt="Mạng lưới 20 Trung tâm Đổi mới sáng tạo Quốc gia và Tech Hubs liên kết vùng" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          
+          <div class="absolute inset-0 bg-slate-950/25 group-hover:bg-slate-950/50 transition flex items-center justify-center">
+            <div class="w-12 h-12 rounded-full bg-emerald-600/90 text-white flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:bg-emerald-500 transition">
+              <i class="fa-solid fa-magnifying-glass-plus text-base"></i>
+            </div>
+          </div>
+
+          <!-- Format Tag -->
+          <span class="absolute bottom-2.5 right-2.5 bg-black/80 backdrop-blur-xs text-white text-[12px] font-mono px-2 py-0.5 rounded font-bold shadow-xs">
+            <i class="fa-solid fa-vector-square mr-1 text-emerald-400"></i> Bản đồ mạng lưới
+          </span>
+
+          <!-- Topic Badge -->
+          <span class="absolute top-2.5 left-2.5 text-[12px] font-bold px-2 py-0.5 rounded-full border shadow-xs bg-amber-50 text-amber-700 border-amber-200">
+            Đổi mới sáng tạo
+          </span>
+        </div>
+
+        <!-- Content -->
+        <div class="p-4 space-y-2.5">
+          <h4 class="font-bold text-xs sm:text-sm text-slate-900 group-hover:text-emerald-700 transition line-clamp-2 leading-snug cursor-pointer" onclick="openInfoModal('info11')">
+            Mạng lưới 20 Trung tâm Đổi mới sáng tạo Quốc gia và Tech Hubs liên kết vùng
+          </h4>
+
+          <!-- Key Metrics Pills -->
+          <div class="flex flex-wrap gap-1.5 pt-1">
+            
+              <span class="bg-emerald-50 text-emerald-800 border border-emerald-200/60 text-[12px] font-bold px-2 py-0.5 rounded-md">
+                20 Trung tâm ĐMST
+              </span>
+            
+              <span class="bg-emerald-50 text-emerald-800 border border-emerald-200/60 text-[12px] font-bold px-2 py-0.5 rounded-md">
+                Hà Nội - Đà Nẵng - HCM
+              </span>
+            
+              <span class="bg-emerald-50 text-emerald-800 border border-emerald-200/60 text-[12px] font-bold px-2 py-0.5 rounded-md">
+                Vườn ươm mở
+              </span>
+            
+          </div>
+
+          <p class="text-[13px] text-slate-500 line-clamp-2 leading-relaxed pt-0.5">
+            Không gian kết nối giữa trường viện, quỹ đầu tư mạo hiểm và doanh nghiệp kỳ lân công nghệ.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card Action & Meta -->
+      <div class="px-4 py-2.5 bg-slate-50 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+        <span class="text-[13px] text-slate-400"><i class="fa-regular fa-calendar"></i> 04/06/2026</span>
+        <div class="flex items-center gap-2">
+          <button onclick="openInfoModal('info11')" class="text-emerald-700 hover:text-emerald-800 font-bold text-[13px] flex items-center gap-1">
+            Xem ảnh <i class="fa-solid fa-arrow-up-right-from-square text-[11px]"></i>
+          </button>
+          <button onclick="alert('Đang tải file vector PDF chất lượng cao...');" class="p-1 text-slate-400 hover:text-emerald-700 transition" title="Tải PDF">
+            <i class="fa-solid fa-download text-xs"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  
+
+    <div class="content-card-item bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition duration-300 group flex flex-col justify-between" 
+         data-topic="cds" data-subtopic="cds-kynangso">
+      <div>
+        <!-- Infographic Preview Box -->
+        <div class="relative h-60 bg-slate-900 overflow-hidden cursor-pointer" onclick="openInfoModal('info12')">
+          <img src="https://mic.mediacdn.vn/zoom/560_350/639352410187198464/2026/10/24/fec72f0437a5e8745337caa48cf9b10e204d3145017t11000l1-aiien7-17928078642721410459650-0-47-595-1000-crop-17928078818391056008190.jpg" alt="Bộ Kỹ năng số chuẩn hóa dành cho Công dân và Cán bộ công chức thời kỳ mới" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          
+          <div class="absolute inset-0 bg-slate-950/25 group-hover:bg-slate-950/50 transition flex items-center justify-center">
+            <div class="w-12 h-12 rounded-full bg-emerald-600/90 text-white flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:bg-emerald-500 transition">
+              <i class="fa-solid fa-magnifying-glass-plus text-base"></i>
+            </div>
+          </div>
+
+          <!-- Format Tag -->
+          <span class="absolute bottom-2.5 right-2.5 bg-black/80 backdrop-blur-xs text-white text-[12px] font-mono px-2 py-0.5 rounded font-bold shadow-xs">
+            <i class="fa-solid fa-vector-square mr-1 text-emerald-400"></i> Khung năng lực số
+          </span>
+
+          <!-- Topic Badge -->
+          <span class="absolute top-2.5 left-2.5 text-[12px] font-bold px-2 py-0.5 rounded-full border shadow-xs bg-blue-50 text-blue-700 border-blue-200">
+            Chuyển đổi số & KNS
+          </span>
+        </div>
+
+        <!-- Content -->
+        <div class="p-4 space-y-2.5">
+          <h4 class="font-bold text-xs sm:text-sm text-slate-900 group-hover:text-emerald-700 transition line-clamp-2 leading-snug cursor-pointer" onclick="openInfoModal('info12')">
+            Bộ Kỹ năng số chuẩn hóa dành cho Công dân và Cán bộ công chức thời kỳ mới
+          </h4>
+
+          <!-- Key Metrics Pills -->
+          <div class="flex flex-wrap gap-1.5 pt-1">
+            
+              <span class="bg-emerald-50 text-emerald-800 border border-emerald-200/60 text-[12px] font-bold px-2 py-0.5 rounded-md">
+                5 Nhóm năng lực
+              </span>
+            
+              <span class="bg-emerald-50 text-emerald-800 border border-emerald-200/60 text-[12px] font-bold px-2 py-0.5 rounded-md">
+                24 Tiêu chí con
+              </span>
+            
+              <span class="bg-emerald-50 text-emerald-800 border border-emerald-200/60 text-[12px] font-bold px-2 py-0.5 rounded-md">
+                Cấp chứng nhận số
+              </span>
+            
+          </div>
+
+          <p class="text-[13px] text-slate-500 line-clamp-2 leading-relaxed pt-0.5">
+            Cẩm nang hướng dẫn tự học và đánh giá năng lực số trực tuyến qua nền tảng học liệu mở.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card Action & Meta -->
+      <div class="px-4 py-2.5 bg-slate-50 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+        <span class="text-[13px] text-slate-400"><i class="fa-regular fa-calendar"></i> 24/10/2026</span>
+        <div class="flex items-center gap-2">
+          <button onclick="openInfoModal('info12')" class="text-emerald-700 hover:text-emerald-800 font-bold text-[13px] flex items-center gap-1">
+            Xem ảnh <i class="fa-solid fa-arrow-up-right-from-square text-[11px]"></i>
+          </button>
+          <button onclick="alert('Đang tải file vector PDF chất lượng cao...');" class="p-1 text-slate-400 hover:text-emerald-700 transition" title="Tải PDF">
+            <i class="fa-solid fa-download text-xs"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  
+        </div>
+
+        <!-- PAGINATION -->
+        <div class="pt-6 border-t border-slate-200 flex items-center justify-between text-xs text-slate-500">
+          <span>Hiển thị 1 - 12 trên tổng số 12 infographic</span>
+          <div class="flex items-center gap-1">
+            <button class="px-3 py-1.5 rounded-lg border border-slate-200 bg-white hover:bg-slate-50 text-slate-400 cursor-not-allowed">
+              <i class="fa-solid fa-chevron-left text-[12px]"></i>
+            </button>
+            <button class="px-3 py-1.5 rounded-lg bg-emerald-800 text-white font-bold">1</button>
+            <button class="px-3 py-1.5 rounded-lg border border-slate-200 bg-white hover:bg-slate-50 text-slate-700">2</button>
+            <button class="px-3 py-1.5 rounded-lg border border-slate-200 bg-white hover:bg-slate-50 text-slate-700">
+              <i class="fa-solid fa-chevron-right text-[12px]"></i>
+            </button>
+          </div>
+        </div>
+
+      </section>
+
+    </div>
+  </main>
+
+  <!-- INFOGRAPHIC ZOOM LIGHTBOX MODAL -->
+  <div id="infoModal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-md p-4">
+    <div class="max-w-5xl w-full flex flex-col h-[92vh] bg-slate-950 rounded-2xl overflow-hidden border border-slate-800 text-white">
+      
+      <!-- Top Bar -->
+      <div class="flex items-center justify-between px-6 py-3.5 border-b border-slate-800 bg-slate-900/90">
+        <div class="flex items-center gap-3 truncate">
+          <span class="text-emerald-400 text-sm font-bold"><i class="fa-solid fa-chart-pie mr-1"></i> Infographic</span>
+          <span class="text-slate-500">•</span>
+          <span id="infoModalTitle" class="font-bold text-xs sm:text-sm text-slate-200 truncate">Tiêu đề infographic</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <div class="flex items-center gap-1 bg-slate-800 rounded-lg p-1 text-xs">
+            <button onclick="zoomOut()" class="w-7 h-7 rounded hover:bg-slate-700 flex items-center justify-center" title="Thu nhỏ">
+              <i class="fa-solid fa-minus"></i>
+            </button>
+            <span id="zoomLevelText" class="px-2 font-mono text-[13px] text-emerald-400">100%</span>
+            <button onclick="zoomIn()" class="w-7 h-7 rounded hover:bg-slate-700 flex items-center justify-center" title="Phóng to">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+          </div>
+          <button onclick="closeInfoModal()" class="text-slate-400 hover:text-white p-1 text-lg">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Main Graphic Display -->
+      <div class="flex-1 relative overflow-auto p-6 bg-slate-900 flex items-center justify-center">
+        <img id="infoModalImg" src="" class="max-h-full max-w-full object-contain transition-transform duration-200 shadow-2xl rounded-lg">
+      </div>
+
+      <!-- Footer Bar -->
+      <div class="p-4 bg-slate-950 border-t border-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs">
+        <div>
+          <p id="infoModalDesc" class="text-slate-300 font-medium">Mô tả tóm tắt nội dung infographic.</p>
+          <span class="text-[13px] text-slate-500">Nguồn: Bộ Khoa học và Công nghệ • Xuất bản số hóa độ nét cao</span>
+        </div>
+        <div class="flex items-center gap-2 shrink-0">
+          <button onclick="alert('Bắt đầu tải tệp PNG độ phân giải 4K...');" class="px-3.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 font-bold flex items-center gap-1.5 transition">
+            <i class="fa-regular fa-image"></i> Tải PNG 4K
+          </button>
+          <button onclick="alert('Bắt đầu tải tệp Vector PDF chuẩn in ấn...');" class="px-3.5 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white font-bold flex items-center gap-1.5 transition">
+            <i class="fa-solid fa-file-pdf"></i> Tải Vector PDF
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  
+  <!-- FOOTER -->
+  <footer class="bg-[#0b1e36] text-white mt-12 border-t border-slate-800 text-[14.5px]" style="font-family: 'Inter', sans-serif;">
+    <div class="max-w-[90rem] mx-auto px-4 sm:px-8 py-10">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <!-- Col 1 -->
+        <div class="md:col-span-2 space-y-3.5 min-w-0">
+          <div class="flex items-start sm:items-center gap-3.5 min-w-0">
+            <div class="w-12 h-12 rounded-full flex items-center justify-center p-0.5 filter drop-shadow-lg shrink-0">
+              <img src="quoc-huy.png" alt="Quốc huy Việt Nam" class="w-11 h-11 object-contain drop-shadow">
+            </div>
+            <div class="min-w-0 flex-1">
+              <h5 class="font-extrabold text-[14.5px] sm:text-[15.5px] lg:text-[16.5px] xl:text-[17.5px] tracking-wide uppercase text-amber-400 leading-snug sm:leading-relaxed">NỀN TẢNG TRUYỀN THÔNG SỐ QUỐC GIA VỀ KHOA HỌC, CÔNG NGHỆ, ĐỔI MỚI SÁNG TẠO VÀ CHUYỂN ĐỔI SỐ</h5>
+              <p class="text-[13px] xl:text-[14.5px] text-slate-300 mt-1">Cơ quan chủ quản: Bộ Khoa học và Công nghệ (MST)</p>
+            </div>
+          </div>
+          <div class="text-[13px] xl:text-[14px] text-slate-300 space-y-1.5 pt-1">
+            <p><i class="fa-solid fa-location-dot w-4 mr-1 text-red-400"></i> Địa chỉ: Đang cập nhật</p>
+            <p><i class="fa-solid fa-phone w-4 mr-1 text-emerald-400"></i> Điện thoại: Đang cập nhật • Email: Đang cập nhật</p>
+          </div>
+        </div>
+
+        <!-- Col 2: Liên kết -->
+        <div class="min-w-0">
+          <h5 class="font-bold text-[13px] xl:text-[14.5px] uppercase tracking-wider text-amber-400 mb-3.5 pb-1.5 border-b border-slate-700">Liên kết nhanh</h5>
+          <ul class="space-y-2.5 text-[13px] xl:text-[14px] text-slate-300">
+            <li><a href="chinh-sach-tra-cuu.html" class="hover:text-amber-300 transition">Văn bản chỉ đạo điều hành</a></li>
+            <li><a href="san-pham-cong-nghe.html" class="hover:text-amber-300 transition">10 Nhóm sản phẩm số trọng điểm</a></li>
+            <li><a href="su-kien.html" class="hover:text-amber-300 transition">Lịch trình sự kiện & hội thảo</a></li>
+            <li><a href="hoi-dap.html" class="hover:text-amber-300 transition">Hỏi đáp & hỗ trợ trực tuyến</a></li>
+            <li><a href="chuyen-muc-kinh-te-so.html" class="hover:text-amber-300 transition">Báo cáo dữ liệu & Chỉ số PII</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Đa phương tiện -->
+        <div class="min-w-0">
+          <h5 class="font-bold text-[13px] xl:text-[14.5px] uppercase tracking-wider text-amber-400 mb-3.5 pb-1.5 border-b border-slate-700">Đa phương tiện</h5>
+          <ul class="space-y-2.5 text-[13px] xl:text-[14px] text-slate-300">
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Video phóng sự thời sự</a></li>
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Kho tư liệu ảnh sự kiện</a></li>
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Đồ họa Infographic số hóa</a></li>
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Podcast & Bản tin phát thanh</a></li>
+            <li><a href="multimedia.html" class="hover:text-amber-300 transition">Sách điện tử & Báo cáo tổng kết</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-8 pt-4 border-t border-slate-800 flex flex-col lg:flex-row items-center justify-between text-[12.5px] xl:text-[13.5px] text-slate-400 gap-3">
+        <p class="text-center lg:text-left">© 2026 Bản quyền thuộc Bộ Khoa học và Công nghệ. Ghi rõ nguồn khi phát hành lại thông tin.</p>
+        <div class="flex flex-wrap items-center justify-center gap-4 shrink-0">
+          <a href="#" class="hover:text-white transition">Điều khoản sử dụng</a>
+          <a href="#" class="hover:text-white transition">Chính sách bảo mật</a>
+          <a href="hoi-dap.html" class="hover:text-white transition">Sơ đồ cổng</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="prototype-nav.js"></script>
+
+  <!-- Interactive Category Filter Script -->
+  <script>
+    // Filter by Category
+    function filterByTopic(topicId, btnEl) {
+      // 1. Reset all buttons to inactive default state
+      document.querySelectorAll('.category-btn').forEach(btn => {
+        btn.classList.remove('active-category-btn', 'bg-[#0e2646]', 'text-white', 'shadow-sm', 'border-transparent');
+        btn.classList.add('bg-white', 'text-slate-700', 'border-slate-200/80', 'hover:bg-slate-100');
+
+        // Reset text color
+        const nameSpan = btn.querySelector('.category-name');
+        if (nameSpan) {
+          nameSpan.classList.remove('text-white');
+          nameSpan.classList.add('text-slate-800');
+        }
+
+        // Reset icon container to original theme colors
+        const iconBox = btn.querySelector('.category-icon-box');
+        if (iconBox) {
+          const origBg = iconBox.dataset.origBg || 'bg-slate-100';
+          const origText = iconBox.dataset.origText || 'text-slate-700';
+          iconBox.className = 'category-icon-box w-7 h-7 rounded-lg ' + origBg + ' ' + origText + ' flex items-center justify-center text-xs shrink-0 shadow-xs transition';
+        }
+
+        // Reset count badge to original theme colors
+        const countBadge = btn.querySelector('.category-count');
+        if (countBadge) {
+          const origBg = countBadge.dataset.origBg || 'bg-slate-100';
+          const origText = countBadge.dataset.origText || 'text-slate-700';
+          countBadge.className = 'category-count text-[13px] font-mono font-bold px-2 py-0.5 rounded-full ' + origBg + ' ' + origText + ' shrink-0 transition';
+        }
+      });
+
+      // 2. Set active style on the selected button
+      if (btnEl) {
+        btnEl.classList.remove('bg-white', 'text-slate-700', 'border-slate-200/80', 'hover:bg-slate-100');
+        btnEl.classList.add('active-category-btn', 'bg-[#0e2646]', 'text-white', 'shadow-sm', 'border-transparent');
+
+        const nameSpan = btnEl.querySelector('.category-name');
+        if (nameSpan) {
+          nameSpan.classList.remove('text-slate-800');
+          nameSpan.classList.add('text-white');
+        }
+
+        const iconBox = btnEl.querySelector('.category-icon-box');
+        if (iconBox) {
+          iconBox.className = 'category-icon-box w-7 h-7 rounded-lg bg-white/20 text-white flex items-center justify-center text-xs shrink-0 shadow-xs transition';
+        }
+
+        const countBadge = btnEl.querySelector('.category-count');
+        if (countBadge) {
+          countBadge.className = 'category-count text-[13px] font-mono font-bold px-2 py-0.5 rounded-full bg-white/20 text-white shrink-0 transition';
+        }
+      }
+
+      // 3. Update active label on the right side
+      const targetName = btnEl ? (btnEl.getAttribute('data-topic-name') || 'Tất cả chuyên mục') : 'Tất cả chuyên mục';
+      const labelEl = document.getElementById('activeTopicLabel');
+      if (labelEl) {
+        labelEl.textContent = topicId === 'all' ? 'Tất cả chuyên mục' : targetName;
+      }
+
+      // 4. Filter content cards on the right
+      const cards = document.querySelectorAll('.content-card-item');
+      let visibleCount = 0;
+
+      cards.forEach(card => {
+        const itemTopic = card.getAttribute('data-topic');
+        if (topicId === 'all' || itemTopic === topicId) {
+          card.classList.remove('hidden');
+          visibleCount++;
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+
+      // 5. Update count badge
+      const countEl = document.getElementById('filteredCount');
+      if (countEl) countEl.textContent = visibleCount + ' kết quả';
+
+      // 6. Empty state toggle
+      const emptyState = document.getElementById('emptyStateNotice');
+      if (emptyState) {
+        if (visibleCount === 0) {
+          emptyState.classList.remove('hidden');
+        } else {
+          emptyState.classList.add('hidden');
+        }
+      }
+    }
+
+    // Live search inside category list
+    function handleTreeSearch(query) {
+      const q = query.toLowerCase().trim();
+      const btns = document.querySelectorAll('#treeContainer .category-btn');
+      btns.forEach(btn => {
+        const name = (btn.getAttribute('data-topic-name') || '').toLowerCase();
+        if (!q || name.includes(q)) {
+          btn.classList.remove('hidden');
+        } else {
+          btn.classList.add('hidden');
+        }
+      });
+    }
+
+    // Reset filter
+    function resetFilter() {
+      const allBtn = document.querySelector('[data-topic-target="all"]');
+      filterByTopic('all', allBtn);
+      const search = document.getElementById('treeSearchInput');
+      if (search) {
+        search.value = '';
+        handleTreeSearch('');
+      }
+    }
+  </script>
+  
+
+  <script>
+    const INFO_DATA = [{"id":"info1","topic":"cns-ai","subtopic":"cns-bandan","topicName":"Công nghiệp số & AI","topicColor":"bg-sky-50 text-sky-700 border-sky-200","title":"Nhiệm vụ trọng tâm lĩnh vực Công nghiệp công nghệ số theo Nghị quyết 57/NQ-TW","thumb":"https://mic.mediacdn.vn/zoom/560_350/639352410187198464/2026/7/22/infonhiem-vu-trong-tam-theo-nq57-17847170026701073134971-0-0-960-1536-crop-178471703575979911915.png","format":"Vector PDF & PNG 4K","date":"22/07/2026","metrics":["35% GDP số","50.000 Kỹ sư bán dẫn","Top 3 ASEAN"],"desc":"Đồ họa tổng hợp hệ thống chỉ tiêu chiến lược và các giải pháp ưu tiên phát triển công nghệ cao quốc gia."},{"id":"info2","topic":"dmst","subtopic":"dmst-gii","topicName":"Đổi mới sáng tạo","topicColor":"bg-amber-50 text-amber-700 border-amber-200","title":"Khung tiêu chí và 52 chỉ số Đổi mới sáng tạo cấp địa phương (PII 2026)","thumb":"https://mic.mediacdn.vn/zoom/560_350/639352410187198464/2026/10/14/-ra-co-hoi-lon-de-viet-nam-but-pha-vuon-len-nho-khoa-hoc-cong-nghe-doi-moi-sang-tao-va-chuyen-doi-so-17640627816141183624283-0-12-555-900-crop-17919600076031954114266.jpg","format":"Infographic Bản đồ số","date":"14/10/2026","metrics":["63 Tỉnh thành","7 Trụ cột PII","Chuẩn WIPO"],"desc":"Bản đồ nhiệt phân hạng năng lực đổi mới sáng tạo và hiệu quả chuyển giao công nghệ 63 tỉnh thành."},{"id":"info3","topic":"khcn","subtopic":"khcn-quy","topicName":"Khoa học & Công nghệ","topicColor":"bg-indigo-50 text-indigo-700 border-indigo-200","title":"Chính sách tài chính đặc thù: Hỗ trợ tới 100% kinh phí cho 10 nhóm công nghệ chiến lược","thumb":"https://mic.mediacdn.vn/zoom/560_350/639352410187198464/2026/7/15/17841043433002202274505589963961g5081826906783871663963b1b54d59fcf7da010eddec1a1e716-17841200796081718906185-0-0-1600-2560-crop-1784120358326590592508.jpg","format":"Biểu đồ quy trình","date":"15/07/2026","metrics":["100% Kinh phí Lab","Miễn thuế 4 năm","Quỹ 5.000 tỷ"],"desc":"Cơ chế cấp kinh phí khoán chi đến sản phẩm cuối cùng và bảo lãnh rủi ro khoa học mạo hiểm."},{"id":"info4","topic":"shtt","subtopic":"shtt-sangche","topicName":"Sở hữu trí tuệ","topicColor":"bg-rose-50 text-rose-700 border-rose-200","title":"Quy trình 5 bước nộp đơn và cấp Bằng sáng chế nhanh qua Trợ lý số SHTT","thumb":"https://mic.mediacdn.vn/zoom/560_350/639352410187198464/2026/8/4/trien-khai-nghi-quyet-57-quan-tri-ket-qua-de-tao-chuyen-bien-thuc-chat-00-00-05-20-still001-17858601249781615368464-0-85-1080-1813-crop-1785860154238822347715.png","format":"Sơ đồ luồng (Flowchart)","date":"04/08/2026","metrics":["Dưới 9 tháng","100% Nộp online","Giảm 50% phí"],"desc":"Hướng dẫn trực quan hóa thủ tục thẩm định hình thức, tra cứu đối chứng và công bố đơn SHTT."},{"id":"info5","topic":"tcdl","subtopic":"tcdl-tcvn","topicName":"Tiêu chuẩn, Đo lường, CL","topicColor":"bg-emerald-50 text-emerald-700 border-emerald-200","title":"Bộ tiêu chuẩn Quốc gia TCVN cho Hộ chiếu số và Truy xuất nguồn gốc sản phẩm","thumb":"https://mic.mediacdn.vn/zoom/560_350/639352410187198464/2026/6/10/11f747-17810778474411408485072-0-0-1281-2049-crop-1781077881745336430234.jpg","format":"Đồ họa kỹ thuật","date":"10/06/2026","metrics":["Chuẩn GS1 quốc tế","Mã QR động","Liên thông EU"],"desc":"Quy chuẩn kỹ thuật cấu trúc dữ liệu chuỗi cung ứng chống gian lận thương mại điện tử."},{"id":"info6","topic":"bcvt","subtopic":"bcvt-5g","topicName":"Bưu chính - Viễn thông","topicColor":"bg-teal-50 text-teal-700 border-teal-200","title":"Bản đồ phủ sóng mạng băng rộng di động 5G thương mại toàn quốc 2026","thumb":"https://mic.mediacdn.vn/zoom/560_350/639352410187198464/2026/6/30/1-485985-17828039681562016587819-0-0-677-1083-crop-1782804203350692812851.jpg","format":"Bản đồ tương tác","date":"30/06/2026","metrics":["99% KCN phủ sóng","Trạm Open RAN","Băng thông >1Gbps"],"desc":"Quy hoạch phân bổ tần số và tiến độ triển khai các trạm phát sóng công nghệ cao Make in Viet Nam."},{"id":"info7","topic":"cds","subtopic":"cds-chinhphuso","topicName":"Chuyển đổi số & KNS","topicColor":"bg-blue-50 text-blue-700 border-blue-200","title":"Kiến trúc Chính phủ điện tử 3.0 và Trục kết nối dữ liệu số Quốc gia (LGSP/NDXP)","thumb":"https://mic.mediacdn.vn/zoom/560_350/639352410187198464/2026/7/5/010720260217-z7995724204418-508c2e1e10b4f7a6202bcc181fe889bb-17832367327091491676511-84-0-1334-2000-crop-1783236737333193343026.jpg","format":"Sơ đồ kiến trúc","date":"05/07/2026","metrics":["100% CSDL liên thông","Kho dữ liệu mở","API dùng chung"],"desc":"Mô hình kết nối đa tầng giữa các bộ ngành trung ương và 63 hệ thống thông tin địa phương."},{"id":"info8","topic":"nlnt","subtopic":"nlnt-buxa","topicName":"Năng lượng nguyên tử","topicColor":"bg-purple-50 text-purple-700 border-purple-200","title":"Chuỗi ứng dụng Bức xạ nguyên tử và Đồng vị phóng xạ vì mục đích hòa bình","thumb":"https://mic.mediacdn.vn/zoom/560_350/639352410187198464/2026/10/1/photo-1790847167008-17908471698471336286555-0-74-805-1362-crop-17908474063331642582332.jpeg","format":"Infographic Khoa học","date":"01/10/2026","metrics":["Y học hạt nhân","Chiếu xạ nông sản","Quan trắc an toàn"],"desc":"Tổng hợp các thành tựu ứng dụng công nghệ hạt nhân trong điều trị ung thư và bảo quản thực phẩm."},{"id":"info9","topic":"kts","subtopic":"kts-doanhnghiep","topicName":"Kinh tế số - Xã hội số","topicColor":"bg-cyan-50 text-cyan-700 border-cyan-200","title":"Cơ cấu và Tỷ trọng đóng góp của Kinh tế số trong GDP Quốc gia giai đoạn 2021 - 2026","thumb":"https://mic.mediacdn.vn/zoom/560_350/639352410187198464/2026/9/5/hinh-anh-3-1788612734007824862819-0-28-320-540-crop-17886128305461553852089.jpeg","format":"Biểu đồ kinh tế","date":"05/09/2026","metrics":["Đạt 22.5% GDP","80.000 DN công nghệ","Tăng trưởng 25%/năm"],"desc":"Số liệu thống kê chính thức từ Bộ Thông tin và Truyền thông và Tổng cục Thống kê."},{"id":"info10","topic":"cns-ai","subtopic":"cns-ai-sub","topicName":"Công nghiệp số & AI","topicColor":"bg-sky-50 text-sky-700 border-sky-200","title":"Mô hình Ngôn ngữ lớn (LLM) Tiếng Việt: Kiến trúc dữ liệu và Hạ tầng huấn luyện","thumb":"https://mic.mediacdn.vn/zoom/560_350/639352410187198464/2026/8/19/1-312818-1787108290347-1787108291436142272388-34-0-747-1140-crop-1787108965852827414626.jpg","format":"Sơ đồ công nghệ AI","date":"19/08/2026","metrics":["100 tỷ Tham số","Dữ liệu tiếng Việt sạch","Bảo vệ chủ quyền số"],"desc":"Mô hình đào tạo kết hợp giữa tri thức văn hóa, pháp lý Việt Nam và siêu tính toán đám mây."},{"id":"info11","topic":"dmst","subtopic":"dmst-vuonuom","topicName":"Đổi mới sáng tạo","topicColor":"bg-amber-50 text-amber-700 border-amber-200","title":"Mạng lưới 20 Trung tâm Đổi mới sáng tạo Quốc gia và Tech Hubs liên kết vùng","thumb":"https://mic.mediacdn.vn/zoom/560_350/639352410187198464/2026/6/4/193a1dc3b882c5d4824935e681108196-17805569889081545410304-0-0-754-1206-crop-17805570812211936123531.jpg","format":"Bản đồ mạng lưới","date":"04/06/2026","metrics":["20 Trung tâm ĐMST","Hà Nội - Đà Nẵng - HCM","Vườn ươm mở"],"desc":"Không gian kết nối giữa trường viện, quỹ đầu tư mạo hiểm và doanh nghiệp kỳ lân công nghệ."},{"id":"info12","topic":"cds","subtopic":"cds-kynangso","topicName":"Chuyển đổi số & KNS","topicColor":"bg-blue-50 text-blue-700 border-blue-200","title":"Bộ Kỹ năng số chuẩn hóa dành cho Công dân và Cán bộ công chức thời kỳ mới","thumb":"https://mic.mediacdn.vn/zoom/560_350/639352410187198464/2026/10/24/fec72f0437a5e8745337caa48cf9b10e204d3145017t11000l1-aiien7-17928078642721410459650-0-47-595-1000-crop-17928078818391056008190.jpg","format":"Khung năng lực số","date":"24/10/2026","metrics":["5 Nhóm năng lực","24 Tiêu chí con","Cấp chứng nhận số"],"desc":"Cẩm nang hướng dẫn tự học và đánh giá năng lực số trực tuyến qua nền tảng học liệu mở."}];
+    let currentZoom = 1.0;
+
+    function openInfoModal(infoId) {
+      const item = INFO_DATA.find(i => i.id === infoId) || INFO_DATA[0];
+      currentZoom = 1.0;
+      updateZoom();
+      document.getElementById('infoModalTitle').textContent = item.title;
+      document.getElementById('infoModalImg').src = item.thumb;
+      document.getElementById('infoModalDesc').textContent = item.desc;
+      document.getElementById('infoModal').classList.remove('hidden');
+    }
+
+    function closeInfoModal() {
+      document.getElementById('infoModal').classList.add('hidden');
+    }
+
+    function zoomIn() {
+      if (currentZoom < 2.5) {
+        currentZoom += 0.25;
+        updateZoom();
+      }
+    }
+
+    function zoomOut() {
+      if (currentZoom > 0.5) {
+        currentZoom -= 0.25;
+        updateZoom();
+      }
+    }
+
+    function updateZoom() {
+      document.getElementById('infoModalImg').style.transform = 'scale(' + currentZoom + ')';
+      document.getElementById('zoomLevelText').textContent = Math.round(currentZoom * 100) + '%';
+    }
+
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeInfoModal();
+    });
+  </script>
+</body>
+</html>
